@@ -2,7 +2,7 @@
     <!--header-->
     <view class="tui-header-box" style="height:{{height}}px;background:rgba(255,255,255,{{opcity}})">
         <view class="tui-header" style="padding-top:{{top}}px; opacity:{{opcity}}">
-            商品详情
+            活动详情
         </view>
         <view class="tui-header-icon" style="margin-top:{{top}}px">
             <tui-icon name="arrowleft" color="{{opcity>=1?'#000':'#fff'}}" bindtap="back" tui-icon-class="tui-icon-back" class="tui-icon" style="background:rgba(0, 0, 0, {{iconOpcity}});"></tui-icon>
@@ -30,8 +30,8 @@
         <view class="tui-product-title tui-border-radius">
             <view class="tui-pro-pricebox tui-padding">
                 <view class="tui-pro-price">
-                    <view>￥<text class="tui-price">49</text>.00</view>
-                    <tui-tag size="small" plain="{{true}}" type="high-green" shape="circle" tui-tag-class="tui-scale tui-tag-pro">新品</tui-tag>
+                    <view>￥<text class="tui-price">0</text>.00</view>
+                    <tui-tag size="small" plain="{{true}}" type="high-green" shape="circle" tui-tag-class="tui-scale tui-tag-pro">首届</tui-tag>
                 </view>
                 <view class="tui-collection tui-size" bindtap="collecting">
                     <tui-icon name="{{collected?'like-fill':'like'}}" color="{{collected?'#ff201f':'#333'}}" size="20" tui-icon-class="tui-icon-collection"></tui-icon>
@@ -43,7 +43,7 @@
                 <text class="tui-line-through">￥199.00</text>
             </view>
             <view class="tui-pro-titbox">
-                <view class="tui-pro-title">谈判官明星同款耳坠韩国气质简约显脸瘦的耳环女百搭个性长款耳钉 个性水滴耳环【A2】</view>
+                <view class="tui-pro-title">趣知游第一届香山旅游活动召集令</view>
                 <button open-type="share" class="tui-share-btn tui-share-position">
                     <tui-tag type="gray" tui-tag-class="tui-tag-share tui-size" shape="circleLeft" size="small">
                         <tui-icon name="partake" color="#999" size="15"></tui-icon>
@@ -52,11 +52,11 @@
                 </button>
             </view>
             <view class="tui-padding">
-                <view class="tui-sub-title tui-size tui-gray">此商品将于2019-06-28,10点结束闪购特卖，时尚美饰联合专场</view>
+                <view class="tui-sub-title tui-size tui-gray">2019年 河南人在北京同乡会</view>
                 <view class="tui-sale-info tui-size tui-gray">
-                    <view>快递：0.00</view>
-                    <view>月销2000</view>
-                    <view>浙江杭州</view>
+                    <view>人数：50人</view>
+                    <view>已报20人</view>
+                    <view>北京香山</view>
                 </view>
             </view>
         </view>
