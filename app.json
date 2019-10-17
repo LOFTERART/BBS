@@ -26,7 +26,8 @@
     "pages/order/evaluate/evaluate",
     "pages/coupon/index/index",
     "pages/coupon/onDetail/onDetail",
-    "pages/demo/demo"
+    "pages/demo/demo",
+    "pages/homeDetail/homeDetail"
   ],
   "usingComponents": {
     "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
@@ -73,6 +74,5 @@
     "navigationBarTextStyle": "black",
     "onReachBottomDistance": 50
   },
-
   "sitemapLocation": "sitemap.json"
 }
