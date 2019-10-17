@@ -100,50 +100,48 @@
 
         </view>
 
-<!--
- <view class="tui-basic-info tui-mtop tui-radius-all">
-            <view class="tui-list-cell" bindtap="showPopup" >
-                <view class="tui-bold tui-cell-title">已选</view>
-                <view class="tui-selected-box">个性水滴耳环【A2】,1个，可选服务</view>
-                <tui-icon name="more-fill" size="20" class="tui-right" color="#666"></tui-icon>
+        <view class="tui-basic-info tui-mtop tui-radius-all">
+            <view class="tui-list-cell" >
+                <view class="tui-bold tui-cell-title">报名时间</view>
+                <view class="tui-selected-box">2019-10-17 至 2019-10-31</view>
+<!--                <tui-icon name="more-fill" size="20" class="tui-right" color="#666"></tui-icon>-->
             </view>
-            <view class="tui-list-cell" bindtap="showPopup">
-                <view class="tui-bold tui-cell-title">送至</view>
+
+            <view class="tui-list-cell" >
+                <view class="tui-bold tui-cell-title">活动时间</view>
+                <view class="tui-selected-box">2019-11-31当天</view>
+            </view>
+            <view class="tui-list-cell" >
+                <view class="tui-bold tui-cell-title">集合地点</view>
                 <view class="tui-addr-box">
-                    <view class="tui-addr-item">北京朝阳区三环到四环之间</view>
-                    <view class="tui-addr-item">今日23:59前完成下单，预计6月28日23:30前发货，7月1日24:00前送达</view>
+                    <view class="tui-addr-item">北京海淀区人民大学</view>
+<!--                    <view class="tui-addr-item">今日23:59前完成下单，预计6月28日23:30前发货，7月1日24:00前送达</view>-->
                 </view>
                 <tui-icon name="more-fill" size="20" class="tui-right" color="#666"></tui-icon>
             </view>
-            <view class="tui-list-cell tui-last">
+<!--
+
+<view class="tui-list-cell tui-last">
                 <view class="tui-bold tui-cell-title">运费</view>
                 <view class="tui-selected-box">在线支付免运费</view>
             </view>
+-->
             <view class="tui-guarantee">
                 <view class="tui-guarantee-item">
                     <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
-                    <text class="tui-pl">可配送海外</text>
+                    <text class="tui-pl">河南同乡</text>
                 </view>
                 <view class="tui-guarantee-item">
                     <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
-                    <text class="tui-pl">店铺发货&售后</text>
+                    <text class="tui-pl">免费一日游</text>
                 </view>
                 <view class="tui-guarantee-item">
                     <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
-                    <text class="tui-pl">7天无理由退货</text>
+                    <text class="tui-pl">吃喝全包</text>
                 </view>
-                <view class="tui-guarantee-item">
-                    <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
-                    <text class="tui-pl">闪电退款</text>
-                </view>
-                <view class="tui-guarantee-item">
-                    <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
-                    <text class="tui-pl">极速审核</text>
-                </view>
+
             </view>
         </view>
-
--->
 
 <!--
      <view class="tui-cmt-box tui-mtop tui-radius-all">

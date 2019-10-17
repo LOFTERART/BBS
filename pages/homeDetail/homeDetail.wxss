@@ -352,7 +352,7 @@ page {
 }
 
 .tui-cell-title {
-    width: 66rpx;
+    width: 110rpx;
     padding-right: 30rpx;
     flex-shrink: 0;
 }
