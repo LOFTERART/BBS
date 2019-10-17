@@ -23,7 +23,7 @@
 <!--活动召集 S-->
 
 <block wx:for="{{dynamicList}}" wx:key>
-    <view style="padding: 20rpx" class="van-hairline--bottom">
+    <view style="padding: 20rpx;position: relative" class="van-hairline--bottom">
 
 
         <!--    基本信息 S-->
@@ -67,6 +67,12 @@
             </view>
         </view>
         <!--    成员人数信息E-->
+
+
+
+        <view style="position: absolute;right: 5rpx;top: 5rpx">
+            <van-tag color="green" plain>进行中</van-tag>
+        </view>
 
 
     </view>

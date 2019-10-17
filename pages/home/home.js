@@ -28,7 +28,7 @@ create(store,{
             {id:1,name:'运动',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png'}
             ],
         dynamicList:[
-            {id:1,name:'趣知游第一届香山旅游活动召集令',subName:'河南人在北京同乡会',tags:'#免费 #旅游 #香山 #吃喝玩乐',image:'https://cdn.it120.cc/apifactory/2019/07/14/44db72fe-9c00-4d96-92e3-23ec707becf3.jpg',memNum:10,addNum:10},
+            {id:1,name:'趣知游第一届香山旅游活动召集令',subName:'2019年 河南人在北京同乡会',tags:'#免费 #旅游 #香山 #吃喝玩乐',image:'https://cdn.it120.cc/apifactory/2019/07/14/44db72fe-9c00-4d96-92e3-23ec707becf3.jpg',memNum:10,addNum:10},
             {id:1,name:'趣知游第一届香山旅游活动召集令',subName:'河南人在北京同乡会',tags:'#免费 #旅游 #香山 #吃喝玩乐',image:'https://cdn.it120.cc/apifactory/2019/07/14/44db72fe-9c00-4d96-92e3-23ec707becf3.jpg',memNum:50,addNum:50},
             {id:1,name:'趣知游第一届香山旅游活动召集令',subName:'河南人在北京同乡会',tags:'#免费 #旅游 #香山 #吃喝玩乐',image:'https://cdn.it120.cc/apifactory/2019/07/14/44db72fe-9c00-4d96-92e3-23ec707becf3.jpg',memNum:80,addNum:80},
             {id:1,name:'趣知游第一届香山旅游活动召集令',subName:'河南人在北京同乡会',tags:'#免费 #旅游 #香山 #吃喝玩乐',image:'https://cdn.it120.cc/apifactory/2019/07/14/44db72fe-9c00-4d96-92e3-23ec707becf3.jpg',memNum:90,addNum:90},

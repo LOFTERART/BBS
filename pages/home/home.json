@@ -4,6 +4,7 @@
     "jbj-banner": "/component/banner/banner",
     "tui-icon": "/component/icon/icon",
     "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+    "van-tag": "/miniprogram_npm/vant-weapp/tag/index",
     "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index"
   }
 }
