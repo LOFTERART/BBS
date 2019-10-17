@@ -74,6 +74,31 @@ App({
     }
 })
 
-
+// "tabBar": {
+//     "backgroundColor": "#fff",
+//         "color": "#3E3A39",
+//         "selectedColor": "#C9A063",
+//         "borderStyle": "white",
+//         "list": [
+//         {
+//             "pagePath": "pages/home/home",
+//             "text": "首页",
+//             "iconPath": "assets/image/home.png",
+//             "selectedIconPath": "assets/image/home-r.png"
+//         },
+//         {
+//             "pagePath": "pages/index/index/index",
+//             "text": "商城",
+//             "iconPath": "assets/image/shop.png",
+//             "selectedIconPath": "assets/image/shop-r.png"
+//         },
+//         {
+//             "pagePath": "pages/user/user/user",
+//             "text": "我的",
+//             "iconPath": "assets/image/user.png",
+//             "selectedIconPath": "assets/image/user-r.png"
+//         }
+//     ]
+// },
 
 

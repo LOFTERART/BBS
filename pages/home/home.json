@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "首页",
+  "navigationBarTitleText": "趣知游",
   "usingComponents": {
     "jbj-banner": "/component/banner/banner",
     "tui-icon": "/component/icon/icon",
