@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "报名信息",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "tui-list-cell":"/component/list-cell/list-cell"
+  }
+}

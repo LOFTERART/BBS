@@ -137,7 +137,9 @@ Page({
     },
 
     clickBm:function(){
-        Toast.toast('提交个人信息')
+        wx.navigateTo({
+          url: '/pages/addPeoInfo/addPeoInfo'
+        })
     },
     submit() {
         this.setData({

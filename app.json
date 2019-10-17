@@ -27,7 +27,8 @@
     "pages/coupon/index/index",
     "pages/coupon/onDetail/onDetail",
     "pages/demo/demo",
-    "pages/homeDetail/homeDetail"
+    "pages/homeDetail/homeDetail",
+    "pages/addPeoInfo/addPeoInfo"
   ],
   "usingComponents": {
     "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
