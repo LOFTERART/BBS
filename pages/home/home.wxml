@@ -58,7 +58,10 @@
 
    <!--    成员人数信息S-->
     <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
-        <view class="f24">成员1人</view>
+        <view class="f24">
+            <i class="iconfont icon-tubiaozhizuomoban"></i>
+            成员1人
+        </view>
         <view class="f24">1人加入</view>
     </view>
     <!--    成员人数信息E-->

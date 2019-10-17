@@ -1,4 +1,5 @@
 @import "../../app.wxss";
+@import "../../iconFont/iconFont.wxss";
 
 .tui-classify-box {
     width: 100%;
