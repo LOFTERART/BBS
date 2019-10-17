@@ -45,6 +45,13 @@ create(store,{
     },
 
 
+    clickDy:function(e){
+        wx.navigateTo({
+          url: '/pages/homeDetail/homeDetail'
+        })
+        
+    },
+    
     onChange(event) {
         this.getDataList(event.detail.name);
     },

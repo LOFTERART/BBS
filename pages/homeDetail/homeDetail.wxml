@@ -6,8 +6,10 @@
         </view>
         <view class="tui-header-icon" style="margin-top:{{top}}px">
             <tui-icon name="arrowleft" color="{{opcity>=1?'#000':'#fff'}}" bindtap="back" tui-icon-class="tui-icon-back" class="tui-icon" style="background:rgba(0, 0, 0, {{iconOpcity}});"></tui-icon>
-            <tui-icon name="more-fill" color="{{opcity>=1?'#000':'#fff'}}" size="20" tui-icon-class="tui-icon-more" class="tui-icon tui-icon-ml" style="background:rgba(0, 0, 0, {{iconOpcity}});" catchtap="openMenu"></tui-icon>
+<!--
+ <tui-icon name="more-fill" color="{{opcity>=1?'#000':'#fff'}}" size="20" tui-icon-class="tui-icon-more" class="tui-icon tui-icon-ml" style="background:rgba(0, 0, 0, {{iconOpcity}});" catchtap="openMenu"></tui-icon>
             <tui-badge type="red" tui-badge-class="tui-badge" size="small">5</tui-badge>
+-->
         </view>
     </view>
     <!--header-->
@@ -62,7 +64,10 @@
         </view>
 
         <view class="tui-discount-box tui-radius-all tui-mtop">
-            <view class="tui-list-cell" bindtap="showPopup">
+
+<!--
+
+         <view class="tui-list-cell" bindtap="showPopup">
                 <view class="tui-bold tui-cell-title">领券</view>
                 <view class="tui-tag-coupon-box">
                     <tui-tag size="small" type="red" shape="circle" tui-tag-class="tui-tag-coupon">满99减8</tui-tag>
@@ -70,21 +75,24 @@
                 </view>
                 <tui-icon name="more-fill" size="20" class="tui-right tui-top40" color="#666"></tui-icon>
             </view>
+-->
 
-            <view class="tui-list-cell tui-last" bindtap="showPopup">
-                <view class="tui-bold tui-cell-title">促销</view>
+
+
+            <view class="tui-list-cell tui-last">
+                <view class="tui-bold tui-cell-title">福利</view>
                 <view>
                     <view class="tui-promotion-box">
-                        <tui-tag size="small" type="red" plain="{{true}}" tui-tag-class="tui-inline-block">多买优惠</tui-tag>
-                        <text>满1件，立减最低1件商品价格，包邮（限中国内地）</text>
-                    </view>
-                    <view class="tui-promotion-box">
-                        <tui-tag size="small" type="red" plain="{{true}}" tui-tag-class="tui-inline-block">满额返券</tui-tag>
-                        <text>满2件，立减最低2件商品价格，包邮（限中国内地）</text>
+                        <tui-tag size="small" type="red" plain="{{true}}" tui-tag-class="tui-inline-block">意外保险</tui-tag>
+                        <text>赠送旅游期间意外保险</text>
                     </view>
                     <view class="tui-promotion-box">
                         <tui-tag size="small" type="red" plain="{{true}}" tui-tag-class="tui-inline-block">特别赠品</tui-tag>
-                        <text>满3件，立减最低3件商品价格，包邮（限中国内地）</text>
+                        <text>送XX</text>
+                    </view>
+                    <view class="tui-promotion-box">
+                        <tui-tag size="small" type="red" plain="{{true}}" tui-tag-class="tui-inline-block">特别赠品</tui-tag>
+                        <text>送XX</text>
                     </view>
                 </view>
                 <tui-icon name="more-fill" size="20" class="tui-right tui-top40" color="#666"></tui-icon>
@@ -92,7 +100,8 @@
 
         </view>
 
-        <view class="tui-basic-info tui-mtop tui-radius-all">
+<!--
+ <view class="tui-basic-info tui-mtop tui-radius-all">
             <view class="tui-list-cell" bindtap="showPopup" >
                 <view class="tui-bold tui-cell-title">已选</view>
                 <view class="tui-selected-box">个性水滴耳环【A2】,1个，可选服务</view>
@@ -134,7 +143,10 @@
             </view>
         </view>
 
-        <view class="tui-cmt-box tui-mtop tui-radius-all">
+-->
+
+<!--
+     <view class="tui-cmt-box tui-mtop tui-radius-all">
             <view class="tui-list-cell tui-last tui-between">
                 <view class="tui-bold tui-cell-title">评价</view>
                 <view bindtap="common">
@@ -156,10 +168,27 @@
                 <tui-tag type="black" plain="{{true}}" tui-tag-class="tui-tag-cmt" bindtap="common">查看全部评价</tui-tag>
             </view>
         </view>
+-->
 
         <view class="tui-nomore-box">
-            <tui-nomore text="宝贝详情" visible="{{true}}" bgcolor="#f7f7f7"></tui-nomore>
+            <tui-nomore text="活动详情" visible="{{true}}" bgcolor="#f7f7f7"></tui-nomore>
         </view>
+
+
+        <view style="padding: 20rpx">
+            活动介绍信息
+            公司介绍相关信息
+            赞助商介绍信息
+            微信群信息
+            旅游信息
+            开始时间
+            结束时间
+            注意事项
+            等等
+            图文详情介绍本届活动
+        </view>
+
+
         <view class="tui-product-img tui-radius-all">
             <image src="https://www.thorui.cn/img/detail/{{index+1}}.jpg" wx:for="{{20}}" wx:key="{{index}}" mode="widthFix"></image>
         </view>
@@ -174,19 +203,26 @@
                 <tui-icon name="kefu" size="22" color='#333'></tui-icon>
                 <view class="tui-operation-text tui-scale-small">客服</view>
             </view>
-            <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
-                <tui-icon name="shop" size="22" color='#333'></tui-icon>
-                <view class="tui-operation-text tui-scale-small">店铺</view>
+
+<view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
+                <tui-icon name="share" size="22" color='#333'></tui-icon>
+                <view class="tui-operation-text tui-scale-small">分享</view>
             </view>
-            <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
+
+
+<!--
+ <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
                 <tui-icon name="cart" size="22" color='#333'></tui-icon>
                 <view class="tui-operation-text tui-scale-small">购物车</view>
                 <tui-badge type="red" size="small" tui-badge-class="tui-badge-class">2</tui-badge>
             </view>
+-->
+
+
         </view>
         <view class="tui-operation-right tui-right-flex tui-col-7">
-            <tui-button type="red" tui-button-class="tui-btn-equals" shape="circle" size="mini" class="tui-flex-1" bindtap="showPopup">加入购物车</tui-button>
-            <tui-button type="warning" tui-button-class="tui-btn-equals" shape="circle" size="mini" class="tui-flex-1" bindtap="submit">立即购买</tui-button>
+<!--            <tui-button type="red" tui-button-class="tui-btn-equals" shape="circle" size="mini" class="tui-flex-1" bindtap="showPopup">加入购物车</tui-button>-->
+            <tui-button type="warning" tui-button-class="tui-btn-equals" shape="circle" size="mini" class="tui-flex-1" bindtap="clickBm">立即报名</tui-button>
         </view>
     </view>
     <!--底部操作栏--->

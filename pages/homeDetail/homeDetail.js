@@ -1,4 +1,4 @@
-
+import Toast from'../../utils/util'
 Page({
     data: {
         height: 64, //header高度
@@ -133,6 +133,11 @@ Page({
     },
     common: function () {
         console.log(1);
+        Toast.toast('待开发')
+    },
+
+    clickBm:function(){
+        Toast.toast('提交个人信息')
     },
     submit() {
         this.setData({
