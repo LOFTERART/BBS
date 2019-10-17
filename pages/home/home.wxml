@@ -22,56 +22,55 @@
 
 <!--活动召集 S-->
 
-
-<view style="padding: 20rpx" class="van-hairline--bottom">
-
-
-<!--    基本信息 S-->
+<block wx:for="{{dynamicList}}" wx:key>
+    <view style="padding: 20rpx" class="van-hairline--bottom">
 
 
-    <view style="display: flex;flex-direction: row;height: 180rpx">
+        <!--    基本信息 S-->
 
-        <view style="margin-right: 30rpx">
-            <image src="https://cdn.it120.cc/apifactory/2019/07/14/44db72fe-9c00-4d96-92e3-23ec707becf3.jpg" style="width: 180rpx;height: 180rpx;border-radius: 10rpx" />
+
+        <view style="display: flex;flex-direction: row;height: 180rpx">
+
+            <view style="margin-right: 30rpx">
+                <image src="{{item.image}}" style="width: 180rpx;height: 180rpx;border-radius: 10rpx" />
+            </view>
+
+            <view style="display: flex;flex-direction: column;justify-content: space-between">
+
+                <view class="f28">
+                    {{item.name}}
+                </view>
+                <view class="f24">
+                    {{item.subName}}
+                </view>
+                <view class="f22">
+                    {{item.tags}}
+                </view>
+
+            </view>
+
         </view>
 
-        <view style="display: flex;flex-direction: column;justify-content: space-between">
 
-            <view class="f28">
-                我是瞎写的不知道写啥 主标题 我是
+        <!--    基本信息 E-->
+
+
+
+        <!--    成员人数信息S-->
+        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
+            <view class="f24">
+                <i class="iconfont icon-tubiaozhizuomoban"></i>
+                成员{{item.memNum}}人
             </view>
             <view class="f24">
-                副标题
+                {{item.addNum}}人加入
             </view>
-            <view class="f22">
-                tag标签 #粉丝 #商业 #旅游 #吃喝 #河南
-            </view>
-
         </view>
+        <!--    成员人数信息E-->
+
 
     </view>
-
-
-<!--    基本信息 E-->
-
-
-
-   <!--    成员人数信息S-->
-    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
-        <view class="f24">
-            <i class="iconfont icon-tubiaozhizuomoban"></i>
-            成员1人
-        </view>
-        <view class="f24">1人加入</view>
-    </view>
-    <!--    成员人数信息E-->
-
-
-</view>
-
-
-
-
+</block>
 
 <!--活动召集 E-->
 
