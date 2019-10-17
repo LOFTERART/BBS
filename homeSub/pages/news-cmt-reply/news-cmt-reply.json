@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "回复",
+  "backgroundColorTop": "#fff",
+  "backgroundColorBottom": "#fff",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 0,
+  "usingComponents": {
+    "tui-icon": "/component/icon/icon",
+    "tui-tag": "/component/tag/tag",
+    "tui-list-cell": "/component/list-cell/list-cell",
+    "tui-loadmore": "/component/loadmore/loadmore",
+    "tui-nomore": "/component/nomore/nomore"
+  }
+}

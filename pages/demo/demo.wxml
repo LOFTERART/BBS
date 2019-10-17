@@ -1,0 +1,23 @@
+<nav id="nav" />
+
+<view class="nav-container">
+    <view class="nav-target" id="t1" data-label="概览" data-selector-id="t1" style="height: 600rpx">
+        target 1 概览 <text>\n向下滚动会出现导航栏哦</text>
+    </view>
+    <view class="nav-target" id="t2" data-label="优惠" data-selector-id="t2" style="height: 100rpx">
+        target 2 优惠
+    </view>
+    <view class="nav-target" id="t3" data-label="位置" data-selector-id="t3" style="height: 300rpx">
+        target 3 位置
+    </view>
+    <view class="nav-target" id="t4" data-label="设施" data-selector-id="t4" style="height: 700rpx">
+        target 4 设施
+    </view>
+    <view class="nav-target" id="t5" data-label="评价" data-selector-id="t5" style="height: 800rpx">
+        target 5 评价
+    </view>
+    <view class="nav-target" id="t6" data-label="推荐" data-selector-id="t6" style="height: 900rpx">
+        target 6 推荐
+    </view>
+
+</view>

@@ -1,0 +1,78 @@
+/*navbar*/
+
+@import "/miniprogram_npm/vant-weapp/common/index.wxss";
+@import "../../../app.wxss";
+@import "../../../iconFont/iconFont.wxss";
+
+
+/*cell*/
+
+.cellTStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70rpx;
+    padding: 10rpx 20rpx 10rpx 20rpx
+}
+
+
+.nameStyle{
+
+    width: 140rpx;
+    height: 40rpx;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    color: white;
+    border-radius:70rpx;
+}
+
+
+.bottomStyle{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    background-color: white;
+    position: fixed;
+    bottom: 120rpx;
+    left: 0;
+    right: 0;
+}
+button {
+    position:relative;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:14px;
+    padding-right:14px;
+    box-sizing:border-box;
+    font-size:18px;
+    text-align:center;
+    text-decoration:none;
+    line-height:2.55555556;
+    border-radius:5px;
+    -webkit-tap-highlight-color:transparent;
+    overflow:hidden;
+    color:#000000;
+    background-color:#F8F8F8;
+}
+button::after {
+    border: none;
+}
+button {
+    background-color: red;
+}
+button {
+    border-radius:0;
+}
+/*fankui*/
+.btn-feedback{
+    background: transparent !important;
+    height: 70rpx;
+    width: 500rpx;
+    margin-right: -70rpx;
+}

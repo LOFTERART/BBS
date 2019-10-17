@@ -1,0 +1,130 @@
+
+
+
+<van-tabs active="{{ active }}" bind:change="onChange" sticky    border="{{false}}" line-width="20" line-height="2"  tab-active-class="tab-active-class">
+
+
+
+    <block wx:for="{{topCell}}" wx:key>
+
+        <van-tab title="{{item.title}}" name="{{item.cid}}">
+
+            <view style="margin-top: 3rpx">
+                <jbj-banner banners="{{info.carousels}}"></jbj-banner>
+            </view>
+
+            <view style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;height: 60rpx">
+                <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;color: #ee0a24" class="f22">
+                    <van-icon name="success" color="red"/>
+                    <view > 王明月专场</view>
+                </view>
+                <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;color: #ee0a24" class="f22">
+                    <van-icon name="success" color="red"/>
+                    <view > 全场包税</view>
+                </view>
+                <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;color: #ee0a24" class="f22">
+                    <van-icon name="success" color="red"/>
+                    <view > 正品保障</view>
+                </view>
+
+            </view>
+
+            <view class="divider"></view>
+
+<!--            最后疯抢S-->
+            <view class="cellTitlePic" >
+                <image src="https://dcdn.it120.cc/2019/10/11/902d5d86-05f4-4b20-8dc0-19344827dfa7.png"  mode="widthFix" />
+            </view>
+            <view class="container">
+                <view class="product-list">
+                    <!--商品列表-->
+                    <view class="pro-itemhot" bindtap="detail" wx:for="{{info.boyCategory.items}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap="jumpDetail">
+                        <image src="http://www.mingyue.musemore.art/storage/images/20190928/qQaYG0SD23.jpg" class="pro-img" mode="widthFix" />
+                        <view class="pro-contenthot">
+                            <view style="background-color: #C9A063;color: white;padding: 0 10rpx" class="f22">
+                                抢购价
+                            </view>
+                            <text class="f22" style="font-weight: bold">￥768</text>
+                        </view>
+                    </view>
+                    <!--商品列表-->
+                </view>
+            </view>
+<!--            最后疯抢E-->
+            <view class="divider"></view>
+
+
+<!--            banner S-->
+
+            <view style="padding: 30rpx" class="cellTitlePic">
+                <image src="https://dcdn.it120.cc/2019/10/11/b1af9c75-91ae-4cb9-b0a9-57675544642c.png"  mode="widthFix" />
+            </view>
+
+<!--            banner E-->
+            <view class="divider"></view>
+            <!--新品专区-->
+            <view class="cellTitle">
+                新品专区
+            </view>
+            <view class="container">
+                <view class="product-list">
+                    <!--商品列表-->
+                    <view class="pro-item" bindtap="detail" wx:for="{{info.boyCategory.items}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap="jumpDetail">
+                        <image src="http://www.mingyue.musemore.art/storage/images/20190928/rpGgwjWgIC.jpg" class="pro-img" mode="widthFix" />
+                        <view class="pro-content">
+                            <view class="pro-tit">{{item.name}}</view>
+                            <view>
+                                <view class="pro-price">
+                                    <text class="sale-price">￥{{item.sell_price}}</text>
+                                    <text class="factory-price">￥{{item.market_price}}</text>
+                                </view>
+                                <view class="pro-pay">{{item.payNum||20}}人收藏</view>
+                            </view>
+                        </view>
+                    </view>
+                    <!--商品列表-->
+                </view>
+            </view>
+            <view class="divider"></view>
+
+            <!--        专题推荐-->
+
+            <view>
+
+                <image src="http://www.mingyue.musemore.art/storage/images/20190928/rpGgwjWgIC.jpg"  style="width: 100%;height: 200rpx" mode="widthFix" />
+
+
+            </view>
+
+
+            <view class="divider"></view>
+            <!--猜你喜欢-->
+            <view class="cellTitle">
+                猜你喜欢
+            </view>
+            <view class="container">
+                <view class="product-list">
+                    <!--商品列表-->
+                    <view class="pro-item" bindtap="detail" wx:for="{{info.boyCategory.items}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap="jumpDetail">
+                        <image src="http://www.mingyue.musemore.art/storage/images/20190928/rpGgwjWgIC.jpg" class="pro-img" mode="widthFix" />
+                        <view class="pro-content">
+                            <view class="pro-tit">{{item.name}}</view>
+                            <view>
+                                <view class="pro-price">
+                                    <text class="sale-price">￥{{item.sell_price}}</text>
+                                    <text class="factory-price">￥{{item.market_price}}</text>
+                                </view>
+                                <view class="pro-pay">{{item.payNum||20}}人收藏</view>
+                            </view>
+                        </view>
+                    </view>
+                    <!--商品列表-->
+                </view>
+            </view>
+
+
+        </van-tab>
+
+    </block>
+
+</van-tabs>

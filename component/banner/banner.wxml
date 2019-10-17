@@ -1,0 +1,34 @@
+
+<!--banner S-->
+<view class="swiper-container">
+
+    <swiper  class="swiper_box"
+             autoplay="{{true}}"
+             interval="{{5000}}"
+             duration="{{500}}"
+             bindchange="swiperchange"
+             circular="{{true}}"  >
+        <block wx:for="{{banners}}" wx:key>
+            <swiper-item class="tui-banner-item">
+                <image
+                        lazy-load="{{true}}"
+                        mode="widthFix"
+                        bindtap="tapBanner"
+                        data-id="{{item.id||item.order_id}}"
+                        data-link="{{item.link}}"
+                        data-url="{{item.link}}"
+                        data-type="{{item.type}}"
+                        data-name="{{item.name}}"
+                        src="{{item.thumbnails||item.image}}"  />
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view class="dots">
+        <block wx:for="{{banners}}" wx:key>
+            <view class="dot{{index === current ? ' active' : ''}}"></view>
+        </block>
+    </view>
+
+</view>
+<!--banner E-->

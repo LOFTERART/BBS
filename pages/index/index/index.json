@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "商城",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "jbj-banner": "/component/banner/banner",
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
+    "tui-loadmore": "/component/loadmore/loadmore",
+    "tui-nomore": "/component/nomore/nomore"
+  }
+}

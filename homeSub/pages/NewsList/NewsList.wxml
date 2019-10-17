@@ -1,0 +1,39 @@
+<view class="van-hairline--bottom" wx:for="{{artList}}" wx:key bindtap="clickDetail" data-link="{{item.link}}">
+    <view class="container">
+        <!--文字标题-->
+        <view style="display: flex;flex-direction: column;justify-content: space-around;align-items: flex-start;height: 220rpx;">
+            <!--标题-->
+            <view style="display: flex;flex-direction: column;justify-content: space-between">
+                <view style="color: #3B3B3B;font-size: 28rpx;font-weight: 800;padding-right: 10rpx" >
+                    {{item.name}}
+                </view>
+            </view>
+            <view style="display: flex;flex-direction: row;align-items: center;height: 90rpx;">
+                <view class="f22" style="color: red">
+                    明月
+                </view>
+
+                <view style="color: #656565;margin-left: 10rpx;" class="f22">
+                    {{item.time}}
+                </view>
+            </view>
+        </view>
+        <!--图片-->
+        <view style="height: 220rpx;display: flex;flex-direction: column;justify-content: center">
+            <image src="{{item.pic}}" style="width: 250rpx;height: 200rpx;border-radius: 7rpx" mode="aspectFill"/>
+        </view>
+
+    </view>
+
+
+    <view style="padding: 20rpx 20rpx 0 20rpx;position: relative"  wx:if="{{item.isBig}}">
+
+        <image src="{{item.pic}}" mode="widthFix"  style="width: 100%;height: 750rpx;" />
+
+        <view class="f28" style="position: absolute;bottom: 10rpx;left: 30rpx;color: white">
+            {{item.name}}
+        </view>
+    </view>
+
+
+</view>

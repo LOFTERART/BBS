@@ -1,0 +1,71 @@
+
+<view style="padding: 20rpx;">
+
+<!--logo信息-->
+    <view style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin-bottom: 50rpx">
+
+            <image lazy-load="{{true}}" mode="scaleToFill"  src="http://www.mingyue.musemore.art/storage/logo.jpg"  style="width: 120rpx;height: 120rpx;"/>
+
+
+       <view style="margin-top: 30rpx;height: 100rpx;display: flex;flex-direction: column;justify-content: space-between;align-items: center">
+
+           <view style="font-weight: bold" class="f36">明月艺族</view>
+           <view class="f28">{{myList[2].subName}}</view>
+
+       </view>
+
+    </view>
+
+<!--    功能信息-->
+
+
+    <view  wx:for="{{myList}}" wx:key >
+        <view  class="van-hairline--bottom cellTStyle" bindtap="clickCell" data-type="{{item.type}}" data-id="{{item.id}}">
+
+            <view style="display: flex;flex-direction: row;justify-content: flex-start;align-items: center;">
+
+                <text class="f28" style="color: #323233">{{item.name}}</text>
+                <i class="iconfont icon-Oval " style="color: #FD601C;font-size: 10rpx;margin-left: 10rpx" wx:if="{{item.isShowRed}}"></i>
+
+            </view>
+
+            <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                <button open-type="feedback" class="btn-feedback" wx:if="{{item.type ==='help'}}" size="default"></button>
+                <button open-type="contact" class="btn-feedback" wx:if="{{item.type ==='KF'}}" size="default"></button>
+                <text class="f22" style="color: #969799" >{{item.subName}}</text>
+                <i class="iconfont icon-fanhui1" style="color: #878787;font-size: 20rpx;margin-left: 10rpx" wx:if="{{item.isShowIcon}}"></i>
+            </view>
+
+        </view>
+
+    </view>
+
+
+
+
+
+
+
+    <!--底部固定信息-->
+    <view class="bottomStyle" >
+
+
+        <view class="f22" style="color: #C9A063">
+            软件许可及服务协议 和 软件隐私保护指引
+        </view>
+
+
+        <view style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 20rpx">
+
+            <view class="f22">明月艺族公司 版权所有</view>
+
+            <view class="f20">
+               Copyright © 2019 - 2019 MingYueArt . All Rights Reserved
+            </view>
+
+        </view>
+
+
+    </view>
+
+</view>

@@ -1,0 +1,98 @@
+
+<!--banner-->
+<jbj-banner banners="{{banners}}"></jbj-banner>
+
+
+
+<view class="King">
+
+    <view class="tui-classify-box" >
+        <view class="tui-classify-item" wx:for="{{KING}}" wx:key bindtap="jumpLink" data-name="{{item.name}}" data-src="{{item.link}}">
+            <image src="{{item.image}}" class="tui-classify-img" />
+            <view class="tui-classify-name">{{item.name}}</view>
+        </view>
+    </view>
+
+</view>
+
+
+<!--X滚动新闻-->
+<view class="type-container">
+    <scroll-view scroll-x="{{true}}"  class="type-navbar">
+
+
+        <block wx:for="{{scrollList}}" wx:key>
+            <image src="{{item.image}}"  mode="scaleToFill" class="courseStyle">
+
+                <view style="position: absolute;bottom: 10rpx;color: white;display: flex;flex-direction: row;justify-content: center;align-items: center;width: 400rpx;height:40rpx;text-overflow:ellipsis" class="f22">
+                    {{item.name}}
+                </view>
+
+            </image>
+        </block>
+
+
+
+    </scroll-view>
+
+</view>
+
+
+<!--tab 切换新闻-->
+
+
+<van-tabs active="{{ active }}" bind:change="onChange" line-width="0" tab-active-class="tab-active-class" >
+
+    <block wx:for="{{homeNews}}" wx:key>
+        <van-tab title="{{item.title}}" name="{{item.cid}}">
+            <view class="van-hairline--bottom" wx:for="{{artList}}" wx:key bindtap="clickDetail" data-link="{{item.link}}">
+                <view class="container">
+                    <!--文字标题-->
+                    <view style="display: flex;flex-direction: column;justify-content: space-around;align-items: flex-start;height: 220rpx;">
+                        <!--标题-->
+                        <view style="display: flex;flex-direction: column;justify-content: space-between">
+                            <view style="color: #3B3B3B;font-size: 28rpx;font-weight: 800;padding-right: 10rpx" >
+                                {{item.name}}
+                            </view>
+                        </view>
+                        <view style="display: flex;flex-direction: row;align-items: center;height: 90rpx;">
+                            <view class="f22" style="color: red">
+                                明月
+                            </view>
+
+                            <view style="color: #656565;margin-left: 10rpx;" class="f22">
+                                {{item.time}}
+                            </view>
+                        </view>
+                    </view>
+                    <!--图片-->
+                    <view style="height: 220rpx;display: flex;flex-direction: column;justify-content: center">
+                        <image src="{{item.pic}}" style="width: 250rpx;height: 200rpx;border-radius: 7rpx" mode="aspectFill"/>
+                    </view>
+
+                </view>
+
+
+                <view style="padding: 20rpx 20rpx 0 20rpx;position: relative"  wx:if="{{item.isBig}}">
+
+                    <image src="{{item.pic}}" mode="widthFix"  style="width: 100%;height: 750rpx;" />
+
+                    <view class="f28" style="position: absolute;bottom: 10rpx;left: 30rpx;color: white">
+                        {{item.name}}
+                    </view>
+                </view>
+
+
+            </view>
+        </van-tab>
+    </block>
+
+
+</van-tabs>
+
+
+
+
+
+
+

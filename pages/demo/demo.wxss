@@ -1,0 +1,25 @@
+
+.nav-target {
+    text-align: center;
+    font-size: 32rpx;
+}
+
+
+.nav-target:nth-child(n+1) {
+    background-color: #ffb;
+}
+.nav-target:nth-child(n+2) {
+    background-color: #ead;
+}
+.nav-target:nth-child(n+3) {
+    background-color: #aaf;
+}
+.nav-target:nth-child(n+4) {
+    background-color: #bfb;
+}
+.nav-target:nth-child(n+5) {
+    background-color: #bef;
+}
+.nav-target:nth-child(n+6) {
+    background-color: #faa;
+}

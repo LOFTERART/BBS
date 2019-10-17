@@ -1,0 +1,28 @@
+
+<view style="padding: 20rpx">
+    <textarea maxlength="5000" value='{{message}}' bindinput='messInput'placeholder="这一刻的想法..." show-confirm-bar='{{false}}'></textarea>
+</view>
+
+
+    <view class="picture_list">
+        <view wx:for="{{images}}" class="picture_item" wx:key>
+            <image  src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+            <text class='del'  data-src='{{image}}' style='display:{{isDel}}' data-idx="{{index}}" bindtap="removeImage">×</text>
+        </view>
+
+        <view class='picture_item' wx:if="{{images.length < 9}}">
+            <view class="add-image" bindtap='chooseImage'>
+                <text>图片+</text>
+            </view>
+        </view>
+    </view>
+
+
+
+<view class="main" bindtap="upText">
+    <view class="pay" style="background-color: {{changeColor}}">
+        发表
+    </view>
+</view>
+
+

@@ -1,0 +1,8 @@
+<view class="product-nav-container" wx:if="{{navList && navList.length > 0 && isShowNav}}">
+  <scroll-view scroll-x class="pnc__scroll">
+    <view class="pnc__scroll-inner" bindtap="bindClickNav">
+      <view class="pnc__nav {{index === currentIndex ? 'pnc__nav--active' : ''}}"
+        wx:for="{{navList}}" wx:key="{{index}}" data-selector-id="{{item.selectorId}}" data-index="{{index}}">{{item.label}}</view>
+    </view>
+  </scroll-view>
+</view>

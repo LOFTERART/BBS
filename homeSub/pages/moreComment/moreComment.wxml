@@ -1,0 +1,164 @@
+<wxs src="../../../wxs/Time.wxs" module="Time" />
+<!--楼主评论列表-->
+<view style="padding: 10rpx 20rpx;" >
+
+    <view style="padding: 20rpx;display: flex;flex-direction: column;border-radius: 10rpx">
+
+        <view style="display: flex;flex-direction: row;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
+
+            <view style="margin-right: 10rpx">
+                <image mode="scaleToFill"  src="{{commentInfo.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
+            </view>
+
+            <view style="display: flex;flex-direction: column;justify-content: space-between;">
+                <view style="display: flex;flex-direction: row;justify-content: space-between">
+                    <view class="f28" style="font-weight: 500">{{commentInfo.name}}</view>
+                </view>
+                <view class="f22">{{Time.formatDate(commentInfo.timer)}}</view>
+            </view>
+
+        </view>
+
+        <!--        文字-->
+        <view class="f28" style="font-weight: 500;color: #323233">
+
+            {{commentInfo.content}}
+
+        </view>
+        <!--        赞和评论-->
+
+        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 20rpx">
+
+            <view>
+                <viw style="margin-right: 100rpx;color: #969799">
+                    <i class="iconfont icon-pinglun" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{replyComment.length}}
+                </viw>
+                <viw style="color: #969799;font-size: 30rpx;" bindtap="clickLikeZT" data-id="{{commentInfo.id}}">
+                    <i class="iconfont icon-zan" style="margin-right: 10rpx;color:{{commentInfo.is_like?'red':'#323233'}}" ></i>{{commentInfo.like_num}}
+                </viw>
+            </view>
+
+
+            <view>
+                <i class="iconfont icon-gengduo" style="color: #969799;font-size: 50rpx;" bindtap="clickZTMore"></i>
+            </view>
+
+        </view>
+
+
+    </view>
+
+</view>
+
+
+<view class="divider"></view>
+<view class="divider"></view>
+<view class="divider"></view>
+
+
+<!--评论列表-->
+<view style="padding: 10rpx 20rpx;" wx:for="{{replyComment}}" wx:key class="van-hairline--bottom">
+
+    <view style="padding: 20rpx;;display: flex;flex-direction: column;border-radius: 10rpx">
+
+        <view style="display: flex;flex-direction: row;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
+
+            <view style="margin-right: 10rpx">
+                <image mode="scaleToFill"  src="{{item.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
+            </view>
+
+            <view style="display: flex;flex-direction: column;justify-content: space-between;">
+                <view style="display: flex;flex-direction: row;justify-content: space-between">
+                    <view class="f28" style="font-weight: 500">{{item.name}}</view>
+                </view>
+                <view class="f22">{{Time.formatDate(item.timer)}}</view>
+            </view>
+
+        </view>
+
+        <!--        文字-->
+        <view class="f28" style="font-weight: 500;color: #323233">
+
+            <text style="color: rgba(48,198,139,1)"> @{{item.reviewers?item.reviewers:commentInfo.name}}</text> {{item.content}}
+
+        </view>
+        <!--        赞和评论-->
+
+        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 20rpx">
+
+            <view>
+                <viw style="margin-right: 100rpx;color: #969799" bindtap="clickMoreMessage" data-id="{{item.id}}" data-rutype="{{item.user_type}}" data-ruid="{{item.user_id}}" data-name="{{item.name}}">
+                    <i class="iconfont icon-pinglun" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{item.reply_comment.length}}
+                </viw>
+                <viw style="color: #969799;font-size: 30rpx;" bindtap="clickLike" data-index="{{index}}">
+                    <i class="iconfont icon-zan" style="margin-right: 10rpx;color:{{item.is_like?'red':'#323233'}}" ></i>{{item.like_num}}
+                </viw>
+            </view>
+
+
+            <view>
+                <i class="iconfont icon-gengduo" style="color: #969799;font-size: 50rpx;" bindtap="clickZTMore"></i>
+            </view>
+
+        </view>
+
+
+    </view>
+
+</view>
+
+
+
+
+
+
+
+
+<!--底部固定信息-->
+<view class="bottomStyle" wx:if="{{isShowBottom}}" style='padding-bottom:{{btuBottom}}'>
+
+
+    <view style="flex: 1;display: flex;flex-direction: row;justify-content: center;align-items: center;background-color: #32C48A;color: white;font-weight: bold" bindtap="dp">
+        <van-transition name="fade-up">
+            我 有 话 说
+        </van-transition>
+    </view>
+
+
+</view>
+
+
+
+
+
+<van-popup  show="{{ dPshow }}"
+            position="bottom"
+            overlay="{{ true }}"
+            bind:close="onClose">
+
+    <view style="height: auto;background-color: white;position: relative">
+
+        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;margin-bottom: 30rpx;padding: 20rpx">
+
+            <view style="color: #888888;font-weight: bold;font-size: 36rpx" bindtap="clickQx">取消</view>
+            <view style="color: #888888;font-weight: bold;font-size: 36rpx" bindtap="clickFb">发表</view>
+
+        </view>
+
+
+        <view style="margin-left: 20rpx;margin-right: 10rpx;padding-bottom: 150rpx">
+            <textarea bindinput="onGetValue"  value="{{ message }}"  placeholder="{{placeholders}}" maxlength="-1" cursor-spacing="80"   placeholder-style="color:#444;" adjust-position fixed="{{true}}"	 />
+        </view>
+
+
+
+    </view>
+
+
+</van-popup>
+
+
+
+
+<!--toast-->
+<van-toast id="van-toast"/>

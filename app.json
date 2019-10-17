@@ -1,0 +1,103 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index/index",
+    "pages/BBS/BBS",
+    "pages/index/classification/classification",
+    "pages/store/search/search",
+    "pages/store/list/list",
+    "pages/store/detail/detail",
+    "pages/store/shearImg/shearImg",
+    "pages/store/cart/cart",
+    "pages/store/order/order",
+    "pages/store/orderGoods/orderGoods",
+    "pages/store/payment/payment",
+    "pages/store/success/success",
+    "pages/user/register/register",
+    "pages/user/login/login",
+    "pages/user/user/user",
+    "pages/user/usersetting/usersetting",
+    "pages/user/bindingphone/bindingphone",
+    "pages/address/add/add",
+    "pages/address/list/list",
+    "pages/order/detail/detail",
+    "pages/order/index/index",
+    "pages/order/search/search",
+    "pages/order/evaluate/evaluate",
+    "pages/coupon/index/index",
+    "pages/coupon/onDetail/onDetail",
+    "pages/demo/demo"
+  ],
+  "usingComponents": {
+    "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
+  },
+  "subPackages": [
+    {
+      "root": "homeSub",
+      "pages": [
+        "pages/newsDetail/newsDetail",
+        "pages/news-cmt-reply/news-cmt-reply",
+        "pages/AddBbs/AddBbs",
+        "pages/moreComment/moreComment",
+        "pages/ztDetail/ztDetail",
+        "pages/goodComs/goodComs",
+        "pages/message/message",
+        "pages/UserVIP/UserVIP",
+        "pages/NewsList/NewsList"
+      ]
+    },
+    {
+      "root": "mySub",
+      "pages": [
+        "pages/favorite/index",
+        "pages/about/about",
+        "pages/web/web",
+        "pages/H5/H5"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/home/home": {
+      "network": "all",
+      "packages": [
+        "homeSub",
+        "mySub"
+      ]
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "明月艺族",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#3E3A39",
+    "selectedColor": "#C9A063",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/image/home.png",
+        "selectedIconPath": "assets/image/home-r.png"
+      },
+       {
+           "pagePath": "pages/index/index/index",
+           "text": "商城",
+           "iconPath": "assets/image/shop.png",
+           "selectedIconPath": "assets/image/shop-r.png"
+       },
+      {
+        "pagePath": "pages/user/user/user",
+        "text": "我的",
+        "iconPath": "assets/image/user.png",
+        "selectedIconPath": "assets/image/user-r.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,34 @@
+.product-nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 88rpx;
+  z-index: 999;
+  background: #fff;
+}
+
+.pnc__scroll {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.pnc__scroll-inner {
+  display: flex;
+  align-items: center;
+}
+
+.pnc__nav {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 88rpx;
+  color: #999;
+}
+
+.pnc__nav.pnc__nav--active {
+  color: #333;
+  font-weight: bold;
+}

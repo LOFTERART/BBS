@@ -1,0 +1,97 @@
+@import "../../../app.wxss";
+
+.tui-classify-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10rpx 0;
+}
+
+.tui-classify-item {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 20rpx;
+}
+
+.tui-classify-img {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.tui-classify-name {
+    font-size: 26rpx;
+    line-height: 26rpx;
+    padding-top: 8rpx;
+    color: #555;
+    white-space: nowrap;
+}
+/*金刚位E*/
+/*
+.King .top-image image{width:100%;height:100%;object-fit:cover}.King .menu-wrap{background:#fff;color:#4A4A4A;margin-bottom:10px}.King .menu-wrap .title{display:flex;align-items:center;padding:10px 15px;font-size:13px}
+.King .menu-wrap .title .text{flex:1}
+.King .menu-wrap .title:before{content:'|';margin-right:8px;font-weight: bold;color: #C9A063}
+.King .menu-wrap .item-box{font-size:0}
+.King .menu-wrap .item-box .item{padding:10px 0;display:inline-block;width:33.33%;font-size:12px;text-align:center}
+.King .menu-wrap .item-box .item image{width:45px;height:45px}
+.King .menu-wrap .item-box.goods-box{padding:2px 7px}
+.King .menu-wrap .item-box.goods-box .goods-item{text-align:left;padding:2px 7px}
+.King .menu-wrap .item-box.goods-box .goods-item image{width:100%}
+.King .menu-wrap .item-box.goods-box .goods-item .name{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.King .menu-wrap .item-box.goods-box .goods-item .price{color:#C9A063}
+*/
+
+
+
+
+/*BA S*/
+.type-container{
+    height: 240rpx;
+    padding: 20rpx 0 20rpx 20rpx;
+    background-color: #f7f7f7;
+}
+.type-navbar{
+    white-space: nowrap;
+    height: 240rpx;
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.courseStyle{
+    display: inline-block;
+    height: 240rpx;
+    width: 500rpx;
+    margin-right: 10rpx;
+    border-radius: 10rpx;
+    position: relative;
+}
+
+/*BA E*/
+
+
+
+/*新闻*/
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    height: 220rpx;
+    padding: 0 10rpx 0 10rpx;
+}
+
+.courseStyleNews{
+    padding: 30rpx;
+    height: 750rpx;
+    width: 100%;
+    position: relative;
+}
+
+/*tab*/
+.tab-active-class {
+    color: #ee0a24 !important;
+}

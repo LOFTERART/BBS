@@ -1,0 +1,117 @@
+.picture_list {
+    padding: 10rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+
+
+.add-image, .up-pic image {
+    width: 150rpx;
+    height: 150rpx;
+    color: #ddd;
+    font-size: 28rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    /*background-color: red;*/
+    border-radius: 10rpx;
+}
+
+
+.picture_item {
+    margin: 10px;
+    margin-left: 0;
+    position: relative;
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.picture_item .del {
+    position: absolute;
+    top: -11rpx;
+    right: -11rpx;
+    color: #fff;
+    border-radius: 50%;
+    width: 40rpx;
+    height: 40rpx;
+    z-index: 2;
+    line-height: 35rpx;
+    text-align: center;
+    background-color: #f00;
+}
+
+.upload_progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    border-radius: 8rpx;
+    background-color: #000;
+    color: #fff;
+    width: 167rpx;
+    height: 160rpx;
+    text-align: center;
+    line-height: 160rpx;
+    font-size: 10px;
+}
+
+.picture_item image {
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.yes-upload {
+    color: #fff;
+    width: 350rpx;
+    border-radius:10rpx;
+    background-color: #009944;
+}
+
+.y-up{
+    padding: 4% 0;
+}
+
+
+textarea {
+    margin: 32rpx 0 30rpx;
+    height: 12em;
+    width: 100%;
+    line-height: 1.2em;
+    flex: 1;
+    font-size: 28rpx;
+    padding: 0;
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 80rpx;
+
+}
+
+
+.pay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:400rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color:white;
+    font-weight: 700;
+}

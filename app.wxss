@@ -1,0 +1,274 @@
+@import "assets/css/1px.wxss";
+@import "assets/css/font.wxss";
+
+/**app.wxss**/
+@import '/font/iconfont.wxss';
+
+.acea-row{display:flex;flex-wrap:wrap;}
+.acea-row.row-top{align-items:flex-start;}
+.acea-row.row-middle{align-items:center;}
+.acea-row.row-bottom{align-items:flex-end;}
+.acea-row.row-left{justify-content:flex-start;}
+.acea-row.row-center{justify-content:center;}
+.acea-row.row-right{justify-content:flex-end;}
+.acea-row.row-between{justify-content:space-between;}
+.acea-row.row-around{justify-content:space-around;}
+.acea-row.row-column{flex-direction:column;}
+.acea-row.row-column-between{flex-direction:column;justify-content:space-between;}
+.acea-row.row-column-around{flex-direction:column;justify-content:space-around;}
+.acea-row.row-center-wrapper{align-items:center;justify-content:center;}
+.acea-row.row-between-wrapper{align-items:center;justify-content:space-between;}
+
+
+
+
+
+
+
+
+
+/**app.wxss**/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.phcolor {
+    color: #ccc;
+    font-size: 32rpx;
+}
+
+button::after {
+    border: none;
+}
+
+.opcity {
+    opacity: 0.5;
+}
+
+.hover {
+    background: #f7f7f9 !important;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*列表统一样式 */
+
+.list-item {
+    position: relative;
+}
+
+.list-item::after {
+    content: '';
+    position: absolute;
+    border-bottom: 1rpx solid #eaeef1;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    bottom: 0;
+    right: 0;
+    left: 30rpx;
+}
+
+.last::after {
+    border-bottom: 0 !important;
+}
+
+/*按钮样式*/
+
+.btn-primary {
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    background: linear-gradient(-90deg, #5677fc, #5c8dff);
+    border-radius: 45rpx;
+    color: #fff;
+    font-size: 36rpx;
+}
+
+.btn-hover {
+    color: #d5d4d9;
+    background: linear-gradient(-90deg, #4a67d6, #4e77d9);
+}
+
+.btn-gray {
+    background: #ededed;
+    color: #999 !important;
+}
+
+.btn-gray-hover {
+    background: #d5d5d5 !important;
+    color: #898989;
+}
+
+.btn-white {
+    background: #fff;
+    color: #333 !important;
+}
+
+.tui-white-hover {
+    background: #e5e5e5 !important;
+    color: #2e2e2e !important;
+}
+
+.btn-disabled {
+    color: #fafbfc !important;
+    background: linear-gradient(-90deg, #cad8fb, #c9d3fb);
+}
+
+
+
+
+/**app.wxss**/
+.color1{
+    color: #EEFBF3;
+}
+.color2{
+    color: #EEFBF3;
+}
+
+.van-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.van-multi-ellipsis--l2{-webkit-line-clamp:2}
+.van-multi-ellipsis--l2,.van-multi-ellipsis--l3{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical}
+.van-multi-ellipsis--l3{-webkit-line-clamp:3}
+.van-clearfix:after{content:"";display:table;clear:both}
+.van-hairline,.van-hairline--bottom,.van-hairline--left,.van-hairline--right,.van-hairline--surround,.van-hairline--top,.van-hairline--top-bottom{position:relative}
+.van-hairline--bottom:after,.van-hairline--left:after,.van-hairline--right:after,.van-hairline--surround:after,.van-hairline--top-bottom:after,.van-hairline--top:after,.van-hairline:after{content:" ";position:absolute;pointer-events:none;box-sizing:border-box;-webkit-transform-origin:center;transform-origin:center;top:-50%;left:-50%;right:-50%;bottom:-50%;-webkit-transform:scale(.5);transform:scale(.5);border:0 solid #eee}
+.van-hairline--top:after{border-top-width:1px}.van-hairline--left:after{border-left-width:1px}.van-hairline--right:after{border-right-width:1px}.van-hairline--bottom:after{border-bottom-width:1px}.van-hairline--top-bottom:after{border-width:1px 0}.van-hairline--surround:after{border-width:1px}
+
+/* 价格数字显示不同大小 */
+
+.symbol {
+    font-size: 24rpx;
+}
+
+.big-num {
+    font-size: 32rpx;
+}
+
+.small-num {
+    font-size: 24rpx;
+}
+
+/**app.wxss**/
+
+.f36{
+    /*首页分栏标题*/
+
+    font-size: 36rpx;
+    color: #323233;
+    font-weight: bold;
+}
+.f32{
+    /*卡片 导航栏 详情页*/
+    font-size: 32rpx;
+    color: #323233;
+}
+.f28{
+    /*副标题 小卡片 tab栏*/
+    font-size: 28rpx;
+    color: #3E3A39;
+}
+.f24{
+    /*按钮 重要文字*/
+    color: #969799;
+    font-size: 24rpx;
+}
+.f22{
+    /*小按钮文字 正文 说明性文字*/
+    font-size: 22rpx;
+    color: #969799;
+}
+.f20{
+    /*标签文字 注解文字*/
+    font-size: 20rpx;
+    color: #a0a0a0;
+}
+
+/*分割线*/
+.divider{
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 20rpx
+}
+
+
+.wxParse-img {
+    display: block !important;
+}
+
+.header-container {
+    width: 100%;
+    height: 130rpx;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.header-container .header-name {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 170rpx;
+    font-size: 30rpx;
+    color: #333;
+}
+
+.iphone .header-container {
+    height: 180rpx;
+}
+
+.iphone .header-container .header-name {
+    line-height: 270rpx;
+}
+
+.header-container .goback {
+    width: 56rpx;
+    height: 56rpx;
+    margin-top: 50rpx;
+    position: absolute;
+    margin-left: 20rpx;
+    border: 1rpx solid #fff;
+    border-radius: 50%;
+    padding: 6rpx;
+}
+
+.iphone .header-container .goback {
+    margin-top: 90rpx;
+}
+.hidden {
+    display: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.no-more-goods {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.no-order-img {
+    width: 110px;
+    height: 110px;
+}
+
+.no-more-goods .text {
+    font-size: 28rpx;
+    color: #999;
+    margin-top: -5px;
+}
+.fix-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
