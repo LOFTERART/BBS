@@ -58,7 +58,7 @@
                 <view class="tui-sale-info tui-size tui-gray">
                     <view>人数：50人</view>
                     <view>已报20人</view>
-                    <view>北京香山</view>
+                    <view>已收藏100人</view>
                 </view>
             </view>
         </view>
@@ -104,7 +104,6 @@
             <view class="tui-list-cell" >
                 <view class="tui-bold tui-cell-title">报名时间</view>
                 <view class="tui-selected-box">2019-10-17 至 2019-10-31</view>
-<!--                <tui-icon name="more-fill" size="20" class="tui-right" color="#666"></tui-icon>-->
             </view>
 
             <view class="tui-list-cell" >
@@ -115,17 +114,14 @@
                 <view class="tui-bold tui-cell-title">集合地点</view>
                 <view class="tui-addr-box">
                     <view class="tui-addr-item">北京海淀区人民大学</view>
-<!--                    <view class="tui-addr-item">今日23:59前完成下单，预计6月28日23:30前发货，7月1日24:00前送达</view>-->
                 </view>
-                <tui-icon name="more-fill" size="20" class="tui-right" color="#666"></tui-icon>
             </view>
-<!--
+            <view class="tui-list-cell tui-last">
+                <view class="tui-bold tui-cell-title">目的地</view>
+                <view class="tui-selected-box">北京香山</view>
+            </view>
 
-<view class="tui-list-cell tui-last">
-                <view class="tui-bold tui-cell-title">运费</view>
-                <view class="tui-selected-box">在线支付免运费</view>
-            </view>
--->
+
             <view class="tui-guarantee">
                 <view class="tui-guarantee-item">
                     <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
