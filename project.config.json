@@ -57,70 +57,7 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/user/user/user",
-					"pathName": "pages/user/user/user",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "mySub/pages/about/about",
-					"pathName": "mySub/pages/about/about",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/index/index/index",
-					"pathName": "pages/index/index/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/UserVIP/UserVIP",
-					"pathName": "homeSub/pages/UserVIP/UserVIP",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/NewsList/NewsList",
-					"pathName": "homeSub/pages/NewsList/NewsList",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/index/index/index",
-					"pathName": "pages/index/index/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/homeDetail/homeDetail",
-					"pathName": "pages/homeDetail/homeDetail",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/homeDetail/homeDetail",
-					"pathName": "pages/homeDetail/homeDetail",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/homeDetail/homeDetail",
-					"pathName": "pages/homeDetail/homeDetail",
-					"scene": null
-				}
-			]
+          "list": []
 		}
 	}
 }
