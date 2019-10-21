@@ -231,7 +231,7 @@ page {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #ff201f;
+    color: #ff7900;
     font-size: 36rpx;
     font-weight: bold;
     line-height: 44rpx;
@@ -436,7 +436,7 @@ page {
 }
 
 .tui-cmt-all {
-    color: #ff201f;
+    color: #ff7900;
     padding-right: 8rpx;
 }
 

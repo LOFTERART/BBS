@@ -114,11 +114,13 @@
                 <view class="tui-bold tui-cell-title">集合地点</view>
                 <view class="tui-addr-box">
                     <view class="tui-addr-item">北京海淀区人民大学</view>
+                    <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>
                 </view>
             </view>
             <view class="tui-list-cell tui-last">
                 <view class="tui-bold tui-cell-title">目的地</view>
                 <view class="tui-selected-box">北京香山</view>
+                <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>
             </view>
 
 
@@ -135,34 +137,38 @@
                     <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
                     <text class="tui-pl">吃喝全包</text>
                 </view>
+                <view class="tui-guarantee-item">
+                    <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
+                    <text class="tui-pl">客车接送</text>
+                </view>
 
             </view>
         </view>
 
-<!--
+    <!-- 评价S-->
      <view class="tui-cmt-box tui-mtop tui-radius-all">
             <view class="tui-list-cell tui-last tui-between">
                 <view class="tui-bold tui-cell-title">评价</view>
                 <view bindtap="common">
                     <text class="tui-cmt-all">查看全部</text>
-                    <tui-icon name="more-fill" size="20" color="#ff201f"></tui-icon>
+                    <tui-icon name="more-fill" size="20" color="#ff7900"></tui-icon>
                 </view>
             </view>
 
             <view class="tui-cmt-content tui-padding">
                 <view class="tui-cmt-user">
-                    <image src="../../../static/images/news/avatar_2.jpg" class="tui-acatar"></image>
-                    <view>z***9</view>
+                    <image src="https://dcdn.it120.cc/2019/09/05/f4442e3e-7832-437e-b45f-12a0a489b9e5.jpeg" class="tui-acatar"></image>
+                    <view>赵**文</view>
                 </view>
-                <view class="tui-cmt">物流很快，很适合我的风格❤</view>
-                <view class="tui-attr">颜色：叠层钛钢流苏耳环（A74）</view>
+                <view class="tui-cmt">很不错  认识很多在北京的老乡 玩的很开心 感谢趣知游提供的优质服务❤</view>
+<!--                <view class="tui-attr">颜色：叠层钛钢流苏耳环（A74）</view>-->
             </view>
 
             <view class="tui-cmt-btn">
                 <tui-tag type="black" plain="{{true}}" tui-tag-class="tui-tag-cmt" bindtap="common">查看全部评价</tui-tag>
             </view>
         </view>
--->
+     <!-- 评价E-->
 
         <view class="tui-nomore-box">
             <tui-nomore text="活动详情" visible="{{true}}" bgcolor="#f7f7f7"></tui-nomore>
