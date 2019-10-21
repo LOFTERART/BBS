@@ -200,9 +200,11 @@
     <!--底部操作栏-->
     <view class="tui-operation">
         <view class="tui-operation-left tui-col-5">
-            <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
-                <tui-icon name="kefu" size="22" color='#333'></tui-icon>
-                <view class="tui-operation-text tui-scale-small">客服</view>
+            <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" >
+                <button open-type="contact">
+                    <tui-icon name="kefu" size="22" color='#333'></tui-icon>
+                    <view class="tui-operation-text tui-scale-small">客服</view>
+                </button>
             </view>
 
             <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
