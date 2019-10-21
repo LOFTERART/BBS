@@ -4,12 +4,12 @@
 <!--logo信息-->
     <view style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin-bottom: 50rpx">
 
-            <image lazy-load="{{true}}" mode="scaleToFill"  src="http://www.mingyue.musemore.art/storage/logo.jpg"  style="width: 120rpx;height: 120rpx;"/>
+            <image lazy-load="{{true}}" mode="scaleToFill"  src="https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png"  style="width: 120rpx;height: 120rpx;"/>
 
 
        <view style="margin-top: 30rpx;height: 100rpx;display: flex;flex-direction: column;justify-content: space-between;align-items: center">
 
-           <view style="font-weight: bold" class="f36">明月艺族</view>
+           <view style="font-weight: bold" class="f36">趣知游</view>
            <view class="f28">{{myList[2].subName}}</view>
 
        </view>
