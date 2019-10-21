@@ -8,7 +8,7 @@
             <tui-icon name="arrowleft" color="{{opcity>=1?'#000':'#fff'}}" bindtap="back" tui-icon-class="tui-icon-back" class="tui-icon" style="background:rgba(0, 0, 0, {{iconOpcity}});"></tui-icon>
 <!--
  <tui-icon name="more-fill" color="{{opcity>=1?'#000':'#fff'}}" size="20" tui-icon-class="tui-icon-more" class="tui-icon tui-icon-ml" style="background:rgba(0, 0, 0, {{iconOpcity}});" catchtap="openMenu"></tui-icon>
-            <tui-badge type="red" tui-badge-class="tui-badge" size="small">5</tui-badge>
+  <tui-badge type="red" tui-badge-class="tui-badge" size="small">5</tui-badge>
 -->
         </view>
     </view>
@@ -33,7 +33,7 @@
             <view class="tui-pro-pricebox tui-padding">
                 <view class="tui-pro-price">
                     <view>￥<text class="tui-price">0</text>.00</view>
-                    <tui-tag size="small" plain="{{true}}" type="high-green" shape="circle" tui-tag-class="tui-scale tui-tag-pro">首届</tui-tag>
+                    <tui-tag size="small" plain="{{true}}" type="warning" shape="circle" tui-tag-class="tui-scale tui-tag-pro">首届</tui-tag>
                 </view>
                 <view class="tui-collection tui-size" bindtap="collecting">
                     <tui-icon name="{{collected?'like-fill':'like'}}" color="{{collected?'#ff201f':'#333'}}" size="20" tui-icon-class="tui-icon-collection"></tui-icon>
@@ -83,15 +83,15 @@
                 <view class="tui-bold tui-cell-title">福利</view>
                 <view>
                     <view class="tui-promotion-box">
-                        <tui-tag size="small" type="red" plain="{{true}}" tui-tag-class="tui-inline-block">意外保险</tui-tag>
+                        <tui-tag size="small" type="warning" plain="{{true}}" tui-tag-class="tui-inline-block">意外保险</tui-tag>
                         <text>赠送旅游期间意外保险</text>
                     </view>
                     <view class="tui-promotion-box">
-                        <tui-tag size="small" type="red" plain="{{true}}" tui-tag-class="tui-inline-block">特别赠品</tui-tag>
+                        <tui-tag size="small" type="warning" plain="{{true}}" tui-tag-class="tui-inline-block">特别赠品</tui-tag>
                         <text>送XX</text>
                     </view>
                     <view class="tui-promotion-box">
-                        <tui-tag size="small" type="red" plain="{{true}}" tui-tag-class="tui-inline-block">特别赠品</tui-tag>
+                        <tui-tag size="small" type="warning" plain="{{true}}" tui-tag-class="tui-inline-block">特别赠品</tui-tag>
                         <text>送XX</text>
                     </view>
                 </view>
