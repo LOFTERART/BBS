@@ -3,6 +3,7 @@
   "navigationBarBackgroundColor": "#fff",
   "navigationBarTextStyle": "black",
   "usingComponents": {
-    "tui-list-cell":"/component/list-cell/list-cell"
+    "tui-list-cell":"/component/list-cell/list-cell",
+    "tui-button": "/component/button/button"
   }
 }

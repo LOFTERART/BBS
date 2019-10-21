@@ -76,7 +76,8 @@
     <view class="tui-tips">保证信息真实性</view>
 
     <view class="tui-btn-box">
-      <button class="btn-primary" hover-class="btn-hover" formType="submit" type="primary">立即报名</button>
+        <tui-button type="warning" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">立即报名</tui-button>
+<!--      <button class="btn-primary" hover-class="btn-hover" formType="submit" type="primary">立即报名</button>-->
 <!--      <button class="btn-primary btn-gray" hover-class="btn-gray-hover" formType="reset">Reset</button>-->
     </view>
   </form>
