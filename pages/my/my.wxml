@@ -23,27 +23,15 @@
 
 <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;background-color: white;padding: 20rpx" class="van-hairline--bottom">
 
-    <view>
+    <block wx:for="{{MyDataInfo}}" wx:key>
         <view style="display: flex;flex-direction: column;height: 80rpx;justify-content: space-between;align-items: center">
-            <view class="f28" style="font-weight: bold;color: #323233">{{orderInfo.favCount}}</view>
-            <view class="f22" style="color: #969799">收藏</view>
+            <view class="f28" style="font-weight: bold;color: #323233">{{item.num}}</view>
+            <view class="f22" style="color: #969799">{{item.name}}</view>
         </view>
-    </view>
-
-    <view>
-        <view style="display: flex;flex-direction: column;height: 80rpx;justify-content: space-between;align-items: center">
-            <view class="f28" style="font-weight: bold;color: #323233">{{orderInfo.addressCount}}</view>
-            <view class="f22" style="color: #969799">地址</view>
-        </view>
-    </view>
+    </block>
 
 
-    <view>
-        <view style="display: flex;flex-direction: column;height: 80rpx;justify-content: space-between;align-items: center">
-            <view class="f28" style="font-weight: bold;color: #323233">{{orderInfo.couponCount}}</view>
-            <view class="f22" style="color: #969799">优惠券</view>
-        </view>
-    </view>
+
 
 
 </view>
