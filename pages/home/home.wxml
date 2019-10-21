@@ -70,9 +70,11 @@
 
 
 
-        <view style="position: absolute;right: 5rpx;top: 5rpx">
+<!--
+ <view style="position: absolute;right: 5rpx;top: 5rpx">
             <van-tag color="green" plain>进行中</van-tag>
         </view>
+-->
 
 
     </view>
