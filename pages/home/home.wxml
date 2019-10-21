@@ -58,11 +58,11 @@
 
         <!--    成员人数信息S-->
         <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
-            <view class="f24">
+            <view class="f22">
                 <i class="iconfont icon-tubiaozhizuomoban"></i>
-                成员{{item.memNum}}人
+                成员:{{item.memNum}}
             </view>
-            <view class="f24">
+            <view class="f22">
                 {{item.addNum}}人加入
             </view>
         </view>

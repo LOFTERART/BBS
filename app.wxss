@@ -195,7 +195,7 @@ button::after {
 .divider{
     background-color: #f7f7f7;
     width: 100%;
-    height: 20rpx
+    height: 10rpx
 }
 
 
