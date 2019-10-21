@@ -3,19 +3,26 @@ page {
 }
 
 
-button {
-    position:relative;
-    display:block;
-    overflow:hidden;
+.btn1{
+    width: 100rpx;
+    height: 100rpx;
+    background-color: white;
+    color: #999999;
+    border-radius: 0rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20rpx;
 }
-button::after {
-    border: none;
+
+.btnImg {
+    width: 25rpx;
+    height: 25rpx;
 }
-button {
-    background-color: transparent;
-}
-button {
-    border-radius:0;
+
+.btn1::after {
+    border: 0;
 }
 
 

@@ -201,15 +201,26 @@
     <view class="tui-operation">
         <view class="tui-operation-left tui-col-5">
             <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" >
-                <button open-type="contact">
-                    <tui-icon name="kefu" size="22" color='#333'></tui-icon>
+                <button open-type="contact" class='btn1'>
+                    <tui-icon name="kefu" size="15" color='#333' class='btnImg'></tui-icon>
                     <view class="tui-operation-text tui-scale-small">客服</view>
                 </button>
+
+<!--                <button class='btn1' open-type='contact'>-->
+<!--                    <image class='btnImg' src='https://dcdn.it120.cc/2019/09/26/f9d81245-e12b-400e-9575-34237c840bb4.png'></image>-->
+<!--                    <view>客服</view>-->
+<!--                </button>-->
+
             </view>
 
             <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
-                <tui-icon name="share" size="22" color='#333'></tui-icon>
-                <view class="tui-operation-text tui-scale-small">分享</view>
+<!--                <tui-icon name="share" size="22" color='#333'></tui-icon>-->
+<!--                <view class="tui-operation-text tui-scale-small">分享</view>-->
+
+                <button open-type="share" class='btn1'>
+                    <tui-icon name="share" size="15" color='#333' class='btnImg'></tui-icon>
+                    <view class="tui-operation-text tui-scale-small">分享</view>
+                </button>
             </view>
 
 
