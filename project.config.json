@@ -22,10 +22,10 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"bundle": false
+		"bundle": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.3",
+	"libVersion": "2.9.0",
 	"appid": "wx87d54b84fe549219",
 	"projectname": "quzhi",
 	"debugOptions": {
@@ -57,7 +57,7 @@
 		},
 		"miniprogram": {
 			"current": -1,
-          "list": []
+			"list": []
 		}
 	}
 }

@@ -58,6 +58,26 @@
       ]
     }
   ],
+
+  "tabBar": {
+    "color": "#B6B6B6",
+    "selectedColor": "#ff7900",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/image/home.png",
+        "selectedIconPath": "assets/image/home-r.png"
+      },
+      {
+        "pagePath": "pages/user/user/user",
+        "text": "我的",
+        "iconPath": "assets/image/home.png",
+        "selectedIconPath": "assets/image/home-r.png"
+      }
+    ]
+  },
   "preloadRule": {
     "pages/home/home": {
       "network": "all",
