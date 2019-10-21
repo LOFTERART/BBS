@@ -15,7 +15,7 @@
     margin-right: 10rpx;
 }
 
-#user .banner{position:relative;padding:30px 0;background-color: #C9A063}
+#user .banner{position:relative;padding:30px 0;background-color: #ff7900}
 #user .banner .ban-item-l{display:flex;align-items:center;justify-content:center}
 #user .banner .ban-item-l .user-avatar{width:78px;height:78px;border-radius:50%;margin-right:15px}
 #user .banner .ban-item-l .user-avatar image{width:100%;height:100%;border-radius:50%}

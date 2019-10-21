@@ -1,4 +1,4 @@
-
+import UTIL from '../../utils/util'
 Page({
     data:{
         detail:"",
@@ -59,6 +59,8 @@ Page({
             wx.navigateTo({
                 url: '/mySub/pages/about/about'
             })
+        }else {
+            UTIL.toast('待开发')
         }
 
 
