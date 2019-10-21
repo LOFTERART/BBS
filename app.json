@@ -28,7 +28,8 @@
     "pages/coupon/onDetail/onDetail",
     "pages/demo/demo",
     "pages/homeDetail/homeDetail",
-    "pages/addPeoInfo/addPeoInfo"
+    "pages/addPeoInfo/addPeoInfo",
+    "pages/my/my"
   ],
   "usingComponents": {
     "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
@@ -58,7 +59,6 @@
       ]
     }
   ],
-
   "tabBar": {
     "color": "#B6B6B6",
     "selectedColor": "#ff7900",
@@ -71,7 +71,7 @@
         "selectedIconPath": "assets/image/home-r.png"
       },
       {
-        "pagePath": "pages/user/user/user",
+        "pagePath": "pages/my/my",
         "text": "我的",
         "iconPath": "assets/image/home.png",
         "selectedIconPath": "assets/image/home-r.png"
