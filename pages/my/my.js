@@ -11,8 +11,8 @@ Page({
                     id: 1,
                     isShowArrow: true,
                     isShowPoint: true,
-                    name: "我的活动",
-                    subName: "加入的活动",
+                    name: "我的报名",
+                    subName: "报名信息",
                     type: "DD",
                 }
             ],
