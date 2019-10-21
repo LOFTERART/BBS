@@ -205,7 +205,7 @@
                 <view class="tui-operation-text tui-scale-small">客服</view>
             </view>
 
-<view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
+            <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
                 <tui-icon name="share" size="22" color='#333'></tui-icon>
                 <view class="tui-operation-text tui-scale-small">分享</view>
             </view>
