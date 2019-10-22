@@ -17,42 +17,6 @@ Page({
             "https://www.thorui.cn/img/product/8.jpg"
         ],
         bannerIndex: 0,
-        topMenu: [{
-            icon: "message",
-            text: "消息",
-            size: 26,
-            badge: 3
-        }, {
-            icon: "home",
-            text: "首页",
-            size: 23,
-            badge: 0
-        }, {
-            icon: "people",
-            text: "我的",
-            size: 26,
-            badge: 0
-        }, {
-            icon: "cart",
-            text: "购物车",
-            size: 23,
-            badge: 2
-        }, {
-            icon: "kefu",
-            text: "客服小蜜",
-            size: 26,
-            badge: 0
-        }, {
-            icon: "feedback",
-            text: "我要反馈",
-            size: 23,
-            badge: 0
-        }, {
-            icon: "share",
-            text: "分享",
-            size: 26,
-            badge: 0
-        }],
         menuShow: false,
         popupShow: false,
         value: 1,
