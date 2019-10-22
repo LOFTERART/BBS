@@ -15,11 +15,6 @@
 
 </view>
 
-
-
-
-<view class="divider"></view>
-
 <!--活动召集 S-->
 
 <block wx:for="{{dynamicList}}" wx:key>
