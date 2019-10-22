@@ -57,7 +57,7 @@
 
         <view style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 20rpx">
 
-            <view class="f22">明月艺族公司 版权所有</view>
+            <view class="f22">趣知游公司 版权所有</view>
 
             <view class="f20">
                Copyright © 2019 - 2019 MingYueArt . All Rights Reserved

@@ -110,14 +110,14 @@
                 <view class="tui-bold tui-cell-title">活动时间</view>
                 <view class="tui-selected-box">2019-11-31当天</view>
             </view>
-            <view class="tui-list-cell" >
+            <view class="tui-list-cell" bindtap="common">
                 <view class="tui-bold tui-cell-title">集合地点</view>
                 <view class="tui-addr-box">
                     <view class="tui-addr-item">北京海淀区人民大学</view>
                     <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>
                 </view>
             </view>
-            <view class="tui-list-cell tui-last">
+            <view class="tui-list-cell tui-last" bindtap="common">
                 <view class="tui-bold tui-cell-title">目的地</view>
                 <view class="tui-selected-box">北京香山</view>
                 <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>

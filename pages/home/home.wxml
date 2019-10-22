@@ -60,11 +60,11 @@
         <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
             <view class="f22">
                 <i class="iconfont icon-tubiaozhizuomoban"></i>
-                成员:{{item.memNum}}
+                成员:{{item.memNum}} 位   / 价格 {{item.price}}
             </view>
             <view class="f22">
 
-                <van-tag color="#ff7900" plain>进行中</van-tag>
+                <van-tag color="{{item.status.color}}" plain>{{item.status.desc}}</van-tag>
             </view>
         </view>
         <!--    成员人数信息E-->
