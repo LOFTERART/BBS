@@ -55,7 +55,7 @@
         <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
             <view class="f22">
                 <i class="iconfont icon-tubiaozhizuomoban"></i>
-                成员:{{item.memNum}} 位   / 价格 <text style="color: red">￥{{item.price}}</text>
+                成员:{{item.memNum}}位   / 价格 <text style="color: red">￥{{item.price}}</text>
             </view>
             <view class="f22">
 

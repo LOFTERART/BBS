@@ -12,7 +12,7 @@
             <swiper-item class="tui-banner-item">
                 <image
                         lazy-load="{{true}}"
-                        mode="widthFix"
+                        mode="scaleToFill"
                         bindtap="tapBanner"
                         data-id="{{item.id||item.order_id}}"
                         data-link="{{item.link}}"
