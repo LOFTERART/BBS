@@ -15,10 +15,10 @@
 
 </view>
 
-<!--活动召集 S-->
+<!--活动召集 S class="van-hairline--bottom"-->
 
 <block wx:for="{{dynamicList}}" wx:key>
-    <view style="padding: 20rpx;position: relative" class="van-hairline--bottom" bindtap="clickDy" data-id="{{item.id}}">
+    <view style="padding: 40rpx 20rpx;position: relative"  bindtap="clickDy" data-id="{{item.id}}">
 
 
         <!--    基本信息 S-->
