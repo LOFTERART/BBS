@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/demo/demo",
     "pages/homeDetail/homeDetail",
     "pages/addPeoInfo/addPeoInfo",
     "pages/Community/Community",
@@ -12,6 +11,7 @@
   "subPackages": [
     {
       "root": "homeSub",
+      "name": "homeSub",
       "pages": [
         "pages/newsDetail/newsDetail",
         "pages/news-cmt-reply/news-cmt-reply",
@@ -25,6 +25,7 @@
     },
     {
       "root": "mySub",
+      "name": "mySub",
       "pages": [
         "pages/favorite/index",
         "pages/about/about",
@@ -56,7 +57,12 @@
     "pages/home/home": {
       "network": "all",
       "packages": [
-        "homeSub",
+        "homeSub"
+      ]
+    },
+    "pages/mine/mine": {
+      "network": "all",
+      "packages": [
         "mySub"
       ]
     }
