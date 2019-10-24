@@ -3,7 +3,7 @@ const app = getApp()
 const WXAPI = require('../../../API/API')
 import create from '../../../utils/omi/create'
 import store from '../../../store/store'
-import Toast from "../../../miniprogram_npm/vant-weapp/toast/toast";
+import UTIL from '../../../utils/util'
 create(store,{
 
   /**
@@ -47,7 +47,7 @@ create(store,{
 
 
     clickZTMore:function(){
-      Toast('待开发')
+        UTIL.toast('待开发')
     },
 
 
@@ -98,7 +98,7 @@ create(store,{
                 dPshow: false,
                 placeholders:'写下你的...'
             });
-            Toast('评论成功~');
+            UTIL.toast('评论成功')
         })
 
 
