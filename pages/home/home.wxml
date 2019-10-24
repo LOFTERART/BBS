@@ -144,7 +144,7 @@
 
 
 
-<!--社区标题S-->
+<!--动态标题S-->
 <view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center">
     <view style="font-weight: bold" class="f32">
         小区动态
@@ -157,7 +157,7 @@
 
 
 </view>
-<!--社区标题E-->
+<!--动态标题E-->
 
 <!--状态S-->
 
