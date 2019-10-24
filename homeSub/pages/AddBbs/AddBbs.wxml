@@ -38,7 +38,7 @@
 
 
 
-<view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx;height: 80rpx" class="van-hairline--bottom">
+<view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx;height: 80rpx" class="van-hairline--bottom" bindtap="clickXiaoQu">
 
     <view class="f28" style="font-weight: bold"># 你在哪个小区</view>
     <view style="display: flex;flex-direction: row;align-items: center">

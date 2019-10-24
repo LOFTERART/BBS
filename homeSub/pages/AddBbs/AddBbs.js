@@ -76,6 +76,25 @@ create(store,{
 
     },
 
+
+
+    //监听校区返回
+    emitSchool(city) {
+        console.log(city,'gggggg');
+        this.setData({
+            xiaoqu:city,
+        })
+
+    },
+    
+//    小区选择
+
+    clickXiaoQu:function(){
+      wx.navigateTo({
+        url: '/pages/Community/Community'
+      })  
+    },
+
     
 //    文字发表
 
