@@ -31,33 +31,18 @@
 
 <view style="padding: 20rpx;">
 
-   <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;background-color: rgba(249,249,251,1);height: 60rpx;padding: 20rpx;margin-bottom: 40rpx">
-       <view class="f24">
-           完善身份认证
-       </view>
+  <block wx:for="{{gradeList}}" wx:key>
+      <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;background-color: rgba(249,249,251,1);height: 60rpx;padding: 20rpx;margin-bottom: 20rpx">
+          <view class="f24">
+              {{item.name}}
+          </view>
 
-       <view class="f24">
-           +6
-       </view>
-   </view>
-   <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;background-color: rgba(249,249,251,1);height: 60rpx;padding: 20rpx;margin-bottom: 40rpx">
-       <view class="f24">
-           完善身份认证
-       </view>
+          <view class="f24">
+              {{item.score}}
+          </view>
+      </view>
+  </block>
 
-       <view class="f24">
-           +6
-       </view>
-   </view>
-   <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;background-color: rgba(249,249,251,1);height: 60rpx;padding: 20rpx;margin-bottom: 40rpx">
-       <view class="f24">
-           完善身份认证
-       </view>
-
-       <view class="f24">
-           +6
-       </view>
-   </view>
 
 </view>
 

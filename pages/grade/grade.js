@@ -6,6 +6,24 @@ Page({
    */
   data: {
 
+      gradeList:[
+          {
+              id:1,
+              name:'完善身份认证',
+              score:'+6'
+          },
+          {
+              id:1,
+              name:'点击广告',
+              score:'+12'
+          },
+          {
+              id:1,
+              name:'点击视频',
+              score:'+18'
+          }
+      ]
+
   },
 
   /**
