@@ -21,7 +21,6 @@
         "pages/moreComment/moreComment",
         "pages/ztDetail/ztDetail",
         "pages/goodComs/goodComs",
-        "pages/message/message",
         "pages/UserVIP/UserVIP",
         "pages/NewsList/NewsList"
       ]
