@@ -18,55 +18,49 @@
 
 <!--社区活动S-->
 
+<view class="type-container">
+    <scroll-view scroll-x="{{true}}"  class="type-navbar">
+        <view  class="van-hairline--surround courseStyle">
+
+            <view style="position: relative">
+                <image src="http://www.mingyue.musemore.art/storage/backend/article/cover/150633483e98b4b437ce75c2912fbef3.jpg" style="width: 100%;height: 210rpx" />
+                <view style="position: absolute;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,0.5);color: white;width: 100%;height: 40rpx;line-height: 40rpx;text-align: center" class="f20">
+                    7月23号 14:00-18:00
+                </view>
+
+            </view>
+
+            <!--    文字S-->
+
+            <view style="display: flex;flex-direction: column;height: 160rpx;justify-content: space-around;">
+                <view class="f22" style="color: #f17517">30元+吃晋江豪华大餐</view>
+                <view class="f20" style="color: #333">地址:晋江万达3楼501室醉得意餐厅</view>
+                <view class="f20" style="color: #666">这个突破经由CEO皮猜亲自官宣、论文登上</view>
+            </view>
+            <!--    文字E-->
+
+
+            <!--    参与S-->
+
+            <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 50rpx">
+
+                <view class="f20">
+                    98人参与
+                </view>
+                <view style="width: 90rpx;height: 40rpx;background-color: #ffc80b;display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 45rpx" class="f20">
+                    去参与
+                </view>
+
+            </view>
 
 
 
-<view style="padding: 10rpx;height: 460rpx;width: 480rpx" class="van-hairline--surround">
-
-    <view style="position: relative">
-        <image src="http://www.mingyue.musemore.art/storage/backend/article/cover/150633483e98b4b437ce75c2912fbef3.jpg" style="width: 100%;height: 210rpx" />
+            <!--    参与E-->
 
 
-        <view style="position: absolute;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,0.5);color: white;width: 100%;height: 40rpx;line-height: 40rpx;text-align: center" class="f20">
-            7月23号 14:00-18:00
         </view>
-
-    </view>
-
- <!--    文字S-->
-
-    <view style="display: flex;flex-direction: column;height: 160rpx;justify-content: space-around;">
-        <view class="f22" style="color: #f17517">30元+吃晋江豪华大餐</view>
-        <view class="f20" style="color: #333">地址:晋江万达3楼501室醉得意餐厅</view>
-        <view class="f20" style="color: #666">这个突破经由CEO皮猜亲自官宣、论文登上Nature150周年纪念特刊、各大主流媒体头版头条</view>
-    </view>
-    <!--    文字E-->
-
-
-<!--    参与S-->
-
-    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 80rpx">
-
-        <view class="f20">
-            98人参与
-        </view>
-        <view style="width: 90rpx;height: 40rpx;background-color: #ffc80b;display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 45rpx" class="f20">
-            去参与
-        </view>
-
-    </view>
-
-
-
-<!--    参与E-->
-
-
+    </scroll-view>
 </view>
-
-
-
-
-
 
 
 <!--社区活动E-->

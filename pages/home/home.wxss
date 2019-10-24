@@ -3,6 +3,39 @@
 
 
 
+/*king S*/
+.type-container{
+    padding: 20rpx;
+    background-color: #0e7eff;
+}
+.type-navbar{
+    white-space: nowrap;
+    height: 460rpx;
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.courseStyle{
+    display: inline-block;
+    background-color: #00c203;
+    margin-right: 10rpx;
+    /*box-shadow: 0px 8rpx 20rpx 0px rgba(9, 36, 66, 0.04);*/
+    /*padding: 10rpx;*/
+    height: 460rpx;
+    width: 480rpx
+}
+
+/*king E*/
+
+
+
+
+
+
 .King{
     margin-top: 20rpx;
 }
@@ -39,33 +72,7 @@
 
 
 
-/*BA S*/
-.type-container{
-    height: 240rpx;
-    padding: 20rpx 0 20rpx 20rpx;
-    background-color: #f7f7f7;
-}
-.type-navbar{
-    white-space: nowrap;
-    height: 240rpx;
-    width: 100%;
-}
-::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    color: transparent;
-}
 
-.courseStyle{
-    display: inline-block;
-    height: 240rpx;
-    width: 500rpx;
-    margin-right: 10rpx;
-    border-radius: 10rpx;
-    position: relative;
-}
-
-/*BA E*/
 
 
 
