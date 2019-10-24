@@ -3,6 +3,8 @@ const app = getApp()
 import CONFIG from '../../../config'
 import create from '../../../utils/omi/create'
 import store from '../../../store/store'
+
+import  UTIL from '../../../utils/util'
 create(store,{
     context: {
         emitter: create.emitter
@@ -19,7 +21,7 @@ create(store,{
     chooseImage: function (e) {
         wx.chooseImage({
             count: 9 - this.data.images.length,
-            sizeType: ['original', 'compressed'], //可选择原图或压缩后的图片
+            sizeType: [ 'compressed'], //可选择原图或压缩后的图片
             sourceType: ['album', 'camera'], //可选择性开放访问相册、相机
             success: res => {
                 if (this.data.images.length <= 9) {
@@ -115,18 +117,22 @@ create(store,{
         })
     },
 
-    
+
+    up:function(){
+      UTIL.toast('待开发')
+    },
+
 //    文字发表
 
     upText:   function () {
         var that=this;
-        var images_list = []; //设置了一个空数组进行储存服务器端图片路径
+        var images_list = [];
         for (let i = 0; i < that.data.images.length; i++) {
             wx.showLoading({
                 "mask": true,
                 "title":'上传中'
             })
-             wx.uploadFile({
+            wx.uploadFile({
                 url: 'https://api.teacher.meishuquanyunxiao.com/v2/news/upload-image-yun?source=daily',
                 method: "POST",
                 headers: {
@@ -144,10 +150,10 @@ create(store,{
                 },
                 success:   function (res) {
                     var jsonObj =  JSON.parse(res.data)
-                     images_list.push({showPic:jsonObj.data.url,indexAZ:jsonObj.data.post_indexSort});
+                    images_list.push({showPic:jsonObj.data.url,indexAZ:jsonObj.data.post_indexSort});
                     if (that.data.images.length === images_list.length) {
                         let pass=[];
-                            images_list.sort(that.compare).map((item,index)=>{
+                        images_list.sort(that.compare).map((item,index)=>{
                             pass.push(item.showPic);
                         })
                         let params = {
@@ -158,10 +164,10 @@ create(store,{
                             image_url_came:pass
                         };
                         WXAPI.ArtAddZT(params).then((res)=>{
-                          if(res.success){
-                              that.context.emitter.emit('getNewDataList', res)
-                              wx.navigateBack();
-                          }
+                            if(res.success){
+                                that.context.emitter.emit('getNewDataList', res)
+                                wx.navigateBack();
+                            }
                         })
                     }
                 },

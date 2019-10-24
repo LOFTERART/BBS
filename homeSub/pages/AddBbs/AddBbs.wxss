@@ -1,7 +1,7 @@
 @import "../../../iconFont/iconFont.wxss";
 @import "../../../app.wxss";
 .picture_list {
-    padding: 10rpx;
+    /*padding: 10rpx;*/
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -14,8 +14,8 @@
 
 
 .add-image, .up-pic image {
-    width: 150rpx;
-    height: 150rpx;
+    width: 180rpx;
+    height: 180rpx;
     color: #ddd;
     font-size: 28rpx;
     display: flex;
@@ -23,14 +23,11 @@
     justify-content: center;
     align-items: center;
     background-color: #eee;
-    /*background-color: red;*/
-    border-radius: 10rpx;
 }
 
 
 .picture_item {
     margin: 10px;
-    margin-left: 0;
     position: relative;
     width: 160rpx;
     height: 160rpx;

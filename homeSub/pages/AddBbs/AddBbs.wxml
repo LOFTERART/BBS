@@ -50,7 +50,7 @@
 
 
 
-<view class="main" bindtap="upText" style="margin-top: 30rpx">
+<view class="main" bindtap="up" style="margin-top: 30rpx">
     <view class="pay" style="background-color: {{changeColor}}">
         发布
     </view>
