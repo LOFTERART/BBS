@@ -17,7 +17,8 @@
                 </view>
                 <view class="tui-explain">这家伙很懒…</view>
             </view>
-            <view class="tui-set-box">
+<!--
+ <view class="tui-set-box">
                 <view class="tui-icon-box tui-icon-message" bindtap="href" data-type="1">
                     <tui-icon name="message" color="#fff" size="{{26}}"></tui-icon>
                     <view class="tui-badge tui-badge-white">1</view>
@@ -26,6 +27,8 @@
                     <tui-icon name="setup" color="#fff" size="{{26}}"></tui-icon>
                 </view>
             </view>
+
+-->
         </view>
         <view class="tui-header-btm" bindtap="href" data-type="5">
             <view class="tui-btm-item">
