@@ -1,2 +1,14 @@
-<!--pages/grade/grade.wxml-->
-<text>pages/grade/grade.wxml</text>
+
+
+<!--等级S-->
+<view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center">
+    <view style="font-weight: bold" class="f36">
+        我的等级
+    </view>
+    
+    <view class="f22">
+        等级定义
+    </view>
+
+</view>
+<!--等级E-->
