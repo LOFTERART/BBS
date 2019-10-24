@@ -30,7 +30,8 @@
     "pages/homeDetail/homeDetail",
     "pages/addPeoInfo/addPeoInfo",
     "pages/my/my",
-    "pages/Community/Community"
+    "pages/Community/Community",
+    "pages/grade/grade"
   ],
   "usingComponents": {
     "van-popup": "/miniprogram_npm/vant-weapp/popup/index"

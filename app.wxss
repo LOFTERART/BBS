@@ -20,7 +20,9 @@
 .acea-row.row-between-wrapper{align-items:center;justify-content:space-between;}
 
 
-
+page{
+    font-family: PingFangSC-Regular;
+}
 
 
 

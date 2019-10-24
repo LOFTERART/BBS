@@ -14,6 +14,15 @@ Page({
                     name: "我的报名",
                     subName: "报名信息",
                     type: "DD",
+                },
+                {
+                    icon: "http://www.mingyue.musemore.art/storage/api/me/list/我的订单.png",
+                    id: 1,
+                    isShowArrow: true,
+                    isShowPoint: true,
+                    name: "我的等级",
+                    subName: "等级",
+                    type: "DJ",
                 }
             ],
             [
@@ -58,6 +67,10 @@ Page({
         if(e.currentTarget.dataset.type==='GY'){
             wx.navigateTo({
                 url: '/mySub/pages/about/about'
+            })
+        }else if(e.currentTarget.dataset.type==='DJ'){
+            wx.navigateTo({
+                url: '/pages/grade/grade'
             })
         }else {
             UTIL.toast('待开发')
