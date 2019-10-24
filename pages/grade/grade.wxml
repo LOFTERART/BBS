@@ -20,6 +20,44 @@
 </view>
 
 
+
+
+
+<!--经验值-->
+
+<view class='member-center'>
+
+
+    <view class='wrapper'>
+
+        <view class='list'>
+            <view class='item' wx:for="{{task}}" wx:key>
+                <view class='top acea-row row-between-wrapper'>
+                    <view class='name' bindtap='opHelp' data-index='{{index}}'>{{item.name}}<text wx:if='{{item.illustrate}}' class='iconfont icon-wenti'></text></view>
+                    <view wx:if="{{item.finish}}">已满足条件</view>
+                    <view wx:else>未满足条件</view>
+                </view>
+                <view class="cu-progress">
+                    <view class='bg-red' style="width:{{item.speed}}%;"></view>
+                </view>
+                <view class='experience acea-row row-between-wrapper'>
+                    <view>{{item.task_type_title}}</view>
+                    <view><text class='num'>{{item.new_number || 0}}</text>/{{item.number || 0}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>
+
+
+
+
+
+
+
+
+
 <!--分割线-->
 <view style="display: flex;flex-direction: row;justify-content: center;align-items: center" class="f22">
     --今日等级经验状态--
