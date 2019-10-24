@@ -24,7 +24,6 @@ Page({
     },
     href(e) {
         let page = Number(e.currentTarget.dataset.type)
-        console.log(page,'page');
         let url = "";
         switch (page) {
             case 1:
