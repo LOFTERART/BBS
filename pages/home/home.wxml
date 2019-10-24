@@ -112,8 +112,8 @@
                     <view class="cu-avatar-group" style="display: flex;flex-direction: row">
 
                         <image src="https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png" style="width: 40rpx;height: 40rpx;border-radius: 20rpx" />
-                        <image src="https://dcdn.it120.cc/2019/08/22/e38b0442-735d-4df7-a3ce-7f9de997dc45.jpg" style="width: 40rpx;height: 40rpx;border-radius: 20rpx;margin-left: -20rpx" />
-                        <image src="https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png" style="width: 40rpx;height: 40rpx;border-radius: 20rpx;margin-left: -20rpx" />
+                        <image src="https://dcdn.it120.cc/2019/08/22/e38b0442-735d-4df7-a3ce-7f9de997dc45.jpg" style="width: 40rpx;height: 40rpx;border-radius: 20rpx;margin-left: -10rpx" />
+                        <image src="https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png" style="width: 40rpx;height: 40rpx;border-radius: 20rpx;margin-left: -10rpx" />
 
                     </view>
 
