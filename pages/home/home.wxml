@@ -6,10 +6,10 @@
 
     <view style="display: flex;flex-direction: row;align-items: center">
         <image src="https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png" style="width: 40rpx;height: 40rpx" />
-        <view class="f24" style="margin-left: 10rpx;margin-right: 5rpx">
+        <view class="f28" style="margin-left: 10rpx;margin-right: 2rpx;font-weight: bold">
             阳光花墅
         </view>
-        <tui-icon name="arrowdown" size="24" color="#9a9a9a"></tui-icon>
+        <tui-icon name="arrowdown" size="18" color="#3E3A39"></tui-icon>
 
     </view>
 
