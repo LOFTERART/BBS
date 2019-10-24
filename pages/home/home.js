@@ -9,10 +9,10 @@ create(store,{
     data: {
         //广告
         banners:[
-            {id:1,image:'https://dcdn.it120.cc/2019/10/24/cbfc929a-3011-482e-a8d9-30afa09090b7.jpg',type:'H5',link:'url'},
-            {id:2,image:'https://dcdn.it120.cc/2019/10/24/dd570f26-f5e1-48fb-b8d6-9adb19831fd8.jpg',type:'H5',link:'url'},
-            {id:3,image:'https://dcdn.it120.cc/2019/10/24/18f43bc3-511a-4ae3-95b5-ec446617196c.jpg',type:'sourceCode',link:''},
-            {id:4,image:'https://dcdn.it120.cc/2019/10/24/569b0a25-e9ad-4aed-90b7-2397130ee4b8.jpg',type:'H5',link:'url'},
+            {id:1,image:'https://dcdn.it120.cc/2019/10/24/cbfc929a-3011-482e-a8d9-30afa09090b7.jpg',type:'H5',link:'url',name:'banner'},
+            {id:2,image:'https://dcdn.it120.cc/2019/10/24/dd570f26-f5e1-48fb-b8d6-9adb19831fd8.jpg',type:'H5',link:'url',name:'banner'},
+            {id:3,image:'https://dcdn.it120.cc/2019/10/24/18f43bc3-511a-4ae3-95b5-ec446617196c.jpg',type:'sourceCode',link:'',name:'banner'},
+            {id:4,image:'https://dcdn.it120.cc/2019/10/24/569b0a25-e9ad-4aed-90b7-2397130ee4b8.jpg',type:'H5',link:'url',name:'banner'},
         ],
         //金刚位
         KING:[
@@ -81,7 +81,8 @@ create(store,{
         ],
         homeNews:[],
         active: 0,
-        community:'阳光花墅'
+        community:'阳光花墅',
+        current:0
 
     },
     /**
@@ -138,6 +139,37 @@ create(store,{
     },
 
 
+
+    change: function (e) {
+        this.setData({
+            current: e.detail.current
+        })
+    },
+
+    //    ad 点击
+    tapBanner: function (e) {
+        console.log(e.currentTarget.dataset.type);
+        if(e.currentTarget.dataset.type==='SP'){
+            wx.navigateTo({
+                url: '/homeSub/pages/courseList/courseList?name='+e.currentTarget.dataset.name+'&id='+e.currentTarget.dataset.id+'&type='+e.currentTarget.dataset.type
+            })
+        }else if(e.currentTarget.dataset.type==='DK'){
+            wx.navigateTo({
+                url: '/homeSub/pages/courseDetail/courseDetail?name='+e.currentTarget.dataset.name+'&id='+e.currentTarget.dataset.id+'&type='+e.currentTarget.dataset.type
+            })
+        }else if(e.currentTarget.dataset.type==='home'){
+            wx.navigateTo({
+                url: '/mySub/pages/web/web?url='+encodeURIComponent(e.currentTarget.dataset.url)+'&name='+e.currentTarget.dataset.name
+            })
+        }else if(e.currentTarget.dataset.type==='shop'){
+            wx.navigateTo({
+                url:e.currentTarget.dataset.id
+            })
+        }
+
+
+
+    },
 
     //监听校区返回
     emitSchool(city) {

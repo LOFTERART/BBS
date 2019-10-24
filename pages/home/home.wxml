@@ -30,10 +30,23 @@
 
 
 <!--banner S-->
-<jbj-banner banners="{{banners}}"></jbj-banner>
+<view class="tui-banner-box">
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="150" class="tui-banner-swiper" circular="{{true}}" previous-margin="60rpx" next-margin="60rpx" bindchange="change">
+        <swiper-item wx:for="{{banners}}" wx:key="{{index}}" class="tui-banner-item">
+            <image
+                    bindtap="tapBanner"
+                    data-id="{{item.id||item.order_id}}"
+                    data-link="{{item.link}}"
+                    data-url="{{item.link}}"
+                    data-type="{{item.type}}"
+                    data-name="{{item.name}}"
+                    src="{{item.thumbnails||item.image}}"
+                    class="tui-slide-image {{current!=index?'tui-banner-scale':''}}"
+                    mode="scaleToFill"  />
+        </swiper-item>
+    </swiper>
+</view>
 <!--banner E-->
-
-
 
 
 
