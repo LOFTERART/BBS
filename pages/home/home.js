@@ -79,31 +79,9 @@ create(store,{
             },
 
         ],
+        //成员动态
         articleList:[
-            {
-                address: "阳光花墅",
-                avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/43%2Fpicture%2Fimage%2Fe9f606bf883a0e253e2d543ee768e697.jpg?x-oss-process=style/57x57",
-                comment: 0,
-                content: "色调",
-                follow: 0,
-                follow_user_id: 3804,
-                follow_user_type: "teacher",
-                id: 27565,
-                image_url_came: [{url:'https://dcdn.it120.cc/2019/10/24/569b0a25-e9ad-4aed-90b7-2397130ee4b8.jpg'}],
-                image_url_came_thumb: [{url:'https://dcdn.it120.cc/2019/10/24/569b0a25-e9ad-4aed-90b7-2397130ee4b8.jpg'}],
-                is_activating: true,
-                is_del: true,
-                is_follow: false,
-                is_like: true,
-                is_parent: false,
-                is_top: false,
-                like: 1,
-                name: "赵文",
-                status: "前端开发",
-                timer: '1天前',
-                url: "https://www.meishuquanyunxiao.com/share/daily-view.html?daily_id=27565",
-                views: 0,
-            }
+
         ],
         homeNews:[],
         active: 0,
@@ -120,8 +98,9 @@ create(store,{
         this.getDataList(0);
         // this.getKing();
 
-        let arrayList=[]
-        for (let i =0;i<=5;i++){
+        let arrayList=[];
+        let arrayArticleList=[];
+        for (let i =0;i<=50;i++){
             arrayList.push(
                 {
                     id:1,
@@ -156,10 +135,58 @@ create(store,{
                     views: 10 //浏览量
                 }
                 )
+
+            arrayArticleList.push(
+                {
+                    address: "阳光花墅",
+                    avatar: "https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png",
+                    comment: 0,
+                    content: "在小区发现一只流浪喵,有认识的吗?",
+                    follow: 0,
+                    follow_user_id: 3804,
+                    follow_user_type: "teacher",
+                    id: 27565,
+                    image_url_came: [
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/09/05/fdba84c4-f807-4b1d-91c5-f65fc7a52fe6.jpeg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                    ],
+                    image_url_came_thumb: [
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/09/05/fdba84c4-f807-4b1d-91c5-f65fc7a52fe6.jpeg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                        {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                    ],
+                    is_activating: true,
+                    is_del: true,
+                    is_follow: false,
+                    is_like: true,
+                    is_parent: false,
+                    is_top: false,
+                    like: 1,
+                    name: "赵文",
+                    status: "前端开发",
+                    timer: '1天前',
+                    url: "https://www.meishuquanyunxiao.com/share/daily-view.html?daily_id=27565",
+                    views: 0,
+                }
+            )
         }
 
         this.setData({
-            dynamicList:arrayList
+            dynamicList:arrayList,
+            articleList:arrayArticleList,
         })
 
     },
