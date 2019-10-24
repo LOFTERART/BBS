@@ -144,7 +144,23 @@
 
 
 
+<!--社区标题S-->
+<view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center">
+    <view style="font-weight: bold" class="f32">
+        小区动态
+    </view>
+
+
+    <view class="f22">
+        查看更多>
+    </view>
+
+
+</view>
+<!--社区标题E-->
+
 <!--状态S-->
+
 <view bindlongtap="clickAdd"  >
 
     <view  wx:for="{{articleList}}" wx:key  wx:for-index="idx" wx:for-item="itemName">
@@ -231,6 +247,8 @@
 <!--    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">&#45;&#45;END&#45;&#45;</view>-->
 
 </view>
+
+
 <!--状态E-->
 
 
