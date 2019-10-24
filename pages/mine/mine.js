@@ -24,6 +24,7 @@ Page({
     },
     href(e) {
         let page = Number(e.currentTarget.dataset.type)
+        console.log(page,'page');
         let url = "";
         switch (page) {
             case 1:
@@ -36,6 +37,12 @@ Page({
                 break;
             case 4:
                 url = "../myOrder/myOrder"
+                break;
+            case 10:
+                url = "/mySub/pages/about/about"
+                break;
+            case 11:
+                url = "/pages/grade/grade"
                 break;
             default:
                 break;

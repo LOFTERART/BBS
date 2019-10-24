@@ -138,7 +138,7 @@
             </view>
         </view>
 
-        <view class="tui-box tui-tool-box" bindtap="href" data-type="7">
+        <view class="tui-box tui-tool-box">
             <tui-list-cell arrow="{{true}}" padding="0" lineLeft="{{false}}">
                 <view class="tui-cell-header">
                     <view class="tui-cell-title">常用工具</view>
@@ -177,7 +177,7 @@
                     </view>
                     <view class="tui-tool-text">每日返现</view>
                 </view>
-                <view class="tui-tool-item">
+                <view class="tui-tool-item" bindtap="href" data-type="11">
                     <view class="tui-icon-box">
                         <image src="/static/images/mall/my/icon_tuan_3x.png" class="tui-tool-icon"></image>
                     </view>
@@ -189,7 +189,7 @@
                     </view>
                     <view class="tui-tool-text">闲置换钱</view>
                 </view>
-                <view class="tui-tool-item">
+                <view class="tui-tool-item" bindtap="href" data-type="10">
                     <view class="tui-icon-box">
                         <image src="/static/images/mall/my/icon_kaipiao_3x.png" class="tui-tool-icon"></image>
                     </view>
