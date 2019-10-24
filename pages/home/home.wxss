@@ -169,6 +169,5 @@
     height: 80rpx;
     position: fixed;
     bottom: 38rpx;
-    left: 38rpx;
-    right: 0;
+    right: 38rpx;
 }

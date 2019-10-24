@@ -356,7 +356,20 @@ create(store,{
             url: '/mySub/pages/web/web?url='+decodeURIComponent(e.currentTarget.dataset.link)
         })
 
-    }
+    },
+
+
+
+//    发表
+
+    //发表状态
+    clickAdd:function(e){
+        wx.navigateTo({
+            url: '/homeSub/pages/AddBbs/AddBbs'
+        })
+
+
+    },
 
 
 })
