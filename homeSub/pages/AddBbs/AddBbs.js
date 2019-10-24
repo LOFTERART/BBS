@@ -95,6 +95,15 @@ create(store,{
       })  
     },
 
+
+//    话题
+
+    clickHuaTi:function(){
+        wx.navigateTo({
+            url: '/homeSub/pages/conversation/conversation'
+        })
+    },
+
     
 //    文字发表
 

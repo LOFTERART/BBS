@@ -20,7 +20,8 @@
         "pages/ztDetail/ztDetail",
         "pages/goodComs/goodComs",
         "pages/UserVIP/UserVIP",
-        "pages/NewsList/NewsList"
+        "pages/NewsList/NewsList",
+        "pages/conversation/conversation"
       ]
     },
     {
