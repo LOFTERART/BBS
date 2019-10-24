@@ -1,5 +1,11 @@
 <view class="container">
 
+  <view class="tui-searchbox">
+    <view class="tui-search-input" bindtap="search">
+      <text class="tui-search-text">选择合适的话题会有更多点赞哦~</text>
+    </view>
+  </view>
+
   <scroll-view scroll-y scroll-with-animation class="tab-view" scroll-top="{{scrollTop}}" style="height:{{menuHeight}}px">
     <view wx:for="{{tabbar}}" wx:key="{{index}}" class="tab-bar-item {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" catchtap="swichNav">
       <text>{{item}}</text>
@@ -113,7 +119,6 @@
 
         </view>
       </view>
-
     </block>
     <!--内容部分 end 自定义可删除-->
   </view>
