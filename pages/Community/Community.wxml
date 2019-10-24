@@ -11,7 +11,7 @@
                 </view>
                 <label class="search-bar-label" wx:if="{{!inputShowed}}" bindtap="showInput">
                     <!-- <icon class="icon-search" type="search" size="16"></icon> -->
-                    <view class="search-bar-text">输入学校名称或首字母查询</view>
+                    <view class="search-bar-text">输入社区名称或首字母查询</view>
                 </label>
             </view>
         </view>
@@ -24,14 +24,14 @@
         </view>
         <view wx:if="{{!inputVal}}">
             <view class="current-city">
-                <view class="title">定位城市</view>
+                <view class="title">定位小区</view>
                 <view class="city-name">
                     <tui-icon tui-icon-class="location" name="position-fill" color="#5677fc" size="18"></tui-icon>
                     {{localCity}}
                 </view>
             </view>
             <view class="hot-city">
-                <view class="title">热门学校</view>
+                <view class="title">热门小区</view>
                 <view class="city-names">
                     <view class="city-name-item" wx:for="{{hotCity}}"  wx:key="{{index}}" hover-class="tap-city" hover-stay-time="150" bindtap="selectCity" data-name="{{item}}">
                         {{item}}

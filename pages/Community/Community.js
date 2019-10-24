@@ -18,7 +18,7 @@ Page({
   onLoad: function (options) {
     const that = this;
     that.setData({
-      localCity: options.currentCity || "北京",
+      localCity: options.currentCity || "阳光花墅",
     })
     setTimeout(() => {
       wx.getSystemInfo({
