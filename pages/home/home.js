@@ -81,8 +81,8 @@ create(store,{
         ],
         homeNews:[],
         active: 0,
-        city:'阳光花墅'
-        
+        community:'阳光花墅'
+
     },
     /**
      * 生命周期函数--监听页面加载
@@ -143,7 +143,7 @@ create(store,{
     emitSchool(city) {
         console.log(city,'gggggg');
         this.setData({
-            city:city,
+            community:city,
         })
 
     },
