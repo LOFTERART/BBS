@@ -1,7 +1,0 @@
-{
-  "enablePullDownRefresh": true,
-  "navigationBarTitleText": "论坛",
-  "usingComponents": {
-    "navigation": "/component/navigation/navigation"
-  }
-}
