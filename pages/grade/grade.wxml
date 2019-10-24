@@ -5,10 +5,15 @@
     <view style="font-weight: bold" class="f36">
         我的等级
     </view>
-    
+
     <view class="f22">
         等级定义
     </view>
 
 </view>
 <!--等级E-->
+
+
+<view style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin-top: 50rpx">
+    <image src="https://dcdn.it120.cc/2019/08/22/8bfbb776-b2ba-46cd-a2e8-ee6afbf447b0.png" style="width: 180rpx;height: 180rpx;border-radius: 10rpx" />
+</view>
