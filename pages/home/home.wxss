@@ -157,3 +157,18 @@
 .tab-active-class {
     color: #ee0a24 !important;
 }
+
+
+
+/*发表*/
+.bottomStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    height: 80rpx;
+    position: fixed;
+    bottom: 38rpx;
+    left: 38rpx;
+    right: 0;
+}
