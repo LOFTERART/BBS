@@ -35,7 +35,7 @@
                 <view class='top acea-row row-between-wrapper'>
                     <view class='name' bindtap='opHelp' data-index='{{index}}'>{{item.name}}<text wx:if='{{item.illustrate}}' class='iconfont icon-wenti'></text></view>
                     <view wx:if="{{item.finish}}">已满足条件</view>
-                    <view wx:else>未满足条件</view>
+                    <view wx:else>当前等级: 榜眼</view>
                 </view>
                 <view class="cu-progress">
                     <view class='bg-red' style="width:{{item.speed}}%;"></view>

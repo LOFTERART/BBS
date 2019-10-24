@@ -24,7 +24,7 @@ Page({
           }
       ],
       task:[
-          {id:1,name:'满足积分2000分',task_type_title:'还需要1900积分',illustrate:false,finish:false,speed:'10',number:2000,new_number:100},
+          {id:1,name:'2000积分升级至状元',task_type_title:'今日增加100积分',illustrate:false,finish:false,speed:'10',number:2000,new_number:100},
       ],
 
   },
