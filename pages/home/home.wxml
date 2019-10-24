@@ -83,7 +83,7 @@
 <!--社区活动S-->
 <view class="type-container">
     <scroll-view scroll-x="{{true}}"  class="type-navbar">
-        <view  class="van-hairline--surround courseStyle" wx:for="{{hotList}}" wx:key>
+        <view  class="van-hairline--surround courseStyle" wx:for="{{hotList}}" wx:key bindtap="clickDy" data-id="{{item.id}}">
 
             <view style="position: relative">
                 <image src="{{item.image}}" style="width: 480rpx;height: 210rpx" />
