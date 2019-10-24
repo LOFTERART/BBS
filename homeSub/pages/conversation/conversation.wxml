@@ -14,33 +14,16 @@
   <view class="right-box">
 
 
-      <view style="display: flex;flex-direction: column;margin-bottom: 40rpx" class="van-hairline--bottom" >
+      <block wx:for="{{huaTiList}}" wx:key>
+          <view style="display: flex;flex-direction: column;margin-bottom: 40rpx" class="van-hairline--bottom" bindtap="productList" data-name="{{item.name}}">
 
-          <view class="f24">帮助身边的流浪动物</view>
-          <view class="f22">4079条讨论 6299人围观</view>
+              <view class="f24">{{item.name}}</view>
+              <view class="f22">{{item.subName}}</view>
 
-      </view>
+          </view>
+      </block>
 
-    <view style="display: flex;flex-direction: column;margin-bottom: 40rpx" class="van-hairline--bottom" >
 
-        <view class="f24">帮助身边的流浪动物</view>
-        <view class="f22">4079条讨论 6299人围观</view>
-
-    </view>
-
-    <view style="display: flex;flex-direction: column;margin-bottom: 40rpx" class="van-hairline--bottom" >
-
-        <view class="f24">帮助身边的流浪动物</view>
-        <view class="f22">4079条讨论 6299人围观</view>
-
-    </view>
-
-    <view style="display: flex;flex-direction: column;margin-bottom: 40rpx" class="van-hairline--bottom" >
-
-        <view class="f24">帮助身边的流浪动物</view>
-        <view class="f22">4079条讨论 6299人围观</view>
-
-    </view>
 
 
 

@@ -96,6 +96,17 @@ create(store,{
     },
 
 
+
+    //监听话题返回
+    emitHuaTi(huati) {
+        this.setData({
+            huati
+        })
+
+    },
+
+
+
 //    话题
 
     clickHuaTi:function(){

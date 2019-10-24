@@ -1,9 +1,12 @@
 Page({
   data: {
     tabbar: ['打卡','育儿','包打听','户外','打卡','育儿','包打听','户外','打卡','育儿','包打听','户外','打卡','育儿','包打听','户外'],
+
     menuHeight: "", //菜单高度
     currentTab: 0, //预设当前项的值
-    scrollTop: 0 //tab标题的滚动条位置
+    scrollTop: 0, //tab标题的滚动条位置
+
+      huaTiList:[]
   },
   onLoad: function (options) {
     wx.getSystemInfo({
@@ -13,6 +16,25 @@ Page({
         });
       }
     });
+
+
+
+    var list=[]
+    for (let i=0;i<=50;i++){
+        list.push(
+            {
+                id:1,name:'# 帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+            },
+            {
+                id:2,name:'# 包打听',subName:'1079条讨论 1299人围观'
+            }
+        )
+    }
+
+    this.setData({
+        huaTiList:list
+    })
+
 
   },
   // 点击标题切换当前页时改变样式
@@ -52,14 +74,17 @@ Page({
     })
   },
   productList(e) {
-    let key = e.currentTarget.dataset.key;
-    wx.navigateTo({
-      url: '../extend-view/productList/productList?searchKey=' + key
-    })
+    let key = e.currentTarget.dataset.name;
+      console.log(key,'key');
+
+      //返回并刷新上一页面
+      let pages = getCurrentPages();
+      let prePage = pages[pages.length - 2];
+      prePage.emitHuaTi(key)
+      wx.navigateBack({
+          delta: 1
+      })
+
   },
-  search: function () {
-    wx.navigateTo({
-      url: '../extend-view/news-search/news-search'
-    })
-  }
+
 })
