@@ -20,12 +20,50 @@
 </view>
 
 
-
-
 <!--分割线-->
-<view style="display: flex;flex-direction: row;justify-content: center;align-items: center" class="f28">
+<view style="display: flex;flex-direction: row;justify-content: center;align-items: center" class="f22">
     --今日等级经验状态--
 </view>
+
+
+<!--经验列表S-->
+
+
+<view style="padding: 20rpx;">
+
+   <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;background-color: rgba(249,249,251,1);height: 60rpx;padding: 20rpx;margin-bottom: 40rpx">
+       <view class="f24">
+           完善身份认证
+       </view>
+
+       <view class="f24">
+           +6
+       </view>
+   </view>
+   <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;background-color: rgba(249,249,251,1);height: 60rpx;padding: 20rpx;margin-bottom: 40rpx">
+       <view class="f24">
+           完善身份认证
+       </view>
+
+       <view class="f24">
+           +6
+       </view>
+   </view>
+   <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;background-color: rgba(249,249,251,1);height: 60rpx;padding: 20rpx;margin-bottom: 40rpx">
+       <view class="f24">
+           完善身份认证
+       </view>
+
+       <view class="f24">
+           +6
+       </view>
+   </view>
+
+</view>
+
+
+
+<!--经验列表E-->
 
 
 
