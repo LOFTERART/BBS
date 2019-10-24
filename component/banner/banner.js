@@ -11,7 +11,7 @@ Component({
     },
     methods:{
         //滑动banner事件处理函数
-        swiperchange: function (e) {
+        change: function (e) {
             this.setData({
                 current: e.detail.current
             })
