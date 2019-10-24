@@ -1,5 +1,4 @@
 @import "../../../app.wxss";
-@import "/miniprogram_npm/vant-weapp/common/index.wxss";
 @import "../../../iconFont/iconFont.wxss";
 
 .bottomStyle{

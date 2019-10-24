@@ -1,6 +1,5 @@
 /*navbar*/
 
-@import "/miniprogram_npm/vant-weapp/common/index.wxss";
 @import "../../../app.wxss";
 @import "../../../iconFont/iconFont.wxss";
 
