@@ -178,7 +178,7 @@
                     <view class="tui-icon-box">
                         <image src="/static/images/mall/my/icon_tuan_3x.png" class="tui-tool-icon"></image>
                     </view>
-                    <view class="tui-tool-text">超值拼团</view>
+                    <view class="tui-tool-text">我的等级</view>
                 </view>
                 <view class="tui-tool-item">
                     <view class="tui-icon-box">
@@ -190,7 +190,7 @@
                     <view class="tui-icon-box">
                         <image src="/static/images/mall/my/icon_kaipiao_3x.png" class="tui-tool-icon"></image>
                     </view>
-                    <view class="tui-tool-text">开发票</view>
+                    <view class="tui-tool-text">关于我们</view>
                 </view>
             </view>
         </view>
