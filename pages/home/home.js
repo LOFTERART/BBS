@@ -94,7 +94,7 @@ create(store,{
         // this.getKing();
 
         let arrayList=[]
-        for (let i =0;i<=50;i++){
+        for (let i =0;i<=10;i++){
             arrayList.push(
                 {
                     id:1,
