@@ -6,7 +6,7 @@
 
     <view style="display: flex;flex-direction: row;align-items: center">
         <image src="https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png" style="width: 40rpx;height: 40rpx" />
-        <view class="f24" style="margin-left: 10rpx;margin-right: 10rpx">
+        <view class="f24" style="margin-left: 10rpx;margin-right: 5rpx">
             阳光花墅
         </view>
         <tui-icon name="arrowdown" size="24" color="#9a9a9a"></tui-icon>
@@ -16,7 +16,7 @@
 
 
     <view class="f22">
-        搜索
+        欢迎您加入我们社区
     </view>
 
 </view>
