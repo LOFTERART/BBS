@@ -76,6 +76,13 @@
 					"id": -1,
 					"name": "pages/grade/grade",
 					"pathName": "pages/grade/grade",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
 					"scene": null
 				}
 			]
