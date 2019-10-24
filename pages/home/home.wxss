@@ -5,16 +5,7 @@
     display: inline-block;
 }
 
-.cu-avatar-group .cu-avatar {
-    margin-left: -30rpx;
-    border: 4rpx solid white;
-    vertical-align: middle;
-}
 
-.cu-avatar-group .cu-avatar.sm {
-    margin-left: -20rpx;
-    border: 1rpx solid white;
-}
 
 /*king S*/
 .type-container{
@@ -37,7 +28,7 @@
     padding: 10rpx;
     height: 460rpx;
     width: 480rpx;
-    margin-right: 10rpx;
+    margin-right: 15rpx;
 }
 
 /*king E*/
