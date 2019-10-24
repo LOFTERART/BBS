@@ -6,11 +6,10 @@
 /*king S*/
 .type-container{
     padding: 20rpx;
-    background-color: #0e7eff;
 }
 .type-navbar{
     white-space: nowrap;
-    height: 465rpx;
+    height: 485rpx;
     width: 100%;
 }
 ::-webkit-scrollbar {
@@ -21,10 +20,11 @@
 
 .courseStyle{
     display: inline-block;
-    /*box-shadow: 0px 8rpx 20rpx 0px rgba(9, 36, 66, 0.04);*/
-    /*padding: 10rpx;*/
+    box-shadow: 0px 8rpx 20rpx 0px rgba(9, 36, 66, 0.04);
+    padding: 10rpx;
     height: 460rpx;
-    width: 480rpx
+    width: 480rpx;
+    margin-right: 10rpx;
 }
 
 /*king E*/

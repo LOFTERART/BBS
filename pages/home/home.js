@@ -26,7 +26,38 @@ create(store,{
         dynamicList:[],
     //    文章
         artList:[],
-        scrollList:[],
+        hotList:[
+            {
+                id:1,
+                image:'http://www.mingyue.musemore.art/storage/backend/article/cover/150633483e98b4b437ce75c2912fbef3.jpg',
+                beginTime:'7月23号 14:00-18:00',
+                name:'30元+吃晋江豪华大餐',
+                address:'地址:晋江万达3楼501室醉得意餐厅',
+                subName:'这个突破经由CEO皮猜亲自官宣、论文登上',
+                memNum: '98人参与',
+                actionDes:'去参与',
+            },
+            {
+                id:1,
+                image:'http://www.mingyue.musemore.art/storage/backend/article/cover/150633483e98b4b437ce75c2912fbef3.jpg',
+                beginTime:'7月23号 14:00-18:00',
+                name:'30元+吃晋江豪华大餐',
+                address:'地址:晋江万达3楼501室醉得意餐厅',
+                subName:'这个突破经由CEO皮猜亲自官宣、论文登上',
+                memNum: '98人参与',
+                actionDes:'去参与',
+            },
+            {
+                id:1,
+                image:'http://www.mingyue.musemore.art/storage/backend/article/cover/150633483e98b4b437ce75c2912fbef3.jpg',
+                beginTime:'7月23号 14:00-18:00',
+                name:'30元+吃晋江豪华大餐',
+                address:'地址:晋江万达3楼501室醉得意餐厅',
+                subName:'这个突破经由CEO皮猜亲自官宣、论文登上',
+                memNum: '98人参与',
+                actionDes:'去参与',
+            }
+        ],
         homeNews:[],
         active: 0,
 
