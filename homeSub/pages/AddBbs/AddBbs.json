@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "发表状态",
-  "usingComponents": {}
+  "usingComponents": {
+    "tui-icon": "/component/icon/icon"
+  }
 }

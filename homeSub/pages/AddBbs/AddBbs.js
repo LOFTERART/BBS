@@ -10,7 +10,9 @@ create(store,{
     data: {
         changeColor:'rgba(231,231,232,1)',
         images: [], //存放图片的数组
-        message:''
+        message:'',
+        huati:'选择合适的话题会有更多赞~',
+        xiaoqu:'阳光花墅'
     },
 
     //选择图片方法

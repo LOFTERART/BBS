@@ -4,7 +4,7 @@
 </view>
 
 
-    <view class="picture_list">
+<view class="picture_list">
         <view wx:for="{{images}}" class="picture_item" wx:key>
             <image  src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
             <text class='del'  data-src='{{image}}' style='display:{{isDel}}' data-idx="{{index}}" bindtap="removeImage">×</text>
@@ -19,9 +19,40 @@
 
 
 
-<view class="main" bindtap="upText">
+
+<!--话题-->
+
+
+<view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx;height: 80rpx" class="van-hairline--bottom">
+
+    <view class="f28" style="font-weight: bold"># 添加话题</view>
+    <view style="display: flex;flex-direction: row;align-items: center">
+        <view class="f22" style="margin-right: 10rpx">{{huati}}</view>
+        <tui-icon name="arrowright" size="18" color="#969799"></tui-icon>
+    </view>
+
+</view>
+
+
+<!--你在哪里-->
+
+
+
+<view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx;height: 80rpx" class="van-hairline--bottom">
+
+    <view class="f28" style="font-weight: bold"># 你在哪个小区</view>
+    <view style="display: flex;flex-direction: row;align-items: center">
+        <view class="f22" style="margin-right: 10rpx">{{xiaoqu}}</view>
+        <tui-icon name="arrowright" size="18" color="#969799"></tui-icon>
+    </view>
+
+</view>
+
+
+
+<view class="main" bindtap="upText" style="margin-top: 30rpx">
     <view class="pay" style="background-color: {{changeColor}}">
-        发表
+        发布
     </view>
 </view>
 

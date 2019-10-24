@@ -1,3 +1,5 @@
+@import "../../../iconFont/iconFont.wxss";
+@import "../../../app.wxss";
 .picture_list {
     padding: 10rpx;
     width: 100%;
