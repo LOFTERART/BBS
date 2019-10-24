@@ -31,7 +31,8 @@
     "pages/addPeoInfo/addPeoInfo",
     "pages/my/my",
     "pages/Community/Community",
-    "pages/grade/grade"
+    "pages/grade/grade",
+    "pages/mine/mine"
   ],
   "usingComponents": {
     "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
@@ -73,7 +74,7 @@
         "selectedIconPath": "assets/image/home-r.png"
       },
       {
-        "pagePath": "pages/my/my",
+        "pagePath": "pages/mine/mine",
         "text": "我的",
         "iconPath": "assets/image/home.png",
         "selectedIconPath": "assets/image/home-r.png"

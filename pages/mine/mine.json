@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "我的",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tui-button": "/component/extend/button/button",
+    "tui-list-cell": "/component/list-cell/list-cell",
+    "tui-icon": "/component/icon/icon",
+    "tui-divider": "/component/divider/divider",
+    "tui-loadmore": "/component/loadmore/loadmore"
+  }
+}
