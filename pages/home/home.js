@@ -81,8 +81,8 @@ create(store,{
         ],
         homeNews:[],
         active: 0,
-
-
+        city:'阳光花墅'
+        
     },
     /**
      * 生命周期函数--监听页面加载
@@ -136,6 +136,18 @@ create(store,{
         })
 
     },
+
+
+
+    //监听校区返回
+    emitSchool(city) {
+        console.log(city,'gggggg');
+        this.setData({
+            city:city,
+        })
+
+    },
+
 
 
     //选择切换社区
