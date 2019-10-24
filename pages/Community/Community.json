@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "社区选择",
+  "usingComponents": {
+    "tui-icon": "/component/icon/icon"
+  }
+}

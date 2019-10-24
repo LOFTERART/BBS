@@ -29,7 +29,8 @@
     "pages/demo/demo",
     "pages/homeDetail/homeDetail",
     "pages/addPeoInfo/addPeoInfo",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/Community/Community"
   ],
   "usingComponents": {
     "van-popup": "/miniprogram_npm/vant-weapp/popup/index"

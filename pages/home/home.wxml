@@ -4,7 +4,7 @@
 
 <view style="display: flex;flex-direction: row;height: 40rpx;;padding: 20rpx;justify-content: space-between">
 
-    <view style="display: flex;flex-direction: row;align-items: center">
+    <view style="display: flex;flex-direction: row;align-items: center" bindtap="choseCommunity">
         <image src="https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png" style="width: 40rpx;height: 40rpx" />
         <view class="f28" style="margin-left: 10rpx;margin-right: 2rpx;font-weight: bold">
             阳光花墅

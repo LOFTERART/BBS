@@ -138,6 +138,16 @@ create(store,{
     },
 
 
+    //选择切换社区
+
+    choseCommunity:function(){
+        wx.navigateTo({
+            url: '/pages/Community/Community'
+        })
+    },
+
+
+
     clickDy:function(e){
         wx.navigateTo({
           url: '/pages/homeDetail/homeDetail'
