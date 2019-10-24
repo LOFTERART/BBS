@@ -32,10 +32,10 @@
 
             <!--    文字S-->
 
-            <view style="display: flex;flex-direction: column;height: 160rpx;justify-content: space-around;width: 480rpx">
-                <view class="f22" style="color: #f17517"> {{item.name}}</view>
-                <view class="f20" style="color: #333"> {{item.address}}</view>
-                <view class="f20" style="color: #666"> {{item.subName}}</view>
+            <view style="display: flex;flex-direction: column;height: 180rpx;justify-content: space-around;width: 480rpx">
+                <view class="f24" style="color: #f17517">{{item.name}}</view>
+                <view class="f20" style="color: #333">{{item.address}}</view>
+                <view class="f20" style="color: #666;width: 480rpx;white-space: pre-wrap">{{item.subName}}</view>
             </view>
             <!--    文字E-->
 
@@ -44,10 +44,22 @@
 
             <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 50rpx;width: 480rpx">
 
-                <view class="f20">
-                    {{item.memNum}}
+                <view class="f20" style="display: flex;flex-direction: row;align-items: center">
+
+                    <view class="cu-avatar-group" style="display: flex;flex-direction: row">
+
+                        <image src="https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png" style="width: 40rpx;height: 40rpx;border-radius: 20rpx" />
+                        <image src="https://dcdn.it120.cc/2019/08/22/e38b0442-735d-4df7-a3ce-7f9de997dc45.jpg" style="width: 40rpx;height: 40rpx;border-radius: 20rpx;margin-left: -20rpx" />
+                        <image src="https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png" style="width: 40rpx;height: 40rpx;border-radius: 20rpx;margin-left: -20rpx" />
+
+                    </view>
+
+                    <view style="margin-left: 10rpx">
+                        {{item.partakeNum}}
+                    </view>
+
                 </view>
-                <view style="width: 90rpx;height: 40rpx;background-color: #ffc80b;display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 45rpx" class="f20">
+                <view style="width: 90rpx;height: 40rpx;background-color: #ffc80b;display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 45rpx;color: #333" class="f20">
                     {{item.actionDes}}
                 </view>
 
