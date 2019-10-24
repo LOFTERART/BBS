@@ -7,28 +7,16 @@
     </view>
     <!--header-->
     <view class="tui-mybg-box">
-        <image src="/static/images/mall/my/img_bg_3x.png" class="tui-my-bg" mode="widthFix"></image>
+        <image src="https://dcdn.it120.cc/2019/10/24/ad6b0992-e455-4b69-a7e1-09ef018d9d18.png" class="tui-my-bg" mode="widthFix"></image>
         <view class="tui-header-center">
-            <image src="/static/images/my/mine_def_touxiang_3x.png" class="tui-avatar" bindtap="href" data-type="3"></image>
+            <image src="https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png" class="tui-avatar" bindtap="href" data-type="3"></image>
             <view class="tui-info">
                 <view class="tui-nickname">
                     <text>赵文.</text>
-                    <image src="/static/images/mall/my/icon_vip_3x.png" class="tui-img-vip"></image>
+                    <image src="https://dcdn.it120.cc/2019/10/24/114a3daa-2804-44ef-9ead-2591eeb595d1.png" class="tui-img-vip"></image>
                 </view>
                 <view class="tui-explain">这家伙很懒…</view>
             </view>
-<!--
- <view class="tui-set-box">
-                <view class="tui-icon-box tui-icon-message" bindtap="href" data-type="1">
-                    <tui-icon name="message" color="#fff" size="{{26}}"></tui-icon>
-                    <view class="tui-badge tui-badge-white">1</view>
-                </view>
-                <view class="tui-icon-box tui-icon-setup" bindtap="href" data-type="2">
-                    <tui-icon name="setup" color="#fff" size="{{26}}"></tui-icon>
-                </view>
-            </view>
-
--->
         </view>
         <view class="tui-header-btm" bindtap="href" data-type="5">
             <view class="tui-btm-item">
@@ -61,34 +49,34 @@
             <view class="tui-order-list">
                 <view class="tui-order-item" bindtap="href" data-type="4">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_daifukuan_3x.png" class="tui-order-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/97d002d9-656a-4aff-8e9a-59182e14226c.png" class="tui-order-icon"></image>
                         <view class="tui-badge tui-badge-red">1</view>
                     </view>
                     <view class="tui-order-text">待付款</view>
                 </view>
                 <view class="tui-order-item" bindtap="href" data-type="4">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_daifahuo_3x.png" class="tui-order-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/b6dd3726-2f8c-4ef1-83a3-87a808b83226.png" class="tui-order-icon"></image>
                         <view class="tui-badge tui-badge-red">1</view>
                     </view>
                     <view class="tui-order-text">待发货</view>
                 </view>
                 <view class="tui-order-item" bindtap="href" data-type="4">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_daishouhuo_3x.png" class="tui-order-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/0f0b9f6a-8c94-473e-9d24-7f8741628787.png" class="tui-order-icon"></image>
                     </view>
                     <view class="tui-order-text">待收货</view>
                 </view>
                 <view class="tui-order-item" bindtap="href" data-type="4">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_pingjia_3x.png" class="tui-order-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/5413d396-0eda-4f63-b136-e2eb24b6c3f2.png" class="tui-order-icon"></image>
                         <view class="tui-badge tui-badge-red" v-if="false">12</view>
                     </view>
                     <view class="tui-order-text">评价</view>
                 </view>
                 <view class="tui-order-item" bindtap="href" data-type="4">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_tuikuan_3x.png" class="tui-order-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/c1b3f270-e054-4ce6-b884-3e5973392019.png" class="tui-order-icon"></image>
                         <view class="tui-badge tui-badge-red">2</view>
                     </view>
                     <view class="tui-order-text">退款/售后</view>
@@ -148,50 +136,50 @@
             <view class="tui-order-list tui-flex-wrap">
                 <view class="tui-tool-item">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_gift_3x.png" class="tui-tool-icon"></image>
-                        <image src="/static/images/mall/my/icon_tab_3x.png" class="tui-badge-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/74866bee-8ab5-4c37-b584-a5d1f5a4a55c.png" class="tui-tool-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/188c03fd-540a-4b07-a14e-40a5ce998c44.png" class="tui-badge-icon"></image>
                     </view>
                     <view class="tui-tool-text">免费领好礼</view>
                 </view>
                 <view class="tui-tool-item">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_purse_3x.png" class="tui-tool-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/0344f011-f18e-4cf3-803b-9b4ac62d2582.png" class="tui-tool-icon"></image>
                     </view>
                     <view class="tui-tool-text">钱包</view>
                 </view>
                 <view class=" tui-tool-item">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_ticket_3x.png" class="tui-tool-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/c72d8838-2371-4e4a-a1b3-f225c35264d3.png" class="tui-tool-icon"></image>
                     </view>
                     <view class="tui-tool-text">领券中心</view>
                 </view>
                 <view class=" tui-tool-item">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_kefu_3x.png" class="tui-tool-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/4ffb2c09-5846-4ba8-aada-8430708e0f4f.png" class="tui-tool-icon"></image>
                     </view>
                     <view class="tui-tool-text">客服服务</view>
                 </view>
                 <view class="tui-tool-item">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_fanxian_3x.png" class="tui-tool-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/f2d366a3-8dbe-4335-b7b6-1d24a1ac5cf9.png" class="tui-tool-icon"></image>
                     </view>
                     <view class="tui-tool-text">每日返现</view>
                 </view>
                 <view class="tui-tool-item" bindtap="href" data-type="11">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_tuan_3x.png" class="tui-tool-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/f2d366a3-8dbe-4335-b7b6-1d24a1ac5cf9.png" class="tui-tool-icon"></image>
                     </view>
                     <view class="tui-tool-text">我的等级</view>
                 </view>
                 <view class="tui-tool-item">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_zhihuan_3x.png" class="tui-tool-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/9042e6b3-c1d7-4ce6-a648-acf0df3ecdf8.png" class="tui-tool-icon"></image>
                     </view>
                     <view class="tui-tool-text">闲置换钱</view>
                 </view>
                 <view class="tui-tool-item" bindtap="href" data-type="10">
                     <view class="tui-icon-box">
-                        <image src="/static/images/mall/my/icon_kaipiao_3x.png" class="tui-tool-icon"></image>
+                        <image src="https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png" class="tui-tool-icon"></image>
                     </view>
                     <view class="tui-tool-text">关于我们</view>
                 </view>
