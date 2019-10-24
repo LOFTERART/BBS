@@ -200,11 +200,11 @@
             </view>
 
             <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28 van-hairline--right" data-id="{{itemName.id}}" bindtap="clickDailyContent">
-                <i class="iconfont icon-pinglun f28" style="margin-right: 10rpx"></i> {{itemName.comment}}
+                <i class="iconfont icon-xinxi f28" style="margin-right: 10rpx"></i> {{itemName.comment}}
             </view>
 
             <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28 van-hairline--right" bindtap="clickLike" data-index="{{idx}}" data-id="{{itemName.id}}">
-                <i class="iconfont icon-zan f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#323233'}}"></i> {{itemName.like}}
+                <i class="iconfont icon-zandianji f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#323233'}}"></i> {{itemName.like}}
             </view>
 
             <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28" bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}">
@@ -293,7 +293,7 @@
         <!--    成员人数信息S-->
         <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
             <view class="f22">
-                <i class="iconfont icon-tubiaozhizuomoban"></i>
+                <i class="iconfont icon-chengyuan-copy"></i>
                 成员:{{item.memNum}}位   / 价格 <text style="color: red">￥{{item.price}}</text>
             </view>
             <view class="f22">

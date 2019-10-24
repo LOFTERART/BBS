@@ -94,7 +94,7 @@ create(store,{
                 is_activating: true,
                 is_del: true,
                 is_follow: false,
-                is_like: false,
+                is_like: true,
                 is_parent: false,
                 is_top: false,
                 like: 1,
