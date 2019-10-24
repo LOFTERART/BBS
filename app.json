@@ -35,9 +35,6 @@
     "pages/mine/mine",
     "pages/userInfo/userInfo"
   ],
-  "usingComponents": {
-    "van-popup": "/miniprogram_npm/vant-weapp/popup/index"
-  },
   "subPackages": [
     {
       "root": "homeSub",
