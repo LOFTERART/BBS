@@ -1,5 +1,7 @@
 
 <!--banner S-->
+<!--
+
 <view class="swiper-container">
 
     <swiper  class="swiper_box"
@@ -31,4 +33,24 @@
     </view>
 
 </view>
+
+-->
 <!--banner E-->
+
+
+
+
+<view class="container">
+
+    <!--banner-->
+    <view class="tui-banner-box">
+        <swiper indicator-dots="true" autoplay="true" interval="5000" duration="150" class="tui-banner-swiper" circular="{{true}}" previous-margin="60rpx" next-margin="60rpx" bindchange="change">
+            <swiper-item wx:for="{{banners}}" wx:key="{{index}}" class="tui-banner-item">
+                <image  src="{{item.thumbnails||item.image}}" class="tui-slide-image {{current!=index?'tui-banner-scale':''}}" mode="scaleToFill" bindtap="detail" />
+            </swiper-item>
+        </swiper>
+    </view>
+    <!--banner-->
+
+
+</view>

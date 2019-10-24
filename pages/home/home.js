@@ -9,10 +9,10 @@ create(store,{
     data: {
         //广告
         banners:[
-            {id:1,image:'https://dcdn.it120.cc/2019/08/22/9815471b-5fe0-496a-8f5e-5cf5ff372eef.jpg',type:'H5',link:'url'},
-            {id:2,image:'https://dcdn.it120.cc/2019/08/22/e38b0442-735d-4df7-a3ce-7f9de997dc45.jpg',type:'H5',link:'url'},
-            {id:3,image:'https://dcdn.it120.cc/2019/08/22/9815471b-5fe0-496a-8f5e-5cf5ff372eef.jpg',type:'sourceCode',link:''},
-            {id:4,image:'https://dcdn.it120.cc/2019/08/22/e38b0442-735d-4df7-a3ce-7f9de997dc45.jpg',type:'H5',link:'url'},
+            {id:1,image:'https://dcdn.it120.cc/2019/10/24/cbfc929a-3011-482e-a8d9-30afa09090b7.jpg',type:'H5',link:'url'},
+            {id:2,image:'https://dcdn.it120.cc/2019/10/24/dd570f26-f5e1-48fb-b8d6-9adb19831fd8.jpg',type:'H5',link:'url'},
+            {id:3,image:'https://dcdn.it120.cc/2019/10/24/18f43bc3-511a-4ae3-95b5-ec446617196c.jpg',type:'sourceCode',link:''},
+            {id:4,image:'https://dcdn.it120.cc/2019/10/24/569b0a25-e9ad-4aed-90b7-2397130ee4b8.jpg',type:'H5',link:'url'},
         ],
         //金刚位
         KING:[
