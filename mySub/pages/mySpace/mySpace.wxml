@@ -52,8 +52,9 @@
                     <view>
                         <image   src="{{userInfo.ava}}"  style="width: 60rpx;height: 60rpx;border-radius: 30rpx"/>
                     </view>
-                    <view style="margin-left: 10rpx;margin-right: 10rpx" class="f22">知游</view>
-                    <view class="f22">发起</view>
+                    <view style="margin-left: 10rpx;margin-right: 10rpx" class="f22">{{userInfo.name}}</view>
+                    <view class="f22"> {{userInfo.sex}} </view>
+                    <view class="f22"> {{userInfo.community}} </view>
 
                 </view>
 
