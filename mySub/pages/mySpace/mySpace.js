@@ -6,6 +6,23 @@ Page({
    */
   data: {
 
+      userInfo:{
+          ava:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+          name:'赵文',
+          grade:'等级',
+          badge:'徽章',
+          sex:'男',
+          community:'阳光花墅',
+          numberInfo:[
+              {id:1,name:'关注'},
+              {id:1,name:'粉丝'},
+              {id:1,name:'获赞'},
+          ]
+
+      }
+
+
+
   },
 
   /**
