@@ -72,7 +72,7 @@
 
 
     <view class="f22">
-        查看更多>
+        更多>
     </view>
 
 
@@ -148,11 +148,6 @@
 <view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center">
     <view style="font-weight: bold" class="f32">
         小区动态
-    </view>
-
-
-    <view class="f22">
-        查看更多>
     </view>
 
 
