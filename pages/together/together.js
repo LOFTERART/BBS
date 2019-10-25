@@ -19,7 +19,7 @@ Page({
 
 
       let arrayArticleList=[];
-      for (let i =0;i<=1;i++){
+      for (let i =0;i<=10;i++){
           arrayArticleList.push(
               {
                   address: "许昌东区森林半岛",
@@ -56,7 +56,7 @@ Page({
               },
               {
                   address: "阳光花墅",
-                  tag:'# 包打听',
+                  tag:'# 寻找流浪猫',
                   avatar: "https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg",
                   comment: 0,
                   content: "咱们附件有九阳豆浆机售后吗?",

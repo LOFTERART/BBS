@@ -91,7 +91,7 @@
 
 
     <view class="f22" style="display: flex;flex-direction: row">
-        <view>按热度</view>
+        <view style="font-weight: bold;color: #1a1a1a">按热度</view>
         <view style="margin-left: 30rpx;margin-right: 30rpx">|</view>
         <view>按时间</view>
     </view>
