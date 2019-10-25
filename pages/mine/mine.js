@@ -79,7 +79,11 @@ Page({
             wx.navigateTo({
               url: '/mySub/pages/follow/follow'
             })
-        }else {
+        }else if(type==='FS'){
+            wx.navigateTo({
+                url: '/mySub/pages/Fans/Fans'
+            })
+        } else{
             UTIL.toast('待开发')
         }
 

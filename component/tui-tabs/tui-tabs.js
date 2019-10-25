@@ -56,7 +56,7 @@ Component({
     //滑块背景颜色
     sliderBgColor: {
       type: String,
-      value: "#5677fc"
+      value: "#00cc88"
     },
     //滑块bottom
     bottom: {
@@ -76,7 +76,7 @@ Component({
     //选中后字体颜色
     selectedColor: {
       type: String,
-      value: "#5677fc"
+      value: "#00cc88"
     },
     //字体大小
     size: {
