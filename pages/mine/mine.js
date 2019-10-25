@@ -99,6 +99,15 @@ Page({
 
 
     },
+    
+    
+    //点击勋章
+
+    clickMedal:function(){
+        wx.navigateTo({
+          url: '/mySub/pages/medal/medal'
+        })
+    },
 
 
 

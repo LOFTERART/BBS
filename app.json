@@ -34,7 +34,8 @@
         "pages/favorite/index",
         "pages/about/about",
         "pages/web/web",
-        "pages/H5/H5"
+        "pages/H5/H5",
+        "pages/medal/medal"
       ]
     }
   ],
