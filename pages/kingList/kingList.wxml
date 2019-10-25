@@ -96,7 +96,7 @@
 
 
 <!--动态标题S-->
-<view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx;margin-bottom: 30rpx">
+<view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-bottom: 30rpx">
     <view style="font-weight: bold" class="f32">
         动态
     </view>
