@@ -1,0 +1,80 @@
+
+<view class="container">
+
+
+    <tui-tabs tabs="{{navbar}}" currentTab="{{currentTab>1?0:currentTab}}" bind:change="change" itemWidth="50%" isFixed="{{true}}">
+    </tui-tabs>
+
+    <view class="header" wx:if="{{currentTab<1?true:false}}">
+        <view class="title">关注的人</view>
+    </view>
+
+
+
+
+
+    <view wx:if="{{currentTab<1?true:false}}">
+
+
+       <block wx:for="{{followUserList}}" wx:key>
+
+           <view style="display: flex;flex-direction: row;height: 60rpx;padding: 20rpx;justify-content: space-between;align-items: center;margin-bottom: 10rpx">
+
+
+               <view style="display: flex;flex-direction: row;align-items: center">
+                   <view>
+                       <image src="{{item.image}}" style="width: 60rpx;height: 60rpx;border-radius: 30rpx"></image>
+                   </view>
+                   <view style="margin-left: 10rpx" class="f24">{{item.name}}</view>
+               </view>
+
+               <view style="width: 140rpx;height: 40rpx;color: #00cc88;border-radius: 70rpx;line-height: 40rpx;text-align: center;" >
+                   已关注
+               </view>
+
+
+
+           </view>
+
+
+       </block>
+
+
+
+    </view>
+
+
+
+
+
+    <view class="header" wx:if="{{currentTab<1?false:true}}">
+        <view class="title">关注的话题</view>
+    </view>
+
+    <view wx:if="{{currentTab<1?false:true}}">
+        22
+    </view>
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+<!--
+
+ <view class="header">
+        <view class="title">tabs</view>
+        <view class="sub-title">tabs标签页，支持自定义设置，具体查看文档。暂不支持超出一屏，滚动标签页
+            <text class="tui-primary" bindtap="goNavBar">参考这里</text>。
+        </view>
+    </view>
+
+-->

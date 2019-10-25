@@ -97,6 +97,13 @@
 					"id": -1,
 					"name": "mySub/pages/mySpace/mySpace",
 					"pathName": "mySub/pages/mySpace/mySpace",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mySub/pages/follow/follow",
+					"pathName": "mySub/pages/follow/follow",
 					"scene": null
 				}
 			]

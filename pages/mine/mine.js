@@ -74,7 +74,14 @@ Page({
 
     let type = e.currentTarget.dataset.type;
 
-        UTIL.toast('待开发')
+
+        if(type==='GZ'){
+            wx.navigateTo({
+              url: '/mySub/pages/follow/follow'
+            })
+        }else {
+            UTIL.toast('待开发')
+        }
 
     },
 
