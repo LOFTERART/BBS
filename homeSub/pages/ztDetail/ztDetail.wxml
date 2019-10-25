@@ -131,12 +131,12 @@
 
             <view>
                 <viw style="margin-right: 100rpx;color: #969799" bindtap="clickMoreComment" data-id="{{item.id}}">
-                    <i class="iconfont icon-pinglun" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{item.reply_comment.length}}
+                    <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{item.reply_comment.length}}
                 </viw>
 
 
                 <viw style="font-size: 30rpx;" bindtap="clickLike" data-index="{{index}}" data-id="{{item.id}}">
-                    <i class="iconfont icon-zan" style="margin-right: 10rpx;color:{{item.is_like?'red':'#323233'}}" ></i>{{item.like_num}}
+                    <i class="iconfont icon-zandianji" style="margin-right: 10rpx;color:{{item.is_like?'red':'#999'}}" ></i>{{item.like_num}}
                 </viw>
 
 
