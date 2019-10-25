@@ -31,24 +31,15 @@ Page({
 
     //点击每一行
     clickCell:function(e){
-        console.log(e.currentTarget.dataset,'ffffff');
 
         let index = e.currentTarget.dataset.index;
+        let id = e.currentTarget.dataset.id;
+
         let isCheck= "list["+index+"].isCheck";
 
-
-        if(this.data.list[index].isCheck){
-            this.setData({
-                [isCheck]: !this.data.list[index].isCheck,
-
-            })
-        }else {
-            this.setData({
-                [isCheck]: !this.data.list[index].isCheck,
-
-            })
-
-        }
+        this.setData({
+            [isCheck]: !this.data.list[index].isCheck,
+        })
 
 
     },
