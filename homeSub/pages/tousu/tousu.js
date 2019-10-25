@@ -34,12 +34,15 @@ Page({
 
         let index = e.currentTarget.dataset.index;
         let id = e.currentTarget.dataset.id;
+        this.data.result.push(id)
 
         let isCheck= "list["+index+"].isCheck";
 
         this.setData({
             [isCheck]: !this.data.list[index].isCheck,
         })
+
+        console.log(this.data.result,'llll');
 
 
     },
