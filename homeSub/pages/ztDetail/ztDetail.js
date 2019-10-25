@@ -9,7 +9,95 @@ create(store,{
         page: 0, //分页
         pageSize: 20, //每页显示的个数
 
-        commentList:[],
+
+        //评论列表
+        commentList:[
+            {
+
+                avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
+                content: "别紧张 都是第一次 😁",
+                id: 40579,
+                is_like: true,
+                like_num: 10,
+                name: "张三",
+                reply_comment: [],
+                timer: 1571523440000,
+                user_id: 39754,
+                user_type: "student",
+                color:'#f7f7f7'
+            },
+            {
+
+                avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
+                content: "哇 新娘子好漂亮~",
+                id: 40579,
+                is_like: true,
+                like_num: 10,
+                name: "李四",
+                reply_comment: [],
+                timer: 1571523440000,
+                user_id: 39754,
+                user_type: "student",
+                color:'rgba(245,242,217,1)'
+            },
+            {
+
+                avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
+                content: "哈哈  恭喜恭喜 沾沾喜气 吃喜糖",
+                id: 40579,
+                is_like: true,
+                like_num: 10,
+                name: "小明",
+                reply_comment: [],
+                timer: 1571523440000,
+                user_id: 39754,
+                user_type: "student",
+                color:'rgba(231,245,236,1)'
+            },
+            {
+
+                avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
+                content: "别紧张 都是第一次 😁",
+                id: 40579,
+                is_like: true,
+                like_num: 10,
+                name: "小花",
+                reply_comment: [],
+                timer: 1571523440000,
+                user_id: 39754,
+                user_type: "student",
+                color:'rgba(207,243,223,1)'
+            },
+
+            {
+
+                avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
+                content: "别紧张 都是第一次 😁",
+                id: 40579,
+                is_like: true,
+                like_num: 10,
+                name: "小狗",
+                reply_comment: [],
+                timer: 1571523440000,
+                user_id: 39754,
+                user_type: "student",
+                color:'rgba(234,242,246,1)'
+            },
+            {
+
+                avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
+                content: "别紧张 都是第一次 😁",
+                id: 40579,
+                is_like: true,
+                like_num: 10,
+                name: "小虫",
+                reply_comment: [],
+                timer: 1571523440000,
+                user_id: 39754,
+                user_type: "student",
+                color:'rgba(236,233,238,1)'
+            }
+        ],
         NewsList:[],
         placeholders:'写下你的...',
         daily_comment_pid:0,
@@ -62,7 +150,7 @@ create(store,{
                 btuBottom:"68rpx",
             })
         }
-        this.getZTList(false,options.id);
+        // this.getZTList(false,options.id);
 
         this.setData({
             id:options.id
