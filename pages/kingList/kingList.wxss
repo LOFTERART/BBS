@@ -1,1 +1,70 @@
-/* pages/kingList/kingList.wxss */
+
+
+
+/*
+notice S
+*/
+
+
+
+
+.tui-rolling-icon {
+    margin-right: 12rpx;
+}
+.tui-animation {
+    -webkit-animation: tui-rolling 12s linear infinite;
+    animation: tui-rolling 12s linear infinite;
+}
+
+@-webkit-keyframes tui-rolling {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-170%);
+    }
+}
+
+@keyframes tui-rolling {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-170%);
+    }
+}
+.tui-rolling-news {
+
+    margin-top: 100rpx;
+    width: 100%;
+    padding: 12rpx 30rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.tui-swiper {
+    font-size: 28rpx;
+    height: 50rpx;
+    flex: 1;
+}
+.tui-swiper-item{
+    display: flex;
+    align-items: center
+}
+
+.tui-news-item {
+    line-height: 28rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+/*notice E*/

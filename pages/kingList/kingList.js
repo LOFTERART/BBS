@@ -6,6 +6,11 @@ Page({
      */
     data: {
         artList:[],
+        newsList:[
+            "北京市海淀区人民大学",
+            "河南市海淀区人民大学",
+            "许昌市海淀区人民大学",
+        ],
 
     },
 
@@ -16,6 +21,12 @@ Page({
         wx.setNavigationBarTitle({
             title: options.name
         })
+
+        setTimeout(()=>{
+            this.setData({
+                animation:true
+            })
+        },600)
 
 
         let arrayArticleList=[];
@@ -96,6 +107,14 @@ Page({
             name:options.name
         })
 
+    },
+
+
+    detail(e) {
+        wx.showToast({
+            title: '详情功能尚未完善~',
+            icon: "none"
+        })
     },
 
     /**
