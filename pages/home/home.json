@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "趣知游",
+  "navigationBarTitleText": "首页",
   "usingComponents": {
     "tui-icon": "/component/icon/icon"
   }

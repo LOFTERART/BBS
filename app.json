@@ -24,7 +24,8 @@
         "pages/UserVIP/UserVIP",
         "pages/NewsList/NewsList",
         "pages/conversation/conversation",
-        "pages/tousu/tousu"
+        "pages/tousu/tousu",
+        "pages/moreActivity/moreActivity"
       ]
     },
     {

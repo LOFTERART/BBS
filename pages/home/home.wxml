@@ -71,7 +71,7 @@
     </view>
 
 
-    <view class="f22">
+    <view class="f22" bindtap="clickMoreActivity">
         更多>
     </view>
 
