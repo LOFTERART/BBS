@@ -127,62 +127,27 @@
         </view>
 
         <view class="tui-box tui-tool-box">
-            <tui-list-cell arrow="{{true}}" padding="0" lineLeft="{{false}}">
+            <tui-list-cell arrow="{{false}}" padding="0" lineLeft="{{false}}">
                 <view class="tui-cell-header">
-                    <view class="tui-cell-title">常用工具</view>
-                    <view class="tui-cell-sub">查看更多</view>
+                    <view class="tui-cell-title">常用</view>
+<!--                    <view class="tui-cell-sub">查看更多</view>-->
                 </view>
             </tui-list-cell>
             <view class="tui-order-list tui-flex-wrap">
-                <view class="tui-tool-item">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/74866bee-8ab5-4c37-b584-a5d1f5a4a55c.png" class="tui-tool-icon"></image>
-                        <image src="https://dcdn.it120.cc/2019/10/24/188c03fd-540a-4b07-a14e-40a5ce998c44.png" class="tui-badge-icon"></image>
+
+                <block wx:for="{{tools}}" wx:key>
+
+                    <view class="tui-tool-item">
+                        <view class="tui-icon-box">
+                            <image src="{{item.image}}" class="tui-tool-icon"></image>
+                            <image src="{{item.isHot}}" class="tui-badge-icon"></image>
+                        </view>
+                        <view class="tui-tool-text">{{item.name}}</view>
                     </view>
-                    <view class="tui-tool-text">免费领好礼</view>
-                </view>
-                <view class="tui-tool-item">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/0344f011-f18e-4cf3-803b-9b4ac62d2582.png" class="tui-tool-icon"></image>
-                    </view>
-                    <view class="tui-tool-text">钱包</view>
-                </view>
-                <view class=" tui-tool-item">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/c72d8838-2371-4e4a-a1b3-f225c35264d3.png" class="tui-tool-icon"></image>
-                    </view>
-                    <view class="tui-tool-text">领券中心</view>
-                </view>
-                <view class=" tui-tool-item">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/4ffb2c09-5846-4ba8-aada-8430708e0f4f.png" class="tui-tool-icon"></image>
-                    </view>
-                    <view class="tui-tool-text">客服服务</view>
-                </view>
-                <view class="tui-tool-item">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/f2d366a3-8dbe-4335-b7b6-1d24a1ac5cf9.png" class="tui-tool-icon"></image>
-                    </view>
-                    <view class="tui-tool-text">每日返现</view>
-                </view>
-                <view class="tui-tool-item" bindtap="href" data-type="11">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/f2d366a3-8dbe-4335-b7b6-1d24a1ac5cf9.png" class="tui-tool-icon"></image>
-                    </view>
-                    <view class="tui-tool-text">我的等级</view>
-                </view>
-                <view class="tui-tool-item">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/9042e6b3-c1d7-4ce6-a648-acf0df3ecdf8.png" class="tui-tool-icon"></image>
-                    </view>
-                    <view class="tui-tool-text">闲置换钱</view>
-                </view>
-                <view class="tui-tool-item" bindtap="href" data-type="10">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png" class="tui-tool-icon"></image>
-                    </view>
-                    <view class="tui-tool-text">关于我们</view>
-                </view>
+
+                </block>
+
+
             </view>
         </view>
 

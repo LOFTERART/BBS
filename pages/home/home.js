@@ -24,7 +24,7 @@ create(store,{
             {id:1,name:'亲子',image:'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',type:'QZ'},
             {id:1,name:'教育',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png',type:'JY'},
             {id:1,name:'旅游',image:'https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png',type:'LY'},
-            {id:1,name:'情感',image:'https://dcdn.it120.cc/2019/09/26/d9429381-1b41-4444-9309-e2ba73b09620.png',type:'QG'},
+            {id:1,name:'爆料',image:'https://dcdn.it120.cc/2019/09/26/d9429381-1b41-4444-9309-e2ba73b09620.png',type:'QG'},
             {id:1,name:'物业',image:'https://dcdn.it120.cc/2019/08/22/8bfbb776-b2ba-46cd-a2e8-ee6afbf447b0.png',type:'WY'}
         ],
         //首页动态列表
