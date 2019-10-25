@@ -21,12 +21,13 @@ Page({
         ],
 
         actions:[
-            {id:1,name:'关注',number:12,isHot:true},
-            {id:1,name:'粉丝',number:165,isHot:false},
-            {id:1,name:'动态',number:10,isHot:false},
-            {id:1,name:'赞',number:90,isHot:false},
-            {id:1,name:'发帖',number:10,isHot:false},
-        ]
+            {id:1,name:'关注',number:12,type:'GZ'},
+            {id:1,name:'粉丝',number:165,type:'FS'},
+            {id:1,name:'动态',number:10,type:'DT'},
+            {id:1,name:'收藏夹',number:90,type:'SCJ'},
+            {id:1,name:'评论',number:10,type:'PL'}
+        ],
+
 
     },
 
@@ -45,6 +46,16 @@ Page({
         })
     },
 
+
+
+    //点击数据
+    clickAction:function(e){
+
+    let type = e.currentTarget.dataset.type;
+
+        UTIL.toast('待开发')
+        
+    },
 
     //点击常用工具
 

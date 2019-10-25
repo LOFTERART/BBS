@@ -18,23 +18,17 @@
                 <view class="tui-explain">这家伙很懒…</view>
             </view>
         </view>
-        <view class="tui-header-btm" bindtap="href" data-type="5">
-            <view class="tui-btm-item">
-                <view class="tui-btm-num">25</view>
-                <view class="tui-btm-text">收藏夹</view>
-            </view>
-            <view class="tui-btm-item">
-                <view class="tui-btm-num">22</view>
-                <view class="tui-btm-text">店铺关注</view>
-            </view>
-            <view class="tui-btm-item">
-                <view class="tui-btm-num">3</view>
-                <view class="tui-btm-text">喜欢的内容</view>
-            </view>
-            <view class="tui-btm-item">
-                <view class="tui-btm-num">44</view>
-                <view class="tui-btm-text">足迹</view>
-            </view>
+
+        <view class="tui-header-btm">
+
+            <block wx:for="{{actions}}" wx:key>
+
+                <view class="tui-btm-item" bindtap="clickAction" data-type="{{item.type}}">
+                    <view class="tui-btm-num">{{item.number}}</view>
+                    <view class="tui-btm-text">{{item.name}}</view>
+                </view>
+            </block>
+
         </view>
     </view>
 
@@ -84,7 +78,9 @@
             </view>
         </view>
 
-        <view class="tui-box tui-assets-box" bindtap="href" data-type="6">
+<!--
+
+ <view class="tui-box tui-assets-box" bindtap="href" data-type="6">
             <tui-list-cell padding="0" last="{{true}}" hover="{{false}}">
                 <view class="tui-cell-header">
                     <view class="tui-cell-title">数据中心</view>
@@ -107,6 +103,8 @@
 
             </view>
         </view>
+
+-->
 
         <view class="tui-box tui-tool-box">
             <tui-list-cell arrow="{{false}}" padding="0" lineLeft="{{false}}">
