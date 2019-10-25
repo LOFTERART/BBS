@@ -14,6 +14,7 @@ Page({
           sex:'男',
           community:'阳光花墅',
           numberInfo:[
+              {id:1,name:'状态',num:10},
               {id:1,name:'关注',num:10},
               {id:1,name:'粉丝',num:80},
               {id:1,name:'获赞',num:60},

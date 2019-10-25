@@ -1,102 +1,64 @@
 
-<view style="position: relative">
+<!--个人中心-->
 
-    <image   src="https://static1.keepcdn.com/2019/06/05/1559718008918_750x497.png"  style="width: 100%;height: 500rpx;filter: blur(6rpx)"/>
 
-    <view style="position: absolute;top:50%;width: 100%;">
+<view style="padding: 60rpx 20rpx;">
 
-        <view style="display: flex;flex-direction: column;padding: 20rpx">
 
-            <view style="color: white;font-weight: bold" class="f36">
-                {{userInfo.name}}
+    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center">
+
+
+        <view style="display: flex;flex-direction: row;align-items: center">
+            <view>
+                <image   src="https://static1.keepcdn.com/2019/06/05/1559718008918_750x497.png"  style="width: 150rpx;height: 150rpx;border-radius: 75rpx"/>
             </view>
 
 
+            <view style="margin-left: 20rpx">
 
-            <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 100%">
-
-                <view style="color: white;" class="f24">
-                    {{userInfo.grade}}   {{userInfo.badge}}
-                </view>
-
-
-                <view style="width: 140rpx;height: 60rpx;background-color: #00cc88;border-radius: 70rpx;line-height: 60rpx;text-align: center;color: white">
-                    关注
-                </view>
-
+                <view class="f24" style="font-weight: bold">{{userInfo.name}}</view>
+                <view class="f22">{{userInfo.community}}</view>
 
             </view>
 
 
         </view>
 
-
-    </view>
-
-
-    <!--    描述-->
-
-    <view style="position: absolute;bottom: -90rpx;width: 100%;">
-
-
-
-        <view style="display: flex;flex-direction: column;width: 100%;height:180rpx;justify-content: center;align-items: center">
-
-
-
-            <view style="width: 90%;height: 180rpx;background-color: white;display: flex;flex-direction: column;padding: 20rpx" class="van-hairline--surround">
-
-
-                <view style="display: flex;flex-direction: row;align-items: center">
-
-                    <view>
-                        <image   src="{{userInfo.ava}}"  style="width: 60rpx;height: 60rpx;border-radius: 30rpx"/>
-                    </view>
-                    <view  class="f22" style="margin-left: 10rpx;">{{userInfo.name}}</view>
-                    <view class="f22" style="margin-left: 10rpx;margin-right: 10rpx"> {{userInfo.sex}} </view>
-                    <view class="f22"> {{userInfo.community}} </view>
-
-                </view>
-
-
-
-
-                <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center">
-
-
-
-                    <block wx:for="{{userInfo.numberInfo}}" wx:key>
-
-                        <view style="display: flex;flex-direction: column;justify-content: center;align-items: center">
-                            <view>{{item.num}}</view>
-                            <view class="f22">{{item.name}}</view>
-                        </view>
-
-                    </block>
-
-
-
-
-
-                </view>
-
-
-
-
-            </view>
-
-
-
-
-
+        <view style="width: 140rpx;height: 60rpx;background-color: #00cc88;border-radius: 70rpx;line-height: 60rpx;text-align: center;color: white">
+            关注
         </view>
 
 
 
+    </view>
+
+
+    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
+
+
+
+        <block wx:for="{{userInfo.numberInfo}}" wx:key>
+
+            <view style="display: flex;flex-direction: column;justify-content: center;align-items: center">
+                <view>{{item.num}}</view>
+                <view class="f22">{{item.name}}</view>
+            </view>
+
+        </block>
+
+
+
+
 
     </view>
+
 
 </view>
+
+
+<!--分割线-->
+<view class="divider"></view>
+
 
 
 
@@ -104,10 +66,8 @@
 
 
 
-
-
 <!--动态标题S-->
-<view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 100rpx">
+<view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
     <view style="font-weight: bold" class="f32">
         全部动态
     </view>
