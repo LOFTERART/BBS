@@ -330,7 +330,7 @@ create(store,{
     },
 
     //    ad 点击
-    tapBanner: function (e) {
+    tapBannerAD: function (e) {
         console.log(e.currentTarget.dataset.type);
         if(e.currentTarget.dataset.type==='SP'){
             wx.navigateTo({
@@ -556,6 +556,20 @@ create(store,{
         }
 
 
+
+    },
+
+    //预览图片
+    tapBanner:function(e){
+
+        var newPic=[]
+        e.currentTarget.dataset.pics.forEach((item,index)=>{
+            newPic.push(item.url)
+        })
+        wx.previewImage({
+            current: e.currentTarget.dataset.pic,
+            urls: newPic
+        })
 
     },
 
