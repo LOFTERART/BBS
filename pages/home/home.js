@@ -252,6 +252,15 @@ create(store,{
 
 
     },
+    
+    
+    //点击头像
+
+    clickAva:function(e){
+      wx.navigateTo({
+        url: '/mySub/pages/mySpace/mySpace?name='+e.currentTarget.dataset.name
+      })  
+    },
 
     //监听校区返回
     emitSchool(city) {

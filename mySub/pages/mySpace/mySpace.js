@@ -34,6 +34,10 @@ Page({
    */
   onLoad: function (options) {
 
+      wx.setNavigationBarTitle({
+        title: options.name
+      })
+
 
       let arrayArticleList=[];
       for (let i =0;i<=10;i++){
