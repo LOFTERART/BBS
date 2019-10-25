@@ -1,2 +1,206 @@
-<!--pages/kingList/kingList.wxml-->
-<text>pages/kingList/kingList.wxml</text>
+
+<view style="position: relative">
+
+    <image   src="https://static1.keepcdn.com/2019/06/05/1559718008918_750x497.png"  style="width: 100%;height: 500rpx;filter: blur(6rpx)"/>
+
+    <view style="position: absolute;top:50%;width: 100%;">
+
+        <view style="display: flex;flex-direction: column;padding: 20rpx">
+
+            <view style="color: white;font-weight: bold" class="f36">
+                #拯救身边的流浪动物
+            </view>
+
+
+
+            <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 100%">
+
+                <view style="color: white;" class="f24">
+                    1万条评论 2.7万人围观
+                </view>
+
+
+                <view style="width: 140rpx;height: 60rpx;background-color: #00cc88;border-radius: 70rpx;line-height: 60rpx;text-align: center;color: white">
+                    关注
+                </view>
+
+
+            </view>
+
+
+        </view>
+
+
+    </view>
+
+
+    <!--    描述-->
+
+    <view style="position: absolute;bottom: -90rpx;width: 100%;">
+
+
+
+        <view style="display: flex;flex-direction: column;width: 100%;height:140rpx;justify-content: center;align-items: center">
+
+
+
+            <view style="width: 90%;height: 140rpx;background-color: white;display: flex;flex-direction: column;padding: 20rpx" class="van-hairline--surround">
+
+
+                <view style="display: flex;flex-direction: row;align-items: center">
+
+                    <view>
+                        <image   src="https://dcdn.it120.cc/2019/08/22/b938febf-48e9-4f31-8a4b-cab00e6e8092.png"  style="width: 60rpx;height: 60rpx;border-radius: 30rpx"/>
+                    </view>
+                    <view style="margin-left: 10rpx;margin-right: 10rpx" class="f22">趣知游</view>
+                    <view class="f22">发起</view>
+
+                </view>
+
+
+                <view class="f24">
+                    给身边的流浪动物一个温暖的家,从此不再流浪
+                </view>
+
+
+            </view>
+
+
+
+
+
+        </view>
+
+
+
+
+    </view>
+
+</view>
+
+
+
+
+
+
+<!--动态标题S-->
+<view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 100rpx;margin-bottom: 30rpx">
+    <view style="font-weight: bold" class="f32">
+        动态
+    </view>
+
+
+    <view class="f22" style="display: flex;flex-direction: row">
+        <view style="font-weight: bold;color: #1a1a1a">按热度</view>
+        <view style="margin-left: 30rpx;margin-right: 30rpx">|</view>
+        <view>按时间</view>
+    </view>
+
+
+</view>
+<!--动态标题E-->
+
+<!--状态S-->
+
+<view bindlongtap="clickAdd"  >
+
+    <view  wx:for="{{articleList}}" wx:key  wx:for-index="idx" wx:for-item="itemName">
+
+        <view wx:if="{{!itemName.list}}" style="padding: 20rpx;" class="van-hairline--bottom">
+            <!--头像基本信息-->
+            <view style="display: flex;flex-direction: row;background-color: white;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
+
+                <view style="margin-right: 20rpx">
+                    <image mode="widthFix"  src="{{itemName.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
+                </view>
+
+                <view style="display: flex;flex-direction: column;justify-content: space-between;">
+                    <view style="display: flex;flex-direction: row;justify-content: space-between">
+                        <view class="f28">{{itemName.name}}</view>
+                        <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28">{{itemName.status}}</view>
+                        <view style="color: rgba(48,198,139,1)" class="f28">{{itemName.address}}</view>
+                        <view style="color: red;margin-left: 20rpx" class="f28" wx:if="{{itemName.is_top}}">置顶</view>
+                    </view>
+                    <view class="f22">{{itemName.timer}}</view>
+                </view>
+
+            </view>
+
+            <!--文字-->
+
+            <view style="margin-bottom: 10rpx" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f24">
+                {{itemName.content}}
+            </view>
+
+            <!--图片九宫格-->
+            <view style="display: flex;flex-direction: row;flex-wrap: wrap;">
+
+                <view  wx:for="{{itemName.image_url_came_thumb}}" wx:key="{{index}}" style="margin-right: {{(index+1)%3===0?'0':'8rpx'}};">
+
+                    <view bindtap="tapBanner"  data-pic="{{articleList[idx].image_url_came[index].url}}"  data-pics="{{itemName.image_url_came}}" data-idx="{{idx}}">
+                        <image mode="scaleToFill"  src="{{item.url}}"  style="width: 230rpx;height: 230rpx;border-radius: 10rpx"/>
+                    </view>
+
+                </view>
+
+            </view>
+
+
+
+            <!-- #话题S-->
+
+
+            <view style="background-color: deeppink;height: 40rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;width: 160rpx;border-radius: 50rpx;color: white" class="f22" bindtap="clickTogether" data-tag="{{itemName.tag}}">
+                {{itemName.tag}}
+            </view>
+
+            <!-- #话题E-->
+
+
+        </view>
+
+        <!--    4个功能键-->
+
+        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 62rpx;background-color: white" wx:if="{{!itemName.list}}">
+
+            <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28 van-hairline--right">
+                <i class="iconfont icon-chakan f28" style="margin-right: 10rpx"></i>{{itemName.views}}
+            </view>
+
+            <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28 van-hairline--right" data-id="{{itemName.id}}" bindtap="clickDailyContent">
+                <i class="iconfont icon-xinxi f28" style="margin-right: 10rpx"></i> {{itemName.comment}}
+            </view>
+
+            <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28 van-hairline--right" bindtap="clickLike" data-index="{{idx}}" data-id="{{itemName.id}}">
+                <i class="iconfont icon-zandianji f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#323233'}}"></i> {{itemName.like}}
+            </view>
+
+            <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28" bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}">
+                <i class="iconfont icon-gengduo f28" style="margin-right: 10rpx"></i>
+            </view>
+
+
+
+        </view>
+
+        <!--    图片banner-->
+
+        <view wx:else data-url="{{itemName.list[0].url}}" bindtap="clickImage" data-name="{{itemName.list[0].name}}" style="padding: 20rpx;">
+
+            <image mode="widthFix"  src="{{itemName.list[0].thumbnails[0].url}}" class="slide-image" style="width: 100%;height: 400rpx;border-radius: 10rpx"/>
+
+        </view>
+
+
+        <view class="divider"></view>
+
+    </view>
+
+    <!--    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">&#45;&#45;END&#45;&#45;</view>-->
+
+</view>
+
+
+<!--状态E-->
+
+

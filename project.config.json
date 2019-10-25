@@ -62,6 +62,13 @@
 					"id": -1,
 					"name": "homeSub/pages/tousu/tousu",
 					"pathName": "homeSub/pages/tousu/tousu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/kingList/kingList",
+					"pathName": "pages/kingList/kingList",
 					"scene": null
 				}
 			]

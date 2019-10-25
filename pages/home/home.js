@@ -280,7 +280,7 @@ create(store,{
             UTIL.toast('待开发')
         }else {
             wx.navigateTo({
-              url: '/pages/kingList/kingList'
+              url: '/pages/kingList/kingList?name='+e.currentTarget.dataset.name
             })
         }
 
