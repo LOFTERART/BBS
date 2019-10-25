@@ -54,7 +54,7 @@
 <view class="King">
 
     <view class="tui-classify-box" >
-        <view class="tui-classify-item" wx:for="{{KING}}" wx:key bindtap="jumpLink" data-name="{{item.name}}" data-src="{{item.link}}">
+        <view class="tui-classify-item" wx:for="{{KING}}" wx:key bindtap="clickKing" data-name="{{item.name}}" data-src="{{item.link}}" data-type="{{item.type}}">
             <image src="{{item.image}}" class="tui-classify-img" />
             <view class="tui-classify-name">{{item.name}}</view>
         </view>
