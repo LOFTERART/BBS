@@ -399,7 +399,7 @@ create(store,{
             success (res) {
                 if(res.tapIndex===0){
                     wx.navigateTo({
-                        url: '/homeSub/pages/tousu/tousu'
+                        url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
                     })
 
                 }
