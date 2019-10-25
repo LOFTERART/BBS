@@ -40,10 +40,7 @@
 
 
 <view class="main" bindtap="clickSubmit">
-    <view class="pay" style="background-color: {{changeColor}}">
+    <view class="pay" style="background-color: #ff7900">
         谢谢反馈
     </view>
 </view>
-
-
-<van-toast id="van-toast" />
