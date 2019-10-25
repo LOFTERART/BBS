@@ -276,13 +276,9 @@ create(store,{
     clickKing:function(e){
         let type = e.currentTarget.dataset.type;
 
-        if(type==='WY'){
-            UTIL.toast('待开发')
-        }else {
-            wx.navigateTo({
-              url: '/pages/kingList/kingList?name='+e.currentTarget.dataset.name
-            })
-        }
+        wx.navigateTo({
+            url: '/pages/kingList/kingList?name='+e.currentTarget.dataset.name
+        })
 
     },
 
