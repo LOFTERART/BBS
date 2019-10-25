@@ -34,7 +34,17 @@ Page({
             {id:1,name:'收藏数',number:10,type:'SC',image:'https://dcdn.it120.cc/2019/10/24/0f0b9f6a-8c94-473e-9d24-7f8741628787.png'},
             {id:1,name:'查看数',number:100,type:'CK',image:'https://dcdn.it120.cc/2019/10/24/5413d396-0eda-4f63-b136-e2eb24b6c3f2.png'},
             {id:1,name:'举报数',number:1,type:'JB',image:'https://dcdn.it120.cc/2019/10/24/c1b3f270-e054-4ce6-b884-3e5973392019.png'},
-        ]
+        ],
+
+        userInfo:{
+            id:1,
+            ava:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+            name:'赵文',
+            grade:'https://dcdn.it120.cc/2019/10/24/114a3daa-2804-44ef-9ead-2591eeb595d1.png',
+            badge:'https://dcdn.it120.cc/2019/10/25/12bbe9e6-7e26-40d9-a1f7-e45a1dc9a6f5.png',
+            community:'阳光花墅',
+
+        }
 
 
 
@@ -109,6 +119,13 @@ Page({
         })
     },
 
+
+    //点击头像
+    clickAva:function(e){
+        wx.navigateTo({
+          url: '/mySub/pages/mySpace/mySpace?name='+e.currentTarget.dataset.name
+        })
+    },
 
 
 
