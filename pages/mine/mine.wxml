@@ -14,6 +14,7 @@
                 <view class="tui-nickname">
                     <text>赵文.</text>
                     <image src="https://dcdn.it120.cc/2019/10/24/114a3daa-2804-44ef-9ead-2591eeb595d1.png" class="tui-img-vip"></image>
+                    <image src="https://dcdn.it120.cc/2019/10/25/12bbe9e6-7e26-40d9-a1f7-e45a1dc9a6f5.png" class="tui-img-HZ"></image>
                 </view>
                 <view class="tui-explain">这家伙很懒…</view>
             </view>

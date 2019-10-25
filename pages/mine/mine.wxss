@@ -132,6 +132,11 @@
     height: 24rpx;
     margin-left: 18rpx;
 }
+.tui-img-HZ {
+    width: 56rpx;
+    height: 56rpx;
+    margin-left: 18rpx;
+}
 
 .tui-explain {
     width: 80%;
