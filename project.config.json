@@ -57,70 +57,7 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/my/my",
-					"pathName": "pages/my/my",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/homeDetail/homeDetail",
-					"pathName": "pages/homeDetail/homeDetail",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/grade/grade",
-					"pathName": "pages/grade/grade",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/AddBbs/AddBbs",
-					"pathName": "homeSub/pages/AddBbs/AddBbs",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/conversation/conversation",
-					"pathName": "homeSub/pages/conversation/conversation",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/together/together",
-					"pathName": "pages/together/together",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/together/together",
-					"pathName": "pages/together/together",
-					"scene": null
-				}
-			]
+          "list": []
 		}
 	}
 }
