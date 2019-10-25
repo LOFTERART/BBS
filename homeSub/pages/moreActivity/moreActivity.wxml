@@ -41,8 +41,7 @@
                 成员:{{item.memNum}}位   / 价格 <text style="color: red">￥{{item.price}}</text>
             </view>
             <view class="f22">
-
-                <van-tag color="{{item.status.color}}" plain>{{item.status.desc}}</van-tag>
+                <tui-tag size="small" type="danger" shape="circle" plain="{{true}}">{{item.status.desc}}</tui-tag>
             </view>
         </view>
         <!--    成员人数信息E-->

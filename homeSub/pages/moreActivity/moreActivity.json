@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "活动",
-  "usingComponents": {}
+  "usingComponents": {
+    "tui-tag": "/component/tag/tag"
+  }
 }
