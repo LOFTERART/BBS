@@ -1,1 +1,41 @@
-/* mySub/pages/medal/medal.wxss */
+.container {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.tui-title{
+    padding: 50rpx 30rpx 30rpx 30rpx;
+    font-size: 32rpx;
+    color: #333;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.tui-grid-icon {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tui-grid-icon + .tui-grid-label {
+    margin-top: 10rpx;
+}
+.tui-grid-four{
+    padding: 30rpx 20rpx !important;
+}
+.tui-grid-5{
+    margin-top: 0 !important;
+    color: #8a5966 !important;
+}
+.tui-grid-five{
+    padding:20rpx !important;
+}
+.tui-grid-label {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #333;
+    font-size: 28rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

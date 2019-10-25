@@ -1,4 +1,10 @@
 {
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
   "navigationBarTitleText": "徽章",
-  "usingComponents": {}
+  "usingComponents": {
+    "tui-icon": "/component/icon/icon",
+    "tui-grid": "/component/grid/grid",
+    "tui-grid-item": "/component/grid-item/grid-item"
+  }
 }

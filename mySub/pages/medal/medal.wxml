@@ -1,2 +1,35 @@
-<!--mySub/pages/medal/medal.wxml-->
-<text>mySub/pages/medal/medal.wxml</text>
+
+<!--社区标题S-->
+<view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-bottom: 40rpx">
+    <view style="font-weight: bold" class="f32">
+        我的徽章
+    </view>
+    <view class="f22">
+        已经获得56枚
+    </view>
+
+</view>
+<!--社区标题E-->
+
+
+
+
+
+<!--徽章图标-->
+
+
+
+<view class="container">
+    <tui-grid>
+        <block wx:for="{{dataList}}" wx:key="{{index}}">
+            <tui-grid-item cell="2" bind:click="detail">
+                <view class="tui-grid-icon">
+                    <image mode="widthFix"  src="{{item.image}}" class="slide-image" style="width: 100rpx;height: 100rpx;"/>
+                </view>
+                <text class="tui-grid-label">{{item.name}}</text>
+            </tui-grid-item>
+        </block>
+    </tui-grid>
+
+</view>
+
