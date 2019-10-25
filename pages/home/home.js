@@ -20,7 +20,7 @@ create(store,{
             {id:1,name:'宠物',image:'https://dcdn.it120.cc/2019/08/22/921823b7-1df9-479e-8351-bf14bce698e1.png',type:'CW'},
             {id:1,name:'相亲',image:'https://dcdn.it120.cc/2019/08/22/b938febf-48e9-4f31-8a4b-cab00e6e8092.png',type:'XQ'},
             {id:1,name:'结婚',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',type:'JH'},
-            {id:1,name:'家具',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png',type:'JJ'},
+            {id:1,name:'家居',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png',type:'JJ'},
             {id:1,name:'亲子',image:'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',type:'QZ'},
             {id:1,name:'教育',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png',type:'JY'},
             {id:1,name:'旅游',image:'https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png',type:'LY'},
