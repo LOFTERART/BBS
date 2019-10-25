@@ -22,9 +22,7 @@
 
 
                <view style="display: flex;flex-direction: row;align-items: center">
-                   <view>
-                       <image src="{{item.image}}" style="width: 60rpx;height: 60rpx;border-radius: 30rpx"></image>
-                   </view>
+                   <image src="{{item.image}}" style="width: 60rpx;height: 60rpx;border-radius: 30rpx"></image>
                    <view style="margin-left: 10rpx" class="f24">{{item.name}}</view>
                </view>
 
@@ -52,7 +50,29 @@
     </view>
 
     <view wx:if="{{currentTab<1?false:true}}">
-        22
+
+
+       <block wx:for="{{conversationList}}" wx:key>
+
+
+           <view style="display: flex;flex-direction: row;height: 60rpx;padding: 20rpx;align-items: center;margin-bottom: 20rpx">
+
+               <image src="{{item.image}}" style="width: 60rpx;height: 60rpx;border-radius: 30rpx;margin-right: 10rpx"></image>
+
+               <view style="display: flex;flex-direction: column;justify-content: space-between">
+
+                   <view class="f24">{{item.name}}</view>
+                   <view class="f22">{{item.viewNum}}</view>
+
+               </view>
+
+
+           </view>
+
+       </block>
+
+
+
     </view>
 
 
