@@ -28,6 +28,17 @@ Page({
             {id:1,name:'评论',number:10,type:'PL'}
         ],
 
+        dyActions:[
+            {id:1,name:'赞数',number:1,type:'ZAN',image:'https://dcdn.it120.cc/2019/10/24/97d002d9-656a-4aff-8e9a-59182e14226c.png'},
+            {id:1,name:'评论数',number:7,type:'PL',image:'https://dcdn.it120.cc/2019/10/24/b6dd3726-2f8c-4ef1-83a3-87a808b83226.png'},
+            {id:1,name:'收藏数',number:10,type:'SC',image:'https://dcdn.it120.cc/2019/10/24/0f0b9f6a-8c94-473e-9d24-7f8741628787.png'},
+            {id:1,name:'查看数',number:100,type:'CK',image:'https://dcdn.it120.cc/2019/10/24/5413d396-0eda-4f63-b136-e2eb24b6c3f2.png'},
+            {id:1,name:'举报数',number:1,type:'JB',image:'https://dcdn.it120.cc/2019/10/24/c1b3f270-e054-4ce6-b884-3e5973392019.png'},
+        ]
+
+
+
+
 
     },
 
@@ -48,14 +59,25 @@ Page({
 
 
 
-    //点击数据
+    //点击头部数据
     clickAction:function(e){
 
     let type = e.currentTarget.dataset.type;
 
         UTIL.toast('待开发')
-        
+
     },
+
+
+
+    //点击动态数据
+    clickDyAction:function(e){
+
+    let type = e.currentTarget.dataset.type;
+
+    UTIL.toast('待开发')
+
+},
 
     //点击常用工具
 

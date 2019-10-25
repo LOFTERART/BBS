@@ -34,47 +34,26 @@
 
     <view class="tui-content-box">
         <view class="tui-box tui-order-box">
-            <tui-list-cell arrow="{{true}}" padding="0" lineLeft="{{false}}" bind:click="href" data-type="4">
+            <tui-list-cell arrow="{{false}}" padding="0" lineLeft="{{false}}" bind:click="href" data-type="4">
                 <view class="tui-cell-header">
-                    <view class="tui-cell-title">我的订单</view>
-                    <view class="tui-cell-sub">查看全部订单</view>
+                    <view class="tui-cell-title">我的动态</view>
                 </view>
             </tui-list-cell>
             <view class="tui-order-list">
-                <view class="tui-order-item" bindtap="href" data-type="4">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/97d002d9-656a-4aff-8e9a-59182e14226c.png" class="tui-order-icon"></image>
-                        <view class="tui-badge tui-badge-red">1</view>
+
+
+                <block wx:for="{{dyActions}}" wx:key>
+
+                    <view class="tui-order-item" bindtap="clickDyAction" data-type="{{item.type}}">
+                        <view class="tui-icon-box">
+                            <image src="{{item.image}}" class="tui-order-icon"></image>
+                            <view class="tui-badge tui-badge-red"> {{item.number}} </view>
+                        </view>
+                        <view class="tui-order-text">{{item.name}}</view>
                     </view>
-                    <view class="tui-order-text">待付款</view>
-                </view>
-                <view class="tui-order-item" bindtap="href" data-type="4">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/b6dd3726-2f8c-4ef1-83a3-87a808b83226.png" class="tui-order-icon"></image>
-                        <view class="tui-badge tui-badge-red">1</view>
-                    </view>
-                    <view class="tui-order-text">待发货</view>
-                </view>
-                <view class="tui-order-item" bindtap="href" data-type="4">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/0f0b9f6a-8c94-473e-9d24-7f8741628787.png" class="tui-order-icon"></image>
-                    </view>
-                    <view class="tui-order-text">待收货</view>
-                </view>
-                <view class="tui-order-item" bindtap="href" data-type="4">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/5413d396-0eda-4f63-b136-e2eb24b6c3f2.png" class="tui-order-icon"></image>
-                        <view class="tui-badge tui-badge-red" v-if="false">12</view>
-                    </view>
-                    <view class="tui-order-text">评价</view>
-                </view>
-                <view class="tui-order-item" bindtap="href" data-type="4">
-                    <view class="tui-icon-box">
-                        <image src="https://dcdn.it120.cc/2019/10/24/c1b3f270-e054-4ce6-b884-3e5973392019.png" class="tui-order-icon"></image>
-                        <view class="tui-badge tui-badge-red">2</view>
-                    </view>
-                    <view class="tui-order-text">退款/售后</view>
-                </view>
+                </block>
+
+
             </view>
         </view>
 
