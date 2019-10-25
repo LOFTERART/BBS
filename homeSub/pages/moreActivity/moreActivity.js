@@ -59,6 +59,13 @@ Page({
 
   },
 
+
+    clickDy:function(e){
+        wx.navigateTo({
+            url: '/pages/homeDetail/homeDetail'
+        })
+
+    },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
