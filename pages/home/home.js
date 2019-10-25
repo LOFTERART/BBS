@@ -384,7 +384,33 @@ create(store,{
         wx.navigateTo({
           url: '/pages/together/together?name='+e.currentTarget.dataset.tag
         })
-    }
+    },
+
+
+    //点击更多
+    clickMore:function(e){
+
+        var that=this
+
+        wx.showActionSheet({
+            itemList: [
+                '投诉'
+            ],
+            success (res) {
+                if(res.tapIndex===0){
+                    wx.navigateTo({
+                        url: '/homeSub/pages/tousu/tousu'
+                    })
+
+                }
+            },
+            fail (res) {
+                console.log(res.errMsg)
+            }
+        })
+
+
+    },
 
 
 })

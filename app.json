@@ -22,7 +22,8 @@
         "pages/goodComs/goodComs",
         "pages/UserVIP/UserVIP",
         "pages/NewsList/NewsList",
-        "pages/conversation/conversation"
+        "pages/conversation/conversation",
+        "pages/tousu/tousu"
       ]
     },
     {

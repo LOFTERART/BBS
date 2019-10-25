@@ -1,0 +1,61 @@
+/* package/pages/tousu/tousu.wxss */
+
+
+/*去掉button 默认css*/
+
+button {
+    position:relative;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:14px;
+    padding-right:14px;
+    box-sizing:border-box;
+    font-size:18px;
+    text-align:center;
+    text-decoration:none;
+    line-height:2.55555556;
+    border-radius:5px;
+    -webkit-tap-highlight-color:transparent;
+    overflow:hidden;
+    color:white;
+}
+
+button::after {
+    border: none;
+}
+button {
+    background-color: rgba(45,45,45,1);
+}
+
+button {
+    border-radius:0;
+}
+
+
+.main{
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 80rpx;
+
+
+}
+
+
+
+.pay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:400rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color:white;
+    font-weight: 700;
+}
