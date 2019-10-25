@@ -104,6 +104,13 @@
 					"id": -1,
 					"name": "homeSub/pages/conversation/conversation",
 					"pathName": "homeSub/pages/conversation/conversation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/together/together",
+					"pathName": "pages/together/together",
 					"scene": null
 				}
 			]

@@ -209,7 +209,7 @@
      <!-- #话题S-->
 
 
-            <view style="background-color: deeppink;height: 40rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;width: 160rpx;border-radius: 50rpx;color: white" class="f22">
+            <view style="background-color: deeppink;height: 40rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;width: 160rpx;border-radius: 50rpx;color: white" class="f22" bindtap="clickTogether">
                 {{itemName.tag}}
             </view>
 

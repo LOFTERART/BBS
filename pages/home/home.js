@@ -370,6 +370,16 @@ create(store,{
 
 
     },
+    
+    
+    
+//   点击#
+
+    clickTogether:function () {
+        wx.navigateTo({
+          url: '/pages/together/together'
+        })
+    }
 
 
 })

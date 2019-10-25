@@ -6,7 +6,8 @@
     "pages/Community/Community",
     "pages/grade/grade",
     "pages/mine/mine",
-    "pages/userInfo/userInfo"
+    "pages/userInfo/userInfo",
+    "pages/together/together"
   ],
   "subPackages": [
     {
