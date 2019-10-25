@@ -6,6 +6,7 @@ Page({
    */
   data: {
       artList:[],
+      theme:{name:'# 寻找流浪猫',themeId:10}
 
   },
 
@@ -103,7 +104,7 @@ Page({
     clickAction:function(e){
 
         wx.navigateTo({
-            url: '/homeSub/pages/AddBbs/AddBbs'
+            url: '/homeSub/pages/AddBbs/AddBbs?name='+e.currentTarget.dataset.name+'&id='+e.currentTarget.dataset.id
         })
 
     },
