@@ -1,2 +1,51 @@
-<!--homeSub/pages/moreactivity/moreActivity.wxml-->
-<text>homeSub/pages/moreactivity/moreActivity.wxml</text>
+
+<!--活动召集 S class="van-hairline--bottom"-->
+<block wx:for="{{dynamicList}}" wx:key>
+    <view style="padding: 40rpx 20rpx;position: relative"  bindtap="clickDy" data-id="{{item.id}}">
+
+
+        <!--    基本信息 S-->
+
+
+        <view style="display: flex;flex-direction: row;height: 180rpx">
+
+            <view style="margin-right: 30rpx">
+                <image src="{{item.image}}" style="width: 180rpx;height: 180rpx;border-radius: 10rpx" />
+            </view>
+
+            <view style="display: flex;flex-direction: column;justify-content: space-between">
+
+                <view class="f28">
+                    {{item.name}}
+                </view>
+                <view class="f24">
+                    {{item.subName}}
+                </view>
+                <view class="f22">
+                    {{item.tags}}
+                </view>
+
+            </view>
+
+        </view>
+
+
+        <!--    基本信息 E-->
+
+
+
+        <!--    成员人数信息S-->
+        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
+            <view class="f22">
+                <i class="iconfont icon-chengyuan-copy"></i>
+                成员:{{item.memNum}}位   / 价格 <text style="color: red">￥{{item.price}}</text>
+            </view>
+            <view class="f22">
+
+                <van-tag color="{{item.status.color}}" plain>{{item.status.desc}}</van-tag>
+            </view>
+        </view>
+        <!--    成员人数信息E-->
+    </view>
+</block>
+<!--活动召集 E-->
