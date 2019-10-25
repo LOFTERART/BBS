@@ -130,7 +130,6 @@
             <tui-list-cell arrow="{{false}}" padding="0" lineLeft="{{false}}">
                 <view class="tui-cell-header">
                     <view class="tui-cell-title">常用</view>
-<!--                    <view class="tui-cell-sub">查看更多</view>-->
                 </view>
             </tui-list-cell>
             <view class="tui-order-list tui-flex-wrap">
