@@ -562,6 +562,8 @@ create(store,{
     //预览图片
     tapBanner:function(e){
 
+        console.log(e,'fff');
+
         var newPic=[]
         e.currentTarget.dataset.pics.forEach((item,index)=>{
             newPic.push(item.url)
