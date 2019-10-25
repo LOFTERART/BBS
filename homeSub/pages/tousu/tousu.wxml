@@ -10,7 +10,7 @@
 
     <block wx:for="{{list}}" wx:key>
 
-        <view style="background-color: #888888;height: 80rpx;margin-bottom: 10rpx;justify-content: center;align-items: center;display: flex;flex-direction: row">
+        <view style="height: 80rpx;margin-bottom: 10rpx;justify-content: center;align-items: center;display: flex;flex-direction: row" class="van-hairline--bottom">
 
             {{item.name}}
 
