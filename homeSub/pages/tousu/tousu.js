@@ -1,5 +1,20 @@
 // package/pages/tousu/tousu.js
 import UTIL from '../../../utils/util'
+
+Array.prototype.indexOf = function(val) {
+    for (var i = 0; i < this.length; i++) {
+        if (this[i] == val) return i;
+    }
+    return -1;
+};
+
+Array.prototype.remove = function(val) {
+    var index = this.indexOf(val);
+    if (index > -1) {
+        this.splice(index, 1);
+    }
+};
+
 Page({
 
   /**
@@ -44,6 +59,8 @@ Page({
                 [isCheck]: !this.data.list[index].isCheck,
 
             })
+
+            this.data.result.remove(id);
         }else {
             this.setData({
                 [isCheck]: !this.data.list[index].isCheck,
