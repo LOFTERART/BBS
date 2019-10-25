@@ -182,7 +182,7 @@
 
             <!--文字-->
 
-            <view style="margin-bottom: 10rpx" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f24">
+            <view style="margin-bottom: 10rpx;margin-top: 30rpx" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f24">
                 {{itemName.content}}
             </view>
 

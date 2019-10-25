@@ -8,27 +8,35 @@
 
         <view  style="padding: 20rpx;" class="van-hairline--bottom">
             <!--头像基本信息-->
-            <view style="display: flex;flex-direction: row;background-color: white;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
+            <view style="display: flex;flex-direction: row;background-color: white;height: 80rpx;margin-bottom: 10rpx;justify-content: space-between;align-items: center" >
 
-                <view style="margin-right: 20rpx" bindtap="clickAva" data-name="{{itemName.name}}">
-                    <image mode="widthFix"  src="{{itemName.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
+              <view style="display: flex;flex-direction: row">
+                  <view style="margin-right: 20rpx" bindtap="clickAva" data-name="{{itemName.name}}">
+                      <image mode="widthFix"  src="{{itemName.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
+                  </view>
+
+                  <view style="display: flex;flex-direction: column;justify-content: space-around;">
+                      <view style="display: flex;flex-direction: row;justify-content: space-between">
+                          <view class="f28">{{itemName.name}}</view>
+                          <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28">{{itemName.status}}</view>
+                          <view style="color: rgba(48,198,139,1)" class="f28">{{itemName.address}}</view>
+                          <view style="color: red;margin-left: 20rpx" class="f28" wx:if="{{itemName.is_top}}">置顶</view>
+                      </view>
+                      <view class="f22">{{itemName.timer}}</view>
+                  </view>
+              </view>
+
+
+                <view style="width: 120rpx;height: 60rpx;color: white;border-radius: 70rpx;line-height: 60rpx;text-align: center;background-color: #00cc88" >
+                    关注
                 </view>
 
-                <view style="display: flex;flex-direction: column;justify-content: space-between;">
-                    <view style="display: flex;flex-direction: row;justify-content: space-between">
-                        <view class="f28">{{itemName.name}}</view>
-                        <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28">{{itemName.status}}</view>
-                        <view style="color: rgba(48,198,139,1)" class="f28">{{itemName.address}}</view>
-                        <view style="color: red;margin-left: 20rpx" class="f28" wx:if="{{itemName.is_top}}">置顶</view>
-                    </view>
-                    <view class="f22">{{itemName.timer}}</view>
-                </view>
 
             </view>
 
             <!--文字-->
 
-            <view style="margin-bottom: 10rpx" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f24">
+            <view style="margin-bottom: 10rpx;margin-top: 30rpx" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f24">
                 {{itemName.content}}
             </view>
 
