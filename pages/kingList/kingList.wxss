@@ -68,3 +68,19 @@ notice S
 
 
 /*notice E*/
+
+
+
+.bottomStyle{
+    padding-bottom: env(safe-area-inset-bottom);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 80rpx;
+    background-color: #32C48A;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
