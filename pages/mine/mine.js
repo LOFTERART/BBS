@@ -1,3 +1,4 @@
+import UTIL from '../../utils/util'
 Page({
     data: {
         height: 64, //header高度
@@ -17,8 +18,19 @@ Page({
             {id:1,name:'我的等级',image:'https://dcdn.it120.cc/2019/10/24/f2d366a3-8dbe-4335-b7b6-1d24a1ac5cf9.png',isHot:'',type:'DJ'},
             {id:1,name:'闲置换钱',image:'https://dcdn.it120.cc/2019/10/24/9042e6b3-c1d7-4ce6-a648-acf0df3ecdf8.png',isHot:'',type:'XZ'},
             {id:1,name:'关于我们',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+        ],
+
+        actions:[
+            {id:1,name:'关注',number:12,isHot:true},
+            {id:1,name:'粉丝',number:165,isHot:false},
+            {id:1,name:'动态',number:10,isHot:false},
+            {id:1,name:'赞',number:90,isHot:false},
+            {id:1,name:'发帖',number:10,isHot:false},
         ]
+
     },
+
+
     onLoad: function(options) {
         let obj = wx.getMenuButtonBoundingClientRect();
         wx.getSystemInfo({
@@ -32,6 +44,32 @@ Page({
             }
         })
     },
+
+
+    //点击常用工具
+
+    clickTool:function(e){
+
+        let type = e.currentTarget.dataset.type
+
+        if(type==='GY'){
+            wx.navigateTo({
+                url: '/mySub/pages/about/about'
+            })
+        }else if(type==='DJ'){
+            wx.navigateTo({
+                url: '/pages/grade/grade'
+            })
+        }else {
+            UTIL.toast('待开发')
+        }
+
+
+    },
+
+
+
+
     href(e) {
         let page = Number(e.currentTarget.dataset.type)
         let url = "";
@@ -67,11 +105,18 @@ Page({
             })
         }
     },
+
+
     detail: function() {
         wx.navigateTo({
             url: '../../productDetail/productDetail'
         })
     },
+
+
+
+
+
     onPageScroll(e) {
         let scroll = e.scrollTop <= 0 ? 0 : e.scrollTop;
         let opcity = scroll / this.data.scrollH;
