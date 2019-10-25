@@ -1,4 +1,5 @@
 // pages/together/together.js
+import UTIL from '../../utils/util'
 Page({
 
     /**
@@ -7,9 +8,9 @@ Page({
     data: {
         artList:[],
         newsList:[
-            "北京市海淀区人民大学",
-            "河南市海淀区人民大学",
-            "许昌市海淀区人民大学",
+            {id:1,name:"庆春节 迎新年 和睦邻里拉力赛",link:'url',type:'H5'},
+            {id:2,name:"河南市海淀区人民大学",link:'url',type:'H5'},
+            {id:3,name:"许昌市海淀区人民大学",link:'url',type:'H5'},
         ],
 
     },
@@ -110,11 +111,12 @@ Page({
     },
 
 
+
+
+    //点击公告
     detail(e) {
-        wx.showToast({
-            title: '详情功能尚未完善~',
-            icon: "none"
-        })
+        console.log(e.currentTarget.dataset,'eee');
+        UTIL.toast('详情功能尚未完善~')
     },
 
     /**
