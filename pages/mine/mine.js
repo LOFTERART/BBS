@@ -83,6 +83,10 @@ Page({
             wx.navigateTo({
                 url: '/mySub/pages/Fans/Fans'
             })
+        }else if(type==='DT'){
+            wx.navigateTo({
+                url: '/mySub/pages/mySpace/mySpace'
+            })
         } else{
             UTIL.toast('待开发')
         }
