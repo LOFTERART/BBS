@@ -16,7 +16,7 @@
 
 
     <view class="f22">
-        第1008位 欢迎您加入我们社区
+        第<text style="color: #00cc88">1008</text>位 欢迎您加入我们社区
     </view>
 
 </view>
