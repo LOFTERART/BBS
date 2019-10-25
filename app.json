@@ -32,14 +32,15 @@
       "root": "mySub",
       "name": "mySub",
       "pages": [
-        "pages/favorite/index",
         "pages/about/about",
         "pages/web/web",
         "pages/H5/H5",
         "pages/medal/medal",
         "pages/mySpace/mySpace",
         "pages/follow/follow",
-        "pages/Fans/Fans"
+        "pages/Fans/Fans",
+        "pages/Favorites/Favorites",
+        "pages/commentS/commentS"
       ]
     }
   ],

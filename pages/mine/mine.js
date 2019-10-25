@@ -87,8 +87,16 @@ Page({
             wx.navigateTo({
                 url: '/mySub/pages/mySpace/mySpace'
             })
+        }else if(type==='SCJ'){
+            wx.navigateTo({
+                url: '/mySub/pages/Favorites/Favorites'
+            })
+        }else if(type==='PL'){
+            wx.navigateTo({
+                url: '/mySub/pages/commentS/commentS'
+            })
         } else{
-            UTIL.toast('待开发')
+            UTIL.toast('稍后再试')
         }
 
     },
