@@ -14,7 +14,44 @@ create(store,{
         placeholders:'写下你的...',
         daily_comment_pid:0,
         reply_user_id:0,//被回复者的userId
-        reply_user_type:'' //被回复者的userType
+        reply_user_type:'', //被回复者的userType
+
+
+        articleList:[
+            {
+                address: "阳光花墅",
+                tag:'# 结婚注意事项',
+                avatar: "https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png",
+                comment: 800,
+                content: "明天就要结婚了 亲们给点意见 第一次 有点紧张",
+                follow: 0,
+                follow_user_id: 3804,
+                follow_user_type: "teacher",
+                id: 27565,
+                image_url_came: [
+                    {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                    {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                    {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                ],
+                image_url_came_thumb: [
+                    {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                    {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                    {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                ],
+                is_activating: true,
+                is_del: true,
+                is_follow: false,
+                is_like: true,
+                is_parent: false,
+                is_top: false,
+                like: 10,
+                name: "小龙女",
+                status: "掌门人",
+                timer: '刚刚',
+                url: "https://www.meishuquanyunxiao.com/share/daily-view.html?daily_id=27565",
+                views: 100,
+            }
+        ]
 
     },
 

@@ -153,7 +153,7 @@ create(store,{
                     follow: 0,
                     follow_user_id: 3804,
                     follow_user_type: "teacher",
-                    id: 27565,
+                    id: 30903,
                     image_url_came: [
                         {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
                         {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
