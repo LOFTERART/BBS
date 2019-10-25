@@ -59,3 +59,12 @@ button {
     color:white;
     font-weight: 700;
 }
+
+.cell{
+    height: 80rpx;
+    margin-bottom: 10rpx;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row
+}

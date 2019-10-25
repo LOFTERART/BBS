@@ -10,9 +10,16 @@
 
     <block wx:for="{{list}}" wx:key>
 
-        <view style="height: 80rpx;margin-bottom: 10rpx;justify-content: center;align-items: center;display: flex;flex-direction: row" class="van-hairline--bottom">
+        <view
+                class="van-hairline--bottom cell"
+                bindtap="clickCell"
+                data-index="{{index}}"
+        >
 
-            {{item.name}}
+
+            <text style="color:{{item.isCheck?'red':'#323233'}}">
+                {{item.name}}
+            </text>
 
         </view>
 
