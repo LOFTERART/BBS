@@ -90,6 +90,13 @@
 					"id": -1,
 					"name": "mySub/pages/medal/medal",
 					"pathName": "mySub/pages/medal/medal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mySub/pages/mySpace/mySpace",
+					"pathName": "mySub/pages/mySpace/mySpace",
 					"scene": null
 				}
 			]

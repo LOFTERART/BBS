@@ -122,7 +122,7 @@ Page({
                 url = "../set/set"
                 break;
             case 3:
-                url = "/pages/userInfo/userInfo"
+                url = "/mySub/pages/mySpace/mySpace"
                 break;
             case 4:
                 url = "../myOrder/myOrder"
