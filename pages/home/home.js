@@ -574,4 +574,16 @@ create(store,{
     },
 
 
+
+    //点击文字跳转详情
+    clickDailyContent:function(e){
+        wx.navigateTo({
+            url: '/homeSub/pages/ztDetail/ztDetail?id='+e.currentTarget.dataset.id
+        })
+
+    },
+
+
+
+
 })
