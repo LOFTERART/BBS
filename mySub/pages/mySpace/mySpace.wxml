@@ -52,16 +52,35 @@
                     <view>
                         <image   src="{{userInfo.ava}}"  style="width: 60rpx;height: 60rpx;border-radius: 30rpx"/>
                     </view>
-                    <view style="margin-left: 10rpx;margin-right: 10rpx" class="f22">{{userInfo.name}}</view>
-                    <view class="f22"> {{userInfo.sex}} </view>
+                    <view  class="f22" style="margin-left: 10rpx;">{{userInfo.name}}</view>
+                    <view class="f22" style="margin-left: 10rpx;margin-right: 10rpx"> {{userInfo.sex}} </view>
                     <view class="f22"> {{userInfo.community}} </view>
 
                 </view>
 
 
-                <view class="f24">
-                    {{name}}
+
+
+                <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center">
+
+
+
+                    <block wx:for="{{userInfo.numberInfo}}" wx:key>
+
+                        <view style="display: flex;flex-direction: column;justify-content: center;align-items: center">
+                            <view>{{item.num}}</view>
+                            <view class="f22">{{item.name}}</view>
+                        </view>
+
+                    </block>
+
+
+
+
+
                 </view>
+
+
 
 
             </view>
