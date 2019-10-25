@@ -5,15 +5,13 @@
     <tui-tabs tabs="{{navbar}}" currentTab="{{currentTab>1?0:currentTab}}" bind:change="change" itemWidth="50%" isFixed="{{true}}">
     </tui-tabs>
 
-    <view class="header" wx:if="{{currentTab<1?true:false}}">
-        <view class="title">关注的人</view>
-    </view>
 
 
 
 
 
-    <view wx:if="{{currentTab<1?true:false}}">
+
+    <view wx:if="{{currentTab<1?true:false}}" class="header">
 
 
        <block wx:for="{{followUserList}}" wx:key>
@@ -44,12 +42,7 @@
 
 
 
-
-    <view class="header" wx:if="{{currentTab<1?false:true}}">
-        <view class="title">关注的话题</view>
-    </view>
-
-    <view wx:if="{{currentTab<1?false:true}}">
+    <view wx:if="{{currentTab<1?false:true}}" class="header">
 
 
        <block wx:for="{{conversationList}}" wx:key>
