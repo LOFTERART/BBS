@@ -119,6 +119,15 @@ Page({
         UTIL.toast('详情功能尚未完善~')
     },
 
+    //立即参与
+    clickAction:function(e){
+        
+        wx.navigateTo({
+          url: '/homeSub/pages/AddBbs/AddBbs'
+        })
+
+    },
+
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
