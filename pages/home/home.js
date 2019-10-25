@@ -533,5 +533,31 @@ create(store,{
 
     },
 
+    //  like 点赞
+    clickLike:function(e){
+
+        wx.vibrateShort();
+        let index = e.currentTarget.dataset.index;
+        let is_like= "articleList["+index+"].is_like";
+        let like= "articleList["+index+"].like";
+
+        if(this.data.articleList[index].is_like){
+            this.setData({
+                [is_like]: !this.data.articleList[index].is_like,
+                [like]: this.data.articleList[index].like-1,
+            })
+            // this.likeVSNoLikeComment(e.currentTarget.dataset.id,true)
+        }else {
+            this.setData({
+                [is_like]: !this.data.articleList[index].is_like,
+                [like]: this.data.articleList[index].like+1,
+            })
+            // this.likeVSNoLikeComment(e.currentTarget.dataset.id,false)
+        }
+
+
+
+    },
+
 
 })

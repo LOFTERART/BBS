@@ -226,7 +226,7 @@
             </view>
 
             <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28 van-hairline--right" bindtap="clickLike" data-index="{{idx}}" data-id="{{itemName.id}}">
-                <i class="iconfont icon-zandianji f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#323233'}}"></i> {{itemName.like}}
+                <i class="iconfont icon-zandianji f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#999'}}"></i> {{itemName.like}}
             </view>
 
             <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28" bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}">
