@@ -375,9 +375,9 @@ create(store,{
     
 //   点击#
 
-    clickTogether:function () {
+    clickTogether:function (e) {
         wx.navigateTo({
-          url: '/pages/together/together'
+          url: '/pages/together/together?name='+e.currentTarget.dataset.tag
         })
     }
 

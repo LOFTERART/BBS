@@ -111,6 +111,13 @@
 					"id": -1,
 					"name": "pages/together/together",
 					"pathName": "pages/together/together",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/together/together",
+					"pathName": "pages/together/together",
 					"scene": null
 				}
 			]
