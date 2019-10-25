@@ -224,11 +224,15 @@ create(store,{
         })
     },
 
-    clickMore:function(){
-      UTIL.toast('待开发')
+    clickMore:function(e){
+        wx.navigateTo({
+            url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
+        })
     },
-    clickMoreMessage:function(){
-        UTIL.toast('待开发')
+    clickMoreMessage:function(e){
+        wx.navigateTo({
+            url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
+        })
     },
 
     //点击点评
