@@ -8,7 +8,7 @@
         <view style="display: flex;flex-direction: column;padding: 20rpx">
 
             <view style="color: white;font-weight: bold" class="f36">
-                #拯救身边的流浪动物
+                #{{name}}
             </view>
 
 
@@ -59,7 +59,7 @@
 
 
                 <view class="f24">
-                    给身边的流浪动物一个温暖的家,从此不再流浪
+                    {{name}}
                 </view>
 
 
