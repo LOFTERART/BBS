@@ -1,5 +1,3 @@
-@import "../../app.wxss";
-@import "../../iconFont/iconFont.wxss";
 
 .cu-avatar-group {
     display: inline-block;

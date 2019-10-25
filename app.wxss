@@ -1,10 +1,8 @@
 @import "assets/css/1px.wxss";
 @import "assets/css/font.wxss";
-
+@import "iconFont/iconFont.wxss";
 /**app.wxss**/
-@import '/font/iconfont.wxss';
-
-
+/*@import '/font/iconfont.wxss';*/
 
 
 page{
