@@ -132,6 +132,20 @@
 					"id": -1,
 					"name": "homeSub/pages/AddBbs/AddBbs",
 					"pathName": "homeSub/pages/AddBbs/AddBbs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/choseAddress/choseAddress",
+					"pathName": "homeSub/pages/choseAddress/choseAddress",
 					"scene": null
 				}
 			]
