@@ -6,7 +6,6 @@
     "pages/Community/Community",
     "pages/grade/grade",
     "pages/mine/mine",
-    "pages/userInfo/userInfo",
     "pages/together/together",
     "pages/kingList/kingList"
   ],
@@ -37,6 +36,7 @@
         "pages/follow/follow",
         "pages/Fans/Fans",
         "pages/Favorites/Favorites",
+        "pages/userInfo/userInfo",
         "pages/commentS/commentS"
       ]
     }

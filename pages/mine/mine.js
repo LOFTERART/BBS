@@ -128,7 +128,7 @@ Page({
             })
         }else if(type==='GR'){
             wx.navigateTo({
-                url: '/pages/userInfo/userInfo'
+                url: '/mySub/pages/userInfo/userInfo'
             })
         }else {
             UTIL.toast('待开发')

@@ -16,7 +16,7 @@ create(store,{
         ],
         //金刚位
         KING:[
-            {id:1,name:'美食',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png',type:'MS'},
+            {id:1,name:'运动',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png',type:'MS'},
             {id:1,name:'宠物',image:'https://dcdn.it120.cc/2019/08/22/921823b7-1df9-479e-8351-bf14bce698e1.png',type:'CW'},
             {id:1,name:'相亲',image:'https://dcdn.it120.cc/2019/08/22/b938febf-48e9-4f31-8a4b-cab00e6e8092.png',type:'XQ'},
             {id:1,name:'结婚',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',type:'JH'},
