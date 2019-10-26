@@ -110,10 +110,6 @@
 
 
 
-
-
-
-
 <!--底部固定信息-->
 <view class="bottomStyle" wx:if="{{isShowBottom}}" style='padding-bottom:{{btuBottom}}'>
 
@@ -130,6 +126,8 @@
 
 
 
+
+<!--
 
 <van-popup  show="{{ dPshow }}"
             position="bottom"
@@ -156,9 +154,7 @@
 
 
 </van-popup>
+-->
 
 
 
-
-<!--toast-->
-<van-toast id="van-toast"/>
