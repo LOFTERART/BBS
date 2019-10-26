@@ -1,5 +1,4 @@
-@import "assets/css/1px.wxss";
-@import "assets/css/font.wxss";
+
 @import "iconFont/iconFont.wxss";
 page{
     font-family: PingFangSC-Regular;
