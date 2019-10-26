@@ -70,7 +70,7 @@ Page({
                 },
 
                 {
-                    community: "许昌森林半岛",
+                    community: "阳光花墅",
                     address:'许昌 胖东来',
                     tag:'# 结婚注意事项',
                     avatar: "https://dcdn.it120.cc/2019/10/26/894be9d3-656c-4e3b-921e-c55d3d76e477.png",
