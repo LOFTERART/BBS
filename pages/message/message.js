@@ -3,10 +3,10 @@ Page({
         currentTab: 0,
         navbar: [
             {
-            name: "消息"
+            name: "关注"
             },
             {
-            name: "动态"
+                name: "消息"
             },
             {
                 name: "通知"
