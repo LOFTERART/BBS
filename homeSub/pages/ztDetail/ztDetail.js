@@ -323,7 +323,7 @@ create(store,{
             url: '/homeSub/pages/moreComment/moreComment?id='+e.currentTarget.dataset.id+'&pid='+this.data.dailyInfo.id
         })
     },
-    
+
     clickMoreMessage:function(e){
         wx.navigateTo({
             url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
