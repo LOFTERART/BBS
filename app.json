@@ -32,7 +32,6 @@
       "pages": [
         "pages/about/about",
         "pages/web/web",
-        "pages/H5/H5",
         "pages/medal/medal",
         "pages/mySpace/mySpace",
         "pages/follow/follow",

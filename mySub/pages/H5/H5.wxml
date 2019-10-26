@@ -1,8 +1,0 @@
-
-
-<import src="../../../component/wxParse/wxParse.wxml" xmlns:wx="http://www.w3.org/1999/xhtml"/>
-
-
-<view style="padding: 20rpx">
-    <template is="wxParse" data="{{wxParseData:detailI.nodes}}"/>
-</view>
