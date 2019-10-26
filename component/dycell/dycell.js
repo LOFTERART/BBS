@@ -6,15 +6,17 @@ Component({
    * 组件的属性列表
    */
   properties: {
-      articleList: Array,
-      current:{
-          type: Number,
+      articleList:{
+          type: Array,
           value: [], //不存在此属性时
       },
-      isShowFollow: Boolean,
-      current1:{
+      isShowFollow:{
           type: Boolean,
           value: false, //不存在此属性时
+      },
+      tag:{
+          type: String,
+          value: '', //不存在此属性时
       },
 
 
