@@ -135,7 +135,7 @@
                     <view style="display: flex;flex-direction: row;justify-content: space-between">
                         <view class="f28">{{itemName.name}}</view>
                         <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28">{{itemName.status}}</view>
-                        <view style="color: rgba(48,198,139,1)" class="f28">{{itemName.address}}</view>
+                        <view style="color: rgba(18,213,139,1)" class="f28">{{itemName.address}}</view>
                         <view style="color: red;margin-left: 20rpx" class="f28" wx:if="{{itemName.is_top}}">置顶</view>
                     </view>
                     <view class="f22">{{itemName.timer}}</view>

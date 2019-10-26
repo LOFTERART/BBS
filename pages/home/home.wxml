@@ -172,7 +172,7 @@
                     <view style="display: flex;flex-direction: row;justify-content: space-between">
                         <view class="f28">{{itemName.name}}</view>
                         <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28">{{itemName.status}}</view>
-                         <view style="color: rgba(48,198,139,1)" class="f28">{{itemName.address}}</view>
+                         <view style="color: rgba(18,213,139,1)" class="f28">{{itemName.address}}</view>
                         <view style="color: red;margin-left: 20rpx" class="f28" wx:if="{{itemName.is_top}}">置顶</view>
                     </view>
                     <view class="f22">{{itemName.timer}}</view>
@@ -270,7 +270,7 @@
 <view class="bottomStyle f22" style="color: white" bindtap="clickAdd" >
 
 
-    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;color: white;background-color: {{store.userInfo.admin_id?'#1cbbb4':'#ccc'}};width: 80rpx;height: 80rpx;border-radius: 40rpx">
+    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;color: white;background-color: rgba(18,213,139,1);width: 80rpx;height: 80rpx;border-radius: 40rpx">
         <i class="iconfont icon-xiangji" style="color: white;font-size: 40rpx;" ></i>
     </view>
 
