@@ -112,7 +112,6 @@ Page({
 
 
 
-
     //点击公告
     detail(e) {
         console.log(e.currentTarget.dataset,'eee');
@@ -129,32 +128,6 @@ Page({
     },
 
 
-    clickMore:function(e){
-
-        var that=this
-
-        wx.showActionSheet({
-            itemList: [
-                '收藏',
-                '投诉'
-            ],
-            success (res) {
-                if(res.tapIndex===1){
-                    wx.navigateTo({
-                        url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
-                    })
-
-                }else {
-                    UTIL.toast('收藏成功')
-                }
-            },
-            fail (res) {
-                console.log(res.errMsg)
-            }
-        })
-
-
-    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

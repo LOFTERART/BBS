@@ -4,6 +4,6 @@
   "navigationBarTitleText": "",
   "enablePullDownRefresh": true,
   "usingComponents": {
-    "tui-tabs": "/component/tui-tabs/tui-tabs"
+    "dycell": "/component/dycell/dycell"
   }
 }

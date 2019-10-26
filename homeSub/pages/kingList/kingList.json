@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "tui-icon": "/component/icon/icon"
+    "tui-icon": "/component/icon/icon",
+    "dycell": "/component/dycell/dycell"
   }
 }
