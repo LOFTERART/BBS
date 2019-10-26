@@ -1,1 +1,20 @@
 @import "/app.wxss";
+
+.tag{
+    background-color: deeppink;
+    height: 40rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 160rpx;
+    border-radius: 50rpx;
+    color: white
+}
+
+.fourTool{
+    display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 62rpx;background-color: white
+}
+.tools{
+    display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;
+}
