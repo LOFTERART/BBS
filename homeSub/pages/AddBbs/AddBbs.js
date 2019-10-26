@@ -25,8 +25,6 @@ create(store,{
 
 
     onLoad:function(options){
-        console.log(options,'opopopo');
-
         this.setData({
             huati:options.name||'选择合适的话题会有更多赞~'
         })

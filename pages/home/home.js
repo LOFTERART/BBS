@@ -16,16 +16,16 @@ create(store,{
         ],
         //金刚位
         KING:[
-            {id:1,name:'运动',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',type:'MS',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
-            {id:1,name:'宠物',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',type:'CW',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
-            {id:1,name:'相亲',image:'https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png',type:'XQ',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
-            {id:1,name:'结婚',image:'https://dcdn.it120.cc/2019/10/26/8154f8a5-58de-4872-9a1e-09f8729aed46.png',type:'JH',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
-            {id:1,name:'家居',image:'https://dcdn.it120.cc/2019/10/26/2d0cde71-c50c-486e-8815-0d94a628cef0.png',type:'JJ',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
-            {id:1,name:'亲子',image:'https://dcdn.it120.cc/2019/10/26/e34aa4cf-05dc-49ff-b240-4dd59a143027.png',type:'QZ',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
-            {id:1,name:'教育',image:'https://dcdn.it120.cc/2019/10/26/b2012b31-25e4-47b8-8f72-1554ac0dc797.png',type:'JY',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
-            {id:1,name:'旅游',image:'https://dcdn.it120.cc/2019/10/26/8ff607f2-94f9-4cc3-9943-7c958b3d5dc9.png',type:'LY',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
-            {id:1,name:'闲置',image:'https://dcdn.it120.cc/2019/10/26/88c74b7a-1948-411a-ade2-6d613e71a22c.png',type:'QG',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
-            {id:1,name:'物业',image:'https://dcdn.it120.cc/2019/10/26/894be9d3-656c-4e3b-921e-c55d3d76e477.png',type:'WY',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'}
+            {id:1,name:'运动',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',type:'MS',des:'运动使我快乐',desPic:'https://static1.keepcdn.com/2019/06/05/1559718008918_750x497.png'},
+            {id:1,name:'宠物',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',type:'CW',des:'爱宠之家',desPic:'https://static1.keepcdn.com/ark_gaea/2019/8/23/15665318427690b697mpb_710x400.jpg'},
+            {id:1,name:'相亲',image:'https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png',type:'XQ',des:'一起来脱单~',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
+            {id:1,name:'结婚',image:'https://dcdn.it120.cc/2019/10/26/8154f8a5-58de-4872-9a1e-09f8729aed46.png',type:'JH',des:'结婚常见问题',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
+            {id:1,name:'家居',image:'https://dcdn.it120.cc/2019/10/26/2d0cde71-c50c-486e-8815-0d94a628cef0.png',type:'JJ',des:'秀出你的家居',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
+            {id:1,name:'亲子',image:'https://dcdn.it120.cc/2019/10/26/e34aa4cf-05dc-49ff-b240-4dd59a143027.png',type:'QZ',des:'和小朋友一起玩耍 感受童年快乐',desPic:'https://static1.keepcdn.com/2019/05/30/1559213871256_460x238.png'},
+            {id:1,name:'教育',image:'https://dcdn.it120.cc/2019/10/26/b2012b31-25e4-47b8-8f72-1554ac0dc797.png',type:'JY',des:'做一个知书达理的人',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'},
+            {id:1,name:'旅游',image:'https://dcdn.it120.cc/2019/10/26/8ff607f2-94f9-4cc3-9943-7c958b3d5dc9.png',type:'LY',des:'旅游发现未知的美',desPic:'https://static1.keepcdn.com/FnGhoicwNCqK2b1Ohz0jM5ggPCgt'},
+            {id:1,name:'闲置',image:'https://dcdn.it120.cc/2019/10/26/88c74b7a-1948-411a-ade2-6d613e71a22c.png',type:'QG',des:'闲置换取价值',desPic:'https://static1.keepcdn.com/2019/03/27/1553646719435_900x600.jpg'},
+            {id:1,name:'物业',image:'https://dcdn.it120.cc/2019/10/26/894be9d3-656c-4e3b-921e-c55d3d76e477.png',type:'WY',des:'一起来吐槽物业吧',desPic:'https://static1.keepcdn.com/2019/06/03/1559554899424_750x340.jpg'}
         ],
     //    文章
         artList:[],
@@ -355,11 +355,9 @@ create(store,{
     //点击king
     clickKing:function(e){
         let type = e.currentTarget.dataset.type;
-
         wx.navigateTo({
             url: '/homeSub/pages/kingList/kingList?name='+e.currentTarget.dataset.name+'&des='+e.currentTarget.dataset.des+'&pic='+decodeURIComponent(e.currentTarget.dataset.pic)+'&image='+decodeURIComponent(e.currentTarget.dataset.image)
         })
-
     },
 
     //选择切换社区
