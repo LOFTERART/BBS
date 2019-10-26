@@ -323,16 +323,38 @@ create(store,{
             url: '/homeSub/pages/moreComment/moreComment?id='+e.currentTarget.dataset.id+'&pid='+this.data.dailyInfo.id
         })
     },
-
-    clickMore:function(e){
-        wx.navigateTo({
-            url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
-        })
-    },
+    
     clickMoreMessage:function(e){
         wx.navigateTo({
             url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
         })
+    },
+
+    clickMore:function(e){
+
+        var that=this
+
+        wx.showActionSheet({
+            itemList: [
+                '收藏',
+                '投诉'
+            ],
+            success (res) {
+                if(res.tapIndex===1){
+                    wx.navigateTo({
+                        url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
+                    })
+
+                }else {
+                    UTIL.toast('收藏成功')
+                }
+            },
+            fail (res) {
+                console.log(res.errMsg)
+            }
+        })
+
+
     },
 
     //点击点评

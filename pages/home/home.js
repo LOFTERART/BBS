@@ -493,14 +493,17 @@ create(store,{
 
         wx.showActionSheet({
             itemList: [
+                '收藏',
                 '投诉'
             ],
             success (res) {
-                if(res.tapIndex===0){
+                if(res.tapIndex===1){
                     wx.navigateTo({
                         url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
                     })
 
+                }else {
+                    UTIL.toast('收藏成功')
                 }
             },
             fail (res) {
