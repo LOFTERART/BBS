@@ -1,12 +1,7 @@
 const WXAPI = require('../../../API/API')
-
 import create from '../../../utils/omi/create'
 import store from '../../../store/store'
-
 import  UTIL from '../../../utils/util'
-
-
-
 import md5 from '../../../utils/md5.min.js'
 // 请使用你自己的密钥
 const QQMapKey = 'XUQBZ-TDDCW-BXXRQ-OCU7L-XAAFE-HPFDY';
