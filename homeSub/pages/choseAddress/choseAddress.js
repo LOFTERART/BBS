@@ -55,7 +55,7 @@ Page({
      */
     onLoad: function (options) {
 
-        this.getLocation();
+
 
     },
 
@@ -81,7 +81,6 @@ Page({
         wx.getLocation({
             type: 'gcj02',
             success:(res)=>{
-                console.log(res,'reddddddddddd');
                 this.updateLocation(res)
                 this.setData({
                     isShowCity:true
@@ -127,7 +126,7 @@ Page({
                 let result = res.data.result
                 // 此处的that指向app
                 that.setData({
-                    addressLocal:result.address_component.province+'-'+result.address_component.city+'-'+result.address_component.district
+                    addressLocal:result.address
                 })
                 wx.hideLoading()
             },

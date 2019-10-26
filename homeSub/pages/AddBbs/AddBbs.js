@@ -3,6 +3,18 @@ import create from '../../../utils/omi/create'
 import store from '../../../store/store'
 
 import  UTIL from '../../../utils/util'
+
+
+
+import md5 from '../../../utils/md5.min.js'
+// 请使用你自己的密钥
+const QQMapKey = 'XUQBZ-TDDCW-BXXRQ-OCU7L-XAAFE-HPFDY';
+
+// 在密钥设置中开启WebServiceAPI，选择签名校验，即可获取Secret key，即SK
+// 请使用你自己的SK
+const SK = 'jFXVCoBLZqz8LfkJ3pZwm9R5ghR9pFz8';
+
+
 create(store,{
     context: {
         emitter: create.emitter
@@ -12,7 +24,7 @@ create(store,{
         images: [], //存放图片的数组
         message:'',
         huati:'选择合适的话题会有更多赞~',
-        xiaoqu:'阳光花墅'
+        addressLocal:''
     },
 
 
@@ -99,13 +111,75 @@ create(store,{
 
     },
     
-//    小区选择
+//    你在哪里位置选择
 
     clickXiaoQu:function(){
-      wx.navigateTo({
-        url: '/homeSub/pages/choseAddress/choseAddress'
-      })  
+        this.getLocation();
     },
+
+
+    // 微信api，获取经纬度
+    getLocation() {
+        let that = this;
+        wx.getLocation({
+            type: 'gcj02',
+            success:(res)=>{
+                this.updateLocation(res)
+                this.setData({
+                    isShowCity:true
+                })
+            },
+            fail(err) {
+                console.log('fail', err);
+            }
+        });
+
+    },
+
+
+    // 根据经纬度，设置数据
+    updateLocation(res) {
+        let {latitude: lat, longitude: lon} = res
+        let data = {
+            lat,
+            lon
+        }
+        this.setData(data)
+        this.getAddress(lat, lon)
+    },
+
+    // 根据经纬度，逆地址解析
+    getAddress(lat, lon) {
+        var that = this
+        wx.showLoading({
+            title: '定位中',
+            mask: true,
+            duration: 3000
+        })
+        let SIG = md5("/ws/geocoder/v1?key=" + QQMapKey +"&location="+String(lat)+","+String(lon)+SK)
+        wx.request({
+            url: 'https://apis.map.qq.com/ws/geocoder/v1',
+            data: {
+                key: QQMapKey,
+                location: `${lat},${lon}`,
+                sig: SIG,
+            },
+            success(res) {
+                let result = res.data.result
+                // 此处的that指向app
+                that.setData({
+                    addressLocal:result.address
+                })
+                wx.hideLoading()
+            },
+            fail:(e) => {
+                console.log(e)
+                wx.hideLoading()
+            }
+        })
+    },
+
+
 
 
 

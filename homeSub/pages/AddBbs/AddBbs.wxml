@@ -44,7 +44,7 @@
         <tui-icon name="location" size="16" color="rgba(18,213,139,1)"></tui-icon> 你在哪里
     </view>
     <view style="display: flex;flex-direction: row;align-items: center">
-        <view class="f22" style="margin-right: 10rpx">{{xiaoqu}}</view>
+        <view class="f22" style="margin-right: 10rpx">{{addressLocal}}</view>
         <tui-icon name="arrowright" size="18" color="#969799"></tui-icon>
     </view>
 
