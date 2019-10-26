@@ -1,4 +1,4 @@
-import Toast from'../../utils/util'
+import Toast from '../../../utils/util'
 Page({
     data: {
         height: 64, //header高度
@@ -102,7 +102,7 @@ Page({
 
     clickBm:function(){
         wx.navigateTo({
-          url: '/pages/addPeoInfo/addPeoInfo'
+          url: '/homeSub/pages/addPeoInfo/addPeoInfo'
         })
     },
     submit() {

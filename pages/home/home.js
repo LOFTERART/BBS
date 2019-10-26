@@ -366,10 +366,10 @@ create(store,{
     },
 
 
-
+    //点击进入社区活动
     clickDy:function(e){
         wx.navigateTo({
-          url: '/pages/homeDetail/homeDetail'
+          url: '/homeSub/pages/homeDetail/homeDetail'
         })
 
     },
@@ -379,25 +379,7 @@ create(store,{
     },
 
 
-    jumpLink(e) {
-        var src = e.currentTarget.dataset.src
-        var name = e.currentTarget.dataset.name
 
-        if(name==='VIP'){
-            wx.navigateTo({
-              url: '/homeSub/pages/UserVIP/UserVIP'
-            })
-        }else {
-            UTIL.toast('待开发')
-            if (!src) return
-            wx.navigateTo({
-                // url: src+'&name='+name
-                url: '/homeSub/pages/NewsList/NewsList'
-            })
-
-        }
-        
-    },
 
     getDataList:function(cid){
         WXAPI.ArtMingYueHomeList(
@@ -449,8 +431,6 @@ create(store,{
     },
 
 
-
-//    发表
 
     //发表状态
     clickAdd:function(e){

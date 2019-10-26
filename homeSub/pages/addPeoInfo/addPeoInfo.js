@@ -1,6 +1,6 @@
 // const form = require("/component/utils/formValidation.js")
 
-import form  from '../../component/utils/formValidation.js'
+import form  from '../../../component/utils/formValidation.js'
 Page({
   data: {
 

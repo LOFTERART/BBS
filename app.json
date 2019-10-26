@@ -1,8 +1,7 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/homeDetail/homeDetail",
-    "pages/addPeoInfo/addPeoInfo",
+
     "pages/Community/Community",
     "pages/mine/mine",
 
@@ -23,6 +22,8 @@
         "pages/tousu/tousu",
         "pages/choseAddress/choseAddress",
         "pages/together/together",
+        "pages/homeDetail/homeDetail",
+        "pages/addPeoInfo/addPeoInfo",
         "pages/moreActivity/moreActivity"
       ]
     },
