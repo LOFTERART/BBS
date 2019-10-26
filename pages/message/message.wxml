@@ -14,27 +14,118 @@
     <view wx:if="{{currentTab===0}}" class="header">
 
 
-        <block wx:for="{{followUserList}}" wx:key>
+        <!--动态标题S-->
+        <view style="padding: 20rpx 20rpx 20rpx 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center">
+            <view style="font-weight: bold" class="f36">
+                关注TA的最新动态
+            </view>
+        </view>
+        <!--动态标题E-->
 
-            <view style="display: flex;flex-direction: row;height: 60rpx;padding: 20rpx;justify-content: space-between;align-items: center;margin-bottom: 10rpx">
+        <!--状态S-->
+
+        <view bindlongtap="clickAdd"  >
+
+            <view  wx:for="{{articleList}}" wx:key  wx:for-index="idx" wx:for-item="itemName">
+
+                <view wx:if="{{!itemName.list}}" style="padding: 20rpx;" class="van-hairline--bottom">
+                    <!--头像基本信息-->
+                    <view style="display: flex;flex-direction: row;background-color: white;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
+
+                        <view style="margin-right: 20rpx" bindtap="clickAva" data-name="{{itemName.name}}">
+                            <image mode="widthFix"  src="{{itemName.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
+                        </view>
+
+                        <view style="display: flex;flex-direction: column;justify-content: space-between;">
+                            <view style="display: flex;flex-direction: row;justify-content: space-between">
+                                <view class="f28">{{itemName.name}}</view>
+                                <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28">{{itemName.status}}</view>
+                                <view style="color: rgba(18,213,139,1)" class="f28">{{itemName.community}}</view>
+                                <view style="color: red;margin-left: 20rpx" class="f28" wx:if="{{itemName.is_top}}">置顶</view>
+                            </view>
+                            <view class="f22">
+                                {{itemName.timer}} · <text style="color: rgba(18,213,139,1)" class="f22">{{itemName.address}}</text>
+                            </view>
+                        </view>
+
+                    </view>
+
+                    <!--文字-->
+
+                    <view style="margin-bottom: 10rpx;margin-top: 30rpx;color: #323233" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f28">
+                        {{itemName.content}}
+                    </view>
+
+                    <!--图片九宫格-->
+                    <view style="display: flex;flex-direction: row;flex-wrap: wrap;">
+
+                        <view  wx:for="{{itemName.image_url_came_thumb}}" wx:key="{{index}}" style="margin-right: {{(index+1)%3===0?'0':'8rpx'}};">
+
+                            <view bindtap="tapBanner"  data-pic="{{articleList[idx].image_url_came[index].url}}"  data-pics="{{itemName.image_url_came}}" data-idx="{{idx}}">
+                                <image mode="scaleToFill"  src="{{item.url}}"  style="width: 230rpx;height: 230rpx;border-radius: 10rpx"/>
+                            </view>
+
+                        </view>
+
+                    </view>
 
 
-                <view style="display: flex;flex-direction: row;align-items: center">
-                    <image src="{{item.image}}" style="width: 60rpx;height: 60rpx;border-radius: 30rpx"></image>
-                    <view style="margin-left: 10rpx" class="f24">{{item.name}}</view>
+
+                    <!-- #话题S-->
+
+
+                    <view style="background-color: deeppink;height: 40rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;width: 160rpx;border-radius: 50rpx;color: white" class="f22" bindtap="clickTogether" data-tag="{{itemName.tag}}">
+                        {{itemName.tag}}
+                    </view>
+
+                    <!-- #话题E-->
+
+
                 </view>
 
-                <view style="width: 140rpx;height: 40rpx;color: #00cc88;border-radius: 70rpx;line-height: 40rpx;text-align: center;" >
-                    已关注
+                <!--    4个功能键-->
+
+                <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 62rpx;background-color: white" wx:if="{{!itemName.list}}">
+
+                    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28 van-hairline--right">
+                        <i class="iconfont icon-chakan f28" style="margin-right: 10rpx"></i>{{itemName.views}}
+                    </view>
+
+                    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28 van-hairline--right" data-id="{{itemName.id}}" bindtap="clickDailyContent">
+                        <i class="iconfont icon-xinxi f28" style="margin-right: 10rpx"></i> {{itemName.comment}}
+                    </view>
+
+                    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28 van-hairline--right" bindtap="clickLike" data-index="{{idx}}" data-id="{{itemName.id}}">
+                        <i class="iconfont icon-zandianji f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#999'}}"></i> {{itemName.like}}
+                    </view>
+
+                    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex: 1;" class="f28" bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}">
+                        <i class="iconfont icon-gengduo f28" style="margin-right: 10rpx"></i>
+                    </view>
+
+
+
+                </view>
+
+                <!--    图片banner-->
+
+                <view wx:else data-url="{{itemName.list[0].url}}" bindtap="clickImage" data-name="{{itemName.list[0].name}}" style="padding: 20rpx;">
+
+                    <image mode="widthFix"  src="{{itemName.list[0].thumbnails[0].url}}" class="slide-image" style="width: 100%;height: 400rpx;border-radius: 10rpx"/>
+
                 </view>
 
 
+                <view class="divider"></view>
 
             </view>
 
+            <!--    <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">&#45;&#45;END&#45;&#45;</view>-->
 
-        </block>
+        </view>
 
+
+        <!--状态E-->
 
 
     </view>
