@@ -9,8 +9,7 @@
 
 
 
-
-
+<!--关注人的动态-->
     <view wx:if="{{currentTab===0}}" class="header">
 
 
@@ -132,7 +131,7 @@
 
 
 
-
+<!--消息-->
     <view wx:if="{{currentTab===1}}" class="header">
 
 
@@ -161,10 +160,11 @@
 
 
 
+<!--   我的帖子 动态-->
     <view wx:if="{{currentTab===2}}" class="header">
 
 
-       <block wx:for="{{messageList}}" wx:key>
+       <block wx:for="{{dynamicList}}" wx:key>
 
 
            <view style="display: flex;flex-direction: row;height: 200rpx;justify-content: space-between;align-items: center" class="van-hairline--bottom" wx:if="{{item.type==='FIRST'}}">
@@ -185,10 +185,10 @@
                        <view style="display: flex;flex-direction: column;margin-left: 20rpx;justify-content: space-between;">
 
                            <view class="f24">
-                               {{item.name}}
+                               {{item.name}}  {{item.time}}
                            </view>
                            <view class="f24">
-                               {{item.time}}
+                               [动态]·{{item.bbsName}}
                            </view>
 
 

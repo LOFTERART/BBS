@@ -1,6 +1,6 @@
 Page({
     data: {
-        currentTab: 2,
+        currentTab: 1,
         navbar: [
             {
             name: "关注"
@@ -82,7 +82,7 @@ Page({
         ],
 
 
-        messageList:[
+        dynamicList:[
             {
                 id:1,
                 type:'LIKE',
@@ -121,8 +121,72 @@ Page({
                 imageFirstPeo:'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
                 userImg:[],
                 des:'帖子被置为首页推荐',
-                time:'6小时前'
-            }
+                time:'6小时前',
+                bbsName:'流浪动物~~~'
+            },
+            {
+                id:1,
+                type:'FIRST',
+                name:'赵文',
+                imageBbs:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg',
+                imageFirstPeo:'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                userImg:[],
+                des:'帖子投诉被删除',
+                time:'6小时前',
+                bbsName:'流浪动物~~~'
+            },
+            {
+                id:1,
+                type:'LIKE',
+                name:'赵文',
+                imageBbs:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg',
+                imageFirstPeo:'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                userImg:[
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                ],
+                des:'等20人赞了你的动态[和你一起收养流浪动物]'
+            },
+            {
+                id:1,
+                type:'LOVE',
+                name:'赵文',
+                imageBbs:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg',
+                imageFirstPeo:'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                userImg:[
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                    'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                ],
+                des:'等20人收藏了你的动态[中考加油]'
+            },
+            {
+                id:1,
+                type:'FIRST',
+                name:'赵文',
+                imageBbs:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg',
+                imageFirstPeo:'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                userImg:[],
+                des:'帖子被置为首页推荐',
+                time:'6小时前',
+                bbsName:'流浪动物~~~'
+            },
+            {
+                id:1,
+                type:'FIRST',
+                name:'赵文',
+                imageBbs:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg',
+                imageFirstPeo:'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',
+                userImg:[],
+                des:'帖子投诉被删除',
+                time:'6小时前',
+                bbsName:'流浪动物~~~'
+            },
         ],
 
         followUserList:[
