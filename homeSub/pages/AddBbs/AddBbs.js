@@ -103,7 +103,7 @@ create(store,{
 
     clickXiaoQu:function(){
       wx.navigateTo({
-        url: '/pages/Community/Community'
+        url: '/homeSub/pages/choseAddress/choseAddress'
       })  
     },
 

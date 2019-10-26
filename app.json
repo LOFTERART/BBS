@@ -21,6 +21,7 @@
         "pages/NewsList/NewsList",
         "pages/conversation/conversation",
         "pages/tousu/tousu",
+        "pages/choseAddress/choseAddress",
         "pages/moreActivity/moreActivity"
       ]
     },
@@ -39,6 +40,7 @@
         "pages/grade/grade",
         "pages/commentS/commentS",
         "pages/auth/auth"
+
       ]
     }
   ],
