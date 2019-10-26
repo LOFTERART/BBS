@@ -27,8 +27,6 @@ create(store,{
             {id:1,name:'闲置',image:'https://dcdn.it120.cc/2019/09/26/d9429381-1b41-4444-9309-e2ba73b09620.png',type:'QG'},
             {id:1,name:'物业',image:'https://dcdn.it120.cc/2019/08/22/8bfbb776-b2ba-46cd-a2e8-ee6afbf447b0.png',type:'WY'}
         ],
-        //首页动态列表
-        dynamicList:[],
     //    文章
         artList:[],
         hotList:[
@@ -103,43 +101,8 @@ create(store,{
         // this.getDataList(0);
         // this.getKing();
 
-        let arrayList=[];
         let arrayArticleList=[];
         for (let i =0;i<=10;i++){
-            arrayList.push(
-                {
-                    id:1,
-                    name:'趣知游第一届香山旅游活动召集令',
-                    subName:'2019年 河南人在北京同乡会',
-                    tags:'#免费 #旅游 #香山 #吃喝玩乐 #一日游',
-                    price:99, //现价
-                    originalPrice:199, //原价
-                    image:'https://dcdn.it120.cc/2019/10/22/9043ba2f-d4a2-4934-a4d3-acd6d5e8e0e6.jpg',
-                    memNum:10, //已报名成员
-                    totalNum:100, //总成员
-                    status:{color:'#ff7900',desc:'进行中'},  //动态当前状态    未开始 进行中 已结束
-                    author: "趣知游",
-                    dateAdd: "2019-10-22 14:26:01",
-                    dateUpdate: "2019-10-22 14:29:02",
-                    views: 10 //浏览量
-                },
-                {
-                    id:2,
-                    name:'趣知游第一届香山旅游活动召集令',
-                    subName:'2019年 河南人在北京同乡会',
-                    tags:'#免费 #旅游 #香山 #吃喝玩乐 #一日游',
-                    price:99, //现价
-                    originalPrice:199, //原价
-                    image:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg',
-                    memNum:10, //已报名成员
-                    totalNum:100, //总成员
-                    status:{color:'#ff7900',desc:'进行中'},  //动态当前状态    未开始 进行中 已结束
-                    author: "趣知游",
-                    dateAdd: "2019-10-22 14:26:01",
-                    dateUpdate: "2019-10-22 14:29:02",
-                    views: 10 //浏览量
-                }
-                )
 
             arrayArticleList.push(
 
@@ -313,7 +276,6 @@ create(store,{
         }
 
         this.setData({
-            dynamicList:arrayList,
             articleList:arrayArticleList,
         })
 
