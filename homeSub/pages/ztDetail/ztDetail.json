@@ -2,6 +2,7 @@
   "navigationBarTitleText": "动态详情",
   "enablePullDownRefresh": true,
   "usingComponents": {
-    "tui-icon": "/component/icon/icon"
+    "tui-icon": "/component/icon/icon",
+    "dycell": "/component/dycell/dycell"
   }
 }

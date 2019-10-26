@@ -220,21 +220,6 @@ create(store,{
 
 
 
-    //预览图片
-    tapBanner:function(e){
-        console.log(e.currentTarget.dataset);
-
-        var newPic=[]
-        e.currentTarget.dataset.pics.forEach((item,index)=>{
-            newPic.push(item.url)
-        })
-        wx.previewImage({
-            current: e.currentTarget.dataset.pic,
-            urls: newPic
-        })
-
-    },
-
 
 
     onReachBottom: function () {
@@ -244,25 +229,7 @@ create(store,{
         this. getZTList(true,this.data.id)
     },
 
-    //状态点赞
 
-    clickLikeZT:function(e){
-        let is_like= "dailyInfo.is_like";
-        let like= "dailyInfo.like";
-        if(this.data.dailyInfo.is_like){
-            this.setData({
-                [is_like]: !this.data.dailyInfo.is_like,
-                [like]: this.data.dailyInfo.like-1,
-            })
-            this.likeVSNoLikeComment(e.currentTarget.dataset.id,true,'daily')
-        }else {
-            this.setData({
-                [is_like]: !this.data.dailyInfo.is_like,
-                [like]: this.data.dailyInfo.like+1,
-            })
-            this.likeVSNoLikeComment(e.currentTarget.dataset.id,false,'daily')
-        }
-    },
 
     //  评论列表like 点赞
     clickLike:function(e){
@@ -308,14 +275,7 @@ create(store,{
 
     },
 
-    //  新闻点击
-    clickImage:function(e){
 
-        wx.navigateTo({
-            url: '/homeSub/pages/web/web?url='+encodeURIComponent(e.currentTarget.dataset.url)+'&name='+e.currentTarget.dataset.name
-        })
-
-    },
 
 
 //    点击更多评论
@@ -331,32 +291,7 @@ create(store,{
         })
     },
 
-    clickMore:function(e){
-
-        var that=this
-
-        wx.showActionSheet({
-            itemList: [
-                '收藏',
-                '投诉'
-            ],
-            success (res) {
-                if(res.tapIndex===1){
-                    wx.navigateTo({
-                        url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
-                    })
-
-                }else {
-                    UTIL.toast('收藏成功')
-                }
-            },
-            fail (res) {
-                console.log(res.errMsg)
-            }
-        })
-
-
-    },
+    
 
     //点击点评
     dp:function(e){
