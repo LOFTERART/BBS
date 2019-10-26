@@ -101,62 +101,93 @@
 
 
 <!--评论列表-->
-<view style="padding: 10rpx 20rpx;" wx:for="{{commentList}}" wx:key>
+<block>
 
-    <view style="padding: 20rpx;background-color: {{item.color}};display: flex;flex-direction: column;border-radius: 10rpx;box-shadow: 0px 8rpx 20rpx 0px rgba(9, 36, 66, 0.04);">
+  <!--点赞人数S-->
 
-        <view style="display: flex;flex-direction: row;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
+    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 60rpx;padding: 20rpx 20rpx 0 20rpx">
 
-            <view style="margin-right: 10rpx">
-                <image mode="scaleToFill"  src="{{item.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
-            </view>
+        <view class="f20" style="display: flex;flex-direction: row;align-items: center">
 
-            <view style="display: flex;flex-direction: column;justify-content: space-between;">
-                <view style="display: flex;flex-direction: row;justify-content: space-between">
-                    <view class="f24" style="font-weight: 500">{{item.name}}</view>
-                    <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f24">{{item.status}}</view>
-                    <view style="color: rgba(48,198,139,1)" class="f24">{{item.Community}}</view>
-                </view>
-                <view class="f22">{{item.timer}}</view>
-            </view>
+            <view class="cu-avatar-group" style="display: flex;flex-direction: row">
 
-        </view>
-
-<!--        文字-->
-        <view class="f28" style="font-weight: 500;color: #323233" bindtap="clickMoreComment" data-id="{{item.id}}">
-
-            {{item.content}}
-
-        </view>
-<!--        赞和评论-->
-
-        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 20rpx">
-
-            <view>
-                <viw style="margin-right: 100rpx;color: #969799" bindtap="clickMoreComment" data-id="{{item.id}}">
-                    <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{item.reply_comment.length}}
-                </viw>
-
-
-                <viw style="font-size: 30rpx;" bindtap="clickLike" data-index="{{index}}" data-id="{{item.id}}">
-                    <i class="iconfont icon-zandianji" style="margin-right: 10rpx;color:{{item.is_like?'red':'#999'}}" ></i>{{item.like_num}}
-                </viw>
-
-
+                <image src="https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png" style="width: 50rpx;height: 50rpx;border-radius: 25rpx" />
+                <image src="https://dcdn.it120.cc/2019/08/22/e38b0442-735d-4df7-a3ce-7f9de997dc45.jpg" style="width: 50rpx;height: 50rpx;border-radius: 25rpx;margin-left: -10rpx" />
+                <image src="https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png" style="width: 50rpx;height: 50rpx;border-radius: 25rpx;margin-left: -10rpx" />
 
             </view>
 
-
-            <view>
-                <i class="iconfont icon-gengduo" style="color: #969799;font-size: 50rpx;" bindtap="clickMoreMessage" ></i>
+            <view style="margin-left: 10rpx">
+                369人赞过
             </view>
 
         </view>
-
+        <view  class="f20">
+            <tui-icon name="arrowright" size="18" color="#3E3A39"></tui-icon>
+        </view>
 
     </view>
+    <!--    点赞人数E-->
 
-</view>
+    <!--评论列表S-->
+    <view style="padding: 20rpx 20rpx;" wx:for="{{commentList}}" wx:key>
+
+        <view style="padding: 20rpx;background-color: {{item.color}};display: flex;flex-direction: column;border-radius: 10rpx;box-shadow: 0px 8rpx 20rpx 0px rgba(9, 36, 66, 0.04);">
+
+            <view style="display: flex;flex-direction: row;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
+
+                <view style="margin-right: 10rpx">
+                    <image mode="scaleToFill"  src="{{item.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
+                </view>
+
+                <view style="display: flex;flex-direction: column;justify-content: space-between;">
+                    <view style="display: flex;flex-direction: row;justify-content: space-between">
+                        <view class="f24" style="font-weight: 500">{{item.name}}</view>
+                        <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f24">{{item.status}}</view>
+                        <view style="color: rgba(48,198,139,1)" class="f24">{{item.Community}}</view>
+                    </view>
+                    <view class="f22">{{item.timer}}</view>
+                </view>
+
+            </view>
+
+            <!--        文字-->
+            <view class="f28" style="font-weight: 500;color: #323233" bindtap="clickMoreComment" data-id="{{item.id}}">
+
+                {{item.content}}
+
+            </view>
+            <!--        赞和评论-->
+
+            <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 20rpx">
+
+                <view>
+                    <viw style="margin-right: 100rpx;color: #969799" bindtap="clickMoreComment" data-id="{{item.id}}">
+                        <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{item.reply_comment.length}}
+                    </viw>
+
+
+                    <viw style="font-size: 30rpx;" bindtap="clickLike" data-index="{{index}}" data-id="{{item.id}}">
+                        <i class="iconfont icon-zandianji" style="margin-right: 10rpx;color:{{item.is_like?'red':'#999'}}" ></i>{{item.like_num}}
+                    </viw>
+
+
+
+                </view>
+
+
+                <view>
+                    <i class="iconfont icon-gengduo" style="color: #969799;font-size: 50rpx;" bindtap="clickMoreMessage" ></i>
+                </view>
+
+            </view>
+
+
+        </view>
+
+    </view>
+</block>
+
 
 <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">--END--</view>
 

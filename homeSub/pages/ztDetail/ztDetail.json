@@ -4,5 +4,6 @@
   "backgroundColorTop": "#fff",
   "backgroundColorBottom": "#fff",
   "usingComponents": {
+    "tui-icon": "/component/icon/icon"
   }
 }
