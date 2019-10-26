@@ -15,7 +15,7 @@ Page({
             {id:1,name:'使用帮助',image:'https://dcdn.it120.cc/2019/10/24/c72d8838-2371-4e4a-a1b3-f225c35264d3.png',isHot:'',type:'SY'},
             {id:1,name:'客服服务',image:'https://dcdn.it120.cc/2019/10/24/4ffb2c09-5846-4ba8-aada-8430708e0f4f.png',isHot:'',type:'KF'},
             {id:1,name:'我的活动',image:'https://dcdn.it120.cc/2019/10/24/f2d366a3-8dbe-4335-b7b6-1d24a1ac5cf9.png',isHot:'',type:'MR'},
-            {id:1,name:'我的等级',image:'https://dcdn.it120.cc/2019/10/24/f2d366a3-8dbe-4335-b7b6-1d24a1ac5cf9.png',isHot:'',type:'DJ'},
+            {id:1,name:'个人信息',image:'https://dcdn.it120.cc/2019/10/24/f2d366a3-8dbe-4335-b7b6-1d24a1ac5cf9.png',isHot:'',type:'GR'},
             {id:1,name:'产品建议',image:'https://dcdn.it120.cc/2019/10/24/9042e6b3-c1d7-4ce6-a648-acf0df3ecdf8.png',isHot:'',type:'XZ'},
             {id:1,name:'关于我们',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
         ],
@@ -125,6 +125,10 @@ Page({
         }else if(type==='DJ'){
             wx.navigateTo({
                 url: '/pages/grade/grade'
+            })
+        }else if(type==='GR'){
+            wx.navigateTo({
+                url: '/pages/userInfo/userInfo'
             })
         }else {
             UTIL.toast('待开发')
