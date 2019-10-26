@@ -151,31 +151,37 @@ button::after {
     font-size: 36rpx;
     color: #323233;
     font-weight: bold;
+    font-family: PingFangSC-Regular;
 }
 .f32{
     /*卡片 导航栏 详情页*/
     font-size: 32rpx;
     color: #323233;
+    font-family: PingFangSC-Regular;
 }
 .f28{
     /*副标题 小卡片 tab栏*/
     font-size: 28rpx;
     color: #3E3A39;
+    font-family: PingFangSC-Regular;
 }
 .f24{
     /*按钮 重要文字*/
     color: #969799;
     font-size: 24rpx;
+    font-family: PingFangSC-Regular;
 }
 .f22{
     /*小按钮文字 正文 说明性文字*/
     font-size: 22rpx;
     color: #969799;
+    font-family: PingFangSC-Regular;
 }
 .f20{
     /*标签文字 注解文字*/
     font-size: 20rpx;
     color: #a0a0a0;
+    font-family: PingFangSC-Regular;
 }
 
 /*分割线*/
