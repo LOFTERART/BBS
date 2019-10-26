@@ -130,6 +130,10 @@ Page({
             wx.navigateTo({
                 url: '/mySub/pages/userInfo/userInfo'
             })
+        }else if(type==='RZ'){
+            wx.navigateTo({
+                url: '/mySub/pages/auth/auth'
+            })
         }else {
             UTIL.toast('待开发')
         }

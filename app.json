@@ -4,7 +4,6 @@
     "pages/homeDetail/homeDetail",
     "pages/addPeoInfo/addPeoInfo",
     "pages/Community/Community",
-
     "pages/mine/mine",
     "pages/together/together",
     "pages/kingList/kingList"
@@ -38,7 +37,8 @@
         "pages/Favorites/Favorites",
         "pages/userInfo/userInfo",
         "pages/grade/grade",
-        "pages/commentS/commentS"
+        "pages/commentS/commentS",
+        "pages/auth/auth"
       ]
     }
   ],
