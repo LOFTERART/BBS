@@ -16,16 +16,16 @@ create(store,{
         ],
         //金刚位
         KING:[
-            {id:1,name:'运动',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png',type:'MS'},
-            {id:1,name:'宠物',image:'https://dcdn.it120.cc/2019/08/22/921823b7-1df9-479e-8351-bf14bce698e1.png',type:'CW'},
-            {id:1,name:'相亲',image:'https://dcdn.it120.cc/2019/08/22/b938febf-48e9-4f31-8a4b-cab00e6e8092.png',type:'XQ'},
-            {id:1,name:'结婚',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',type:'JH'},
-            {id:1,name:'家居',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png',type:'JJ'},
-            {id:1,name:'亲子',image:'https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png',type:'QZ'},
-            {id:1,name:'教育',image:'https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png',type:'JY'},
-            {id:1,name:'旅游',image:'https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png',type:'LY'},
-            {id:1,name:'闲置',image:'https://dcdn.it120.cc/2019/09/26/d9429381-1b41-4444-9309-e2ba73b09620.png',type:'QG'},
-            {id:1,name:'物业',image:'https://dcdn.it120.cc/2019/08/22/8bfbb776-b2ba-46cd-a2e8-ee6afbf447b0.png',type:'WY'}
+            {id:1,name:'运动',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',type:'MS'},
+            {id:1,name:'宠物',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',type:'CW'},
+            {id:1,name:'相亲',image:'https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png',type:'XQ'},
+            {id:1,name:'结婚',image:'https://dcdn.it120.cc/2019/10/26/8154f8a5-58de-4872-9a1e-09f8729aed46.png',type:'JH'},
+            {id:1,name:'家居',image:'https://dcdn.it120.cc/2019/10/26/2d0cde71-c50c-486e-8815-0d94a628cef0.png',type:'JJ'},
+            {id:1,name:'亲子',image:'https://dcdn.it120.cc/2019/10/26/e34aa4cf-05dc-49ff-b240-4dd59a143027.png',type:'QZ'},
+            {id:1,name:'教育',image:'https://dcdn.it120.cc/2019/10/26/b2012b31-25e4-47b8-8f72-1554ac0dc797.png',type:'JY'},
+            {id:1,name:'旅游',image:'https://dcdn.it120.cc/2019/10/26/8ff607f2-94f9-4cc3-9943-7c958b3d5dc9.png',type:'LY'},
+            {id:1,name:'闲置',image:'https://dcdn.it120.cc/2019/10/26/88c74b7a-1948-411a-ade2-6d613e71a22c.png',type:'QG'},
+            {id:1,name:'物业',image:'https://dcdn.it120.cc/2019/10/26/894be9d3-656c-4e3b-921e-c55d3d76e477.png',type:'WY'}
         ],
     //    文章
         artList:[],
