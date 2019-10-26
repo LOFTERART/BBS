@@ -184,7 +184,7 @@
                        <view style="display: flex;flex-direction: column;margin-left: 20rpx;justify-content: space-between;height: 80rpx">
 
                            <view class="f24">
-                               闫莎
+                               {{item.name}}
                            </view>
 
                            <view style="display: flex;flex-direction: row">
@@ -202,7 +202,7 @@
                    </view>
 
 
-                   <view class="f22" style="margin-top: 20rpx">18人赞了你的动态[宠物]</view>
+                   <view class="f22" style="margin-top: 20rpx">{{item.des}}</view>
 
 
 
