@@ -103,9 +103,8 @@
 <!--评论列表-->
 <block>
 
-  <!--点赞人数S-->
-
-    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 60rpx;padding: 20rpx 20rpx 0 20rpx">
+   <!--点赞人数S-->
+    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 60rpx;padding: 20rpx" class="van-hairline--bottom">
 
         <view class="f20" style="display: flex;flex-direction: row;align-items: center">
 
@@ -123,11 +122,27 @@
 
         </view>
         <view  class="f20">
-            <tui-icon name="arrowright" size="18" color="#3E3A39"></tui-icon>
+            <tui-icon name="arrowright" size="25" color="#3E3A39"></tui-icon>
         </view>
 
     </view>
-    <!--    点赞人数E-->
+    <!--点赞人数E-->
+
+
+<!--    赞信息S-->
+    <view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+        <view style="font-weight: bold" class="f32">
+            61评论
+        </view>
+
+        <view class="f22" style="display: flex;flex-direction: row">
+            <view style="font-weight: bold;color: #1a1a1a">按热度</view>
+            <view style="margin-left: 30rpx;margin-right: 30rpx">|</view>
+            <view>按时间</view>
+        </view>
+    </view>
+
+<!--    赞信息E-->
 
     <!--评论列表S-->
     <view style="padding: 20rpx 20rpx;" wx:for="{{commentList}}" wx:key>
