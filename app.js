@@ -1,3 +1,4 @@
+wx = require('./x-wxx/index');
 
 App({
     onLaunch: function () {
