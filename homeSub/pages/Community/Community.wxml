@@ -10,7 +10,7 @@
                     </view>
                 </view>
                 <label class="search-bar-label" wx:if="{{!inputShowed}}" bindtap="showInput">
-                    <!-- <icon class="icon-search" type="search" size="16"></icon> -->
+                     <icon class="icon-search" type="search" size="16"></icon>
                     <view class="search-bar-text">输入社区名称或首字母查询</view>
                 </label>
             </view>
@@ -26,7 +26,7 @@
             <view class="current-city">
                 <view class="title">定位小区</view>
                 <view class="city-name">
-                    <tui-icon tui-icon-class="location" name="position-fill" color="#5677fc" size="18"></tui-icon>
+                    <tui-icon tui-icon-class="location" name="position-fill" color="rgba(18,213,139,1)" size="18"></tui-icon>
                     {{localCity}}
                 </view>
             </view>
