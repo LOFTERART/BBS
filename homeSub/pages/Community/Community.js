@@ -1,4 +1,4 @@
-const cityData = require('../../utils/Community.js')
+const cityData = require('../../../utils/Community.js')
 Page({
   data: {
     lists: [],

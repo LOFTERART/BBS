@@ -352,7 +352,7 @@ create(store,{
         let type = e.currentTarget.dataset.type;
 
         wx.navigateTo({
-            url: '/pages/kingList/kingList?name='+e.currentTarget.dataset.name
+            url: '/homeSub/pages/kingList/kingList?name='+e.currentTarget.dataset.name
         })
 
     },
@@ -361,7 +361,7 @@ create(store,{
 
     choseCommunity:function(){
         wx.navigateTo({
-            url: '/pages/Community/Community'
+            url: '/homeSub/pages/Community/Community'
         })
     },
 

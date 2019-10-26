@@ -1,5 +1,5 @@
 // pages/together/together.js
-import UTIL from '../../utils/util'
+import UTIL from '../../../utils/util'
 Page({
 
     /**

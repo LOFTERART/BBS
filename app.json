@@ -2,10 +2,10 @@
   "pages": [
     "pages/home/home",
 
-    "pages/Community/Community",
-    "pages/mine/mine",
 
-    "pages/kingList/kingList"
+    "pages/mine/mine"
+
+
   ],
   "subPackages": [
     {
@@ -24,6 +24,8 @@
         "pages/together/together",
         "pages/homeDetail/homeDetail",
         "pages/addPeoInfo/addPeoInfo",
+        "pages/kingList/kingList",
+        "pages/Community/Community",
         "pages/moreActivity/moreActivity"
       ]
     },
