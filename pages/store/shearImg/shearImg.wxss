@@ -1,3 +1,0 @@
-#shareImg .img-box{padding:10px 15px}#shareImg image{width:100%;border-radius:6px;box-sizing:border-box;overflow:hidden;margin-bottom:80px}
-#shareImg .btn-box{position:fixed;bottom:0;width:100%; background: rgba(255, 255, 255, 0.98);padding:10px 0;text-align:center;  padding-bottom: env(safe-area-inset-bottom);}
-#shareImg .btn-box .btn{color:#fff;font-size:16px;display:inline-block;text-align:center;height:44px;line-height:44px;background:#C9A063;padding:2px 30px;margin:0 auto;border-radius:44px}

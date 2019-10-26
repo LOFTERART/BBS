@@ -15,8 +15,6 @@
       "root": "homeSub",
       "name": "homeSub",
       "pages": [
-        "pages/newsDetail/newsDetail",
-        "pages/news-cmt-reply/news-cmt-reply",
         "pages/AddBbs/AddBbs",
         "pages/moreComment/moreComment",
         "pages/ztDetail/ztDetail",
