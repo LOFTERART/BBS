@@ -1,12 +1,9 @@
 Page({
     data: {
-        currentTab: 1,
+        currentTab: 0,
         navbar: [
             {
             name: "关注"
-            },
-            {
-                name: "消息"
             },
             {
                 name: "动态"

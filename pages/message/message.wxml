@@ -2,7 +2,7 @@
 <view class="container">
 
 
-    <tui-tabs tabs="{{navbar}}" currentTab="{{currentTab>2?0:currentTab}}" bind:change="change" itemWidth="33.333333%" isFixed="{{true}}">
+    <tui-tabs tabs="{{navbar}}" currentTab="{{currentTab>2?0:currentTab}}" bind:change="change" itemWidth="50%" isFixed="{{true}}">
     </tui-tabs>
 
 
@@ -131,37 +131,11 @@
 
 
 
-<!--消息-->
-    <view wx:if="{{currentTab===1}}" class="header">
-
-
-        <block wx:for="{{conversationList}}" wx:key>
-
-
-            <view style="display: flex;flex-direction: row;height: 60rpx;padding: 20rpx;align-items: center;margin-bottom: 20rpx">
-
-                <image src="{{item.image}}" style="width: 60rpx;height: 60rpx;border-radius: 30rpx;margin-right: 10rpx"></image>
-
-                <view style="display: flex;flex-direction: column;justify-content: space-between">
-
-                    <view class="f24">{{item.name}}</view>
-                    <view class="f22">{{item.viewNum}}</view>
-
-                </view>
-
-
-            </view>
-
-        </block>
-
-
-
-    </view>
 
 
 
 <!--   我的帖子 动态-->
-    <view wx:if="{{currentTab===2}}" class="header">
+    <view wx:if="{{currentTab===1}}" class="header">
 
 
        <block wx:for="{{dynamicList}}" wx:key>
