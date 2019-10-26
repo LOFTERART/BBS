@@ -10,7 +10,14 @@ Component({
       current:{
           type: Number,
           value: [], //不存在此属性时
-      }
+      },
+      isShowFollow: Boolean,
+      current1:{
+          type: Boolean,
+          value: false, //不存在此属性时
+      },
+
+
 
   },
 

@@ -1,6 +1,6 @@
 
 <!--头部状态S-->
-<dycell articleList="{{articleList}}"></dycell>
+<dycell articleList="{{articleList}}" isShowFollow="{{true}}"></dycell>
 <!--头部状态E-->
 
 <view class="divider"></view>
