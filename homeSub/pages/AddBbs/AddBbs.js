@@ -20,7 +20,7 @@ create(store,{
         images: [], //存放图片的数组
         message:'',
         huati:'选择合适的话题会有更多赞~',
-        addressLocal:''
+        addressLocal:'不显示地区'
     },
 
 
@@ -96,7 +96,7 @@ create(store,{
 
 
 
-    //监听校区返回
+    //监听小区返回
     emitSchool(city) {
         console.log(city,'gggggg');
         this.setData({
@@ -108,7 +108,29 @@ create(store,{
 //    你在哪里位置选择
 
     clickXiaoQu:function(){
-        this.getLocation();
+        var that =this;
+
+        wx.showActionSheet({
+            itemList: [
+                '获取当前定位信息',
+                '不显示地区'
+            ],
+            success (res) {
+                if(res.tapIndex===0){
+                    that.getLocation();
+
+                }else {
+                    that.setData({
+                        addressLocal:'来自银河地球'
+                    })
+                }
+            },
+            fail (res) {
+                console.log(res.errMsg)
+            }
+        })
+
+
     },
 
 
