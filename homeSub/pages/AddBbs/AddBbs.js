@@ -1,5 +1,4 @@
 const WXAPI = require('../../../API/API')
-const app = getApp()
 import create from '../../../utils/omi/create'
 import store from '../../../store/store'
 
