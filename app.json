@@ -1,11 +1,8 @@
 {
   "pages": [
     "pages/home/home",
-
-
-    "pages/mine/mine"
-
-
+    "pages/mine/mine",
+    "pages/message/message"
   ],
   "subPackages": [
     {
@@ -44,7 +41,6 @@
         "pages/grade/grade",
         "pages/commentS/commentS",
         "pages/auth/auth"
-
       ]
     }
   ],
@@ -56,6 +52,12 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
+        "iconPath": "assets/image/home.png",
+        "selectedIconPath": "assets/image/home-r.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "消息",
         "iconPath": "assets/image/home.png",
         "selectedIconPath": "assets/image/home-r.png"
       },
