@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "社区",
   "usingComponents": {
-    "tui-icon": "/component/icon/icon"
+    "tui-icon": "/component/icon/icon",
+    "dycell": "/component/dycell/dycell"
   }
 }
