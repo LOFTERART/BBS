@@ -25,7 +25,7 @@
 
 <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx;height: 80rpx" class="van-hairline--bottom" bindtap="clickHuaTi">
 
-    <view class="f28" style="font-weight: bold"><text style="color: #ff7900">#</text> 添加话题</view>
+    <view class="f28" style="font-weight: bold"><text style="color: rgba(18,213,139,1)">#</text> 添加话题</view>
     <view style="display: flex;flex-direction: row;align-items: center">
         <view class="f22" style="margin-right: 10rpx">{{huati}}</view>
         <tui-icon name="arrowright" size="18" color="#969799"></tui-icon>
@@ -41,7 +41,7 @@
 <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx;height: 80rpx" class="van-hairline--bottom" bindtap="clickXiaoQu">
 
     <view class="f28" style="font-weight: bold">
-        <tui-icon name="location" size="16" color="#ff7900"></tui-icon> 你在哪个小区
+        <tui-icon name="location" size="16" color="rgba(18,213,139,1)"></tui-icon> 你在哪个小区
     </view>
     <view style="display: flex;flex-direction: row;align-items: center">
         <view class="f22" style="margin-right: 10rpx">{{xiaoqu}}</view>
