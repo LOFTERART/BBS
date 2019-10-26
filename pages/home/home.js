@@ -106,7 +106,6 @@ create(store,{
 
             arrayArticleList.push(
 
-
                 {
                     address: "阳光花墅",
                     tag:'# 结婚注意事项',
@@ -128,7 +127,7 @@ create(store,{
                     is_activating: true,
                     is_del: true,
                     is_follow: false,
-                    is_like: true,
+                    is_like: false,
                     is_parent: false,
                     is_top: false,
                     like: 10,
@@ -136,7 +135,7 @@ create(store,{
                     status: "掌门人",
                     timer: '刚刚',
                     url: "https://www.meishuquanyunxiao.com/share/daily-view.html?daily_id=27565",
-                    views: 100,
+                    views: i+100,
                 },
                 {
                     address: "阳光花墅",
