@@ -56,7 +56,7 @@
         "selectedIconPath": "assets/image/home-r.png"
       },
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/message/message",
         "text": "消息",
         "iconPath": "assets/image/home.png",
         "selectedIconPath": "assets/image/home-r.png"

@@ -146,6 +146,13 @@
 					"id": -1,
 					"name": "homeSub/pages/choseAddress/choseAddress",
 					"pathName": "homeSub/pages/choseAddress/choseAddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/message/message",
+					"pathName": "pages/message/message",
 					"scene": null
 				}
 			]

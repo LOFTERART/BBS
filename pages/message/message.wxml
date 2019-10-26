@@ -1,2 +1,87 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+
+<view class="container">
+
+
+    <tui-tabs tabs="{{navbar}}" currentTab="{{currentTab>2?0:currentTab}}" bind:change="change" itemWidth="33.333333%" isFixed="{{true}}">
+    </tui-tabs>
+
+
+
+
+
+
+
+    <view wx:if="{{currentTab===0}}" class="header">
+
+
+        <block wx:for="{{followUserList}}" wx:key>
+
+            <view style="display: flex;flex-direction: row;height: 60rpx;padding: 20rpx;justify-content: space-between;align-items: center;margin-bottom: 10rpx">
+
+
+                <view style="display: flex;flex-direction: row;align-items: center">
+                    <image src="{{item.image}}" style="width: 60rpx;height: 60rpx;border-radius: 30rpx"></image>
+                    <view style="margin-left: 10rpx" class="f24">{{item.name}}</view>
+                </view>
+
+                <view style="width: 140rpx;height: 40rpx;color: #00cc88;border-radius: 70rpx;line-height: 40rpx;text-align: center;" >
+                    已关注
+                </view>
+
+
+
+            </view>
+
+
+        </block>
+
+
+
+    </view>
+
+
+
+
+    <view wx:if="{{currentTab===1}}" class="header">
+
+
+        <block wx:for="{{conversationList}}" wx:key>
+
+
+            <view style="display: flex;flex-direction: row;height: 60rpx;padding: 20rpx;align-items: center;margin-bottom: 20rpx">
+
+                <image src="{{item.image}}" style="width: 60rpx;height: 60rpx;border-radius: 30rpx;margin-right: 10rpx"></image>
+
+                <view style="display: flex;flex-direction: column;justify-content: space-between">
+
+                    <view class="f24">{{item.name}}</view>
+                    <view class="f22">{{item.viewNum}}</view>
+
+                </view>
+
+
+            </view>
+
+        </block>
+
+
+
+    </view>
+
+
+
+    <view wx:if="{{currentTab===2}}" class="header">
+        11
+    </view>
+
+
+
+
+
+
+
+
+
+</view>
+
+

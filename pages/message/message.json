@@ -1,3 +1,8 @@
+
+
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "我的关注",
+  "usingComponents": {
+    "tui-tabs": "/component/tui-tabs/tui-tabs"
+  }
 }

@@ -1,1 +1,10 @@
-/* pages/message/message.wxss */
+.container {
+    padding: 40rpx 0 120rpx 0;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 40rpx 20rpx 10rpx 20rpx;
+    box-sizing: border-box;
+}
+
