@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "首页",
+  "navigationBarTitleText": "社区",
   "usingComponents": {
     "tui-icon": "/component/icon/icon"
   }
