@@ -90,7 +90,7 @@ create(store,{
 
         if (e.detail.value.length>1){
             this.setData({
-                changeColor:'rgba(253,96,28,1)'
+                changeColor:'#12d58b'
             })
         }else {
             this.setData({
