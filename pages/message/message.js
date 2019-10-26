@@ -81,6 +81,37 @@ Page({
             },
         ],
 
+
+        messageList:[
+            {
+                id:1,
+                type:'BBS',
+                name:'赵文',
+                image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                userImg:[
+                    'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                    'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                    'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                    'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                ],
+                des:'等20人赞了动态[和你一起收养流浪动物]'
+            },
+            {
+                id:1,
+                type:'BBS',
+                name:'赵文',
+                image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                userImg:[
+                    'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                    'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                    'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                    'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                ],
+                des:'帖子被置为首页推荐',
+                time:'6小时前'
+            }
+        ],
+
         followUserList:[
             {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png'},
             {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png'},
