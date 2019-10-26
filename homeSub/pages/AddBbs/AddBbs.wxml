@@ -41,7 +41,7 @@
 <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx;height: 80rpx" class="van-hairline--bottom" bindtap="clickXiaoQu">
 
     <view class="f28" style="font-weight: bold">
-        <tui-icon name="location" size="16" color="rgba(18,213,139,1)"></tui-icon> 你在哪里
+        <tui-icon name="position-fill" size="16" color="rgba(18,213,139,1)"></tui-icon> 你在哪里
     </view>
     <view style="display: flex;flex-direction: row;align-items: center">
         <view class="f22" style="margin-right: 10rpx">{{addressLocal}}</view>
