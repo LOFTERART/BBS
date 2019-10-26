@@ -107,7 +107,8 @@ create(store,{
             arrayArticleList.push(
 
                 {
-                    address: "阳光花墅",
+                    community: "阳光花墅",
+                    address:'许昌 胖东来',
                     tag:'# 结婚注意事项',
                     avatar: "https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png",
                     comment: 800,
@@ -138,7 +139,8 @@ create(store,{
                     views: i+100,
                 },
                 {
-                    address: "阳光花墅",
+                    community: "阳光花墅",
+                    address:'许昌 胖东来',
                     tag:'# 中考加油',
                     avatar: "https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png",
                     comment: 800,
@@ -171,7 +173,8 @@ create(store,{
                     views: 100,
                 },
                 {
-                    address: "阳光花墅",
+                    community: "阳光花墅",
+                    address:'许昌 胖东来',
                     tag:'# 家居装修',
                     avatar: "https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png",
                     comment: 800,
@@ -204,7 +207,8 @@ create(store,{
                     views: 500,
                 },
                 {
-                    address: "阳光花墅",
+                    community: "阳光花墅",
+                    address:'许昌 胖东来',
                     tag:'# 寻找流浪猫',
                     avatar: "https://dcdn.it120.cc/2019/08/22/1643cf11-1778-4c36-a707-646bf89b2f83.png",
                     comment: 0,
@@ -237,7 +241,8 @@ create(store,{
                     views: 0,
                 },
                 {
-                    address: "阳光花墅",
+                    community: "阳光花墅",
+                    address:'许昌 胖东来',
                     tag:'# 包打听',
                     avatar: "https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg",
                     comment: 0,
