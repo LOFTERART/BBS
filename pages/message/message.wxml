@@ -166,7 +166,53 @@
 
        <block wx:for="{{messageList}}" wx:key>
 
-           <view style="display: flex;flex-direction: row;height: 200rpx;justify-content: space-between;align-items: center" class="van-hairline--bottom">
+
+           <view style="display: flex;flex-direction: row;height: 200rpx;justify-content: space-between;align-items: center" class="van-hairline--bottom" wx:if="{{item.type==='FIRST'}}">
+
+               <view style="display: flex;flex-direction: column;">
+
+                   <view style="display: flex;flex-direction: row;align-items: center">
+
+
+                       <image
+                               mode="widthFix"
+                               src="{{item.imageFirstPeo}}"
+                               style="width: 120rpx;height: 120rpx;border-radius: 60rpx"
+                       />
+
+
+
+                       <view style="display: flex;flex-direction: column;margin-left: 20rpx;justify-content: space-between;">
+
+                           <view class="f24">
+                               {{item.name}}
+                           </view>
+                           <view class="f24">
+                               {{item.time}}
+                           </view>
+
+
+                       </view>
+
+
+                   </view>
+
+
+                   <view class="f22" style="margin-top: 20rpx">{{item.des}}</view>
+
+
+
+
+               </view>
+
+
+               <image   src="{{item.imageBbs}}"
+                        style="width: 200rpx;height: 140rpx;border-radius: 10rpx"/>
+
+
+           </view>
+
+           <view style="display: flex;flex-direction: row;height: 200rpx;justify-content: space-between;align-items: center" class="van-hairline--bottom" wx:else>
 
                <view style="display: flex;flex-direction: column;">
 
@@ -188,7 +234,7 @@
                            </view>
 
                            <view style="display: flex;flex-direction: row">
-                               <block wx:for="{{item.userImg}}">
+                               <block wx:for="{{item.userImg}}" wx:key>
                                    <image mode="widthFix"  src="{{item}}"
                                           style="width: 40rpx;height: 40rpx;border-radius: 20rpx;margin-right: 10rpx"/>
                                </block>
@@ -215,6 +261,7 @@
 
 
            </view>
+
 
 
        </block>
