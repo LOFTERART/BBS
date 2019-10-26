@@ -1,8 +1,6 @@
 {
-  "navigationBarTitleText": "详情",
+  "navigationBarTitleText": "动态详情",
   "enablePullDownRefresh": true,
-  "backgroundColorTop": "#fff",
-  "backgroundColorBottom": "#fff",
   "usingComponents": {
     "tui-icon": "/component/icon/icon"
   }
