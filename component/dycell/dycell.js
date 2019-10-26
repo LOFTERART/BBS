@@ -52,6 +52,14 @@ Component({
 
       },
 
+      //点击头像
+
+      clickAva:function(e){
+          wx.navigateTo({
+              url: '/mySub/pages/mySpace/mySpace?name='+e.currentTarget.dataset.name
+          })
+      },
+
       //预览图片
       tapBanner:function(e){
 
