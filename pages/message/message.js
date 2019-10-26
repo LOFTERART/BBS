@@ -1,6 +1,6 @@
 Page({
     data: {
-        currentTab: 0,
+        currentTab: 2,
         navbar: [
             {
             name: "关注"
@@ -87,7 +87,8 @@ Page({
                 id:1,
                 type:'BBS',
                 name:'赵文',
-                image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                imageBbs:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
+                imageFirstPeo:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
                 userImg:[
                     'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
                     'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',
