@@ -1,0 +1,73 @@
+<!--社区标题S-->
+<view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center">
+    <view style="font-weight: bold" class="f32">
+        社区活动
+    </view>
+
+
+    <view class="f22" bindtap="clickMoreActivity">
+        更多>
+    </view>
+
+
+</view>
+<!--社区标题E-->
+
+
+<!--社区活动S-->
+<view class="type-container">
+    <scroll-view scroll-x="{{true}}"  class="type-navbar">
+        <view  class="van-hairline--surround courseStyle" wx:for="{{hotList}}" wx:key bindtap="clickDy" data-id="{{item.id}}">
+
+            <view style="position: relative">
+                <image src="{{item.image}}" style="width: 480rpx;height: 210rpx" />
+                <view style="position: absolute;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,0.5);color: white;width: 100%;height: 40rpx;line-height: 40rpx;text-align: center" class="f20">
+                    {{item.beginTime}}
+                </view>
+
+            </view>
+
+            <!--    文字S-->
+
+            <view style="display: flex;flex-direction: column;height: 180rpx;justify-content: space-around;width: 480rpx">
+                <view class="f24" style="color: #f17517">{{item.name}}</view>
+                <view class="f20" style="color: #333">{{item.address}}</view>
+                <view class="f20" style="color: #666;width: 480rpx;white-space: pre-wrap">{{item.subName}}</view>
+            </view>
+            <!--    文字E-->
+
+
+            <!--    参与S-->
+
+            <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 50rpx;width: 480rpx">
+
+                <view class="f20" style="display: flex;flex-direction: row;align-items: center">
+
+                    <view class="cu-avatar-group" style="display: flex;flex-direction: row">
+
+                        <image src="https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png" style="width: 40rpx;height: 40rpx;border-radius: 20rpx" />
+                        <image src="https://dcdn.it120.cc/2019/08/22/e38b0442-735d-4df7-a3ce-7f9de997dc45.jpg" style="width: 40rpx;height: 40rpx;border-radius: 20rpx;margin-left: -10rpx" />
+                        <image src="https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png" style="width: 40rpx;height: 40rpx;border-radius: 20rpx;margin-left: -10rpx" />
+
+                    </view>
+
+                    <view style="margin-left: 10rpx">
+                        {{item.partakeNum}}
+                    </view>
+
+                </view>
+                <view style="width: 90rpx;height: 40rpx;background-color: #ffc80b;display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 45rpx;color: #333" class="f20">
+                    {{item.actionDes}}
+                </view>
+
+            </view>
+
+
+
+            <!--    参与E-->
+
+
+        </view>
+    </scroll-view>
+</view>
+<!--社区活动E-->
