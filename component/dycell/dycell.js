@@ -1,4 +1,6 @@
 // component/dycell/dycell.js
+import UTIL from "../../utils/util";
+
 Component({
   /**
    * 组件的属性列表
@@ -23,6 +25,95 @@ Component({
    * 组件的方法列表
    */
   methods: {
+
+      //  like 点赞
+      clickLike:function(e){
+
+          wx.vibrateShort();
+          let index = e.currentTarget.dataset.index;
+          let is_like= "articleList["+index+"].is_like";
+          let like= "articleList["+index+"].like";
+
+          if(this.data.articleList[index].is_like){
+              this.setData({
+                  [is_like]: !this.data.articleList[index].is_like,
+                  [like]: this.data.articleList[index].like-1,
+              })
+              // this.likeVSNoLikeComment(e.currentTarget.dataset.id,true)
+          }else {
+              this.setData({
+                  [is_like]: !this.data.articleList[index].is_like,
+                  [like]: this.data.articleList[index].like+1,
+              })
+              // this.likeVSNoLikeComment(e.currentTarget.dataset.id,false)
+          }
+
+
+
+      },
+
+      //预览图片
+      tapBanner:function(e){
+
+          console.log(e,'fff');
+
+          var newPic=[]
+          e.currentTarget.dataset.pics.forEach((item,index)=>{
+              newPic.push(item.url)
+          })
+          wx.previewImage({
+              current: e.currentTarget.dataset.pic,
+              urls: newPic
+          })
+
+      },
+
+
+
+      //点击文字跳转详情
+      clickDailyContent:function(e){
+          wx.navigateTo({
+              url: '/homeSub/pages/ztDetail/ztDetail?id='+e.currentTarget.dataset.id
+          })
+
+      },
+
+//   点击#
+
+      clickTogether:function (e) {
+          wx.navigateTo({
+              url: '/homeSub/pages/together/together?name='+e.currentTarget.dataset.tag
+          })
+      },
+
+
+      //点击更多
+      clickMore:function(e){
+
+          var that=this
+
+          wx.showActionSheet({
+              itemList: [
+                  '收藏',
+                  '投诉'
+              ],
+              success (res) {
+                  if(res.tapIndex===1){
+                      wx.navigateTo({
+                          url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
+                      })
+
+                  }else {
+                      UTIL.toast('收藏成功')
+                  }
+              },
+              fail (res) {
+                  console.log(res.errMsg)
+              }
+          })
+
+
+      },
 
   }
 })
