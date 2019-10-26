@@ -45,27 +45,27 @@
     }
   ],
   "tabBar": {
-    "color": "#B6B6B6",
-    "selectedColor": "#ff7900",
+    "color": "#C5C5C5",
+    "selectedColor": "#52495b",
     "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "首页",
+        "text": "社区",
         "iconPath": "assets/image/home.png",
-        "selectedIconPath": "assets/image/home-r.png"
+        "selectedIconPath": "assets/image/homeing.png"
       },
       {
         "pagePath": "pages/message/message",
-        "text": "消息",
-        "iconPath": "assets/image/home.png",
-        "selectedIconPath": "assets/image/home-r.png"
+        "text": "关注",
+        "iconPath": "assets/image/gz.png",
+        "selectedIconPath": "assets/image/gzing.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "assets/image/user.png",
-        "selectedIconPath": "assets/image/user-r.png"
+        "iconPath": "assets/image/me.png",
+        "selectedIconPath": "assets/image/meing.png"
       }
     ]
   },
