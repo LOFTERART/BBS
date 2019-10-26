@@ -166,6 +166,7 @@ create(store,{
                 sig: SIG,
             },
             success(res) {
+                console.log(res.data.result);
                 let result = res.data.result
                 // 此处的that指向app
                 that.setData({

@@ -335,7 +335,7 @@ create(store,{
     
 
 
-    //监听校区返回
+    //监听小区返回
     emitSchool(city) {
         console.log(city,'gggggg');
         this.setData({
@@ -346,14 +346,11 @@ create(store,{
 
 
     //更多社区活动
-
     clickMoreActivity:function(){
         wx.navigateTo({
             url: '/homeSub/pages/moreActivity/moreActivity'
         })
     },
-
-
 
     //点击king
     clickKing:function(e){
