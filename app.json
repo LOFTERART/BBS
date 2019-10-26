@@ -5,7 +5,7 @@
     "pages/addPeoInfo/addPeoInfo",
     "pages/Community/Community",
     "pages/mine/mine",
-    "pages/together/together",
+
     "pages/kingList/kingList"
   ],
   "subPackages": [
@@ -22,6 +22,7 @@
         "pages/conversation/conversation",
         "pages/tousu/tousu",
         "pages/choseAddress/choseAddress",
+        "pages/together/together",
         "pages/moreActivity/moreActivity"
       ]
     },

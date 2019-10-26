@@ -467,7 +467,7 @@ create(store,{
 
     clickTogether:function (e) {
         wx.navigateTo({
-          url: '/pages/together/together?name='+e.currentTarget.dataset.tag
+          url: '/homeSub/pages/together/together?name='+e.currentTarget.dataset.tag
         })
     },
 
