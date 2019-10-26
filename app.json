@@ -85,5 +85,10 @@
     "navigationBarTextStyle": "black",
     "onReachBottomDistance": 50
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于动态的效果展示"
+    }
+  },
   "sitemapLocation": "sitemap.json"
 }

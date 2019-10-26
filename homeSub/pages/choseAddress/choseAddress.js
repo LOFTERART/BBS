@@ -55,6 +55,8 @@ Page({
      */
     onLoad: function (options) {
 
+        this.getLocation();
+
     },
 
 
@@ -91,6 +93,8 @@ Page({
         });
 
     },
+
+
     // 根据经纬度，设置数据
     updateLocation(res) {
         let {latitude: lat, longitude: lon} = res
@@ -116,7 +120,7 @@ Page({
             data: {
                 key: QQMapKey,
                 location: `${lat},${lon}`,
-                sig: SIG
+                sig: SIG,
             },
             success(res) {
                 console.log(res,'地址');
