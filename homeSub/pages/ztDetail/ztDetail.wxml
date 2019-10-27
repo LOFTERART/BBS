@@ -168,5 +168,23 @@
 <!--底部抽屉-->
 <view class="mask-screen" bindtap="hideModal" hidden="{{!showModalStatus}}"></view>
 <view animation="{{animationData}}" class="region-box" hidden="{{!showModalStatus}}">
-    <view class="region-txt {{(index==regionArr.length-3 || index==regionArr.length-2 || index==regionArr.length-1)?'grow':''}} {{tabIndex==index?'active':''}}" wx:for="{{regionArr}}" data-index="{{index}}" catchtap="getRegion">{{item}}</view>
+
+    <view style="height: auto;background-color: white;position: relative">
+
+        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;margin-bottom: 30rpx;padding: 20rpx">
+
+            <view style="color: #888888;font-weight: bold;font-size: 36rpx" bindtap="clickQx">取消</view>
+            <view style="color: #888888;font-weight: bold;font-size: 36rpx" bindtap="clickFb">发表</view>
+
+        </view>
+
+
+        <view style="margin-left: 20rpx;margin-right: 10rpx;padding-bottom: 150rpx">
+            <textarea bindinput="onGetValue"  value="{{ message }}"  placeholder="{{placeholders}}" maxlength="-1" cursor-spacing="80"   placeholder-style="color:#444;" adjust-position fixed="{{true}}" 	 />
+        </view>
+
+
+
+    </view>
+
 </view>
