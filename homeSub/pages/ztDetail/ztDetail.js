@@ -158,16 +158,9 @@ create(store,{
 
         showModalStatus: false,
         animationData: "",
-        regionArr: [
-            "京", "津", "沪", "渝", "蒙", "新",
-            "藏", "宁", "桂", "港", "澳", "黑",
-            "吉", "辽", "晋", "冀", "青", "鲁",
-            "豫", "苏", "皖", "浙", "闽", "赣",
-            "湘", "鄂", "粤", "琼", "甘", "陕",
-            "黔", "滇", "川"
-        ],
-        regionTxt: "粤",
-        tabIndex: 26,
+
+        isShowBottom:true  //是否显示底部评论bar
+
 
     },
 
@@ -272,7 +265,8 @@ create(store,{
         //导出动画对象赋给数据对象储存
         this.setData({
             animationData: animation.export(),
-            showModalStatus: true
+            showModalStatus: true,
+            isShowBottom:false
         })
         setTimeout(function() {
             animation.translateY(0).step()
@@ -285,7 +279,8 @@ create(store,{
     //关闭评论
     hideModal: function() {
         this.setData({
-            showModalStatus: false
+            showModalStatus: false,
+            isShowBottom:true
         })
     },
 
