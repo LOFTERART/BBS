@@ -111,7 +111,7 @@ create(store,{
             }
         ],
         NewsList:[],
-        placeholders:'写下你的...',
+        placeholders:'写下你想说的话...',
         daily_comment_pid:0,
         reply_user_id:0,//被回复者的userId
         reply_user_type:'', //被回复者的userType

@@ -22,7 +22,7 @@
     left: 0;
     z-index: 10;
     background: #fff;
-    /*height: 712rpx;*/
+    height: 900rpx;
     box-sizing: border-box;
 
 }
