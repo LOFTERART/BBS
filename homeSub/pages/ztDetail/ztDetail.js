@@ -157,10 +157,7 @@ create(store,{
 
 
         showModalStatus: false,
-        animationData: "",
-
-        isShowBottom:true  //是否显示底部评论bar
-
+        isShowBottom:true,  //是否显示底部评论bar
 
     },
 
@@ -255,7 +252,7 @@ create(store,{
     btnCmt: function() {
         this.setData({
             showModalStatus: true,
-            isShowBottom:false
+            isShowBottom:false,
         })
     },
 
@@ -263,7 +260,7 @@ create(store,{
     hideModal: function() {
         this.setData({
             showModalStatus: false,
-            isShowBottom:true
+            isShowBottom:true,
         })
     },
 
