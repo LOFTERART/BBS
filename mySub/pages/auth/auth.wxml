@@ -2,24 +2,19 @@
     <form bindsubmit="formSubmit" bindreset="formReset">
         <tui-list-cell hover="{{false}}">
             <view class="tui-line-cell">
-                <view class="tui-title">姓名</view>
-                <input placeholder-class="phcolor" class="tui-input" name="name" placeholder="请输入姓名" maxlength="50" type="text" />
+                <view class="tui-title">真实姓名</view>
+                <input placeholder-class="phcolor" class="tui-input" name="name" placeholder="请输入真实姓名" maxlength="50" type="text" />
                 <radio-group class="radio-group" name="sex">
                     <label class="tui-radio">
-                        <radio value="1" color="#5677fc" />男
+                        <radio value="1" color="#12d58b" />男
                     </label>
                     <label class="tui-radio">
-                        <radio value="2" color="#5677fc" />女
+                        <radio value="2" color="#12d58b" />女
                     </label>
                 </radio-group>
             </view>
         </tui-list-cell>
-        <tui-list-cell hover="{{false}}">
-            <view class="tui-line-cell">
-                <view class="tui-title">年龄</view>
-                <input placeholder-class="phcolor" class="tui-input" name="age" placeholder="请输入年龄" maxlength="50" type="number" />
-            </view>
-        </tui-list-cell>
+
         <tui-list-cell hover="{{false}}">
             <view class="tui-line-cell">
                 <view class="tui-title">手机号</view>
@@ -27,7 +22,7 @@
             </view>
         </tui-list-cell>
 
-       
+
 
          <tui-list-cell hover="{{false}}">
               <view class="tui-line-cell">
@@ -76,9 +71,7 @@
         <view class="tui-tips">保证信息真实性</view>
 
         <view class="tui-btn-box">
-            <tui-button type="warning" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">立即报名</tui-button>
-            <!--      <button class="btn-primary" hover-class="btn-hover" formType="submit" type="primary">立即报名</button>-->
-            <!--      <button class="btn-primary btn-gray" hover-class="btn-gray-hover" formType="reset">Reset</button>-->
+            <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">提交申请</tui-button>
         </view>
     </form>
 </view>

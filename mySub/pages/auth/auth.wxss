@@ -16,8 +16,9 @@
 
 .tui-input {
     font-size: 32rpx;
-    color: #333;
+    color: rgba(151,151,151,1);
     padding-left: 20rpx;
+    font-weight: 100;
     flex: 1;
 }
 
