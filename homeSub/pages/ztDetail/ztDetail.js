@@ -274,60 +274,13 @@ create(store,{
     },
 
 
-    //  评论列表like 点赞
-    clickLike:function(e){
-
-        let index = e.currentTarget.dataset.index;
-        let is_like= "commentList["+index+"].is_like";
-        let like_num= "commentList["+index+"].like_num";
-
-        if(this.data.commentList[index].is_like){
-            this.setData({
-                [is_like]: !this.data.commentList[index].is_like,
-                [like_num]: this.data.commentList[index].like_num-1,
-            })
-            this.likeVSNoLikeComment(e.currentTarget.dataset.id,true,'daily_comment')
-        }else {
-            this.setData({
-                [is_like]: !this.data.commentList[index].is_like,
-                [like_num]: this.data.commentList[index].like_num+1,
-            })
-            this.likeVSNoLikeComment(e.currentTarget.dataset.id,false,'daily_comment')
-        }
-
-    },
-
-
-    // 评论点赞和取消赞
-    likeVSNoLikeComment:function(id,isTrue,type){
-        let params = {
-            id:id,
-            like_type:type,
-            studio_id:this.store.data.userInfo.studio_id,
-            user_id:this.store.data.userInfo.admin_id,
-            user_type:this.store.data.userInfo.user_role,
-        };
-
-        WXAPI.ZtLike(params).then((res)=>{
-            if(isTrue){
-                console.log(1);
-            }else {
-                console.log(1);
-            }
-        })
-
-    },
-
-
-
-
-//    点击更多评论
-    clickMoreComment:function (e) {
-        wx.navigateTo({
-            url: '/homeSub/pages/moreComment/moreComment?id='+e.currentTarget.dataset.id+'&pid='+this.data.dailyInfo.id
+    //文字点评获取输入文字
+    onGetValue(event) {
+        // event.detail 为当前输入的值
+        this.setData({
+            ly:event.detail.value
         })
     },
-
 
 
     //发表评价
@@ -361,18 +314,66 @@ create(store,{
     },
 
 
+    
+
+    //  评论列表like 点赞
+    clickLike:function(e){
+
+        let index = e.currentTarget.dataset.index;
+        let is_like= "commentList["+index+"].is_like";
+        let like_num= "commentList["+index+"].like_num";
+
+        if(this.data.commentList[index].is_like){
+            this.setData({
+                [is_like]: !this.data.commentList[index].is_like,
+                [like_num]: this.data.commentList[index].like_num-1,
+            })
+            this.likeVSNoLikeComment(e.currentTarget.dataset.id,true,'daily_comment')
+        }else {
+            this.setData({
+                [is_like]: !this.data.commentList[index].is_like,
+                [like_num]: this.data.commentList[index].like_num+1,
+            })
+            this.likeVSNoLikeComment(e.currentTarget.dataset.id,false,'daily_comment')
+        }
+
+    },
+
+
+    // 评论列表点赞和取消赞
+    likeVSNoLikeComment:function(id,isTrue,type){
+        let params = {
+            id:id,
+            like_type:type,
+            studio_id:this.store.data.userInfo.studio_id,
+            user_id:this.store.data.userInfo.admin_id,
+            user_type:this.store.data.userInfo.user_role,
+        };
+
+        WXAPI.ZtLike(params).then((res)=>{
+            if(isTrue){
+                console.log(1);
+            }else {
+                console.log(1);
+            }
+        })
+
+    },
 
 
 
-    //文字点评获取输入文字
-    onGetValue(event) {
-        // event.detail 为当前输入的值
-        this.setData({
-            ly:event.detail.value
+
+//    评论列表点击更多评论
+    clickMoreComment:function (e) {
+        wx.navigateTo({
+            url: '/homeSub/pages/moreComment/moreComment?id='+e.currentTarget.dataset.id+'&pid='+this.data.dailyInfo.id
         })
     },
+
+
+
     //    底部按钮点击
-    
+
     /**
      * 页面相关事件处理函数--监听用户下拉动作
      */
