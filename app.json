@@ -23,7 +23,8 @@
         "pages/addPeoInfo/addPeoInfo",
         "pages/kingList/kingList",
         "pages/Community/Community",
-        "pages/moreActivity/moreActivity"
+        "pages/moreActivity/moreActivity",
+        "pages/likePeople/likePeople"
       ]
     },
     {

@@ -160,6 +160,13 @@
 					"id": -1,
 					"name": "homeSub/pages/homeDetail/homeDetail",
 					"pathName": "homeSub/pages/homeDetail/homeDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/ztDetail/ztDetail",
+					"pathName": "homeSub/pages/ztDetail/ztDetail",
 					"scene": null
 				}
 			]

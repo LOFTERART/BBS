@@ -10,7 +10,9 @@
 <block>
 
    <!--点赞人数S-->
-    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 60rpx;padding: 20rpx" class="van-hairline--bottom">
+    <view
+            bindtap="clickLikePeople"
+            style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 60rpx;padding: 20rpx" class="van-hairline--bottom">
 
         <view class="f20" style="display: flex;flex-direction: row;align-items: center">
 

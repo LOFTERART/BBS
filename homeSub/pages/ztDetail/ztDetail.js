@@ -180,6 +180,16 @@ create(store,{
     },
 
 
+    //点击多少人赞过
+
+    clickLikePeople:function(){
+      wx.navigateTo({
+        url: '/homeSub/pages/likePeople/likePeople'
+      })  
+    },
+    
+    
+    
     collection: function () {
         this.setData({
             isCollection: !this.data.isCollection
