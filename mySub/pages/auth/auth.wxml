@@ -5,14 +5,6 @@
             <view class="tui-line-cell">
                 <view class="tui-title">真实姓名</view>
                 <input placeholder-class="phcolor" class="tui-input" name="name" placeholder="请输入真实姓名" maxlength="50" type="text" />
-                <radio-group class="radio-group" name="sex">
-                    <label class="tui-radio">
-                        <radio value="1" color="#12d58b" />男
-                    </label>
-                    <label class="tui-radio">
-                        <radio value="2" color="#12d58b" />女
-                    </label>
-                </radio-group>
             </view>
         </tui-list-cell>
 
@@ -59,6 +51,65 @@
         </view>
 
         <view class="divider"></view>
+
+        <view style="display: flex;flex-direction: row;height: 60rpx;padding: 30rpx;align-items: center" class="tui-title">
+            认证材料
+        </view>
+
+
+
+        <view style="display: flex;flex-direction: row;justify-content: space-between;padding: 30rpx">
+
+
+           <view style="display: flex;flex-direction: column;justify-content: space-between;align-items: center;height: 240rpx">
+
+               <view style="width: 200rpx;height: 200rpx;display: flex;flex-direction: row;justify-content: center;align-items: center" class="van-hairline--surround">
+
+                   <tui-icon name="add-fill" size="40" color="#12d58b"></tui-icon>
+
+               </view>
+
+               <view class="f22">资质证明材料</view>
+
+           </view>
+
+
+
+            <view style="display: flex;flex-direction: column;justify-content: space-between;align-items: center;height: 240rpx">
+
+                <view style="width: 200rpx;height: 200rpx;display: flex;flex-direction: row;justify-content: center;align-items: center" class="van-hairline--surround">
+
+                    <tui-icon name="add-fill" size="40" color="#12d58b"></tui-icon>
+
+                </view>
+
+                <view class="f22">手持身份证人像面</view>
+
+            </view>
+
+
+
+
+            <view style="display: flex;flex-direction: column;justify-content: space-between;align-items: center;height: 240rpx">
+
+                <view style="width: 200rpx;height: 200rpx;display: flex;flex-direction: row;justify-content: center;align-items: center" class="van-hairline--surround">
+
+                    <tui-icon name="add-fill" size="40" color="#12d58b"></tui-icon>
+
+                </view>
+
+                <view class="f22">身份证国徽面</view>
+
+            </view>
+
+            
+
+
+
+        </view>
+
+
+
 
 
         <view class="tui-btn-box">
