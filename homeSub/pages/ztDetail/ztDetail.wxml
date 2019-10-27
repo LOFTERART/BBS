@@ -116,21 +116,6 @@
 
 
 
-<!--底部固定信息wx:if="{{isShowBottom}}"-->
-<!--
-<view class="bottomStyle"  style='padding-bottom:{{btuBottom}}'>
-
-
-    <view style="flex: 1;display: flex;flex-direction: row;justify-content: center;align-items: center;background-color: #32C48A;color: white;font-weight: bold" bindtap="dp">
-        <view >
-            我 有 话 说
-        </view>
-    </view>
-
-
-</view>
--->
-
 <!--
 <van-popup  show="{{ dPshow }}"
             position="bottom"
