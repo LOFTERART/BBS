@@ -41,11 +41,11 @@
         </tui-list-cell>
 
 
-        <view style="display: flex;flex-direction: row;height: 60rpx;padding: 20rpx;align-items: center" class="van-hairline--bottom tui-title">
+        <view style="display: flex;flex-direction: row;height: 60rpx;padding: 30rpx;align-items: center" class="van-hairline--bottom tui-title">
             认证说明
         </view>
 
-        <view style="padding: 20rpx;background-color: #12d58b" >
+        <view style="padding: 20rpx;" >
             <textarea
                     bindinput="onGetValue"
                     value="{{ message }}"
@@ -54,7 +54,7 @@
                     placeholder-style="color:#666;"
                     adjust-position
                     show-confirm-bar="{{false}}"
-                   
+
             />
         </view>
 
