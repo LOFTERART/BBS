@@ -1,5 +1,6 @@
 <view class="container">
     <form bindsubmit="formSubmit" bindreset="formReset">
+
         <tui-list-cell hover="{{false}}">
             <view class="tui-line-cell">
                 <view class="tui-title">真实姓名</view>
@@ -32,14 +33,18 @@
         </tui-list-cell>
 
 
+        <tui-list-cell hover="{{false}}">
+            <view class="tui-line-cell" style="display: flex;flex-direction: row;justify-content: space-between">
+                <view class="tui-title">证件号码</view>
+                <view style="color: rgba(151,151,151,1);display: flex;flex-direction: row;align-items: center">行业专家  <tui-icon name="arrowright" size="25" color="#3E3A39"></tui-icon></view>
+            </view>
+        </tui-list-cell>
 
 
-
-
-        <view class="tui-tips">保证信息真实性</view>
 
         <view class="tui-btn-box">
             <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">提交申请</tui-button>
         </view>
+
     </form>
 </view>
