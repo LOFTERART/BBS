@@ -34,7 +34,7 @@ Page({
         })
     },
 
-    //点击资质
+    //点击手持
 
     clickAddShouChi:function(){
         var that =this;
@@ -46,15 +46,15 @@ Page({
                 // tempFilePath可以作为img标签的src属性显示图片
                 const tempFilePaths = res.tempFilePaths
                 that.setData({
-                    tempFilePaths:tempFilePaths,
-                    isZiZhi:false
+                    tempFilePathssc:tempFilePaths,
+                    isShouChi:false
                 })
 
             }
         })
     },
 
-    //点击资质
+    //点击国徽
 
     clickAddGuoHui:function(){
         var that =this;
@@ -66,8 +66,8 @@ Page({
                 // tempFilePath可以作为img标签的src属性显示图片
                 const tempFilePaths = res.tempFilePaths
                 that.setData({
-                    tempFilePaths:tempFilePaths,
-                    isZiZhi:false
+                    tempFilePathsgh:tempFilePaths,
+                    isGuoHui:false
                 })
 
             }
