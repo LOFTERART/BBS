@@ -127,10 +127,10 @@
     </view>
     <view class="tui-operation-right tui-right-flex tui-col-5">
         <view class="tui-operation-item" bindtap="collection">
-            <tui-icon name="{{isCollection?'star-fill':'star'}}" size="20" color="{{isCollection?'#5677fc':'#444'}}"></tui-icon>
+            <tui-icon name="{{isCollection?'star-fill':'star'}}" size="20" color="{{isCollection?'red':'#444'}}"></tui-icon>
         </view>
         <view class="tui-operation-item">
-            <tui-icon name="like" size="20" color="{{isCollection?'#5677fc':'#444'}}"></tui-icon>
+            <tui-icon name="like" size="20" color="{{isCollection?'red':'#444'}}"></tui-icon>
         </view>
         <view class="tui-operation-item" hover-class="opcity" hover-stay-time="150">
             <button open-type="share" class="tui-share-btn">
