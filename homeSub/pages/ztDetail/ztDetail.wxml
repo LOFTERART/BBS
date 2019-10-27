@@ -149,7 +149,7 @@
 
 <view class="tui-operation">
     <view class="tui-operation-left tui-col-7 tui-height-full tui-ptop-zero">
-        <view class="tui-btn-comment" bindtap="btnCmt">发表你的评论...</view>
+        <view class="tui-btn-comment" bindtap="btnCmt">说点什么吧...</view>
     </view>
     <view class="tui-operation-right tui-right-flex tui-col-5">
         <view class="tui-operation-item" bindtap="collection">
