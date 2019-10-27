@@ -162,3 +162,11 @@
         </view>
     </view>
 </view>
+
+
+
+<!--底部抽屉-->
+<view class="mask-screen" bindtap="hideModal" hidden="{{!showModalStatus}}"></view>
+<view animation="{{animationData}}" class="region-box" hidden="{{!showModalStatus}}">
+    <view class="region-txt {{(index==regionArr.length-3 || index==regionArr.length-2 || index==regionArr.length-1)?'grow':''}} {{tabIndex==index?'active':''}}" wx:for="{{regionArr}}" data-index="{{index}}" catchtap="getRegion">{{item}}</view>
+</view>
