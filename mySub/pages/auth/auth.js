@@ -4,10 +4,81 @@ import form  from '../../../component/utils/formValidation.js'
 Page({
     data: {
 
+        isZiZhi:true,
+        isShouChi:true,
+        isGuoHui:true,
+
     },
     onLoad: function(options) {
 
     },
+
+
+    //点击资质
+
+    clickAddZiZhi:function(){
+        var that =this;
+        wx.chooseImage({
+            count: 1,
+            sizeType: ['original', 'compressed'],
+            sourceType: ['album', 'camera'],
+            success (res) {
+                // tempFilePath可以作为img标签的src属性显示图片
+                const tempFilePaths = res.tempFilePaths
+                that.setData({
+                    tempFilePaths:tempFilePaths,
+                    isZiZhi:false
+                })
+
+            }
+        })
+    },
+
+    //点击资质
+
+    clickAddShouChi:function(){
+        var that =this;
+        wx.chooseImage({
+            count: 1,
+            sizeType: ['original', 'compressed'],
+            sourceType: ['album', 'camera'],
+            success (res) {
+                // tempFilePath可以作为img标签的src属性显示图片
+                const tempFilePaths = res.tempFilePaths
+                that.setData({
+                    tempFilePaths:tempFilePaths,
+                    isZiZhi:false
+                })
+
+            }
+        })
+    },
+
+    //点击资质
+
+    clickAddGuoHui:function(){
+        var that =this;
+        wx.chooseImage({
+            count: 1,
+            sizeType: ['original', 'compressed'],
+            sourceType: ['album', 'camera'],
+            success (res) {
+                // tempFilePath可以作为img标签的src属性显示图片
+                const tempFilePaths = res.tempFilePaths
+                that.setData({
+                    tempFilePaths:tempFilePaths,
+                    isZiZhi:false
+                })
+
+            }
+        })
+    },
+
+
+
+
+
+
     formSubmit: function(e) {
         //表单规则
         let rules = [{
