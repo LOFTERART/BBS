@@ -141,6 +141,7 @@
 
 <!--底部抽屉-->
 <view class="mask-screen" bindtap="hideModal" hidden="{{!showModalStatus}}"></view>
+
 <view animation="{{animationData}}" class="region-box" hidden="{{!showModalStatus}}">
     <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx;">
 
@@ -155,11 +156,11 @@
                     bindinput="onGetValue"
                     value="{{ message }}"
                     placeholder="{{placeholders}}"
-                    maxlength="-1"
-                    cursor-spacing="80"
                     placeholder-style="color:#444;"
                     adjust-position
                     show-confirm-bar="{{false}}"
+                    cursor-spacing="100"
+                    focus="{{showModalStatus}}"
             />
     </view>
 
