@@ -8,6 +8,15 @@ Page({
 
       followUserList:[
           {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
+          {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
+          {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
+          {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
+          {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
+          {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
+          {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
+          {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
+          {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
+          {id:1,name:'闫莎',image:'https://dcdn.it120.cc/2019/09/26/1437dbec-d951-45a6-8050-89ae11ccd54e.png',specialist:true},
       ],
 
   },
