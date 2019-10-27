@@ -41,6 +41,25 @@
         </tui-list-cell>
 
 
+        <view style="display: flex;flex-direction: row;height: 60rpx;padding: 20rpx;align-items: center" class="van-hairline--bottom tui-title">
+            认证说明
+        </view>
+
+        <view style="padding: 20rpx;background-color: #12d58b" >
+            <textarea
+                    bindinput="onGetValue"
+                    value="{{ message }}"
+                    placeholder="默认规则: 职位/称号名称,最长30字"
+                    maxlength="30"
+                    placeholder-style="color:#666;"
+                    adjust-position
+                    show-confirm-bar="{{false}}"
+                   
+            />
+        </view>
+
+        <view class="divider"></view>
+
 
         <view class="tui-btn-box">
             <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">提交申请</tui-button>
