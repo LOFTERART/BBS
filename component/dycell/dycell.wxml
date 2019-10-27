@@ -78,7 +78,7 @@
         </view>
 
         <view class="f28 van-hairline--right tools" bindtap="clickLike" data-index="{{idx}}" data-id="{{itemName.id}}">
-            <i class="iconfont icon-zandianji f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#999'}}"></i> {{itemName.like}}
+            <i class="iconfont icon-zan f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#999'}}"></i> {{itemName.like}}
         </view>
 
         <view  class="f28 tools" bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}">

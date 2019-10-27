@@ -1,6 +1,6 @@
 const WXAPI = require('../../../API/API')
-import create from '../../../utils/omi/create'
 import store from '../../../store/store'
+import create from '../../../utils/omi/create'
 import  UTIL from '../../../utils/util'
 
 create(store,{
