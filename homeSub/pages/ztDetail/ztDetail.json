@@ -3,6 +3,7 @@
   "enablePullDownRefresh": true,
   "usingComponents": {
     "tui-icon": "/component/icon/icon",
-    "dycell": "/component/dycell/dycell"
+    "dycell": "/component/dycell/dycell",
+    "tui-tag": "/component/tag/tag"
   }
 }

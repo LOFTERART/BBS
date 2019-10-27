@@ -175,6 +175,16 @@ create(store,{
     },
 
 
+    collection: function () {
+        this.setData({
+            isCollection: !this.data.isCollection
+        }, () => {
+            if (this.data.isCollection) {
+                util.toast("收藏成功！");
+            }
+        })
+    },
+
 
     //获取状态列表
     getZTList:function(append,id){
