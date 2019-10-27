@@ -43,8 +43,7 @@
                     value="{{ message }}"
                     placeholder="默认规则: 职位/称号名称,最长30字"
                     maxlength="30"
-                    placeholder-style="color:#666;"
-                    adjust-position
+                    placeholder-style="color:#333;font-size:26rpx"
                     show-confirm-bar="{{false}}"
 
             />
