@@ -35,6 +35,11 @@ Component({
    */
   methods: {
 
+      clickVip:function(e){
+          UTIL.toast('医生认证')
+
+      },
+
       //  like 点赞
       clickLike:function(e){
 
