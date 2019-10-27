@@ -24,47 +24,15 @@
 
 
 
-         <tui-list-cell hover="{{false}}">
-              <view class="tui-line-cell">
-                <view class="tui-title">邮箱</view>
-                <input placeholder-class="phcolor" class="tui-input" name="email" placeholder="请输入邮箱" maxlength="50" type="text" />
-              </view>
-            </tui-list-cell>
-
-
         <tui-list-cell hover="{{false}}">
             <view class="tui-line-cell">
-                <view class="tui-title">身份证号码</view>
+                <view class="tui-title">证件号码</view>
                 <input placeholder-class="phcolor" class="tui-input" name="idcard" placeholder="请输入身份证号码" maxlength="50" type="text" />
             </view>
         </tui-list-cell>
 
 
 
-          <tui-list-cell hover="{{false}}">
-              <view class="tui-line-cell">
-                <view class="tui-title">密码</view>
-                <input placeholder-class="phcolor" class="tui-input" name="pwd" placeholder="请输入密码" maxlength="50" type="text" />
-              </view>
-            </tui-list-cell>
-            <tui-list-cell hover="{{false}}">
-              <view class="tui-line-cell">
-                <view class="tui-title">确认密码</view>
-                <input placeholder-class="phcolor" class="tui-input" name="pwd2" placeholder="请输入确认密码" maxlength="50" type="text" />
-              </view>
-            </tui-list-cell>
-            <tui-list-cell hover="{{false}}">
-              <view class="tui-line-cell">
-                <view class="tui-title">区间</view>
-                <input placeholder-class="phcolor" class="tui-input" name="range" placeholder="请输入3-20之间的数" maxlength="50" type="number" />
-              </view>
-            </tui-list-cell>
-            <tui-list-cell hover="{{false}}" last="{{true}}">
-              <view class="tui-line-cell">
-                <view class="tui-title">金额</view>
-                <input placeholder-class="phcolor" class="tui-input" name="amount" placeholder="请输入金额,允许保留两位小数" maxlength="50" type="digit" />
-              </view>
-            </tui-list-cell>
 
 
 
