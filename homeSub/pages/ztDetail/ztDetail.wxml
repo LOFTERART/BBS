@@ -153,8 +153,17 @@
         </view>
 
 
-        <view style="margin-left: 20rpx;margin-right: 10rpx;padding-bottom: 150rpx">
-            <textarea bindinput="onGetValue"  value="{{ message }}"  placeholder="{{placeholders}}" maxlength="-1" cursor-spacing="80"   placeholder-style="color:#444;" adjust-position fixed="{{true}}" 	 />
+        <view style="margin-left: 20rpx;margin-right: 10rpx;padding-bottom: 150rpx" >
+            <textarea
+                    bindinput="onGetValue"
+                    value="{{ message }}"
+                    placeholder="{{placeholders}}"
+                    maxlength="-1"
+                    cursor-spacing="80"
+                    placeholder-style="color:#444;"
+                    adjust-position
+                    fixed="{{true}}"
+            />
         </view>
 
 

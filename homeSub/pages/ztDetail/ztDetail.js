@@ -253,27 +253,10 @@ create(store,{
     //点击评论
 
     btnCmt: function() {
-        // 显示遮罩层
-        // 创建动画实例
-        var animation = wx.createAnimation({
-            duration: 220,
-            timingFunction: "linear",
-            delay: 0
-        })
-        //执行第一组动画：Y轴偏移500px后(盒子高度是500px) ，停
-        animation.translateY(500).step()
-        //导出动画对象赋给数据对象储存
         this.setData({
-            animationData: animation.export(),
             showModalStatus: true,
             isShowBottom:false
         })
-        setTimeout(function() {
-            animation.translateY(0).step()
-            this.setData({
-                animationData: animation.export()
-            })
-        }.bind(this), 200)
     },
 
     //关闭评论
