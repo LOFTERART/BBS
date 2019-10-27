@@ -365,6 +365,7 @@ create(store,{
 
 //    评论列表点击更多评论
     clickMoreComment:function (e) {
+        console.log(e,'eee');
         wx.navigateTo({
             url: '/homeSub/pages/moreComment/moreComment?id='+e.currentTarget.dataset.id+'&pid='+this.data.dailyInfo.id
         })

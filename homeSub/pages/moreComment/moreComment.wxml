@@ -31,7 +31,7 @@
 
             <view>
                 <viw style="margin-right: 100rpx;color: #969799">
-                    <i class="iconfont icon-pinglun" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{replyComment.length}}
+                    <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{replyComment.length}}
                 </viw>
                 <viw style="color: #969799;font-size: 30rpx;" bindtap="clickLikeZT" data-id="{{commentInfo.id}}">
                     <i class="iconfont icon-zan" style="margin-right: 10rpx;color:{{commentInfo.is_like?'red':'#323233'}}" ></i>{{commentInfo.like_num}}

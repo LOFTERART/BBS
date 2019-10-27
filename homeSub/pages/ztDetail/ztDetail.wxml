@@ -89,7 +89,7 @@
 
 
                     <viw style="font-size: 30rpx;" bindtap="clickLike" data-index="{{index}}" data-id="{{item.id}}">
-                        <i class="iconfont icon-zandianji" style="margin-right: 10rpx;color:{{item.is_like?'red':'#999'}}" ></i>{{item.like_num}}
+                        <i class="iconfont icon-zan" style="margin-right: 10rpx;color:{{item.is_like?'red':'#999'}}" ></i>{{item.like_num}}
                     </viw>
 
 
