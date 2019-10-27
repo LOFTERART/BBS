@@ -4,6 +4,7 @@
   "usingComponents": {
     "tui-icon": "/component/icon/icon",
     "dycell": "/component/dycell/dycell",
-    "tui-tag": "/component/tag/tag"
+    "tui-tag": "/component/tag/tag",
+    "drawer": "/component/drawer/drawer"
   }
 }
