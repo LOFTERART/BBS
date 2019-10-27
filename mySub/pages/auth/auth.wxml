@@ -4,14 +4,14 @@
         <tui-list-cell hover="{{false}}">
             <view class="tui-line-cell">
                 <view class="tui-title">真实姓名</view>
-                <input placeholder-class="phcolor" class="tui-input" name="name" placeholder="请输入真实姓名" maxlength="50" type="text" />
+                <input  class="tui-input" name="name" placeholder="请输入真实姓名" maxlength="50" type="text" />
             </view>
         </tui-list-cell>
 
         <tui-list-cell hover="{{false}}">
             <view class="tui-line-cell">
                 <view class="tui-title">手机号</view>
-                <input placeholder-class="phcolor" class="tui-input" name="mobile" placeholder="请输入手机号" maxlength="50" type="text" />
+                <input  class="tui-input" name="mobile" placeholder="请输入手机号" maxlength="50" type="text" />
             </view>
         </tui-list-cell>
 
@@ -20,7 +20,7 @@
         <tui-list-cell hover="{{false}}">
             <view class="tui-line-cell">
                 <view class="tui-title">证件号码</view>
-                <input placeholder-class="phcolor" class="tui-input" name="idcard" placeholder="请输入身份证号码" maxlength="50" type="text" />
+                <input  class="tui-input" name="idcard" placeholder="请输入身份证号码" maxlength="50" type="text" />
             </view>
         </tui-list-cell>
 
@@ -33,17 +33,17 @@
         </tui-list-cell>
 
 
-        <view style="display: flex;flex-direction: row;height: 60rpx;padding: 30rpx;align-items: center" class="van-hairline--bottom tui-title">
+        <view style="display: flex;flex-direction: row;height: 60rpx;padding: 30rpx;align-items: center" class=" tui-title">
             认证说明
         </view>
 
-        <view style="padding: 20rpx;" >
+        <view style="padding: 0 30rpx 0 30rpx" >
             <textarea
                     bindinput="onGetValue"
                     value="{{ message }}"
                     placeholder="默认规则: 职位/称号名称,最长30字"
                     maxlength="30"
-                    placeholder-style="color:#333;font-size:26rpx"
+                    placeholder-style="color:#999;font-size:32rpx"
                     show-confirm-bar="{{false}}"
 
             />
