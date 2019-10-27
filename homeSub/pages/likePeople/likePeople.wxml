@@ -7,7 +7,8 @@
 
         <view style="display: flex;flex-direction: row;align-items: center">
             <image src="{{item.image}}" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"></image>
-            <view style="margin-left: 20rpx;color: rgba(48,48,48,1)" class="f28">{{item.name}}</view>
+            <view style="margin-left: 20rpx;color: rgba(48,48,48,1);margin-right: 10rpx" class="f28">{{item.name}}</view>
+            <tui-icon name="member" size="22" color="#DFB176"   wx:if="{{item.specialist}}"></tui-icon>
         </view>
 
         <view style="width: 120rpx;height: 50rpx;color: white;border-radius: 70rpx;line-height: 50rpx;text-align: center;background-color: #12d58b" class="f22">

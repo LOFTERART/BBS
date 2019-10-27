@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "收到的赞",
-  "usingComponents": {}
+  "usingComponents": {
+    "tui-icon": "/component/icon/icon"
+  }
 }
