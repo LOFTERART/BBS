@@ -253,7 +253,7 @@ create(store,{
         this.setData({
             showModalStatus: true,
             isShowBottom:false,
-            // placeholders:'回复'+this.data.dailyInfo.name+'...'
+            placeholders:'回复'+this.data.articleList[0].name+'...'
         })
     },
 
@@ -314,7 +314,7 @@ create(store,{
     },
 
 
-    
+
 
     //  评论列表like 点赞
     clickLike:function(e){
