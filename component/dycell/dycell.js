@@ -35,6 +35,10 @@ Component({
    */
   methods: {
 
+      clickName:function(){
+        UTIL.toast('让身边的人更有温度~')
+      },
+
       clickVip:function(e){
           UTIL.toast(e.currentTarget.dataset.auth)
 

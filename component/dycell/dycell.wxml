@@ -15,9 +15,9 @@
 
                 <view style="display: flex;flex-direction: column;justify-content: space-around;">
                     <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center">
-                        <view class="f28">{{itemName.name}}</view>
-                        <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28">{{itemName.status}}</view>
-                        <view style="color: rgba(18,213,139,1);margin-right: 10rpx" class="f28">{{itemName.community}}</view>
+                        <view class="f28" bindtap="clickName">{{itemName.name}}</view>
+                        <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28" bindtap="clickName">{{itemName.status}}</view>
+                        <view style="color: rgba(18,213,139,1);margin-right: 10rpx" class="f28" bindtap="clickName">{{itemName.community}}</view>
 
                         <tui-icon name="member" size="22" color="#DFB176" bindtap="clickVip" data-auth="{{itemName.Auth}}" wx:if="{{itemName.specialist}}"></tui-icon>
 
