@@ -36,7 +36,7 @@ Component({
   methods: {
 
       clickVip:function(e){
-          UTIL.toast('医生认证')
+          UTIL.toast(e.currentTarget.dataset.auth)
 
       },
 

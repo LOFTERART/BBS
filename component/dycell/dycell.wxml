@@ -19,7 +19,7 @@
                         <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28">{{itemName.status}}</view>
                         <view style="color: rgba(18,213,139,1);margin-right: 10rpx" class="f28">{{itemName.community}}</view>
 
-                        <tui-icon name="member" size="22" color="#DFB176" bindtap="clickVip"></tui-icon>
+                        <tui-icon name="member" size="22" color="#DFB176" bindtap="clickVip" data-auth="{{itemName.Auth}}" wx:if="{{itemName.specialist}}"></tui-icon>
 
                         <view style="color: red;margin-left: 20rpx" class="f28" wx:if="{{itemName.is_top}}">置顶</view>
                     </view>
