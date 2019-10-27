@@ -27,7 +27,7 @@
             </view>
         </tui-list-cell>
 
-        <!--
+       
 
          <tui-list-cell hover="{{false}}">
               <view class="tui-line-cell">
@@ -35,7 +35,7 @@
                 <input placeholder-class="phcolor" class="tui-input" name="email" placeholder="请输入邮箱" maxlength="50" type="text" />
               </view>
             </tui-list-cell>
-        -->
+
 
         <tui-list-cell hover="{{false}}">
             <view class="tui-line-cell">
@@ -44,7 +44,7 @@
             </view>
         </tui-list-cell>
 
-        <!--
+
 
           <tui-list-cell hover="{{false}}">
               <view class="tui-line-cell">
@@ -70,7 +70,7 @@
                 <input placeholder-class="phcolor" class="tui-input" name="amount" placeholder="请输入金额,允许保留两位小数" maxlength="50" type="digit" />
               </view>
             </tui-list-cell>
-        -->
+
 
 
         <view class="tui-tips">保证信息真实性</view>
