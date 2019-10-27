@@ -103,7 +103,6 @@ create(store,{
 
         let arrayArticleList=[];
         for (let i =0;i<=10;i++){
-
             arrayArticleList.push(
                 {
                     community: "阳光花墅",
