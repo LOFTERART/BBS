@@ -185,7 +185,7 @@ create(store,{
             isCollection: !this.data.isCollection
         }, () => {
             if (this.data.isCollection) {
-                util.toast("收藏成功！");
+                UTIL.toast("收藏成功！");
             }
         })
     },
@@ -253,9 +253,18 @@ create(store,{
         this.setData({
             showModalStatus: true,
             isShowBottom:false,
+            // placeholders:'回复'+this.data.dailyInfo.name+'...'
         })
     },
 
+
+    //点击取消按钮
+    clickQx:function(){
+        this.setData({
+            showModalStatus: false,
+            isShowBottom:true
+        })
+    },
     //关闭评论
     hideModal: function() {
         this.setData({
@@ -319,22 +328,7 @@ create(store,{
         })
     },
 
-    clickMoreMessage:function(e){
-        wx.navigateTo({
-            url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
-        })
-    },
 
-
-
-    //点击点评
-    dp:function(e){
-        console.log(1);
-        this.setData({
-            dPshow: true,
-            placeholders:'回复'+this.data.dailyInfo.name+'...'
-        });
-    },
 
     //发表评价
     clickFb:function(){
@@ -367,11 +361,7 @@ create(store,{
     },
 
 
-    clickQx:function(){
-        this.setData({
-            dPshow:false
-        })
-    },
+
 
 
     //文字点评获取输入文字
@@ -382,14 +372,7 @@ create(store,{
         })
     },
     //    底部按钮点击
-
-    clickBottom:function (e) {
-        //点赞
-        console.log(1);
-
-    },
-
-
+    
     /**
      * 页面相关事件处理函数--监听用户下拉动作
      */
