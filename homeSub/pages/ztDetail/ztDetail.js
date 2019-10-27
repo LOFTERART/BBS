@@ -253,7 +253,7 @@ create(store,{
         this.setData({
             showModalStatus: true,
             isShowBottom:false,
-            placeholders:'回复'+this.data.articleList[0].name+'...'
+            placeholders:'@'+this.data.articleList[0].name+'...'
         })
     },
 
@@ -276,9 +276,9 @@ create(store,{
 
     //文字点评获取输入文字
     onGetValue(event) {
-        // event.detail 为当前输入的值
+        console.log(event.detail.value);
         this.setData({
-            ly:event.detail.value
+            message:event.detail.value
         })
     },
 
