@@ -59,7 +59,7 @@
         <!-- #话题S-->
 
 
-        <view  class="f22 tag" bindtap="clickTogether" data-tag="{{itemName.tag}}">
+        <view  class="f22 tag" bindtap="clickTogether" data-tag="{{itemName.tag}}" >
             {{tag || itemName.tag}}
         </view>
 
