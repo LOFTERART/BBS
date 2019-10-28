@@ -1,2 +1,47 @@
-<!--pages/love/love.wxml-->
-<text>pages/love/love.wxml</text>
+
+
+
+<view style="padding: 20rpx 30rpx 30rpx 30rpx;background-color: rgba(251,251,251,1)">
+
+
+
+    <block wx:for="{{loveHobb}}" wx:key>
+
+        <view class="cell">
+
+            <view style="display: flex;flex-direction: row;">
+
+                <image src="{{item.image}}" style="width: 100rpx;height: 100rpx;border-radius: 50rpx;margin-right: 20rpx" />
+
+
+                <view style="display: flex;flex-direction: column;justify-content: space-between">
+
+                    <view class="f32" style="font-weight: bold">{{item.name}}</view>
+                    <view class="f24">{{item.own}}</view>
+
+                </view>
+
+            </view>
+
+
+
+            <view
+                    class="follow"
+                    data-index="{{index}}"
+                    data-isfollow="{{item.isShowFollow}}"
+                    style="background-color: #12d58b;color: white;"
+            >
+                去打卡
+            </view>
+
+
+        </view>
+
+    </block>
+
+
+
+
+
+
+</view>

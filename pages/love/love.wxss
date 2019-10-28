@@ -1,1 +1,12 @@
-/* pages/love/love.wxss */
+.follow{
+    width: 140rpx;
+    height: 60rpx;
+    border-radius: 70rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 24rpx;
+}
+
+.cell{
+    padding: 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 160rpx;margin-bottom: 20rpx;border-radius: 20rpx;background-color: white
+}
