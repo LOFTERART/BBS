@@ -15,7 +15,10 @@ Page({
           {id:1,name:'戒糖打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
           {id:1,name:'多喝水打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
           {id:1,name:'戒酒打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
-      ]
+      ],
+
+
+      showModalStatus: false,
 
   },
 
@@ -25,6 +28,14 @@ Page({
   onLoad: function (options) {
 
   },
+
+    clickCell:function(e){
+
+        this.setData({
+            showModalStatus: true,
+        })
+
+    },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

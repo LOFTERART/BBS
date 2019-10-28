@@ -3,11 +3,9 @@
 
 <view style="padding: 20rpx 30rpx 30rpx 30rpx;background-color: rgba(251,251,251,1)">
 
-
-
     <block wx:for="{{loveHobb}}" wx:key>
 
-        <view class="cell">
+        <view class="cell" bindtap="clickCell">
 
             <view style="display: flex;flex-direction: row;">
 
@@ -39,9 +37,33 @@
 
     </block>
 
+</view>
 
 
 
+<!--底部抽屉-->
+<view class="mask-screen" bindtap="hideModal" hidden="{{!showModalStatus}}"></view>
 
+<view animation="{{animationData}}" class="region-box" hidden="{{!showModalStatus}}">
+    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx;">
+
+        <view style="color: #888888;font-size: 28rpx" bindtap="clickQx">取消</view>
+
+        <view style="color: rgba(18,213,139,1);;font-size: 28rpx" bindtap="clickFb">发表</view>
+
+    </view>
+
+    <view style="padding: 20rpx;" >
+            <textarea
+                    bindinput="onGetValue"
+                    value="{{ message }}"
+                    placeholder="{{placeholders}}"
+                    placeholder-style="color:#666;"
+                    adjust-position
+                    show-confirm-bar="{{false}}"
+                    cursor-spacing="100"
+                    focus="{{showModalStatus}}"
+            />
+    </view>
 
 </view>
