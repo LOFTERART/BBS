@@ -1,9 +1,7 @@
 const WXAPI = require('../../API/API')
 import UTIL from '../../utils/util'
 import data from '../../data/data'
-import create from '../../utils/omi/create'
-import store from '../../store/store'
-create(store,{
+Page({
 
     //声明依赖
     use: ['userInfo'],

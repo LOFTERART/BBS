@@ -7,7 +7,8 @@ export default {
             studio_id:183,
             code_number:'zhao0183',
         }
-    }
+    },
+    debug: true
 }
 
 
