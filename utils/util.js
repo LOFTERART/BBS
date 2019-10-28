@@ -60,10 +60,7 @@ module.exports = {
   isMobile: utils.isMobile,
   isFloat: utils.isFloat,
   isNum: utils.isNum,
-  interfaceUrl: utils.interfaceUrl,
   toast: utils.toast,
-  request: utils.request,
-  uploadFile: utils.uploadFile,
   formatNum: utils.formatNum,
 
 }
