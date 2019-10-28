@@ -1,3 +1,5 @@
 {
+  "navigationBarTitleText": "养成好习惯",
+  "enablePullDownRefresh": true,
   "usingComponents": {}
 }
