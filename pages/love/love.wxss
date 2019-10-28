@@ -47,7 +47,7 @@
 .cat_name {
     text-align: center;
     padding-bottom: 40rpx;
-    font-size: 28rpx;
+    font-size: 30rpx;
 }
 
 .ipt {
@@ -58,7 +58,7 @@
 }
 
 .placeStyle {
-    color: #B6B6B6;
+    color: white;
 }
 
 

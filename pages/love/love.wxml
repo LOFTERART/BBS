@@ -101,7 +101,7 @@
                        type="text"
                        placeholder="点击可添加文字 "
                        placeholder-style="placeStyle"
-                       maxlength="10"
+                       maxlength="15"
                        bindinput="changeIpt"></input>
             </view>
 
@@ -116,7 +116,7 @@
 
             <view style="display: flex;flex-direction: row;align-items: center">
 
-                <image src="https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png" style="width: 100rpx;height: 100rpx;border-radius: 50rpx;margin-right: 10rpx" />
+                <image src="https://dcdn.it120.cc/2019/10/26/9ed88469-5287-481e-ab44-d3287517a020.jpeg" style="width: 100rpx;height: 100rpx;border-radius: 50rpx;margin-right: 10rpx" />
 
                 <view style="display: flex;flex-direction: column">
                     <view class="f32" style="color: white">LOFTERART</view>
