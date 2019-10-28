@@ -3,6 +3,7 @@ const WXAPI = require('../../../API/API')
 const app = getApp()
 import create from '../../../utils/omi/create'
 import store from '../../../store/store'
+import data from '../../../data/data'
 create(store,{
     data: {
         dPshow: false, //点评show
@@ -116,43 +117,8 @@ create(store,{
         reply_user_id:0,//被回复者的userId
         reply_user_type:'', //被回复者的userType
 
-
-        articleList:[
-            {
-                community: "阳光花墅",
-                address:'许昌 陈庄幼儿园',
-                tag:'# 幼儿园瞬间',
-                avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
-                comment: 800,
-                content: "拿着放大镜去发现秋天~~",
-                follow: 0,
-                follow_user_id: 3804,
-                follow_user_type: "teacher",
-                id: 30903,
-                image_url_came: [
-                    {url:'https://dcdn.it120.cc/2019/10/26/fd3ab27b-1ddc-4554-93ca-e0bd6e83bd32.jpeg'},
-                    {url:'https://dcdn.it120.cc/2019/10/26/9ed88469-5287-481e-ab44-d3287517a020.jpeg'},
-                    {url:'https://dcdn.it120.cc/2019/10/26/66ad24e5-fb97-4497-b2a0-202766859b53.jpeg'},
-                ],
-                image_url_came_thumb: [
-                    {url:'https://dcdn.it120.cc/2019/10/26/fd3ab27b-1ddc-4554-93ca-e0bd6e83bd32.jpeg'},
-                    {url:'https://dcdn.it120.cc/2019/10/26/9ed88469-5287-481e-ab44-d3287517a020.jpeg'},
-                    {url:'https://dcdn.it120.cc/2019/10/26/66ad24e5-fb97-4497-b2a0-202766859b53.jpeg'},
-                ],
-                is_activating: true,
-                is_del: true,
-                is_follow: false,
-                is_like: false,
-                is_parent: false,
-                is_top: false,
-                like: 10,
-                name: "曹阿瞒",
-                status: "宝爸",
-                timer: '刚刚',
-                url: "https://www.meishuquanyunxiao.com/share/daily-view.html?daily_id=27565",
-                views: 100,
-            },
-        ],
+        //详情动态数据
+        articleList:data.dyDetail,
 
 
 
