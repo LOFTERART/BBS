@@ -35,19 +35,6 @@ const utils = {
       duration: duration || 2000
     })
   },
-  preventMultiple: function(fn, gapTime) {
-    if (gapTime == null || gapTime == undefined) {
-      gapTime = 200;
-    }
-    let lastTime = null;
-    return function() {
-      let now = +new Date();
-      if (!lastTime || now - lastTime > gapTime) {
-        fn.apply(this, arguments);
-        lastTime = now;
-      }
-    }
-  },
 
 }
 
