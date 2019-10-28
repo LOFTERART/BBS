@@ -1,4 +1,6 @@
 // component/likepeople/likepeople.js
+import UTIL from "../../utils/util";
+
 Component({
   /**
    * 组件的属性列表
@@ -23,6 +25,23 @@ Component({
    * 组件的方法列表
    */
   methods: {
+
+      //点击头像
+
+      clickAva:function(e){
+          wx.navigateTo({
+              url: '/mySub/pages/mySpace/mySpace?name='+e.currentTarget.dataset.name
+          })
+      },
+
+      clickName:function(){
+          UTIL.toast('让身边的人更有温度~')
+      },
+
+      clickVip:function(e){
+          UTIL.toast(e.currentTarget.dataset.auth)
+
+      },
 
   }
 })
