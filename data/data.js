@@ -102,7 +102,7 @@ const dataBase = {
                 {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
                 {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
             ],
-            tag:'# 刚装新加 欢迎大家参观 北欧风~',
+            tag:'# 家居装修~',
             views: 100,
             comment: 800,
             like: 10,
