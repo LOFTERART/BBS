@@ -62,7 +62,7 @@ Page({
 
     clickDy:function(e){
         wx.navigateTo({
-            url: '/pages/homeDetail/homeDetail'
+            url: '/homeSub/pages/homeDetail/homeDetail'
         })
 
     },

@@ -139,7 +139,7 @@ Page({
             })
         }else if(type==='HD'){
             wx.navigateTo({
-                url: '/homeSub/pages/homeDetail/homeDetail'
+                url: '/homeSub/pages/moreActivity/moreActivity'
             })
         }else {
             UTIL.toast('待开发')
