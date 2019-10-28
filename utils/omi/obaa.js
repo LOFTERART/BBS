@@ -49,7 +49,7 @@
     }
     _observe.prototype = {
       onPropertyChanged: function(prop, value, oldValue, target, path) {
-        if (value !== oldValue && this.propertyChangedHandler) {
+        if (value !== oldValue && (!(nan(value) && nan(oldValue))) && this.propertyChangedHandler) {
           var rootName = obaa._getRootName(prop, path)
           for (
             var i = 0, len = this.propertyChangedHandler.length;
@@ -146,6 +146,7 @@
         if (typeof currentValue == 'object') {
           if (obaa.isArray(currentValue)) {
             this.mock(currentValue)
+            //为0，就不会进下面的 for 循环，就不会执行里面的 watch，就不会有 $observeProps 属性
             if (currentValue.length === 0) {
               if (!currentValue.$observeProps){
                 Object.defineProperty(currentValue, '$observeProps', {
@@ -156,9 +157,9 @@
                 })
               }
               if (path !== undefined) {
-                currentValue.$observeProps.$observerPath = path
+                currentValue.$observeProps.$observerPath = path + '-' + prop
               } else {
-                currentValue.$observeProps.$observerPath = '#'
+                currentValue.$observeProps.$observerPath = '#' + '-' + prop
               }
             }
           }
@@ -267,6 +268,10 @@
 
   Array.prototype.size = function(length) {
     this.length = length
+  }
+
+  function nan(value) {
+      return typeof value === "number" && isNaN(value)
   }
 
   if (

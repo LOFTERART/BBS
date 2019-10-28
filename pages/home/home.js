@@ -1,12 +1,7 @@
 const WXAPI = require('../../API/API')
-import create from '../../utils/omi/create'
-import store from '../../store/store'
 import UTIL from '../../utils/util'
 import data from '../../data/data'
-create(store,{
-    context: {
-        emitter: create.emitter
-    },
+Page({
     data: {
         //首页广告
         banners:data.homeBanner,

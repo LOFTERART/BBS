@@ -4,7 +4,7 @@ const app = getApp()
 import create from '../../../utils/omi/create'
 import store from '../../../store/store'
 import data from '../../../data/data'
-create(store,{
+Page({
     data: {
         dPshow: false, //点评show
         page: 0, //分页
