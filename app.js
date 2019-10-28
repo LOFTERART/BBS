@@ -1,26 +1,10 @@
 wx = require('./x-wxx/index');
 
+
 App({
     onLaunch: function () {
-
         this.updataApp();
-        wx.getSystemInfo({
-            success: (res)=> {
-                this.globalData.StatusBar = res.statusBarHeight;
-                this.globalData.platform = res.platform;
-                let custom = wx.getMenuButtonBoundingClientRect();
-                this.globalData.Custom = custom;
-                this.globalData.CustomBar = custom.bottom + custom.top - res.statusBarHeight;
-                if (res.model.search("iPhone X") != -1) {
-                    this.globalData.iphone = true;
-                }
-
-
-            }
-        });
-
     },
-
 
     //更新
     updataApp: function () {//版本更新
@@ -59,5 +43,36 @@ App({
     globalData: {
         userInfo: null
     }
+
+
+
+    
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// wx.getSystemInfo({
+//     success: (res)=> {
+//         this.globalData.StatusBar = res.statusBarHeight;
+//         this.globalData.platform = res.platform;
+//         let custom = wx.getMenuButtonBoundingClientRect();
+//         this.globalData.Custom = custom;
+//         this.globalData.CustomBar = custom.bottom + custom.top - res.statusBarHeight;
+//         if (res.model.search("iPhone X") != -1) {
+//             this.globalData.iphone = true;
+//         }
+//
+//
+//     }
+// });
