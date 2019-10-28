@@ -64,10 +64,25 @@
 <view class="King">
 
     <view class="tui-classify-box" >
-        <view class="tui-classify-item" wx:for="{{KING}}" wx:key bindtap="clickKing" data-name="{{item.name}}" data-des="{{item.des}}" data-pic="{{item.desPic}}" data-image="{{item.image}}" data-type="{{item.type}}">
-            <image src="{{item.image}}" class="tui-classify-img" />
+        <view class="tui-classify-item"
+              wx:for="{{KING}}"
+              wx:key
+              bindtap="clickKing"
+              data-name="{{item.name}}"
+              data-des="{{item.des}}"
+              data-pic="{{item.desPic}}"
+              data-image="{{item.image}}"
+              data-type="{{item.type}}"
+        >
+
+            <image src="{{item.image}}"
+                   class="tui-classify-img"
+            />
+
             <view class="tui-classify-name">{{item.name}}</view>
+
         </view>
+
     </view>
 
 </view>
