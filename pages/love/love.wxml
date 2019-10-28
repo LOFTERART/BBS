@@ -44,17 +44,36 @@
 <!--底部抽屉-->
 <view class="mask-screen" bindtap="hideModal" hidden="{{!showModalStatus}}"></view>
 
-<view animation="{{animationData}}" class="region-box" hidden="{{!showModalStatus}}">
-    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;height: 40rpx;padding: 20rpx;position: relative">
+<view  class="region-box" hidden="{{!showModalStatus}}">
 
+    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;height: 80rpx;padding: 20rpx;position: relative" bindtap="hideModal">
         <view class="f36">早睡打卡</view>
 
-        <view style="position: absolute;left: 30rpx;top:20rpx" class="f36" bindtap="hideModal">
+        <view style="position: absolute;left: 30rpx;top:20rpx;font-size: 50rpx" >
             X
         </view>
 
+    </view>
+
+
+<!--    时间 和公开S-->
+
+    <view style="padding: 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;background-color: #12d58b">
+
+
+        <view style="display: flex;flex-direction: row;align-items: center">
+            <tui-icon name="clock" size="20" color="#3E3A39" style="margin-right: 10rpx"></tui-icon> 2019.10.28
+        </view>
+        <view style="display: flex;flex-direction: row;align-items: center">
+            公开 <tui-icon name="arrowdown" size="20" color="#3E3A39" style="margin-left: 10rpx"></tui-icon>
+        </view>
+
+
 
     </view>
+
+
+<!--    时间 和公开E-->
 
 
 
