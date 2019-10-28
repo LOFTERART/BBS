@@ -20,7 +20,8 @@ Page({
 
       showModalStatus: false,
 
-      loveName:''
+      loveName:'',
+      tempFilePaths:'https://static1.keepcdn.com/2019/05/28/1559017752974_460x238.png'
 
   },
 
@@ -30,6 +31,23 @@ Page({
   onLoad: function (options) {
 
   },
+
+    clickCamera:function(){
+        var that =this;
+        wx.chooseImage({
+            count: 1,
+            sizeType: ['original', 'compressed'],
+            sourceType: ['album', 'camera'],
+            success (res) {
+                // tempFilePath可以作为img标签的src属性显示图片
+                const tempFilePaths = res.tempFilePaths
+                that.setData({
+                    tempFilePaths:tempFilePaths,
+                })
+
+            }
+        })
+    },
 
     clickCell:function(e){
 

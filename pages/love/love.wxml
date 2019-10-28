@@ -82,10 +82,12 @@
 
     <image
             mode="scaleToFill"
-            src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+            src="{{tempFilePaths}}"
            class="img">
 
-        <view style="width: 100rpx;height: 100rpx;border-radius:50rpx;background-color: rgba(255,255,255,0.5);top:30rpx;left: 30rpx;position: absolute;justify-content: center;align-items: center;display: flex">
+        <view
+                bindtap="clickCamera"
+                style="width: 100rpx;height: 100rpx;border-radius:50rpx;background-color: rgba(255,255,255,0.5);top:30rpx;left: 30rpx;position: absolute;justify-content: center;align-items: center;display: flex">
             <tui-icon name="camera" size="30" color="white" style=""></tui-icon>
         </view>
 
