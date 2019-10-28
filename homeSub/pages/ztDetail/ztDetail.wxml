@@ -53,8 +53,6 @@
 <!--    赞信息E-->
 
     <!--评论列表S-->
-
-
     <comment commentList="{{commentList}}"></comment>
     <!--评论列表E-->
 

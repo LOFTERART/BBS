@@ -25,15 +25,23 @@ Page({
       //楼主信息
       LandlordInfo:[
           {
+              specialist:false,
+              Auth:'医生认证',
+              address:'许昌 陈庄幼儿园',
               avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
-              content: "没救了来不及了",
-              id: 40579,
-              is_like: false,
-              like_num: 1,
-              memNum:1,
-              name: "张三",
+              content: "别紧张 都是第一次 😁",
+              id:39854,
+              pid:29969, //评论动态的id
+              is_like: true,
+              like_num: 10,
+              name: "卢婷",
+              status:'环保局',
+              Community:'阳光花墅',
+              reply_comment: [],
               timer: '刚刚',
               user_id: 39754,
+              user_type: "student",
+              color:'white'
           }
       ],
 
