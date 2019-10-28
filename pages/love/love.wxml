@@ -58,7 +58,7 @@
 
 <!--    时间 和公开S-->
 
-    <view style="padding: 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;background-color: #12d58b">
+    <view style="padding: 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;">
 
 
         <view style="display: flex;flex-direction: row;align-items: center">
@@ -85,6 +85,10 @@
             src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
            class="img">
 
+        <view style="width: 100rpx;height: 100rpx;border-radius:50rpx;background-color: rgba(255,255,255,0.5);top:30rpx;left: 30rpx;position: absolute;justify-content: center;align-items: center;display: flex">
+            <tui-icon name="camera" size="30" color="white" style=""></tui-icon>
+        </view>
+
 
 
     </image>
@@ -97,7 +101,7 @@
 
 
     <view class="tui-btn-box">
-        <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">
+        <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickDK">
             完成打卡
         </tui-button>
     </view>

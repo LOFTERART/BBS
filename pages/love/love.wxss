@@ -32,7 +32,7 @@
     bottom: 0;
     left: 0;
     z-index: 10;
-    background: rebeccapurple;
+    background: white;
     height: 100%;
     box-sizing: border-box;
 
@@ -53,7 +53,7 @@
     position: relative;
     width: 95%;
     height: 800rpx;
-    filter: blur(5rpx);
+    /*filter: blur(5rpx);*/
     /*background-color: rgba(255,255,255,0.1);*/
 }
 

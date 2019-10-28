@@ -51,6 +51,15 @@ Page({
         })
     },
 
+    clickDK:function(){
+        wx.showTabBar({
+            animation:true
+        })
+        this.setData({
+            showModalStatus: false
+        })
+    },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
