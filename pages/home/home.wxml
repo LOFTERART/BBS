@@ -29,9 +29,9 @@
 
 
 
-<!--banner S previous-margin="60rpx" next-margin="60rpx"-->
+<!--banner S -->
 <view class="tui-banner-box">
-    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" class="tui-banner-swiper" circular="{{true}}"  bindchange="change">
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" class="tui-banner-swiper" circular="{{true}}" >
         <swiper-item wx:for="{{banners}}" wx:key="{{index}}" class="tui-banner-item">
             <image
                     bindtap="tapBanner"

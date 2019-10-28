@@ -70,10 +70,10 @@ create(store,{
 
         ],
 
-
         //默认社区名称
         community:'阳光花墅',
 
+        current:0   //轮播图
 
     },
     /**
@@ -82,15 +82,22 @@ create(store,{
      */
     onLoad: function (options) {
 
+
+
+
     },
 
 
-
-
+    //轮播图切换
+    change: function (e) {
+        this.setData({
+            current: e.detail.current
+        })
+    },
 
     //    ad 点击
-    tapBannerAD: function (e) {
-        UTIL.toast('待开发')
+    tapBanner: function (e) {
+        UTIL.toast(e.currentTarget.dataset.name)
     },
     
     
@@ -104,6 +111,7 @@ create(store,{
         })
 
     },
+
 
 
 
