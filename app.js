@@ -1,9 +1,22 @@
 wx = require('./x-wxx/index');
-
+const WXAPI = require('/API/API')
 
 App({
     onLaunch: function () {
         this.updataApp();
+        wx.login({
+            success (res) {
+                if (res.code) {
+                    WXAPI.ArtLogin({
+                        code:res.code
+                    }).then(res=>{
+                        console.log(res,'111');
+                    })
+                } else {
+                    console.log('登录失败！' + res.errMsg)
+                }
+            }
+        })
     },
 
     //更新

@@ -68,6 +68,12 @@ module.exports = {
     request,
 
 
+    //登录
+    ArtLogin:(data)=>{
+        // return request('https://api.teacher.meishuquanyunxiao.com/v2/admin/login-test', 'GET',data)
+        return request('https://api.pbook.musemore.art/v1/user/login', 'GET',data)
+    },
+
     //发表状态
     ArtAddZT:(data)=>{
         return request('https://api.meishuquanyunxiao.com/v1/news/add-daily', 'POST',data)
@@ -94,10 +100,7 @@ module.exports = {
         return request('https://api.teacher.meishuquanyunxiao.com/v2/video/info', 'GET',data)
     },
 
-    //登录
-    ArtLogin:(data)=>{
-        return request('https://api.teacher.meishuquanyunxiao.com/v2/admin/login-test', 'POST',data)
-    },
+
 
     //验证码
     ArtSendCode:(data)=>{
