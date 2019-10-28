@@ -56,22 +56,8 @@ App({
     },
 
 
-    fadeInOut:function(that,param,opacity){
-        var animation = wx.createAnimation({
-            //持续时间800ms
-            duration: 200,
-            timingFunction: 'ease-in',
-        })
-        animation.opacity(opacity).step()
-        var json = '{"' + param + '":""}'
-        json = JSON.parse(json);
-        json[param] = animation.export()
-        that.setData(json)
-    },
-
     globalData: {
-        userInfo: null,
-        screen:null,
+        userInfo: null
     }
 })
 
