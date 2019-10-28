@@ -31,10 +31,24 @@ Page({
 
     clickCell:function(e){
 
+        wx.hideTabBar({
+            animation:true
+        })
+
         this.setData({
             showModalStatus: true,
         })
 
+    },
+
+    //关闭评论
+    hideModal: function() {
+        wx.showTabBar({
+            animation:true
+        })
+        this.setData({
+            showModalStatus: false
+        })
     },
 
   /**

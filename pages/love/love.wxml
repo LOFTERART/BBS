@@ -45,25 +45,17 @@
 <view class="mask-screen" bindtap="hideModal" hidden="{{!showModalStatus}}"></view>
 
 <view animation="{{animationData}}" class="region-box" hidden="{{!showModalStatus}}">
-    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx;">
+    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;height: 40rpx;padding: 20rpx;position: relative">
 
-        <view style="color: #888888;font-size: 28rpx" bindtap="clickQx">取消</view>
+        <view class="f36">早睡打卡</view>
 
-        <view style="color: rgba(18,213,139,1);;font-size: 28rpx" bindtap="clickFb">发表</view>
+        <view style="position: absolute;left: 30rpx;top:20rpx" class="f36" bindtap="hideModal">
+            X
+        </view>
+
 
     </view>
 
-    <view style="padding: 20rpx;" >
-            <textarea
-                    bindinput="onGetValue"
-                    value="{{ message }}"
-                    placeholder="{{placeholders}}"
-                    placeholder-style="color:#666;"
-                    adjust-position
-                    show-confirm-bar="{{false}}"
-                    cursor-spacing="100"
-                    focus="{{showModalStatus}}"
-            />
-    </view>
+
 
 </view>
