@@ -89,6 +89,10 @@
             <tui-icon name="camera" size="30" color="white" style=""></tui-icon>
         </view>
 
+        <view style="position: absolute;top: 48%;left: 48%;font-size: 50rpx;transform: translate(-50%, -50%);color: white;font-weight: bolder">
+            早睡打卡第一天
+        </view>
+
 
 
     </image>
