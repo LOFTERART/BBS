@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/mine/mine",
-    "pages/aiDynamic/aiDynamic"
+    "pages/aiDynamic/aiDynamic",
+    "pages/love/love"
   ],
   "subPackages": [
     {
