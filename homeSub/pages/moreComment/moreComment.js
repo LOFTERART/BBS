@@ -1,10 +1,7 @@
 import CONFIG from "../../../config";
-const app = getApp()
 const WXAPI = require('../../../API/API')
-import create from '../../../utils/omi/create'
-import store from '../../../store/store'
 import UTIL from '../../../utils/util'
-create(store,{
+Page({
 
   /**
    * 页面的初始数据

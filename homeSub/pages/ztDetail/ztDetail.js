@@ -1,8 +1,5 @@
 import UTIL from '../../../utils/util'
 const WXAPI = require('../../../API/API')
-const app = getApp()
-import create from '../../../utils/omi/create'
-import store from '../../../store/store'
 import data from '../../../data/data'
 Page({
     data: {

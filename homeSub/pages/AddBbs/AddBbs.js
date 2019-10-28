@@ -1,12 +1,7 @@
 const WXAPI = require('../../../API/API')
-import store from '../../../store/store'
-import create from '../../../utils/omi/create'
 import  UTIL from '../../../utils/util'
+Page({
 
-create(store,{
-    context: {
-        emitter: create.emitter
-    },
     data: {
         changeColor:'rgba(231,231,232,1)',
         images: [], //存放图片的数组
