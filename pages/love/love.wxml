@@ -5,7 +5,7 @@
 
     <block wx:for="{{loveHobb}}" wx:key>
 
-        <view class="cell" bindtap="clickCell">
+        <view class="cell" bindtap="clickCell" data-name="{{item.name}}">
 
             <view style="display: flex;flex-direction: row;">
 
@@ -47,7 +47,7 @@
 <view  class="region-box" hidden="{{!showModalStatus}}">
 
     <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;height: 80rpx;padding: 20rpx;position: relative" bindtap="hideModal">
-        <view class="f36">早睡打卡</view>
+
 
         <view style="position: absolute;left: 30rpx;top:20rpx;font-size: 50rpx" >
             X

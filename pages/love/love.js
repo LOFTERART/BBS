@@ -20,6 +20,8 @@ Page({
 
       showModalStatus: false,
 
+      loveName:''
+
   },
 
   /**
@@ -38,6 +40,9 @@ Page({
         this.setData({
             showModalStatus: true,
         })
+        wx.setNavigationBarTitle({
+          title: e.currentTarget.dataset.name
+        })
 
     },
 
@@ -49,6 +54,9 @@ Page({
         this.setData({
             showModalStatus: false
         })
+        wx.setNavigationBarTitle({
+            title: '养成好习惯'
+        })
     },
 
     clickDK:function(){
@@ -57,6 +65,9 @@ Page({
         })
         this.setData({
             showModalStatus: false
+        })
+        wx.setNavigationBarTitle({
+            title: '养成好习惯'
         })
     },
 
