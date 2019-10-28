@@ -385,6 +385,70 @@ const dataBase = {
         },
     ],
 
+
+
+    //收到的赞
+
+    likePeople:[
+        {   id:1,
+            avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+            name: "曹阿瞒",
+            status: "宝爸",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 陈庄幼儿园',
+            isShowFollow:true
+        },
+        {   id:1,
+            avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+            name: "曹阿瞒",
+            status: "宝爸",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 陈庄幼儿园',
+            isShowFollow:true
+        },
+        {   id:1,
+            avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+            name: "曹阿瞒",
+            status: "宝爸",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 陈庄幼儿园',
+            isShowFollow:true
+        },
+        {   id:1,
+            avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+            name: "曹阿瞒",
+            status: "宝爸",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 陈庄幼儿园',
+            isShowFollow:true
+        },
+        {   id:1,
+            avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+            name: "曹阿瞒",
+            status: "宝爸",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 陈庄幼儿园',
+            isShowFollow:true
+        },
+
+
+    ],
+
     homeBanner:[
         {id:1,image:'https://dcdn.it120.cc/2019/10/24/cbfc929a-3011-482e-a8d9-30afa09090b7.jpg',type:'H5',link:'url',name:'我'},
         {id:2,image:'https://dcdn.it120.cc/2019/10/24/dd570f26-f5e1-48fb-b8d6-9adb19831fd8.jpg',type:'H5',link:'url',name:'是'},

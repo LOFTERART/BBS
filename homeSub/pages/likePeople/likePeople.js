@@ -1,4 +1,4 @@
-// homeSub/pages/likePeople/likePeople.js
+import data from '../../../data/data'
 Page({
 
   /**
@@ -6,21 +6,7 @@ Page({
    */
   data: {
 
-      followUserList:[
-          {   id:1,
-              avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
-              name: "曹阿瞒",
-              status: "宝爸",
-              community: "阳光花墅",
-              specialist:true,
-              Auth:'医生认证',
-              timer: '刚刚',
-              address:'许昌 陈庄幼儿园',
-              isShowFollow:true
-          },
-
-
-      ],
+      followUserList:data.likePeople
 
   },
 
