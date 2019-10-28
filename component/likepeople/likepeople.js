@@ -46,23 +46,23 @@ Component({
 
 
       //  关注
-      clickLike:function(e){
-
+      clickFollow:function(e){
           wx.vibrateShort();
           let index = e.currentTarget.dataset.index;
-          let is_like= "articleList["+index+"].is_like";
-          let like= "articleList["+index+"].like";
+          let isShowFollow= "likeUserList["+index+"].isShowFollow";
+          let followDes= "likeUserList["+index+"].followDes";
 
-          if(this.data.articleList[index].is_like){
+          if(this.data.likeUserList[index].isShowFollow){
               this.setData({
-                  [is_like]: !this.data.articleList[index].is_like,
-                  [like]: this.data.articleList[index].like-1,
+                  [isShowFollow]: !this.data.likeUserList[index].isShowFollow,
+                  [followDes]: '关注',
               })
               // this.likeVSNoLikeComment(e.currentTarget.dataset.id,true)
           }else {
               this.setData({
-                  [is_like]: !this.data.articleList[index].is_like,
-                  [like]: this.data.articleList[index].like+1,
+                  [isShowFollow]: !this.data.likeUserList[index].isShowFollow,
+                  // [like]: this.data.articleList[index].like+1,
+                  [followDes]: '已关注',
               })
               // this.likeVSNoLikeComment(e.currentTarget.dataset.id,false)
           }

@@ -1,1 +1,5 @@
 @import "/app.wxss";
+
+.follow{
+    width: 120rpx;height: 60rpx;color: white;border-radius: 70rpx;line-height: 60rpx;text-align: center;background-color: #00cc88
+}
