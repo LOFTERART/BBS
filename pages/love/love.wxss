@@ -41,3 +41,23 @@
 
 
 /*底部抽屉样式 end*/
+
+
+
+.img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20rpx;
+    position: relative;
+    width: 95%;
+    height: 800rpx;
+    filter: blur(5rpx);
+    /*background-color: rgba(255,255,255,0.1);*/
+}
+
+.tui-btn-box {
+    padding: 40rpx 50rpx;
+    box-sizing: border-box;
+}

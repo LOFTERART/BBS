@@ -3,6 +3,7 @@
   "enablePullDownRefresh": true,
   "usingComponents": {
     "drawer": "/component/drawer/drawer",
+    "tui-button": "/component/button/button",
     "tui-icon": "/component/icon/icon"
   }
 }

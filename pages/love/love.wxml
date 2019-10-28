@@ -76,5 +76,31 @@
 <!--    时间 和公开E-->
 
 
+<!--    图片S-->
+
+
+
+    <image
+            mode="scaleToFill"
+            src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+           class="img">
+
+
+
+    </image>
+
+
+
+
+    <!--    图片E-->
+
+
+
+    <view class="tui-btn-box">
+        <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">
+            完成打卡
+        </tui-button>
+    </view>
+
 
 </view>
