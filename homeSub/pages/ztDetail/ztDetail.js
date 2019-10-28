@@ -21,7 +21,7 @@ create(store,{
                 pid:29969, //评论动态的id
                 is_like: true,
                 like_num: 10,
-                name: "张三",
+                name: "卢婷",
                 status:'环保局',
                 Community:'阳光花墅',
                 reply_comment: [],

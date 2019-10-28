@@ -34,7 +34,7 @@
 
                 <view>
                     <viw style="margin-right: 100rpx;color: #969799">
-                        <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{replyComment.length}}
+                        <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{item.memNum}}
                     </viw>
                     <viw style="color: #969799;font-size: 30rpx;" bindtap="clickLikeZT" data-id="{{item.id}}">
                         <i class="iconfont icon-zan" style="margin-right: 10rpx;color:{{item.is_like?'red':'#323233'}}" ></i>{{item.like_num}}
@@ -79,7 +79,7 @@
                 <view style="display: flex;flex-direction: row;justify-content: space-between">
                     <view class="f28" style="font-weight: 500">{{item.name}}</view>
                 </view>
-                <view class="f22">{{Time.formatDate(item.timer)}}</view>
+                <view class="f22">{{item.timer}}</view>
             </view>
 
         </view>
@@ -96,7 +96,7 @@
 
             <view>
                 <viw style="margin-right: 100rpx;color: #969799" bindtap="clickMoreMessage" data-id="{{item.id}}" data-rutype="{{item.user_type}}" data-ruid="{{item.user_id}}" data-name="{{item.name}}">
-                    <i class="iconfont icon-pinglun" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{item.reply_comment.length}}
+                    <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{item.memNum}}
                 </viw>
                 <viw style="color: #969799;font-size: 30rpx;" bindtap="clickLike" data-index="{{index}}">
                     <i class="iconfont icon-zan" style="margin-right: 10rpx;color:{{item.is_like?'red':'#323233'}}" ></i>{{item.like_num}}

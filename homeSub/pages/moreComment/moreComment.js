@@ -19,7 +19,7 @@ create(store,{
 
       page: 0, //分页
       pageSize: 1000, //每页显示的个数
-      replyComment:[],
+
 
 
       showModalStatus: false,
@@ -33,9 +33,39 @@ create(store,{
               id: 40579,
               is_like: false,
               like_num: 1,
-              name: "昊昊",
+              memNum:1,
+              name: "张三",
               timer: '刚刚',
               user_id: 39754,
+          }
+      ],
+
+      //回复楼主的评论列表
+
+      replyComment:[
+          {
+              avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/183%2Fpicture%2Fimage%2F8f5e4c4657d191ff93491ba7fef872ae.jpg?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
+              content: "像了就不叫画了 这才叫艺术高手",
+              id: 39894,
+              is_like: false,
+              like_num: 0,
+              memNum:0,
+              name: "卢婷",
+              reviewers: "张三",
+              timer: '1天前',
+              user_id: 21110,
+          },
+          {
+              avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/183%2Fpicture%2Fimage%2F8f5e4c4657d191ff93491ba7fef872ae.jpg?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
+              content: "像了就不叫画了 这才叫艺术高手",
+              id: 39894,
+              is_like: false,
+              like_num: 0,
+              memNum:0,
+              name: "卢婷",
+              reviewers: "张三",
+              timer: '1天前',
+              user_id: 21110,
           }
       ]
 
@@ -50,7 +80,7 @@ create(store,{
   onLoad: function (options) {
 
       console.log(options);
-      this.getList(options.id)
+      // this.getList(options.id)
 
       this.setData({
           pid:options.pid,
