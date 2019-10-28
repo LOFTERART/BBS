@@ -85,7 +85,7 @@
             <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 20rpx">
 
                 <view>
-                    <viw style="margin-right: 100rpx;color: #969799" bindtap="clickMoreComment" data-id="{{item.id}}">
+                    <viw style="margin-right: 100rpx;color: #969799" bindtap="clickMoreComment" data-id="{{item.id}}" data-pid="{{item.pid}}">
                         <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{item.reply_comment.length}}
                     </viw>
 

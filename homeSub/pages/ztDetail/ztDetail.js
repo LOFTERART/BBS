@@ -18,6 +18,7 @@ create(store,{
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "别紧张 都是第一次 😁",
                 id: 40579,
+                pid:30903, //评论动态的id
                 is_like: true,
                 like_num: 10,
                 name: "张三",
@@ -34,6 +35,7 @@ create(store,{
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "哇 新娘子好漂亮~",
                 id: 40579,
+                pid:30903, //评论动态的id
                 is_like: true,
                 like_num: 10,
                 name: "李四",
@@ -50,6 +52,7 @@ create(store,{
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "哈哈  恭喜恭喜 沾沾喜气 吃喜糖",
                 id: 40579,
+                pid:30903, //评论动态的id
                 is_like: true,
                 like_num: 10,
                 name: "小明",
@@ -66,6 +69,7 @@ create(store,{
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "别紧张 都是第一次 😁",
                 id: 40579,
+                pid:30903, //评论动态的id
                 is_like: true,
                 like_num: 10,
                 name: "小花",
@@ -83,6 +87,7 @@ create(store,{
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "别紧张 都是第一次 😁",
                 id: 40579,
+                pid:30903, //评论动态的id
                 is_like: true,
                 like_num: 10,
                 name: "小狗",
@@ -99,6 +104,7 @@ create(store,{
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "别紧张 都是第一次 😁",
                 id: 40579,
+                pid:30903, //评论动态的id
                 is_like: true,
                 like_num: 10,
                 name: "小虫",
@@ -339,11 +345,10 @@ create(store,{
 
 
 
-//    评论列表点击更多评论
+//    评论列表点击更多评论 当前id和动态的id 知道是给谁的动态评价
     clickMoreComment:function (e) {
-        console.log(e,'eee');
         wx.navigateTo({
-            url: '/homeSub/pages/moreComment/moreComment?id='+e.currentTarget.dataset.id+'&pid='+this.data.dailyInfo.id
+            url: '/homeSub/pages/moreComment/moreComment?id='+e.currentTarget.dataset.id+'&pid='+e.currentTarget.dataset.pid
         })
     },
 
