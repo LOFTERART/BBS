@@ -1,8 +1,5 @@
 
 @import "iconFont/iconFont.wxss";
-page{
-    font-family: PingFangSC-Regular;
-}
 
 /**app.wxss**/
 
