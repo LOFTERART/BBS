@@ -1,4 +1,6 @@
 // component/comment/comment.js
+import UTIL from "../../utils/util";
+
 Component({
   /**
    * 组件的属性列表
@@ -23,6 +25,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
+      clickVip:function(e){
+          UTIL.toast(e.currentTarget.dataset.auth)
+      },
 
       //    评论列表点击更多评论 当前id和动态的id 知道是给谁的动态评价
       clickMoreComment:function (e) {

@@ -43,7 +43,6 @@ Component({
 
       clickVip:function(e){
           UTIL.toast(e.currentTarget.dataset.auth)
-
       },
 
       //  like 点赞
@@ -117,9 +116,7 @@ Component({
 
       //点击更多
       clickMore:function(e){
-
           var that=this
-
           wx.showActionSheet({
               itemList: [
                   '收藏',
@@ -139,7 +136,6 @@ Component({
                   console.log(res.errMsg)
               }
           })
-
 
       },
 

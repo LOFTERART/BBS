@@ -11,7 +11,9 @@ Page({
         //评论列表
         commentList:[
             {
-
+                specialist:true,
+                Auth:'医生认证',
+                address:'许昌 陈庄幼儿园',
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "别紧张 都是第一次 😁",
                 id:39854,
@@ -28,7 +30,9 @@ Page({
                 color:'#f7f7f7'
             },
             {
-
+                specialist:true,
+                Auth:'医生认证',
+                address:'许昌 陈庄幼儿园',
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "哇 新娘子好漂亮~",
                 id: 40579,
@@ -45,7 +49,9 @@ Page({
                 color:'rgba(245,242,217,1)'
             },
             {
-
+                specialist:true,
+                Auth:'医生认证',
+                address:'许昌 陈庄幼儿园',
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "哈哈  恭喜恭喜 沾沾喜气 吃喜糖",
                 id: 40579,
@@ -62,7 +68,9 @@ Page({
                 color:'rgba(231,245,236,1)'
             },
             {
-
+                specialist:true,
+                Auth:'医生认证',
+                address:'许昌 陈庄幼儿园',
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "别紧张 都是第一次 😁",
                 id: 40579,
@@ -80,7 +88,9 @@ Page({
             },
 
             {
-
+                specialist:true,
+                Auth:'医生认证',
+                address:'许昌 陈庄幼儿园',
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "别紧张 都是第一次 😁",
                 id: 40579,
@@ -97,7 +107,9 @@ Page({
                 color:'rgba(234,242,246,1)'
             },
             {
-
+                specialist:true,
+                Auth:'医生认证',
+                address:'许昌 陈庄幼儿园',
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "别紧张 都是第一次 😁",
                 id: 40579,
