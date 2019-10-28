@@ -10,3 +10,36 @@
 .cell{
     padding: 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 160rpx;margin-bottom: 20rpx;border-radius: 20rpx;background-color: white
 }
+
+
+/*底部抽屉样式 start*/
+
+.mask-screen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 9;
+}
+.region-box{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+    height: 900rpx;
+    box-sizing: border-box;
+
+}
+
+textarea{
+    width:100%;
+}
+
+/*底部抽屉样式 end*/
