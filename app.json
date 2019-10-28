@@ -16,7 +16,6 @@
         "pages/NewsList/NewsList",
         "pages/conversation/conversation",
         "pages/tousu/tousu",
-        "pages/choseAddress/choseAddress",
         "pages/together/together",
         "pages/homeDetail/homeDetail",
         "pages/addPeoInfo/addPeoInfo",
