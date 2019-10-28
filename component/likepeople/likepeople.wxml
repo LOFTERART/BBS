@@ -26,7 +26,7 @@
             </view>
 
 
-            <view class="follow" bindtap="clickFollow" data-index="{{index}}" data-isfollow="{{item.isShowFollow}}"  style="background-color: {{item.isShowFollow?'white':'#12d58b'}};color: {{item.isShowFollow?'#12d58b':'white'}}">
+            <view class="follow" bindtap="clickFollow" data-index="{{index}}" data-isfollow="{{item.isShowFollow}}"  style="background-color: {{item.isShowFollow?'white':'#12d58b'}};color: {{item.isShowFollow?'#12d58b':'white'}}" >
                 {{item.followDes}}
             </view>
 
