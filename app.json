@@ -50,16 +50,16 @@
     "borderStyle": "white",
     "list": [
       {
+        "pagePath": "pages/message/message",
+        "text": "推荐",
+        "iconPath": "assets/image/gz.png",
+        "selectedIconPath": "assets/image/gzing.png"
+      },
+      {
         "pagePath": "pages/home/home",
         "text": "社区",
         "iconPath": "assets/image/home.png",
         "selectedIconPath": "assets/image/homeing.png"
-      },
-      {
-        "pagePath": "pages/message/message",
-        "text": "关注",
-        "iconPath": "assets/image/gz.png",
-        "selectedIconPath": "assets/image/gzing.png"
       },
       {
         "pagePath": "pages/mine/mine",
