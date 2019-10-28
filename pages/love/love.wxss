@@ -47,7 +47,7 @@
 .cat_name {
     text-align: center;
     padding-bottom: 40rpx;
-    font-size: 46rpx;
+    font-size: 28rpx;
 }
 
 .ipt {
