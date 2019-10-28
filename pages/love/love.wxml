@@ -109,6 +109,30 @@
 
 
 
+<!--        头像信息S-->
+
+
+        <view style="position: absolute;bottom: 30rpx;left: 30rpx">
+
+            <view style="display: flex;flex-direction: row;align-items: center">
+
+                <image src="https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png" style="width: 100rpx;height: 100rpx;border-radius: 50rpx;margin-right: 10rpx" />
+
+                <view style="display: flex;flex-direction: column">
+                    <view class="f32" style="color: white">LOFTERART</view>
+                    <view class="f24" style="color: white">2019年10月29日</view>
+                </view>
+
+            </view>
+
+
+        </view>
+
+
+<!--        头像信息E-->
+
+
+
     </image>
 
 
