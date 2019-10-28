@@ -397,7 +397,7 @@ const dataBase = {
             community: "阳光花墅",
             specialist:false,
             Auth:'医生认证',
-            timer: '刚刚',
+            timer: '1分钟前',
             address:'许昌 陈庄幼儿园',
             isShowFollow:true
         },
@@ -408,7 +408,7 @@ const dataBase = {
             community: "森林半岛",
             specialist:false,
             Auth:'医生认证',
-            timer: '刚刚',
+            timer: '2天前',
             address:'许昌 陈庄幼儿园',
             isShowFollow:true
         },
@@ -419,7 +419,7 @@ const dataBase = {
             community: "恒大国际",
             specialist:false,
             Auth:'医生认证',
-            timer: '刚刚',
+            timer: '10天前',
             address:'许昌 陈庄幼儿园',
             isShowFollow:true
         },
@@ -430,7 +430,7 @@ const dataBase = {
             community: "金石小区",
             specialist:false,
             Auth:'医生认证',
-            timer: '刚刚',
+            timer: '3天前',
             address:'许昌 陈庄幼儿园',
             isShowFollow:true
         },
@@ -441,7 +441,7 @@ const dataBase = {
             community: "阳光花墅",
             specialist:true,
             Auth:'医生认证',
-            timer: '刚刚',
+            timer: '6天前',
             address:'许昌 陈庄幼儿园',
             isShowFollow:true
         },

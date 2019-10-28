@@ -1,0 +1,40 @@
+
+
+<blcok wx:for="{{likeUserList}}" wx:key>
+
+    <view  style="padding: 20rpx;" class="van-hairline--bottom">
+        <!--头像基本信息-->
+        <view style="display: flex;flex-direction: row;background-color: white;height: 80rpx;margin-bottom: 10rpx;justify-content: space-between;align-items: center" >
+
+            <view style="display: flex;flex-direction: row">
+                <view style="margin-right: 20rpx" bindtap="clickAva" data-name="{{item.name}}">
+                    <image mode="widthFix"  src="{{item.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
+                </view>
+
+                <view style="display: flex;flex-direction: column;justify-content: space-around;">
+                    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center">
+                        <view class="f28" bindtap="clickName">{{item.name}}</view>
+                        <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f28" bindtap="clickName">{{item.status}}</view>
+                        <view style="color: rgba(18,213,139,1);margin-right: 10rpx" class="f28" bindtap="clickName">{{item.community}}</view>
+
+                        <tui-icon name="member" size="22" color="#DFB176" bindtap="clickVip" data-auth="{{item.Auth}}" wx:if="{{item.specialist}}"></tui-icon>
+
+                        <view style="color: red;margin-left: 20rpx" class="f28" wx:if="{{item.is_top}}">置顶</view>
+                    </view>
+                    <view class="f22">{{item.timer}}·<text style="color: rgba(18,213,139,1)" class="f22">{{item.address}}</text> </view>
+                </view>
+            </view>
+
+
+            <view style="width: 120rpx;height: 60rpx;color: white;border-radius: 70rpx;line-height: 60rpx;text-align: center;background-color: #00cc88" wx:if="{{item.isShowFollow}}">
+                关注
+            </view>
+
+
+        </view>
+
+
+    </view>
+
+
+</blcok>
