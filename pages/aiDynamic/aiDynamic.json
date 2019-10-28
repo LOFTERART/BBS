@@ -1,7 +1,5 @@
-
-
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "推荐",
   "enablePullDownRefresh": true,
   "usingComponents": {
     "dycell": "/component/dycell/dycell"

@@ -76,6 +76,13 @@
 					"id": -1,
 					"name": "homeSub/pages/moreComment/moreComment",
 					"pathName": "homeSub/pages/moreComment/moreComment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/aiDynamic/aiDynamic",
+					"pathName": "pages/aiDynamic/aiDynamic",
 					"scene": null
 				}
 			]

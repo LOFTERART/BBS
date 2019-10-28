@@ -1,0 +1,27 @@
+
+
+<view style="display: flex;flex-direction: column;height: 40rpx;padding: 20rpx;color:rgba(58,58,58,1)" class="f24">
+    为你推荐
+</view>
+
+
+<view style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+
+
+    <block wx:for="{{aiCatList}}" wx:key>
+
+        <view style="display: flex;flex-direction: column;justify-content: space-around;height: 160rpx" bindtap="clickAI" data-type="{{item.type}}">
+            <image src="{{item.image}}" style="width: 80rpx;height: 80rpx;border-radius: 40rpx" />
+            <view class="f24">{{item.name}}</view>
+        </view>
+
+    </block>
+
+
+</view>
+
+
+<view class="divider" style="height: 20rpx"></view>
+
+
+<dycell articleList="{{articleList}}" isShowFollow="{{true}}"></dycell>

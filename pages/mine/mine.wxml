@@ -110,7 +110,5 @@
             </view>
         </view>
 
-        <!--加载loadding-->
-        <tui-loadmore visible="{{loadding}}" index="{{3}}" type="red"></tui-loadmore>
     </view>
 </view>
