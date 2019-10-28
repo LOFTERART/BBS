@@ -10,8 +10,6 @@ create(store,{
    * 页面的初始数据
    */
   data: {
-      isShowBottom:true,
-      dPshow: false, //点评show
       placeholders:'写下你的...',
       daily_comment_pid:0,
       reply_user_id:0,//被回复者的userId
@@ -22,6 +20,10 @@ create(store,{
       page: 0, //分页
       pageSize: 1000, //每页显示的个数
       replyComment:[],
+
+
+      showModalStatus: false,
+      isShowBottom:true,  //是否显示底部评论bar
 
   },
 
@@ -44,6 +46,52 @@ create(store,{
       })
 
   },
+
+
+
+    //点击评论
+
+    btnCmt: function() {
+        this.setData({
+            showModalStatus: true,
+            isShowBottom:false,
+            placeholders:'@'+this.data.commentInfo.name+'...'
+        })
+    },
+
+
+    //点击取消按钮
+    clickQx:function(){
+        this.setData({
+            showModalStatus: false,
+            isShowBottom:true
+        })
+    },
+    //关闭评论
+    hideModal: function() {
+        this.setData({
+            showModalStatus: false,
+            isShowBottom:true,
+        })
+    },
+    //文字点评获取输入文字
+    onGetValue(event) {
+        console.log(event.detail.value);
+        this.setData({
+            message:event.detail.value
+        })
+    },
+    //收藏
+    collection: function () {
+        this.setData({
+            isCollection: !this.data.isCollection
+        }, () => {
+            if (this.data.isCollection) {
+                UTIL.toast("收藏成功！");
+            }
+        })
+    },
+
 
 
     clickZTMore:function(){
@@ -112,27 +160,6 @@ create(store,{
 
 
 
-    //取消
-    clickQx:function(){
-        this.setData({
-            dPshow:false
-        })
-    },
-
-    //文字点评获取输入文字
-    onGetValue(event) {
-        // event.detail 为当前输入的值
-        this.setData({
-            ly:event.detail.value
-        })
-    },
-    //    底部按钮点击
-
-    clickBottom:function (e) {
-        //点赞
-        console.log(1);
-
-    },
 
 
     //获取状态
@@ -227,34 +254,6 @@ create(store,{
 
 
 
-
-
-    //显示bottom
-    onPageScroll: function (ev) {
-        var _this = this;
-        //判断浏览器滚动条上下滚动
-        if (ev.scrollTop <= 0) {
-            // 滚动到最顶部
-            ev.scrollTop = 0;
-            _this.setData({
-                isShowBottom:true
-            })
-        }else if (ev.scrollTop > this.data.scrollTop || ev.scrollTop == wx.getSystemInfoSync().windowHeight) {
-            _this.setData({
-                isShowBottom:false
-            })
-        } else {
-            _this.setData({
-                isShowBottom:true
-            })
-        }
-        //给scrollTop重新赋值
-        setTimeout(function () {
-            _this.setData({
-                scrollTop: ev.scrollTop
-            })
-        }, 0)
-    },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

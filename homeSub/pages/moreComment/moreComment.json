@@ -1,5 +1,8 @@
 {
   "navigationBarTitleText": "更多",
   "enablePullDownRefresh": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "drawer": "/component/drawer/drawer",
+    "tui-icon": "/component/icon/icon"
+  }
 }
