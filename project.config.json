@@ -57,7 +57,14 @@
 		},
 		"miniprogram": {
 			"current": -1,
-          "list": []
+			"list": [
+				{
+					"id": -1,
+					"name": "homeSub/pages/likePeople/likePeople",
+					"pathName": "homeSub/pages/likePeople/likePeople",
+					"scene": null
+				}
+			]
 		}
 	}
 }
