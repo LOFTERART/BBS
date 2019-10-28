@@ -3,7 +3,7 @@ const dataBase = {
 
     homeDyList:[
         {
-            id: 30903,
+            id: 29969,
             avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
             name: "曹阿瞒",
             status: "宝爸",
@@ -139,7 +139,7 @@ const dataBase = {
 
     dyDetail:[
         {
-            id: 30903,
+            id: 29969,
             avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
             name: "曹阿瞒",
             status: "宝爸",
@@ -168,7 +168,7 @@ const dataBase = {
     ],
     mySpaceDyList:[
         {
-            id: 30903,
+            id: 29969,
             avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
             name: "曹阿瞒",
             status: "宝爸",

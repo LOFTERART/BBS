@@ -17,8 +17,8 @@ create(store,{
 
                 avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
                 content: "别紧张 都是第一次 😁",
-                id: 40579,
-                pid:30903, //评论动态的id
+                id:39854,
+                pid:29969, //评论动态的id
                 is_like: true,
                 like_num: 10,
                 name: "张三",
