@@ -1,6 +1,9 @@
 // component/dycell/dycell.js
 import UTIL from "../../utils/util";
 
+//获取应用实例
+const app = getApp()
+
 Component({
   /**
    * 组件的属性列表
@@ -35,7 +38,7 @@ Component({
   methods: {
 
       clickName:function(){
-        UTIL.toast('让身边的人更有温度~')
+          UTIL.toast('让身边的人更有温度~')
       },
 
       clickVip:function(e){
