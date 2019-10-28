@@ -399,7 +399,8 @@ const dataBase = {
             Auth:'医生认证',
             timer: '1分钟前',
             address:'许昌 陈庄幼儿园',
-            isShowFollow:true
+            isShowFollow:true,
+            followDes:'已关注',
         },
         {   id:1,
             avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
@@ -410,7 +411,8 @@ const dataBase = {
             Auth:'医生认证',
             timer: '2天前',
             address:'许昌 陈庄幼儿园',
-            isShowFollow:true
+            isShowFollow:false,
+            followDes:'关注',
         },
         {   id:1,
             avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
@@ -421,7 +423,8 @@ const dataBase = {
             Auth:'医生认证',
             timer: '10天前',
             address:'许昌 陈庄幼儿园',
-            isShowFollow:true
+            isShowFollow:false,
+            followDes:'关注',
         },
         {   id:1,
             avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
@@ -432,7 +435,8 @@ const dataBase = {
             Auth:'医生认证',
             timer: '3天前',
             address:'许昌 陈庄幼儿园',
-            isShowFollow:true
+            isShowFollow:false,
+            followDes:'关注',
         },
         {   id:1,
             avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
@@ -443,7 +447,8 @@ const dataBase = {
             Auth:'医生认证',
             timer: '6天前',
             address:'许昌 陈庄幼儿园',
-            isShowFollow:true
+            isShowFollow:false,
+            followDes:'关注',
         },
 
 
