@@ -44,6 +44,24 @@
 
 
 
+.cat_name {
+    text-align: center;
+    padding-bottom: 40rpx;
+    font-size: 46rpx;
+}
+
+.ipt {
+    flex: auto;
+    height: 49rpx;
+    line-height: 49rpx;
+    padding-right: 10rpx;
+}
+
+.placeStyle {
+    color: #B6B6B6;
+}
+
+
 .img{
     display: flex;
     flex-direction: row;

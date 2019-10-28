@@ -90,7 +90,21 @@
         </view>
 
         <view style="position: absolute;top: 48%;left: 48%;font-size: 50rpx;transform: translate(-50%, -50%);color: white;font-weight: bolder">
-            早睡打卡第一天
+            <view>
+                早睡打卡第一天
+            </view>
+
+            <view class='cat_name'>
+                <input class="ipt"
+                       value="{{parmas.nickname?parmas.nickname:''}}"
+                       data-name='nickname'
+                       type="text"
+                       placeholder="点击可添加文字 "
+                       placeholder-style="placeStyle"
+                       maxlength="10"
+                       bindinput="changeIpt"></input>
+            </view>
+
         </view>
 
 
