@@ -31,7 +31,7 @@
                   bindtap="clickFollow"
                   data-index="{{index}}"
                   data-isfollow="{{item.isShowFollow}}"
-                  style="background-color: {{item.isShowFollow?'white':'#12d58b'}};color: {{item.isShowFollow?'#12d58b':'white'}}"
+                  style="background-color: {{item.isShowFollow?'white':'#12d58b'}};color: {{item.isShowFollow?'#12d58b':'white'}};border: {{item.isShowFollow?'0.5rpx solid #12d58b':''}} "
             >
                 {{item.followDes}}
             </view>
