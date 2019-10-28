@@ -6,6 +6,17 @@ Page({
    */
   data: {
 
+      loveHobb:[
+          {id:1,name:'早睡打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
+          {id:1,name:'早起打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
+          {id:1,name:'不吃零食打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
+          {id:1,name:'准时上班打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
+          {id:1,name:'戒烟打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
+          {id:1,name:'戒糖打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
+          {id:1,name:'多喝水打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
+          {id:1,name:'戒酒打卡',image:'https://dcdn.it120.cc/2019/10/26/cc6c2417-58d4-4a12-a595-bdd73537d6c9.png',own:'已累计打卡0天'},
+      ]
+
   },
 
   /**
