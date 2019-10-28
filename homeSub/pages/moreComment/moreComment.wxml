@@ -1,54 +1,62 @@
 <wxs src="../../../wxs/Time.wxs" module="Time" />
 <!--楼主评论列表-->
-<view style="padding: 10rpx 20rpx;" >
 
-    <view style="padding: 20rpx;display: flex;flex-direction: column;border-radius: 10rpx">
+<block wx:for="{{LandlordInfo}}" wx:key>
 
-        <view style="display: flex;flex-direction: row;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
+    <view style="padding: 10rpx 20rpx;" >
 
-            <view style="margin-right: 10rpx">
-                <image mode="scaleToFill"  src="{{commentInfo.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
-            </view>
+        <view style="padding: 20rpx;display: flex;flex-direction: column;border-radius: 10rpx">
 
-            <view style="display: flex;flex-direction: column;justify-content: space-between;">
-                <view style="display: flex;flex-direction: row;justify-content: space-between">
-                    <view class="f28" style="font-weight: 500">{{commentInfo.name}}</view>
+            <view style="display: flex;flex-direction: row;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
+
+                <view style="margin-right: 10rpx">
+                    <image mode="scaleToFill"  src="{{item.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
                 </view>
-                <view class="f22">{{Time.formatDate(commentInfo.timer)}}</view>
+
+                <view style="display: flex;flex-direction: column;justify-content: space-between;">
+                    <view style="display: flex;flex-direction: row;justify-content: space-between">
+                        <view class="f28" style="font-weight: 500">{{item.name}}</view>
+                    </view>
+                    <view class="f22">{{item.timer}}</view>
+                </view>
+
             </view>
 
-        </view>
+            <!--        文字-->
+            <view class="f28" style="font-weight: 500;color: #323233">
 
-        <!--        文字-->
-        <view class="f28" style="font-weight: 500;color: #323233">
+                {{item.content}}
 
-            {{commentInfo.content}}
+            </view>
+            <!--        赞和评论-->
 
-        </view>
-        <!--        赞和评论-->
+            <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 20rpx">
 
-        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 20rpx">
+                <view>
+                    <viw style="margin-right: 100rpx;color: #969799">
+                        <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{replyComment.length}}
+                    </viw>
+                    <viw style="color: #969799;font-size: 30rpx;" bindtap="clickLikeZT" data-id="{{item.id}}">
+                        <i class="iconfont icon-zan" style="margin-right: 10rpx;color:{{item.is_like?'red':'#323233'}}" ></i>{{item.like_num}}
+                    </viw>
+                </view>
 
-            <view>
-                <viw style="margin-right: 100rpx;color: #969799">
-                    <i class="iconfont icon-xinxi" style="font-size: 30rpx;margin-right: 10rpx" ></i>{{replyComment.length}}
-                </viw>
-                <viw style="color: #969799;font-size: 30rpx;" bindtap="clickLikeZT" data-id="{{commentInfo.id}}">
-                    <i class="iconfont icon-zan" style="margin-right: 10rpx;color:{{commentInfo.is_like?'red':'#323233'}}" ></i>{{commentInfo.like_num}}
-                </viw>
+
+                <view>
+                    <i class="iconfont icon-gengduo" style="color: #969799;font-size: 50rpx;" bindtap="clickZTMore"></i>
+                </view>
+
             </view>
 
 
-            <view>
-                <i class="iconfont icon-gengduo" style="color: #969799;font-size: 50rpx;" bindtap="clickZTMore"></i>
-            </view>
-
         </view>
-
 
     </view>
 
-</view>
+</block>
+
+
+
 
 
 <view class="divider"></view>
@@ -79,7 +87,7 @@
         <!--        文字-->
         <view class="f28" style="font-weight: 500;color: #323233">
 
-            <text style="color: rgba(18,213,139,1)"> @{{item.reviewers?item.reviewers:commentInfo.name}}</text> {{item.content}}
+            <text style="color: rgba(18,213,139,1)"> @{{item.reviewers?item.reviewers:item.name}}</text> {{item.content}}
 
         </view>
         <!--        赞和评论-->

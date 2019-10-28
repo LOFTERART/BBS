@@ -25,6 +25,22 @@ create(store,{
       showModalStatus: false,
       isShowBottom:true,  //是否显示底部评论bar
 
+      //楼主信息
+      LandlordInfo:[
+          {
+              avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
+              content: "没救了来不及了",
+              id: 40579,
+              is_like: false,
+              like_num: 1,
+              name: "昊昊",
+              timer: '刚刚',
+              user_id: 39754,
+          }
+      ]
+
+
+
   },
 
 
@@ -32,11 +48,7 @@ create(store,{
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      if(app.globalData.iphone){
-          this.setData({
-              btuBottom:"68rpx",
-          })
-      }
+
       console.log(options);
       this.getList(options.id)
 
