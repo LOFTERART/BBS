@@ -395,7 +395,7 @@ const dataBase = {
             name: "曹阿瞒",
             status: "宝爸",
             community: "阳光花墅",
-            specialist:false,
+            specialist:true,
             Auth:'医生认证',
             timer: '1分钟前',
             address:'许昌 陈庄幼儿园',
