@@ -51,7 +51,9 @@
 
 
                 <view>
-                    <i class="iconfont icon-gengduo" style="color: #969799;font-size: 50rpx;" bindtap="clickMoreMessage" ></i>
+                    <i class="iconfont icon-gengduo" style="color: #969799;font-size: 50rpx;"
+                       bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}"
+                    ></i>
                 </view>
 
             </view>

@@ -114,7 +114,7 @@ Component({
       },
 
 
-      //点击更多
+      //点击更多投诉
       clickMore:function(e){
           var that=this
           wx.showActionSheet({

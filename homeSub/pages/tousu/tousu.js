@@ -85,7 +85,7 @@ Page({
     clickSubmit:function(e){
 
         UTIL.toast('提交成功');
-        // wx.navigateBack();
+        wx.navigateBack();
     },
 
 })

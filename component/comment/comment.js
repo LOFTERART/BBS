@@ -81,6 +81,32 @@ Component({
       },
 
 
+      //点击更多投诉
+      clickMore:function(e){
+          var that=this
+          wx.showActionSheet({
+              itemList: [
+                  '收藏',
+                  '投诉'
+              ],
+              success (res) {
+                  if(res.tapIndex===1){
+                      wx.navigateTo({
+                          url: '/homeSub/pages/tousu/tousu?id='+e.currentTarget.dataset.id
+                      })
+
+                  }else {
+                      UTIL.toast('收藏成功')
+                  }
+              },
+              fail (res) {
+                  console.log(res.errMsg)
+              }
+          })
+
+      },
+
+
 
 
 
