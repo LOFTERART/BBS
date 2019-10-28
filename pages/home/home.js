@@ -1,6 +1,7 @@
 const WXAPI = require('../../API/API')
 import UTIL from '../../utils/util'
 import data from '../../data/data'
+
 Page({
     data: {
         //首页广告
