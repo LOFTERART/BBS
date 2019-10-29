@@ -21,7 +21,7 @@ Page({
       showModalStatus: false,
 
       loveName:'',
-      tempFilePaths:'https://static1.keepcdn.com/2019/05/28/1559017752974_460x238.png'
+      tempFilePaths:'https://goods7.juancdn.com/bao/170806/d/b/5986c4f0a9fcf8264e77eb68_800x800.jpg?iopcmd=thumbnail&type=11&height=310&width=310%7Ciopcmd=convert&Q=88&dst=jpg'
 
   },
 
