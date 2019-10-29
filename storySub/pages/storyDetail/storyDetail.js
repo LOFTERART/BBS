@@ -73,9 +73,20 @@ Page({
         })
     },
 
+    collection: function () {
+        this.setData({
+            isCollection: !this.data.isCollection
+        }, () => {
+            if (this.data.isCollection) {
+                UTIL.toast("收藏成功！");
+            }
+        })
+    },
 
 
-  /**
+
+
+    /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
