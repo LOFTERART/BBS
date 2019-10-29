@@ -2,7 +2,7 @@
     <view class="product-list">
         <!--商品列表-->
         <view class="pro-item" bindtap="detail" wx:for="{{productList}}" wx:key="{{index}}">
-            <image src="../../static/images/product/{{item.img}}.jpg" class="pro-img" mode="widthFix" />
+            <image src="{{item.image}}" class="pro-img" mode="widthFix" />
             <view class="pro-content">
                 <view class="pro-tit">{{item.name}}</view>
                 <view>

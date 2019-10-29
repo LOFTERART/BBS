@@ -3,12 +3,20 @@ Page({
         pageIndex: 1,
         productList: [
             {
-            img: 'https://dcdn.it120.cc/2019/10/29/223f8506-9882-404e-a76f-6b5c4903e476.jpg',
+            image: 'https://dcdn.it120.cc/2019/10/29/223f8506-9882-404e-a76f-6b5c4903e476.jpg',
             name: "曹魏古城",
             subName:'看山看海看日出都不及在这里笑着醒来',
             sale: 599,
             factory: 899,
             payNum: 2342
+            },
+            {
+                image: 'https://dcdn.it120.cc/2019/10/29/223f8506-9882-404e-a76f-6b5c4903e476.jpg',
+                name: "曹魏古城",
+                subName:'看山看海看日出都不及在这里笑着醒来',
+                sale: 599,
+                factory: 899,
+                payNum: 2342
             },
 
         ],
