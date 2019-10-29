@@ -1,3 +1,4 @@
+import data from "../../../data/data";
 const WXAPI = require('../../../API/API')
 import UTIL from '../../../utils/util'
 const app = getApp();
@@ -10,7 +11,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+//评论列表
+      commentList:data.commentList,
   },
 
   /**

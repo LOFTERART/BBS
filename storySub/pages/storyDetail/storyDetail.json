@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "故事详情",
-  "usingComponents": {}
+  "usingComponents": {
+    "comment": "/component/comment/comment",
+    "tui-icon": "/component/icon/icon"
+  }
 }
