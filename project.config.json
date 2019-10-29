@@ -76,6 +76,13 @@
 					"id": -1,
 					"name": "storySub/pages/storyDetail/storyDetail",
 					"pathName": "storySub/pages/storyDetail/storyDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
 					"scene": null
 				}
 			]
