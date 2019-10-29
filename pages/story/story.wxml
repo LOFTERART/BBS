@@ -1,2 +1,23 @@
-<!--pages/story/story.wxml-->
-<text>pages/story/story.wxml</text>
+<view class="container">
+    <view class="product-list">
+        <!--商品列表-->
+        <view class="pro-item" bindtap="detail" wx:for="{{productList}}" wx:key="{{index}}">
+            <image src="../../static/images/product/{{item.img}}.jpg" class="pro-img" mode="widthFix" />
+            <view class="pro-content">
+                <view class="pro-tit">{{item.name}}</view>
+                <view>
+                    <view class="pro-price">
+                        <text class="sale-price">￥{{item.sale}}</text>
+                        <text class="factory-price">￥{{item.factory}}</text>
+                    </view>
+                    <view class="pro-pay">{{item.payNum}}人付款</view>
+                </view>
+            </view>
+        </view>
+        <!--商品列表-->
+    </view>
+    <!--加载loadding-->
+    <tui-loadmore visible="{{loadding}}" index="3" type="primary"></tui-loadmore>
+    <tui-nomore visible="{{!pullUpOn}}"></tui-nomore>
+    <!--加载loadding-->
+</view>

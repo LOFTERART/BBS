@@ -1,4 +1,11 @@
 {
   "navigationBarTitleText": "全民故事",
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "tui-loadmore": "/component/loadmore/loadmore",
+    "tui-nomore": "/component/nomore/nomore"
+  }
 }
