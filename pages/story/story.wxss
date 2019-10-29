@@ -25,7 +25,7 @@
     position: absolute;
     height: 200%;
     width: 200%;
-    border: 1rpx solid #eaeef1;
+    /*border: 1rpx solid #eaeef1;*/
     transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     -webkit-transform: scale(0.5);
@@ -37,20 +37,21 @@
 .pro-img {
     width: 100%;
     display: block;
+    border-radius: 10rpx;
 }
 
 .pro-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     box-sizing: border-box;
-    padding: 20rpx;
+    background-color: #12d58b;
+    padding: 10rpx 0;
     height: 230rpx;
 }
 
 .pro-tit {
-    /* font-size:  */
-    color: #2e2e2e;
+    color: rgba(63,63,63,1);
     font-size: 26rpx;
     word-break: break-all;
     overflow: hidden;
