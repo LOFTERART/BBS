@@ -6,10 +6,7 @@
         </view>
         <view class="tui-header-icon" style="margin-top:{{top}}px">
             <tui-icon name="arrowleft" color="{{opcity>=1?'#000':'#fff'}}" bindtap="back" tui-icon-class="tui-icon-back" class="tui-icon" style="background:rgba(0, 0, 0, {{iconOpcity}});"></tui-icon>
-<!--
- <tui-icon name="more-fill" color="{{opcity>=1?'#000':'#fff'}}" size="20" tui-icon-class="tui-icon-more" class="tui-icon tui-icon-ml" style="background:rgba(0, 0, 0, {{iconOpcity}});" catchtap="openMenu"></tui-icon>
-  <tui-badge type="red" tui-badge-class="tui-badge" size="small">5</tui-badge>
--->
+
         </view>
     </view>
     <!--header-->
@@ -32,8 +29,8 @@
         <view class="tui-product-title tui-border-radius">
             <view class="tui-pro-pricebox tui-padding">
                 <view class="tui-pro-price">
-                    <view>￥<text class="tui-price">0</text>.00</view>
-                    <tui-tag size="small" plain="{{true}}" type="warning" shape="circle" tui-tag-class="tui-scale tui-tag-pro">首届</tui-tag>
+                    <view>￥<text class="tui-price">{{activityInfo.price}}</text>.00</view>
+                    <tui-tag size="small" plain="{{true}}" type="warning" shape="circle" tui-tag-class="tui-scale tui-tag-pro">{{activityInfo.priceTag}}</tui-tag>
                 </view>
                 <view class="tui-collection tui-size" bindtap="collecting">
                     <tui-icon name="{{collected?'like-fill':'like'}}" color="{{collected?'#ff201f':'#333'}}" size="20" tui-icon-class="tui-icon-collection"></tui-icon>
@@ -42,10 +39,10 @@
             </view>
             <view class="tui-original-price tui-gray">
                 价格
-                <text class="tui-line-through">￥199.00</text>
+                <text class="tui-line-through">￥{{activityInfo.originalPrice}}</text>
             </view>
             <view class="tui-pro-titbox">
-                <view class="tui-pro-title f28">趣知游第一届香山旅游活动召集令</view>
+                <view class="tui-pro-title f28">{{activityInfo.name}}</view>
                 <button open-type="share" class="tui-share-btn tui-share-position">
                     <tui-tag type="gray" tui-tag-class="tui-tag-share tui-size" shape="circleLeft" size="small">
                         <tui-icon name="partake" color="#999" size="15"></tui-icon>
@@ -54,46 +51,34 @@
                 </button>
             </view>
             <view class="tui-padding">
-                <view class="tui-sub-title tui-size tui-gray">2019年 河南人在北京同乡会</view>
+                <view class="tui-sub-title tui-size tui-gray">{{activityInfo.subName}}</view>
                 <view class="tui-sale-info tui-size tui-gray">
-                    <view>人数：50人</view>
-                    <view>已报20人</view>
-                    <view>已收藏100人</view>
+                    <view>人数：{{activityInfo.peoNun}}人</view>
+                    <view>已报{{activityInfo.signNum}}人</view>
+                    <view>已收藏{{activityInfo.CollectionNum}}人</view>
                 </view>
             </view>
         </view>
 
         <view class="tui-discount-box tui-radius-all tui-mtop">
 
-<!--
 
-         <view class="tui-list-cell" bindtap="showPopup">
-                <view class="tui-bold tui-cell-title">领券</view>
-                <view class="tui-tag-coupon-box">
-                    <tui-tag size="small" type="red" shape="circle" tui-tag-class="tui-tag-coupon">满99减8</tui-tag>
-                    <tui-tag size="small" type="red" shape="circle" tui-tag-class="tui-tag-coupon">满59减5</tui-tag>
-                </view>
-                <tui-icon name="more-fill" size="20" class="tui-right tui-top40" color="#666"></tui-icon>
-            </view>
--->
 
 
 
             <view class="tui-list-cell tui-last">
                 <view class="tui-bold tui-cell-title">福利</view>
                 <view>
-                    <view class="tui-promotion-box">
-                        <tui-tag size="small" type="warning" plain="{{true}}" tui-tag-class="tui-inline-block">意外保险</tui-tag>
-                        <text>赠送旅游期间意外保险</text>
-                    </view>
-                    <view class="tui-promotion-box">
-                        <tui-tag size="small" type="warning" plain="{{true}}" tui-tag-class="tui-inline-block">特别赠品</tui-tag>
-                        <text>送XX</text>
-                    </view>
-                    <view class="tui-promotion-box">
-                        <tui-tag size="small" type="warning" plain="{{true}}" tui-tag-class="tui-inline-block">特别赠品</tui-tag>
-                        <text>送XX</text>
-                    </view>
+
+                    <blcok wx:for="{{activityInfo.welfare}}" wx:key>
+
+                        <view class="tui-promotion-box">
+                            <tui-tag size="small" type="warning" plain="{{true}}" tui-tag-class="tui-inline-block">{{item.tag}}</tui-tag>
+                            <text>{{item.des}}</text>
+                        </view>
+
+                    </blcok>
+
                 </view>
                 <tui-icon name="more-fill" size="20" class="tui-right tui-top40" color="#666"></tui-icon>
             </view>
@@ -103,44 +88,36 @@
         <view class="tui-basic-info tui-mtop tui-radius-all">
             <view class="tui-list-cell" >
                 <view class="tui-bold tui-cell-title">报名时间</view>
-                <view class="tui-selected-box">2019-10-17 至 2019-10-31</view>
+                <view class="tui-selected-box">{{activityInfo.signTime}}</view>
             </view>
 
             <view class="tui-list-cell" >
                 <view class="tui-bold tui-cell-title">活动时间</view>
-                <view class="tui-selected-box">2019-11-31当天</view>
+                <view class="tui-selected-box">{{activityInfo.activeTime}}</view>
             </view>
             <view class="tui-list-cell" bindtap="clickAddressFrom" data-lag="116.322402" data-lat="39.975529" data-name="北京海淀区人民大学" data-address="中关村校区在北京市海淀区中关村大街59号">
                 <view class="tui-bold tui-cell-title">集合地点</view>
                 <view class="tui-addr-box">
-                    <view class="tui-addr-item">北京海淀区人民大学</view>
+                    <view class="tui-addr-item">{{activityInfo.gatherAdd.address}}</view>
                     <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>
                 </view>
             </view>
             <view class="tui-list-cell tui-last" bindtap="clickAddressTo" data-lag="116.17948" data-lat="39.99131" data-name="北京香山公园" data-address="香山公园，位于北京市海淀区买卖街40号">
                 <view class="tui-bold tui-cell-title">目的地</view>
-                <view class="tui-selected-box">北京香山</view>
+                <view class="tui-selected-box">{{activityInfo.destination.address}}</view>
                 <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>
             </view>
 
 
             <view class="tui-guarantee">
-                <view class="tui-guarantee-item">
-                    <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
-                    <text class="tui-pl">河南同乡</text>
-                </view>
-                <view class="tui-guarantee-item">
-                    <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
-                    <text class="tui-pl">免费一日游</text>
-                </view>
-                <view class="tui-guarantee-item">
-                    <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
-                    <text class="tui-pl">吃喝全包</text>
-                </view>
-                <view class="tui-guarantee-item">
-                    <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
-                    <text class="tui-pl">客车接送</text>
-                </view>
+
+                <block wx:for="{{activityInfo.tags}}" wx:key>
+                    <view class="tui-guarantee-item">
+                        <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
+                        <text class="tui-pl">{{item}}</text>
+                    </view>
+                </block>
+
 
             </view>
         </view>
@@ -161,7 +138,7 @@
                     <view>赵**文</view>
                 </view>
                 <view class="tui-cmt">很不错  认识很多在北京的老乡 玩的很开心 感谢趣知游提供的优质服务❤</view>
-<!--                <view class="tui-attr">颜色：叠层钛钢流苏耳环（A74）</view>-->
+                <view class="tui-attr">来自河南许昌</view>
             </view>
 
             <view class="tui-cmt-btn">
