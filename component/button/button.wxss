@@ -15,19 +15,9 @@
   color: #fff;
 }
 
-.tui-main{
-  background: #C9A063 !important;
-  color: #FFF;
-}
-
 .tui-warning {
   background: #ff7900 !important;
   color: #fff;
-}
-
-.tui-mainGreen {
-    background: #12d58b !important;
-    color: #fff;
 }
 
 .tui-green {

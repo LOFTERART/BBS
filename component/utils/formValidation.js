@@ -253,8 +253,6 @@ const form = {
     return value.length <= Number(max)
   }
 };
-
-
 module.exports = {
   validation: form.validation
 };
