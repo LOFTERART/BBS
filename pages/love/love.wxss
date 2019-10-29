@@ -71,6 +71,8 @@
     position: relative;
     width: 95%;
     height: 800rpx;
+    /*filter: opacity(20%);*/
+    /*filter: brightness(70%);*/
     /*filter: blur(5rpx);*/
     /*background-color: rgba(255,255,255,0.1);*/
 }
@@ -78,4 +80,29 @@
 .tui-btn-box {
     padding: 40rpx 50rpx;
     box-sizing: border-box;
+}
+
+
+
+.image {
+    width: 746rpx;
+}
+
+.image-parent {
+    height: 746rpx;
+    position: relative;
+    border: 2rpx solid red;
+}
+
+.child {
+    width: 100px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    background: yellowgreen;
 }

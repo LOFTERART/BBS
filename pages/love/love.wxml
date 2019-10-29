@@ -1,4 +1,14 @@
 
+<!--
+<view class="image-parent">
+    <image class='image' mode='widthFix' src='{{tempFilePaths}}'></image>
+    <view class="child">child</view>
+</view>
+
+-->
+
+
+
 
 
 <view style="padding: 20rpx 30rpx 30rpx 30rpx;background-color: rgba(251,251,251,1)">

@@ -3,7 +3,8 @@
     "pages/aiDynamic/aiDynamic",
     "pages/home/home",
     "pages/mine/mine",
-    "pages/love/love"
+    "pages/love/love",
+    "pages/story/story"
   ],
   "subPackages": [
     {
@@ -58,6 +59,12 @@
       {
         "pagePath": "pages/aiDynamic/aiDynamic",
         "text": "推荐",
+        "iconPath": "assets/image/gz.png",
+        "selectedIconPath": "assets/image/gzing.png"
+      },
+      {
+        "pagePath": "pages/story/story",
+        "text": "故事",
         "iconPath": "assets/image/gz.png",
         "selectedIconPath": "assets/image/gzing.png"
       },
