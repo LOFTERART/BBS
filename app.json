@@ -65,14 +65,14 @@
         "selectedIconPath": "assets/image/homeing.png"
       },
       {
-        "pagePath": "pages/aiDynamic/aiDynamic",
-        "text": "推荐",
+        "pagePath": "pages/story/story",
+        "text": "故事",
         "iconPath": "assets/image/gz.png",
         "selectedIconPath": "assets/image/gzing.png"
       },
       {
-        "pagePath": "pages/story/story",
-        "text": "故事",
+        "pagePath": "pages/aiDynamic/aiDynamic",
+        "text": "推荐",
         "iconPath": "assets/image/gz.png",
         "selectedIconPath": "assets/image/gzing.png"
       },
@@ -91,21 +91,11 @@
     ]
   },
   "preloadRule": {
-    "pages/home/home": {
+    "pages/aiDynamic/aiDynamic": {
       "network": "all",
       "packages": [
-        "homeSub"
-      ]
-    },
-    "pages/mine/mine": {
-      "network": "all",
-      "packages": [
-        "mySub"
-      ]
-    },
-    "pages/story/story": {
-      "network": "all",
-      "packages": [
+        "homeSub",
+        "mySub",
         "storySub"
       ]
     }
