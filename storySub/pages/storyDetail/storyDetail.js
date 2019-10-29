@@ -36,7 +36,13 @@ Page({
 
   },
 
+//点击多少人赞过
 
+    clickLikePeople:function(){
+        wx.navigateTo({
+            url: '/homeSub/pages/likePeople/likePeople'
+        })
+    },
 
     //点击评论
 

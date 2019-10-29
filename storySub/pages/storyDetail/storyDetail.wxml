@@ -9,6 +9,38 @@
 </view>
 
 
+
+
+<!--点赞人数S-->
+<view
+        bindtap="clickLikePeople"
+         class="van-hairline--bottom likeCon">
+
+    <view class="f20" style="display: flex;flex-direction: row;align-items: center">
+
+        <view class="cu-avatar-group" style="display: flex;flex-direction: row">
+
+            <image src="https://dcdn.it120.cc/2019/09/26/ef633ab3-4bf4-47cc-9e47-b12367613398.png" style="width: 50rpx;height: 50rpx;border-radius: 25rpx" />
+            <image src="https://dcdn.it120.cc/2019/08/22/e38b0442-735d-4df7-a3ce-7f9de997dc45.jpg" style="width: 50rpx;height: 50rpx;border-radius: 25rpx;margin-left: -10rpx" />
+            <image src="https://dcdn.it120.cc/2019/09/26/24362dc4-e21f-466e-9423-efc03156b730.png" style="width: 50rpx;height: 50rpx;border-radius: 25rpx;margin-left: -10rpx" />
+
+        </view>
+
+        <view style="margin-left: 10rpx">
+            369人赞过
+        </view>
+
+    </view>
+    <view  class="f20">
+        <tui-icon name="arrowright" size="25" color="#3E3A39"></tui-icon>
+    </view>
+
+</view>
+<!--点赞人数E-->
+
+
+
+
 <!--评论列表S-->
 <comment commentList="{{commentList}}"></comment>
 <!--评论列表E-->
