@@ -43,6 +43,14 @@
         "pages/commentS/commentS",
         "pages/auth/auth"
       ]
+    },
+    {
+      "root": "storySub",
+      "name": "storySub",
+      "pages": [
+        "pages/storyDetail/storyDetail"
+
+      ]
     }
   ],
   "tabBar": {
@@ -93,6 +101,12 @@
       "network": "all",
       "packages": [
         "mySub"
+      ]
+    },
+    "pages/story/story": {
+      "network": "all",
+      "packages": [
+        "storySub"
       ]
     }
   },

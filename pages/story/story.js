@@ -188,6 +188,15 @@ Page({
     onLoad: function(options) {
 
     },
+
+
+    clickStory:function(){
+      wx.navigateTo({
+        url: '/storySub/pages/storyDetail/storyDetail'
+      })  
+    },
+    
+    
     /**
      * 页面相关事件处理函数--监听用户下拉动作
      */

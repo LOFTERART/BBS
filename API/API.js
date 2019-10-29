@@ -288,12 +288,12 @@ module.exports = {
 
     //根据cms分类id 获取文章详情
     CmsArticleDetail: (data) => {
-        return request('/cms/news/detail', 'GET',data)
+        return request('https://api.it120.cc/lofter/cms/news/detail', 'GET',data)
     },
 
     //获取单页详情
     CmsArticleDanYeDetail: (data) => {
-        return request('/cms/page/info', 'GET',data)
+        return request('https://api.it120.cc/lofter/cms/page/info', 'GET',data)
     },
 
     //获取商品分类
