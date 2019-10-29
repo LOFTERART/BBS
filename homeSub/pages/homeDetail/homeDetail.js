@@ -112,5 +112,21 @@ Page({
         wx.navigateTo({
             url: '../mall-extend/submitOrder/submitOrder'
         })
+    },
+    
+    
+//     点击目的地
+    clickAddressTo:function (e) {
+        console.log(e.currentTarget.dataset);
+        const latitude = e.currentTarget.dataset.lat
+        const longitude = e.currentTarget.dataset.lag
+        wx.openLocation({
+            latitude,
+            longitude,
+            scale: 18
+        })
     }
+    
+    
+    
 })
