@@ -11,8 +11,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-//评论列表
       commentList:data.commentList,
+      showModalStatus: false,
+      isShowBottom:true,  //是否显示底部评论bar
   },
 
   /**
@@ -34,6 +35,45 @@ Page({
 
 
   },
+
+
+
+    //点击评论
+
+    btnCmt: function() {
+        this.setData({
+            showModalStatus: true,
+            isShowBottom:false,
+            placeholders:'......'
+        })
+    },
+
+
+    //点击取消按钮
+    clickQx:function(){
+        this.setData({
+            showModalStatus: false,
+            isShowBottom:true
+        })
+    },
+    //关闭评论
+    hideModal: function() {
+        this.setData({
+            showModalStatus: false,
+            isShowBottom:true,
+        })
+    },
+
+
+    //文字点评获取输入文字
+    onGetValue(event) {
+        console.log(event.detail.value);
+        this.setData({
+            message:event.detail.value
+        })
+    },
+
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

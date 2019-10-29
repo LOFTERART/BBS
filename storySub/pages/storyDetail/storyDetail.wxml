@@ -12,3 +12,54 @@
 <!--评论列表S-->
 <comment commentList="{{commentList}}"></comment>
 <!--评论列表E-->
+
+
+
+<!-- bottom -->
+<view class="tui-operation" wx:if="{{isShowBottom}}">
+    <view class="tui-operation-left tui-col-7 tui-height-full tui-ptop-zero">
+        <view class="tui-btn-comment" bindtap="btnCmt">说点什么吧...</view>
+    </view>
+    <view class="tui-operation-right tui-right-flex tui-col-5">
+        <view class="tui-operation-item" bindtap="collection">
+            <tui-icon name="{{isCollection?'star-fill':'star'}}" size="20" color="{{isCollection?'red':'#444'}}"></tui-icon>
+        </view>
+        <view class="tui-operation-item">
+            <tui-icon name="like" size="20" color="{{isCollection?'red':'#444'}}"></tui-icon>
+        </view>
+        <view class="tui-operation-item" hover-class="opcity" hover-stay-time="150">
+            <button open-type="share" class="tui-share-btn">
+                <tui-icon name="partake" size="20" color='#444'></tui-icon>
+            </button>
+        </view>
+    </view>
+</view>
+
+
+
+<!--底部抽屉-->
+<view class="mask-screen" bindtap="hideModal" hidden="{{!showModalStatus}}"></view>
+
+<view animation="{{animationData}}" class="region-box" hidden="{{!showModalStatus}}">
+    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx;">
+
+        <view style="color: #888888;font-size: 28rpx" bindtap="clickQx">取消</view>
+
+        <view style="color: rgba(18,213,139,1);;font-size: 28rpx" bindtap="clickFb">发表</view>
+
+    </view>
+
+    <view style="padding: 20rpx;" >
+            <textarea
+                    bindinput="onGetValue"
+                    value="{{ message }}"
+                    placeholder="{{placeholders}}"
+                    placeholder-style="color:#666;"
+                    adjust-position
+                    show-confirm-bar="{{false}}"
+                    cursor-spacing="100"
+                    focus="{{showModalStatus}}"
+            />
+    </view>
+
+</view>

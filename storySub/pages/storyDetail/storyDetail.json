@@ -2,6 +2,7 @@
   "navigationBarTitleText": "故事详情",
   "usingComponents": {
     "comment": "/component/comment/comment",
-    "tui-icon": "/component/icon/icon"
+    "tui-icon": "/component/icon/icon",
+    "drawer": "/component/drawer/drawer"
   }
 }

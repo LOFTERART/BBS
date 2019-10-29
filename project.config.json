@@ -69,6 +69,13 @@
 					"id": -1,
 					"name": "storySub/pages/storyDetail/storyDetail",
 					"pathName": "storySub/pages/storyDetail/storyDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "storySub/pages/storyDetail/storyDetail",
+					"pathName": "storySub/pages/storyDetail/storyDetail",
 					"scene": null
 				}
 			]
