@@ -5,9 +5,9 @@
             我的
         </view>
     </view>
-    <!--header-->
+    <!--header  mode="widthFix"-->
     <view class="tui-mybg-box">
-        <image src="https://dcdn.it120.cc/2019/10/24/ad6b0992-e455-4b69-a7e1-09ef018d9d18.png" class="tui-my-bg" mode="widthFix"></image>
+        <image src="https://dcdn.it120.cc/2019/10/29/b473c228-0387-4bc1-bc65-eada0c9b7867.png" class="tui-my-bg" mode="widthFix"></image>
         <view class="tui-header-center">
             <image src="{{userInfo.ava}}" class="tui-avatar" bindtap="clickAva" data-name="{{userInfo.name}}"></image>
             <view class="tui-info">
@@ -37,7 +37,7 @@
         <view class="tui-box tui-order-box">
             <tui-list-cell arrow="{{false}}" padding="0" lineLeft="{{false}}" bind:click="href" data-type="4">
                 <view class="tui-cell-header">
-                    <view class="tui-cell-title">我的动态</view>
+                    <view class="tui-cell-title">动态数据</view>
                 </view>
             </tui-list-cell>
             <view class="tui-order-list">
@@ -48,7 +48,7 @@
                     <view class="tui-order-item" bindtap="clickDyAction" data-type="{{item.type}}">
                         <view class="tui-icon-box">
                             <image src="{{item.image}}" class="tui-order-icon"></image>
-                            <view class="tui-badge tui-badge-red"> {{item.number}} </view>
+                            <view class="tui-badge tui-badge-mainGreen"> {{item.number}} </view>
                         </view>
                         <view class="tui-order-text">{{item.name}}</view>
                     </view>

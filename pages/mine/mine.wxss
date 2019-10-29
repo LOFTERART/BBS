@@ -64,6 +64,10 @@
     z-index: 10;
 }
 
+.tui-badge-mainGreen {
+    background: #12d58b;
+    color: #fff;
+}
 .tui-badge-red {
     background: #F74D54;
     color: #fff;
