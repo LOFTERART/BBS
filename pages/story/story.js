@@ -1,75 +1,16 @@
 Page({
     data: {
         pageIndex: 1,
-        productList: [{
-            img: 1,
-            name: "利物浦官方 独家出品纪念版沙发",
+        productList: [
+            {
+            img: 'https://dcdn.it120.cc/2019/10/29/223f8506-9882-404e-a76f-6b5c4903e476.jpg',
+            name: "曹魏古城",
+            subName:'看山看海看日出都不及在这里笑着醒来',
             sale: 599,
             factory: 899,
             payNum: 2342
-        },
-            {
-                img: 2,
-                name: "好看好养活的绿色养眼小盆栽，超级实惠",
-                sale: 29,
-                factory: 69,
-                payNum: 999
             },
-            {
-                img: 3,
-                name: "利物浦官方 独家出品大红床上用品三件套",
-                sale: 299,
-                factory: 699,
-                payNum: 666
-            },
-            {
-                img: 4,
-                name: "利物浦官方 独家出品花花碎花床上用品三件套",
-                sale: 1599,
-                factory: 2899,
-                payNum: 236
-            },
-            {
-                img: 5,
-                name: "利物浦官方 独家出品纪念版书柜，便宜又省空间，超级划算",
-                sale: 599,
-                factory: 899,
-                payNum: 2399
-            }, {
-                img: 1,
-                name: "独家出品纪念版沙发",
-                sale: 599,
-                factory: 899,
-                payNum: 2342
-            },
-            {
-                img: 2,
-                name: "好看好养活的绿色养眼小盆栽，超级实惠",
-                sale: 29,
-                factory: 69,
-                payNum: 999
-            },
-            {
-                img: 3,
-                name: "利物浦官方 独家出品大红床上用品三件套",
-                sale: 299,
-                factory: 699,
-                payNum: 666
-            },
-            {
-                img: 4,
-                name: "利物浦官方 独家出品花花碎花床上用品三件套",
-                sale: 1599,
-                factory: 2899,
-                payNum: 236
-            },
-            {
-                img: 5,
-                name: "利物浦官方 独家出品纪念版书柜，便宜又省空间，超级划算",
-                sale: 599,
-                factory: 899,
-                payNum: 2399
-            }
+
         ],
         loadData: [{
             img: 1,
