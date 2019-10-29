@@ -29,11 +29,11 @@ Page({
         ],
 
         dyActions:[
-            {id:1,name:'赞数',number:1,type:'ZAN',image:'https://dcdn.it120.cc/2019/10/24/97d002d9-656a-4aff-8e9a-59182e14226c.png'},
-            {id:1,name:'评论数',number:7,type:'PL',image:'https://dcdn.it120.cc/2019/10/24/b6dd3726-2f8c-4ef1-83a3-87a808b83226.png'},
-            {id:1,name:'收藏数',number:10,type:'SC',image:'https://dcdn.it120.cc/2019/10/24/0f0b9f6a-8c94-473e-9d24-7f8741628787.png'},
-            {id:1,name:'查看数',number:100,type:'CK',image:'https://dcdn.it120.cc/2019/10/24/5413d396-0eda-4f63-b136-e2eb24b6c3f2.png'},
-            {id:1,name:'举报数',number:1,type:'JB',image:'https://dcdn.it120.cc/2019/10/24/c1b3f270-e054-4ce6-b884-3e5973392019.png'},
+            {id:1,name:'赞数',number:1,type:'ZAN',image:'https://dcdn.it120.cc/2019/10/29/6af3114d-d07c-4e3a-8179-fdb2d9fc64f8.png'},
+            {id:1,name:'评论数',number:7,type:'PL',image:'https://dcdn.it120.cc/2019/10/29/085809eb-f6b1-4140-9010-49f4b605c1eb.png'},
+            {id:1,name:'收藏数',number:10,type:'SC',image:'https://dcdn.it120.cc/2019/10/29/3799b6ad-7dad-4e9a-a3bc-681293717051.png'},
+            {id:1,name:'查看数',number:100,type:'CK',image:'https://dcdn.it120.cc/2019/10/29/1494d5d5-e804-4276-9cbe-6cd9abcc7623.png'},
+            {id:1,name:'举报数',number:1,type:'JB',image:'https://dcdn.it120.cc/2019/10/29/dd9f5420-1dc0-410f-912a-6c35b11f2504.png'},
         ],
 
         userInfo:{
