@@ -113,16 +113,36 @@ Page({
             url: '../mall-extend/submitOrder/submitOrder'
         })
     },
-    
+
+
+    //     点击集合地
+    clickAddressFrom:function (e) {
+        console.log(e.currentTarget.dataset);
+        const latitude = Number(e.currentTarget.dataset.lat)
+        const longitude = Number(e.currentTarget.dataset.lag)
+        const name=e.currentTarget.dataset.name
+        const address=e.currentTarget.dataset.address
+        wx.openLocation({
+            latitude,
+            longitude,
+            name,
+            address,
+            scale: 18
+        })
+    },
     
 //     点击目的地
     clickAddressTo:function (e) {
         console.log(e.currentTarget.dataset);
-        const latitude = e.currentTarget.dataset.lat
-        const longitude = e.currentTarget.dataset.lag
+        const latitude = Number(e.currentTarget.dataset.lat)
+        const longitude = Number(e.currentTarget.dataset.lag)
+        const name=e.currentTarget.dataset.name
+        const address=e.currentTarget.dataset.address
         wx.openLocation({
             latitude,
             longitude,
+            name,
+            address,
             scale: 18
         })
     }
