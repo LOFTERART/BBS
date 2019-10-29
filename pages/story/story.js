@@ -11,7 +11,23 @@ Page({
             payNum: 2342
             },
             {
-                image: 'https://dcdn.it120.cc/2019/10/29/223f8506-9882-404e-a76f-6b5c4903e476.jpg',
+                image: 'https://dcdn.it120.cc/2019/10/29/36b9ee81-bbb8-42a9-8bbb-7b605ebbfdb2.jpg',
+                name: "曹魏古城",
+                subName:'看山看海看日出都不及在这里笑着醒来',
+                sale: 599,
+                factory: 899,
+                payNum: 2342
+            },
+            {
+                image: 'https://dcdn.it120.cc/2019/10/29/08f13e44-6f44-4854-b892-306869756a10.jpg',
+                name: "曹魏古城",
+                subName:'看山看海看日出都不及在这里笑着醒来',
+                sale: 599,
+                factory: 899,
+                payNum: 2342
+            },
+            {
+                image: 'https://dcdn.it120.cc/2019/10/29/2f00c6a1-cde7-4b93-b8d5-d5bfb455dcda.jpg',
                 name: "曹魏古城",
                 subName:'看山看海看日出都不及在这里笑着醒来',
                 sale: 599,
@@ -27,7 +43,55 @@ Page({
                 payNum: 2342
             },
             {
+                image: 'https://dcdn.it120.cc/2019/10/29/36b9ee81-bbb8-42a9-8bbb-7b605ebbfdb2.jpg',
+                name: "曹魏古城",
+                subName:'看山看海看日出都不及在这里笑着醒来',
+                sale: 599,
+                factory: 899,
+                payNum: 2342
+            },
+            {
+                image: 'https://dcdn.it120.cc/2019/10/29/08f13e44-6f44-4854-b892-306869756a10.jpg',
+                name: "曹魏古城",
+                subName:'看山看海看日出都不及在这里笑着醒来',
+                sale: 599,
+                factory: 899,
+                payNum: 2342
+            },
+            {
+                image: 'https://dcdn.it120.cc/2019/10/29/2f00c6a1-cde7-4b93-b8d5-d5bfb455dcda.jpg',
+                name: "曹魏古城",
+                subName:'看山看海看日出都不及在这里笑着醒来',
+                sale: 599,
+                factory: 899,
+                payNum: 2342
+            },
+            {
                 image: 'https://dcdn.it120.cc/2019/10/29/223f8506-9882-404e-a76f-6b5c4903e476.jpg',
+                name: "曹魏古城",
+                subName:'看山看海看日出都不及在这里笑着醒来',
+                sale: 599,
+                factory: 899,
+                payNum: 2342
+            },
+            {
+                image: 'https://dcdn.it120.cc/2019/10/29/36b9ee81-bbb8-42a9-8bbb-7b605ebbfdb2.jpg',
+                name: "曹魏古城",
+                subName:'看山看海看日出都不及在这里笑着醒来',
+                sale: 599,
+                factory: 899,
+                payNum: 2342
+            },
+            {
+                image: 'https://dcdn.it120.cc/2019/10/29/08f13e44-6f44-4854-b892-306869756a10.jpg',
+                name: "曹魏古城",
+                subName:'看山看海看日出都不及在这里笑着醒来',
+                sale: 599,
+                factory: 899,
+                payNum: 2342
+            },
+            {
+                image: 'https://dcdn.it120.cc/2019/10/29/2f00c6a1-cde7-4b93-b8d5-d5bfb455dcda.jpg',
                 name: "曹魏古城",
                 subName:'看山看海看日出都不及在这里笑着醒来',
                 sale: 599,
@@ -36,75 +100,15 @@ Page({
             },
 
         ],
-        loadData: [{
-            img: 1,
-            name: "利物浦官方 独家出品纪念版沙发",
-            sale: 599,
-            factory: 899,
-            payNum: 2342
-        },
+        loadData: [
             {
-                img: 2,
-                name: "好看好养活的绿色养眼小盆栽，超级实惠",
-                sale: 29,
-                factory: 69,
-                payNum: 999
-            },
-            {
-                img: 3,
-                name: "利物浦官方 独家出品大红床上用品三件套",
-                sale: 299,
-                factory: 699,
-                payNum: 666
-            },
-            {
-                img: 4,
-                name: "利物浦官方 独家出品花花碎花床上用品三件套",
-                sale: 1599,
-                factory: 2899,
-                payNum: 236
-            },
-            {
-                img: 5,
-                name: "利物浦官方 独家出品纪念版书柜，便宜又省空间，超级划算",
-                sale: 599,
-                factory: 899,
-                payNum: 2399
-            }, {
-                img: 1,
-                name: "利物浦官方 独家出品纪念版沙发",
+                image: 'https://dcdn.it120.cc/2019/10/29/223f8506-9882-404e-a76f-6b5c4903e476.jpg',
+                name: "阳光花墅",
+                subName:'看山看海看日出都不及在这里笑着醒来',
                 sale: 599,
                 factory: 899,
                 payNum: 2342
             },
-            {
-                img: 2,
-                name: "好看好养活的绿色养眼小盆栽，超级实惠",
-                sale: 29,
-                factory: 69,
-                payNum: 999
-            },
-            {
-                img: 3,
-                name: "大红床上用品三件套",
-                sale: 299,
-                factory: 699,
-                payNum: 666
-            },
-            {
-                img: 4,
-                name: "利物浦官方 独家出品花花碎花床上用品三件套",
-                sale: 1599,
-                factory: 2899,
-                payNum: 236
-            },
-            {
-                img: 5,
-                name: "利物浦官方 独家出品纪念版书柜，便宜又省空间，超级划算",
-                sale: 599,
-                factory: 899,
-                payNum: 2399
-            }
         ],
         loadding: false,
         pullUpOn: true

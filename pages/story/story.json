@@ -6,6 +6,7 @@
   "onReachBottomDistance": 50,
   "usingComponents": {
     "tui-loadmore": "/component/loadmore/loadmore",
+    "tui-icon": "/component/icon/icon",
     "tui-nomore": "/component/nomore/nomore"
   }
 }

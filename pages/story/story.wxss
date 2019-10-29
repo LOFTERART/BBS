@@ -45,9 +45,8 @@
     flex-direction: column;
     /*justify-content: space-between;*/
     box-sizing: border-box;
-    background-color: #12d58b;
-    padding: 10rpx 0;
-    height: 230rpx;
+    padding: 20rpx 0 40rpx 0;
+
 }
 
 .pro-tit {

@@ -4,17 +4,29 @@
         <view class="pro-item" bindtap="detail" wx:for="{{productList}}" wx:key="{{index}}">
             <image src="{{item.image}}" class="pro-img" mode="widthFix" />
             <view class="pro-content">
+
                 <view class="pro-tit">
                     <text style="font-weight: bold">{{item.name}}</text>
                     {{item.subName}}
                 </view>
-                <view>
-                    <view class="pro-price">
-                        <text class="sale-price">￥{{item.sale}}</text>
-                        <text class="factory-price">￥{{item.factory}}</text>
+
+
+                <view style="display: flex;flex-direction: row;margin-top: 10rpx;align-items: center">
+                    <image src="{{item.image}}" style="width: 60rpx;height: 60rpx;border-radius: 30rpx" mode="widthFix" />
+
+                    <view class="f22" style="margin-left: 10rpx;margin-right: 10rpx;color: rgba(63,63,63,1)">
+                        <tui-icon name="agree" size="16" color="rgba(63,63,63,1)"></tui-icon> 99+
                     </view>
 
+                    <view class="f22" style="color: rgba(63,63,63,1)">
+                        <tui-icon name="message" size="16" color="rgba(63,63,63,1)"></tui-icon> 68
+                    </view>
+
+
                 </view>
+
+
+
             </view>
         </view>
         <!--商品列表-->
