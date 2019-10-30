@@ -6,6 +6,7 @@ const WXAPI = require('/API/API')
 App({
     onLaunch: function () {
         this.updataApp();
+        this.wxLogin();
     },
 
     wxLogin:function() {
@@ -18,6 +19,7 @@ App({
                             code:res.code
                         }).then(res=>{
                             if(res.success){
+                                UTIL.toast('登录')
                                 resolve(res.data)
                             }else {
                                 UTIL.toast('登录失败')
@@ -80,25 +82,3 @@ App({
 
 
 
-
-
-
-
-
-
-
-
-// wx.getSystemInfo({
-//     success: (res)=> {
-//         this.globalData.StatusBar = res.statusBarHeight;
-//         this.globalData.platform = res.platform;
-//         let custom = wx.getMenuButtonBoundingClientRect();
-//         this.globalData.Custom = custom;
-//         this.globalData.CustomBar = custom.bottom + custom.top - res.statusBarHeight;
-//         if (res.model.search("iPhone X") != -1) {
-//             this.globalData.iphone = true;
-//         }
-//
-//
-//     }
-// });
