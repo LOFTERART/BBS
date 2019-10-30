@@ -1,6 +1,5 @@
 // pages/aiDynamic/aiDynamic.js
 import UTIL from "../../utils/util";
-import data from '../../data/data'
 import create from '../../utils/omi/create'
 import store from '../../store/AI'
 const app = getApp()
@@ -9,8 +8,7 @@ create(store,{
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-      this.store.data.aiCatList.push( {id:1,name:'活动精选',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',type:'JX'},)
+      console.log(this.data,'2222');
 
   },
 
