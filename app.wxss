@@ -4,6 +4,12 @@
 /**app.wxss**/
 
 
+page {
+    padding-bottom: 160rpx;
+}
+
+
+
 .container {
     display: flex;
     flex-direction: column;

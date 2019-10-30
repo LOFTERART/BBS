@@ -17,15 +17,11 @@ App({
                         WXAPI.ArtLogin({
                             code:res.code
                         }).then(res=>{
-
-
                             if(res.success){
                                 resolve(res.data)
                             }else {
                                 UTIL.toast('登录失败')
                             }
-
-
                         })
                     } else {
                        UTIL.toast('code获取失败')
@@ -35,7 +31,7 @@ App({
         })
     },
 
-    
+
     //更新
     updataApp: function () {//版本更新
         if (wx.canIUse('getUpdateManager')) {
