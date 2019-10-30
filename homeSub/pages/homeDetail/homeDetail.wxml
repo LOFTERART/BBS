@@ -214,14 +214,14 @@
 
     <!--底部选择层-->
     <tui-bottom-popup show="{{popupShow}}" tui-popup-class="tui-popup" bind:close="hidePopup">
-        <view class="tui-popup-box">
 
+        <view class="tui-popup-box">
 
             <scroll-view scroll-y class="tui-popup-scroll">
                 <view class="tui-scrollview-box">
                     <view class="tui-bold tui-attr-title">意外险</view>
                     <view class="tui-attr-box">
-                        <view class="tui-attr-item">
+                        <view class="tui-attr-item tui-attr-active">
                             XXX保险公司提供
                         </view>
                     </view>
@@ -235,8 +235,6 @@
 
                 </view>
             </scroll-view>
-
-
 
 
             <tui-icon name="close-fill" color="#999" class="tui-icon-close" size="20" bindtap="hidePopup"></tui-icon>
