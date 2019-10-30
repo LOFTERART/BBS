@@ -1,3 +1,5 @@
+const ald = require('./utils/ald-stat.js')
+
 wx = require('./x-wxx/index');
 const WXAPI = require('/API/API')
 
