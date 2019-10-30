@@ -6,20 +6,6 @@ import store from '../../store/store'
 const app = getApp()
 create(store,{
   /**
-   * 页面的初始数据
-   */
-  data: {
-      title:'为你推荐',
-      aiCatList:[
-          {id:1,name:'活动精选',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',type:'JX'},
-          {id:2,name:'热门活动',image:'https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png',type:'RM'},
-          {id:3,name:'最新话题',image:'https://dcdn.it120.cc/2019/10/26/b2012b31-25e4-47b8-8f72-1554ac0dc797.png',type:'JX'},
-      ],
-      articleList:data.aiDyList,
-
-  },
-
-  /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
