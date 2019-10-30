@@ -80,7 +80,7 @@
                     </blcok>
 
                 </view>
-                <tui-icon name="more-fill" size="20" class="tui-right tui-top40" color="#666"></tui-icon>
+                <tui-icon name="more-fill" size="20" class="tui-right tui-top40" color="#666" bindtap="clickMore"></tui-icon>
             </view>
 
         </view>
@@ -243,6 +243,10 @@
     </tui-top-dropdown>
     <!---顶部下拉菜单-->
 
+
+
+
+
     <!--底部选择层-->
     <tui-bottom-popup show="{{popupShow}}" tui-popup-class="tui-popup" bind:close="hidePopup">
         <view class="tui-popup-box">
@@ -328,5 +332,9 @@
         </view>
     </tui-bottom-popup>
     <!--底部选择层-->
+
+
+
+
 
 </view>

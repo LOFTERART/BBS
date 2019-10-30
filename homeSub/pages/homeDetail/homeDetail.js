@@ -133,6 +133,14 @@ Page({
         Toast.toast('待开发')
     },
 
+
+
+    clickMore:function(){
+      this.setData({
+          popupShow:true
+      })
+    },
+
     clickBm:function(){
         wx.navigateTo({
           url: '/homeSub/pages/addPeoInfo/addPeoInfo'
