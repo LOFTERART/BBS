@@ -1,6 +1,5 @@
 const ald = require('./utils/ald-stat.js')
 import UTIL from './utils/util'
-wx = require('./x-wxx/index');
 const WXAPI = require('/API/API')
 
 App({
@@ -19,7 +18,6 @@ App({
                             code:res.code
                         }).then(res=>{
                             if(res.success){
-                                UTIL.toast('登录')
                                 resolve(res.data)
                             }else {
                                 UTIL.toast('登录失败')

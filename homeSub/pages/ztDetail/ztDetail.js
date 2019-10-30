@@ -1,6 +1,7 @@
 import UTIL from '../../../utils/util'
 const WXAPI = require('../../../API/API')
 import data from '../../../data/data'
+const app = getApp()
 Page({
     data: {
         dPshow: false, //点评show
@@ -33,6 +34,8 @@ Page({
         this.setData({
             id:options.id
         })
+        UTIL.toast(app.globalData.userInfo)
+        console.log(1202929,app.globalData.userInfo);
 
     },
 
