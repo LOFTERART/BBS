@@ -215,83 +215,29 @@
     <!--底部选择层-->
     <tui-bottom-popup show="{{popupShow}}" tui-popup-class="tui-popup" bind:close="hidePopup">
         <view class="tui-popup-box">
-            <view class="tui-product-box tui-padding">
-                <image src="https://www.thorui.cn/img/product/11.jpg" class="tui-popup-img"></image>
-                <view class="tui-popup-price">
-                    <view class="tui-amount tui-bold">￥49.00</view>
-                    <view class="tui-number">编号:4373299399393</view>
-                </view>
-            </view>
+
+
             <scroll-view scroll-y class="tui-popup-scroll">
                 <view class="tui-scrollview-box">
-                    <view class="tui-bold tui-attr-title">颜色</view>
+                    <view class="tui-bold tui-attr-title">意外险</view>
                     <view class="tui-attr-box">
                         <view class="tui-attr-item">
-                            五角星钻耳线
+                            XXX保险公司提供
                         </view>
-                        <view class="tui-attr-item">
-                            米子珍珠耳线
-                        </view>
-                        <view class="tui-attr-item">
-                            花朵镶钻耳线
-                        </view>
-                        <view class="tui-attr-item">
-                            扇子珍珠流苏耳线
-                        </view>
+                    </view>
+                    <view class="tui-bold tui-attr-title">新品赠送</view>
+                    <view class="tui-attr-box">
+
                         <view class="tui-attr-item tui-attr-active">
-                            扇子珍珠流苏耳线耳线
+                            郑家老酒200ML
                         </view>
                     </view>
 
-                    <view class="tui-number-box tui-bold tui-attr-title">
-                        <view class="tui-attr-title">数量</view>
-                        <tui-numberbox max="99" min="1" value="{{value}}" bind:change="change"></tui-numberbox>
-                    </view>
-                    <view class="tui-bold tui-attr-title">尺寸</view>
-                    <view class="tui-attr-box">
-                        <view class="tui-attr-item">
-                            5cm
-                        </view>
-                        <view class="tui-attr-item">
-                            8cm
-                        </view>
-                        <view class="tui-attr-item">
-                            12cm
-                        </view>
-                        <view class="tui-attr-item">
-                            16cm
-                        </view>
-                        <view class="tui-attr-item tui-attr-active">
-                            18cm
-                        </view>
-                    </view>
-
-                    <view class="tui-bold tui-attr-title">
-                        保障服务
-                    </view>
-                    <view class="tui-attr-box">
-                        <view class="tui-attr-item">
-                            半年掉钻保 ￥4.0
-                        </view>
-                    </view>
-
-                    <view class="tui-bold tui-attr-title">
-                        只换不修
-                    </view>
-                    <view class="tui-attr-box">
-                        <view class="tui-attr-item">
-                            三月意外换￥2.0
-                        </view>
-                        <view class="tui-attr-item">
-                            半年意外换￥2.0
-                        </view>
-                    </view>
                 </view>
             </scroll-view>
-            <view class="tui-operation tui-operation-right tui-right-flex tui-popup-btn">
-                <tui-button type="red" tui-button-class="tui-btn-equals" shape="circle" size="mini" class="tui-flex-1" bind:click="hidePopup">加入购物车</tui-button>
-                <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle" size="mini" class="tui-flex-1" bind:click="submit">立即购买</tui-button>
-            </view>
+
+
+
 
             <tui-icon name="close-fill" color="#999" class="tui-icon-close" size="20" bindtap="hidePopup"></tui-icon>
         </view>
