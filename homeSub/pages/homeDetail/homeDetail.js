@@ -36,8 +36,8 @@ Page({
             ],
             signTime:'2019-10-17 -2019-10-31',//报名时间
             activeTime:'2019-11-31全天',//活动时间
-            gatherAdd:{address:'北京海淀区人民大学',lat:'39.975529',lng:'116.322402'}, //集合地
-            destination:{address:'北京香山公园',lat:'39.975529',lng:'116.322402'},//目的地
+            gatherAdd:{address:'北京海淀区人民大学',lat:'39.975529',lng:'116.322402',name:'人民大学'}, //集合地
+            destination:{address:'北京香山公园的具体地址',lat:'39.975529',lng:'116.322402',name:'香山公园'},//目的地
             tags:['河南同乡','免费一日游','吃喝全包','客车接送'],
             htmlCon:'<h1>11</h1>'
         },
@@ -50,8 +50,11 @@ Page({
 
 
 
-        menuShow: false,
+
+
         popupShow: false,
+
+
         value: 1,
         collected: false
     },
@@ -98,48 +101,45 @@ Page({
     back: function () {
         wx.navigateBack()
     },
-    openMenu: function () {
+
+
+
+
+    //点击更多福利展示pop
+    clickMore:function(){
         this.setData({
-            menuShow: true
+            popupShow:true
         })
     },
-    closeMenu: function () {
-        this.setData({
-            menuShow: false
-        })
-    },
-    showPopup: function () {
-        this.setData({
-            popupShow: true
-        })
-    },
+
+//关闭福利展示pop
     hidePopup: function () {
         this.setData({
             popupShow: false
         })
     },
+
+
     change: function (e) {
         this.setData({
             value: e.detail.value
         })
     },
+
     collecting: function () {
         this.setData({
             collected: !this.data.collected
         })
     },
+
+    //未开发功能
     common: function () {
-        console.log(1);
         Toast.toast('待开发')
     },
 
 
 
-    clickMore:function(){
-      this.setData({
-          popupShow:true
-      })
-    },
+
 
     clickBm:function(){
         wx.navigateTo({

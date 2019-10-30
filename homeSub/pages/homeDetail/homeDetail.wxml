@@ -95,14 +95,14 @@
                 <view class="tui-bold tui-cell-title">活动时间</view>
                 <view class="tui-selected-box">{{activityInfo.activeTime}}</view>
             </view>
-            <view class="tui-list-cell" bindtap="clickAddressFrom" data-lag="116.322402" data-lat="39.975529" data-name="北京海淀区人民大学" data-address="中关村校区在北京市海淀区中关村大街59号">
+            <view class="tui-list-cell" bindtap="clickAddressFrom" data-lng="{{activityInfo.gatherAdd.lng}}" data-lat="{{activityInfo.gatherAdd.lat}}" data-name="{{activityInfo.gatherAdd.name}}" data-address="{{activityInfo.gatherAdd.address}}">
                 <view class="tui-bold tui-cell-title">集合地点</view>
                 <view class="tui-addr-box">
                     <view class="tui-addr-item">{{activityInfo.gatherAdd.address}}</view>
                     <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>
                 </view>
             </view>
-            <view class="tui-list-cell tui-last" bindtap="clickAddressTo" data-lag="116.17948" data-lat="39.99131" data-name="北京香山公园" data-address="香山公园，位于北京市海淀区买卖街40号">
+            <view class="tui-list-cell tui-last" bindtap="clickAddressTo" data-lng="{{activityInfo.destination.lng}}" data-lat="{{activityInfo.destination.lat}}" data-name="{{activityInfo.destination.name}}" data-address="{{activityInfo.destination.address}}">
                 <view class="tui-bold tui-cell-title">目的地</view>
                 <view class="tui-selected-box">{{activityInfo.destination.address}}</view>
                 <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>
@@ -185,16 +185,10 @@
                     <view class="tui-operation-text tui-scale-small">客服</view>
                 </button>
 
-<!--                <button class='btn1' open-type='contact'>-->
-<!--                    <image class='btnImg' src='https://dcdn.it120.cc/2019/09/26/f9d81245-e12b-400e-9575-34237c840bb4.png'></image>-->
-<!--                    <view>客服</view>-->
-<!--                </button>-->
-
             </view>
 
-            <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
-<!--                <tui-icon name="share" size="22" color='#333'></tui-icon>-->
-<!--                <view class="tui-operation-text tui-scale-small">分享</view>-->
+            <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" >
+
 
                 <button open-type="share" class='btn1'>
                     <tui-icon name="share" size="15" color='#333' class='btnImg'></tui-icon>
@@ -203,45 +197,16 @@
             </view>
 
 
-<!--
- <view class="tui-operation-item" hover-class="tui-opacity" hover-stay-time="150" bindtap="common">
-                <tui-icon name="cart" size="22" color='#333'></tui-icon>
-                <view class="tui-operation-text tui-scale-small">购物车</view>
-                <tui-badge type="red" size="small" tui-badge-class="tui-badge-class">2</tui-badge>
-            </view>
--->
+
 
 
         </view>
         <view class="tui-operation-right tui-right-flex tui-col-7">
-<!--            <tui-button type="red" tui-button-class="tui-btn-equals" shape="circle" size="mini" class="tui-flex-1" bindtap="showPopup">加入购物车</tui-button>-->
             <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle" size="mini"  class="tui-flex-1" bindtap="clickBm">立即报名</tui-button>
         </view>
     </view>
     <!--底部操作栏--->
 
-    <!--顶部下拉菜单-->
-    <tui-top-dropdown tui-top-dropdown="tui-top-dropdown" bgcolor="rgba(76, 76, 76, 0.95);" show="{{menuShow}}" height="0" bind:close="closeMenu">
-        <view class="tui-menu-box tui-padding">
-            <view class="tui-menu-header" style="padding-top:{{top}}px;">
-                功能直达
-            </view>
-            <view class="tui-menu-itembox">
-                <block wx:for="{{topMenu}}" wx:key="{{index}}">
-                    <view class="tui-menu-item" hover-class="tui-opcity" hover-stay-time="150" bindtap="common">
-                        <view class="tui-badge-box">
-                            <tui-icon name="{{item.icon}}" color="#fff" size="{{item.size}}"></tui-icon>
-                            <tui-badge type="red" tui-badge-class="tui-menu-badge" size="small" wx:if="{{item.badge}}">{{item.badge}}</tui-badge>
-                        </view>
-                        <view class="tui-menu-text">{{item.text}}</view>
-                    </view>
-                </block>
-            </view>
-            <tui-icon name="up" color="#fff" size="26" class="tui-icon-up" catchtap="closeMenu"></tui-icon>
-        </view>
-
-    </tui-top-dropdown>
-    <!---顶部下拉菜单-->
 
 
 
