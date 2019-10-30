@@ -21,7 +21,6 @@ Page({
           console.log(res,'来自AI');
           app.globalData.userInfo=res.openid
       })
-
   },
 
 
