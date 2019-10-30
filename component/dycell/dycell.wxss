@@ -28,3 +28,15 @@
     flex: 1;
 }
 
+
+
+/*关注*/
+
+.follow{
+    width: 120rpx;
+    height: 60rpx;
+    border-radius: 70rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 26rpx;
+}
