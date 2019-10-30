@@ -28,7 +28,7 @@
             </view>
 
 
-            <view style="width: 120rpx;height: 60rpx;color: white;border-radius: 70rpx;line-height: 60rpx;text-align: center;background-color: #00cc88" wx:if="{{isShowFollow}}" bindtap="clickAction">
+            <view style="width: 120rpx;height: 60rpx;color: white;border-radius: 70rpx;line-height: 60rpx;text-align: center;background-color: #00cc88" wx:if="{{isShowFollow}}" bindtap="clickAction" data-index="{{idx}}" data-id="{{itemName.id}}" data-isFollow="{{itemName.isFollow}}">
                 {{itemName.followDes||'关注'}}
             </view>
 

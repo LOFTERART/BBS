@@ -46,8 +46,33 @@ Component({
       },
 
       //点击关注按钮
-      clickAction:function(){
-         console.log(1)
+      clickAction:function(e){
+
+
+          wx.vibrateShort();
+          let index = e.currentTarget.dataset.index;
+          let id = e.currentTarget.dataset.id;
+
+          console.log(1,index,id)
+          let isFollow= "articleList["+index+"].isFollow";
+          let followDes= "articleList["+index+"].followDes";
+
+          if(this.data.articleList[index].isFollow){
+              this.setData({
+                  [isFollow]: !this.data.articleList[index].isFollow,
+                  [followDes]: '关注',
+              })
+              // this.likeVSNoLikeComment(e.currentTarget.dataset.id,true)
+          }else {
+              this.setData({
+                  [isFollow]: !this.data.articleList[index].isFollow,
+                  [followDes]: '已关注',
+              })
+              // this.likeVSNoLikeComment(e.currentTarget.dataset.id,false)
+          }
+
+
+
       },
 
       //  like 点赞
