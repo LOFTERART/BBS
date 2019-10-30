@@ -1,6 +1,7 @@
 
 const dataBase = {
 
+    //首页
     homeDyList:[
         {
             id: 29969,
@@ -137,6 +138,145 @@ const dataBase = {
         }
     ],
 
+    //推荐动态
+    aiDyList:[
+        {
+            id: 29969,
+            avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+            name: "曹阿瞒",
+            status: "宝爸",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 陈庄幼儿园',
+            content: "拿着放大镜去发现秋天~~",
+            image_url_came: [
+                {url:'https://dcdn.it120.cc/2019/10/26/fd3ab27b-1ddc-4554-93ca-e0bd6e83bd32.jpeg'},
+                {url:'https://dcdn.it120.cc/2019/10/26/9ed88469-5287-481e-ab44-d3287517a020.jpeg'},
+                {url:'https://dcdn.it120.cc/2019/10/26/66ad24e5-fb97-4497-b2a0-202766859b53.jpeg'},
+            ],
+            image_url_came_thumb: [
+                {url:'https://dcdn.it120.cc/2019/10/26/fd3ab27b-1ddc-4554-93ca-e0bd6e83bd32.jpeg'},
+                {url:'https://dcdn.it120.cc/2019/10/26/9ed88469-5287-481e-ab44-d3287517a020.jpeg'},
+                {url:'https://dcdn.it120.cc/2019/10/26/66ad24e5-fb97-4497-b2a0-202766859b53.jpeg'},
+            ],
+            tag:'# 幼儿园瞬间',
+            views: 100,
+            comment: 800,
+            like: 10,
+            is_like: false,
+        },
+        {
+            id: 30903,
+            avatar: "https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png",
+            name: "小龙女",
+            status: "掌门人",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 胖东来',
+            content: "明天就要结婚了 亲们给点意见 第一次 有点紧张~~",
+            image_url_came: [
+                {url:'http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/0%2Fdaily%2Fimage%2Fff5457d51f5088f2b84f1ab6b04cdb35.6443607306861865?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c'},
+                {url:'http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/0%2Fdaily%2Fimage%2F7cf05dc1753572192559e73309fe3484.6871809847494202?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c'},
+            ],
+            image_url_came_thumb: [
+                {url:'http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/0%2Fdaily%2Fimage%2Fff5457d51f5088f2b84f1ab6b04cdb35.6443607306861865?x-oss-process=style/250x250'},
+                {url:'http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/0%2Fdaily%2Fimage%2F7cf05dc1753572192559e73309fe3484.6871809847494202?x-oss-process=style/250x250'},
+            ],
+            tag:'# 结婚注意事项',
+            views: 100,
+            comment: 800,
+            like: 10,
+            is_like: false,
+        },
+        {
+            id: 30903,
+            avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+            name: "杨过",
+            status: "部门经理",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 胖东来',
+            content: "儿子明天中考,这个时候还在努力学习,加油!!!你是最棒的",
+            image_url_came: [
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+            ],
+            image_url_came_thumb: [
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+            ],
+            tag:'# 中考加油',
+            views: 100,
+            comment: 800,
+            like: 10,
+            is_like: false,
+        },
+        {
+            id: 30903,
+            avatar: "https://dcdn.it120.cc/2019/10/26/e34aa4cf-05dc-49ff-b240-4dd59a143027.png",
+            name: "杨过",
+            status: "部门经理",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 胖东来',
+            content: "刚装新加 欢迎大家参观 北欧风~",
+            image_url_came: [
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+            ],
+            image_url_came_thumb: [
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+            ],
+            tag:'# 家居装修~',
+            views: 100,
+            comment: 800,
+            like: 10,
+            is_like: false,
+        },
+        {
+            id: 30903,
+            avatar: "https://dcdn.it120.cc/2019/10/26/894be9d3-656c-4e3b-921e-c55d3d76e477.png",
+            name: "周伯通",
+            status: "老顽童",
+            community: "阳光花墅",
+            specialist:true,
+            Auth:'医生认证',
+            timer: '刚刚',
+            address:'许昌 胖东来',
+            content: "发现一只流浪猫 正在寻找主人~",
+            image_url_came: [
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+            ],
+            image_url_came_thumb: [
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+                {url:'https://dcdn.it120.cc/2019/10/22/e7d87490-9d84-4433-bbf3-9d61f34b35e2.jpg'},
+            ],
+            tag:'# 寻找流浪猫~',
+            views: 100,
+            comment: 800,
+            like: 10,
+            is_like: false,
+        }
+    ],
+
+
+
     dyDetail:[
         {
             id: 29969,
@@ -166,6 +306,8 @@ const dataBase = {
             is_like: false,
         }
     ],
+
+
     mySpaceDyList:[
         {
             id: 29969,

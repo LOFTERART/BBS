@@ -45,6 +45,11 @@ Component({
           UTIL.toast(e.currentTarget.dataset.auth)
       },
 
+      //点击关注按钮
+      clickAction:function(){
+         console.log(1)
+      },
+
       //  like 点赞
       clickLike:function(e){
 
