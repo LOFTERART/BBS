@@ -176,7 +176,7 @@ Page({
     clickAddressTo:function (e) {
         console.log(e.currentTarget.dataset);
         const latitude = Number(e.currentTarget.dataset.lat)
-        const longitude = Number(e.currentTarget.dataset.lag)
+        const longitude = Number(e.currentTarget.dataset.lng)
         const name=e.currentTarget.dataset.name
         const address=e.currentTarget.dataset.address
         wx.openLocation({
