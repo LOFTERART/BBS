@@ -37,6 +37,7 @@ Component({
   methods: {
 
       clickName:function(){
+          console.log(app.globalData.userInfo,'appglob');
           UTIL.toast('让身边的人更有温度~')
       },
 

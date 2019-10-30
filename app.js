@@ -35,12 +35,7 @@ App({
         })
     },
 
-
-
-
-
-
-
+    
     //更新
     updataApp: function () {//版本更新
         if (wx.canIUse('getUpdateManager')) {
