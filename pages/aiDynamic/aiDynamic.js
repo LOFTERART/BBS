@@ -1,9 +1,10 @@
 // pages/aiDynamic/aiDynamic.js
 import UTIL from "../../utils/util";
 import data from '../../data/data'
-
-Page({
-
+import create from '../../utils/omi/create'
+import store from '../../store/store'
+const app = getApp()
+create(store,{
   /**
    * 页面的初始数据
    */

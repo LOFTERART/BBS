@@ -8,7 +8,8 @@ export default {
             code_number:'zhao0183',
         }
     },
-    debug: true
+    debug: true,
+    updateAll: true
 }
 
 
