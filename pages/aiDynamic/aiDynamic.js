@@ -2,7 +2,7 @@
 import UTIL from "../../utils/util";
 import data from '../../data/data'
 import create from '../../utils/omi/create'
-import store from '../../store/store'
+import store from '../../store/AI'
 const app = getApp()
 create(store,{
   /**

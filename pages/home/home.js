@@ -1,9 +1,6 @@
 const WXAPI = require('../../API/API')
 import UTIL from '../../utils/util'
 import data from '../../data/data'
-
-import create from '../../utils/omi/create'
-import store from '../../store/store'
 Page({
     data: {
         //首页广告
