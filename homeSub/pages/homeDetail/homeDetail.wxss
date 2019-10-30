@@ -387,7 +387,7 @@ page {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 10rpx 0;
-    width: 74%;
+    width: 100%;
 }
 
 .tui-inline-block {
