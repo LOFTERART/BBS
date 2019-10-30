@@ -166,6 +166,7 @@ const dataBase = {
             comment: 800,
             like: 10,
             is_like: false,
+            likeDes:'关注'
         },
         {
             id: 30903,
@@ -190,7 +191,8 @@ const dataBase = {
             views: 100,
             comment: 800,
             like: 10,
-            is_like: false,
+            is_like: true,
+            likeDes:'已关注'
         },
         {
             id: 30903,
