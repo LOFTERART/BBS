@@ -1,25 +1,45 @@
 const ald = require('./utils/ald-stat.js')
-
+import UTIL from './utils/util'
 wx = require('./x-wxx/index');
 const WXAPI = require('/API/API')
 
 App({
     onLaunch: function () {
         this.updataApp();
-        wx.login({
-            success (res) {
-                if (res.code) {
-                    WXAPI.ArtLogin({
-                        code:res.code
-                    }).then(res=>{
-                        console.log(res,'111');
-                    })
-                } else {
-                    console.log('登录失败！' + res.errMsg)
+    },
+
+    wxLogin:function() {
+        let that = this;
+        return new Promise((resolve, reject) => {
+            wx.login({
+                success (res) {
+                    if (res.code) {
+                        WXAPI.ArtLogin({
+                            code:res.code
+                        }).then(res=>{
+
+
+                            if(res.success){
+                                resolve(res.data)
+                            }else {
+                                UTIL.toast('登录失败')
+                            }
+
+
+                        })
+                    } else {
+                       UTIL.toast('code获取失败')
+                    }
                 }
-            }
+            })
         })
     },
+
+
+
+
+
+
 
     //更新
     updataApp: function () {//版本更新
