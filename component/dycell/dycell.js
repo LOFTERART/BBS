@@ -1,10 +1,10 @@
 // component/dycell/dycell.js
 import UTIL from "../../utils/util";
-
+import create from '../../utils/omi/create'
 //获取应用实例
 const app = getApp()
 
-Component({
+create({
   /**
    * 组件的属性列表
    */
@@ -38,6 +38,7 @@ Component({
   methods: {
 
       clickName:function(){
+          console.log(this.data.userInfo,'rrffff');
           UTIL.toast('让身边的人更有温度~')
       },
 
