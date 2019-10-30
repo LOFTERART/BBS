@@ -10,6 +10,8 @@ create(store,{
    */
   onLoad: function (options) {
 
+      this.store.data.aiCatList.push( {id:1,name:'活动精选',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',type:'JX'},)
+
   },
 
 
