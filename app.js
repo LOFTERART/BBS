@@ -1,11 +1,13 @@
 const ald = require('./utils/ald-stat.js')
 import UTIL from './utils/util'
 const WXAPI = require('/API/API')
-
 App({
     onLaunch: function () {
         this.updataApp();
-        this.wxLogin();
+
+        if(this.globalData.userInfo.openId){
+            this.wxLogin();
+        }
     },
 
     wxLogin:function() {
