@@ -37,7 +37,7 @@
 
 
 
-        <block wx:for="{{userInfo.numberInfo}}" wx:key>
+        <block wx:for="{{userInfo.numberInfo}}" wx:key="index">
 
             <view style="display: flex;flex-direction: column;justify-content: center;align-items: center">
                 <view>{{item.num}}</view>
