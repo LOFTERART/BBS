@@ -18,11 +18,11 @@
     width: 100%;
     overflow: hidden;
     position: fixed;
-    top: 20%;
+    top: 15%;
     left: 0;
     z-index: 10;
     background: #fff;
-    height: 80%;
+    height: 85%;
     box-sizing: border-box;
 }
 
