@@ -34,8 +34,6 @@ Page({
         this.setData({
             id:options.id
         })
-        UTIL.toast(app.globalData.userInfo.openId)
-        console.log(1202929,app.globalData.userInfo);
 
     },
 
