@@ -1,7 +1,7 @@
 
 
 <view style="display: flex;flex-direction: column;height: 40rpx;padding: 20rpx;color:rgba(58,58,58,1)" class="f24">
-    为你推荐 {{$.userInfo.name}}  {{nameFor}}
+    为你推荐
 </view>
 
 
