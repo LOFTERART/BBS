@@ -8,7 +8,7 @@
 <view style="padding: 20rpx;">
 
 
-    <block wx:for="{{list}}" wx:key>
+    <block wx:for="{{list}}" wx:key="index">
 
         <view
                 style="color:{{item.isCheck?'red':'#323233'}}"
