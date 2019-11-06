@@ -26,6 +26,7 @@ create(store,{
           app.globalData.userInfo.openId=res.openid
       })
       console.log(this.store.data,'gggggggg');
+      this.store.data.userInfo.name='zw'
   },
 
 
