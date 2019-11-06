@@ -118,6 +118,13 @@
 					"id": -1,
 					"name": "pages/story/story",
 					"pathName": "pages/story/story",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/ztDetail/ztDetail",
+					"pathName": "homeSub/pages/ztDetail/ztDetail",
 					"scene": null
 				}
 			]

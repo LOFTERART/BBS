@@ -92,7 +92,7 @@
 <!--底部抽屉-->
 <view class="mask-screen" bindtap="hideModal" hidden="{{!showModalStatus}}"></view>
 
-<view animation="{{animationData}}" class="region-box" hidden="{{!showModalStatus}}">
+<view  class="region-box" hidden="{{!showModalStatus}}">
     <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx;">
 
         <view style="color: #888888;font-size: 28rpx" bindtap="clickQx">取消</view>
@@ -101,7 +101,7 @@
 
     </view>
 
-    <view style="padding: 20rpx;" >
+    <view style="padding: 20rpx;background-color: #12d58b" >
             <textarea
                     bindinput="onGetValue"
                     value="{{ message }}"
@@ -109,7 +109,7 @@
                     placeholder-style="color:#666;"
                     adjust-position
                     show-confirm-bar="{{false}}"
-                    cursor-spacing="100"
+                    maxlength="140"
                     focus="{{showModalStatus}}"
             />
     </view>
