@@ -168,8 +168,8 @@ const dataBase = {
             is_like: false,
 
             //是否关注
-            isFollow:false,
-            followDes:'关注'
+            isFollow:true,
+            followDes:'已关注'
         },
         {
             id: 30903,
