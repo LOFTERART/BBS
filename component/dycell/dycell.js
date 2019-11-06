@@ -47,7 +47,7 @@ create({
 
       //点击关注按钮
       clickAction:function(e){
-          console.log(this.store.data.userInfo,'hhhhhh');
+
 
           wx.vibrateShort();
           let index = e.currentTarget.dataset.index;
@@ -77,7 +77,7 @@ create({
 
       //  like 点赞
       clickLike:function(e){
-
+          console.log(this.store.data.userInfo,'hhhhhh');
           wx.vibrateShort();
           let index = e.currentTarget.dataset.index;
           let is_like= "articleList["+index+"].is_like";
