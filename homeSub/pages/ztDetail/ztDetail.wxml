@@ -95,9 +95,9 @@
 <view  class="region-box" hidden="{{!showModalStatus}}">
     <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 80rpx;padding: 20rpx;">
 
-        <view style="color: #888888;font-size: 36rpx;font-weight: bold" bindtap="clickQx">取消</view>
-        
-        <view style="color: rgba(18,213,139,1);;font-size: 36rpx;font-weight: bold" bindtap="clickFb">发表</view>
+        <view style="color: #666;" bindtap="clickQx">取消</view>
+
+        <view style="color: rgba(18,213,139,1);" bindtap="clickFb">发表</view>
 
     </view>
 
