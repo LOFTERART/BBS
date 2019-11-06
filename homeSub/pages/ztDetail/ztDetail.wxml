@@ -101,7 +101,7 @@
 
     </view>
 
-    <view style="padding: 20rpx;background-color: #12d58b" >
+    <view style="padding: 20rpx;" >
             <textarea
                     bindinput="onGetValue"
                     value="{{ message }}"
