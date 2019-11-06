@@ -1,9 +1,8 @@
 
 export default {
     data: {
-
         userInfo: {
-            name:'',
+            name:'fukCup',
             admin_id:4027,
             user_role:'teacher',
             studio_id:183,
@@ -11,7 +10,7 @@ export default {
         }
     },
     debug: true,
-    updateAll: true
+    // updateAll: true
 }
 
 
