@@ -20,7 +20,8 @@ create(store,{
         reply_user_type:'', //被回复者的userType
 
         //详情动态数据
-        articleList:data.dyDetail,
+        // articleList:data.dyDetail,
+        articleList:[],
 
 
 
@@ -33,9 +34,16 @@ create(store,{
     onLoad: function (options) {
         // this.getZTList(false,options.id);
 
+
+        let arrayList=[];
+        arrayList.push(JSON.parse(options.list))
+
         this.setData({
-            id:options.id
+            id:options.id,
+            articleList:arrayList
         })
+
+        console.log(JSON.parse(options.list),'oooo');
 
     },
 

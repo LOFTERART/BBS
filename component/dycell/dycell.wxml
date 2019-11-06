@@ -2,7 +2,7 @@
 <!--状态S-->
 
 
-<block wx:for="{{articleList}}" wx:key  wx:for-index="idx" wx:for-item="itemName">
+<block wx:for="{{articleList}}" wx:key="idx"  wx:for-index="idx" wx:for-item="itemName">
 
     <view  style="padding: 20rpx;" class="van-hairline--bottom">
         <!--头像基本信息-->
@@ -44,14 +44,14 @@
 
         <!--文字-->
 
-        <view style="margin-bottom: 10rpx;margin-top: 30rpx;color: #323233" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f28">
+        <view style="margin-bottom: 10rpx;margin-top: 30rpx;color: #323233" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f28" data-itemArray="{{itemName}}">
             {{itemName.content}}
         </view>
 
         <!--图片九宫格-->
         <view style="display: flex;flex-direction: row;flex-wrap: wrap;">
 
-            <view  wx:for="{{itemName.image_url_came_thumb}}" wx:key="{{index}}" style="margin-right: {{(index+1)%3===0?'0':'8rpx'}};">
+            <view  wx:for="{{itemName.image_url_came_thumb}}" wx:key="index" style="margin-right: {{(index+1)%3===0?'0':'8rpx'}};">
 
                 <view bindtap="tapBanner"  data-pic="{{articleList[idx].image_url_came[index].url}}"  data-pics="{{itemName.image_url_came}}" data-idx="{{idx}}">
                     <image mode="scaleToFill"  src="{{item.url}}"  style="width: 230rpx;height: 230rpx;border-radius: 10rpx"/>
@@ -83,7 +83,7 @@
             <i class="iconfont icon-chakan f28" style="margin-right: 10rpx"></i>{{itemName.views}}
         </view>
 
-        <view  class="f28 van-hairline--right tools" data-id="{{itemName.id}}" bindtap="clickDailyContent">
+        <view  class="f28 van-hairline--right tools" data-id="{{itemName.id}}" bindtap="clickDailyContent" data-itemArray="{{itemName}}">
             <i class="iconfont icon-xinxi f28" style="margin-right: 10rpx"></i> {{itemName.comment}}
         </view>
 
