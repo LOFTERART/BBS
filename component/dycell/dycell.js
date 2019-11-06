@@ -77,7 +77,7 @@ create({
 
       //  like 点赞
       clickLike:function(e){
-          console.log(this.store.data.userInfo,'hhhhhh');
+          console.log(this.store.data.userInfo.name,'全局store');
           wx.vibrateShort();
           let index = e.currentTarget.dataset.index;
           let is_like= "articleList["+index+"].is_like";
