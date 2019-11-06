@@ -23,9 +23,9 @@ create(store,{
    */
   onLoad: function (options) {
       app.wxLogin().then(res=>{
-          console.log(res,'来自AI');
           app.globalData.userInfo.openId=res.openid
       })
+      console.log(this.store.data,'gggggggg');
   },
 
 

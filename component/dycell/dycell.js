@@ -2,8 +2,8 @@
 import UTIL from "../../utils/util";
 //获取应用实例
 const app = getApp()
-
-Component({
+import create from '../../utils/omi/create'
+create({
   /**
    * 组件的属性列表
    */
@@ -47,7 +47,7 @@ Component({
 
       //点击关注按钮
       clickAction:function(e){
-
+          console.log(this.store.data.userInfo,'hhhhhh');
 
           wx.vibrateShort();
           let index = e.currentTarget.dataset.index;
