@@ -2,7 +2,9 @@ import UTIL from '../../../utils/util'
 const WXAPI = require('../../../API/API')
 import data from '../../../data/data'
 const app = getApp()
-Page({
+import create from '../../../utils/omi/create'
+import store from '../../../store/index'
+create(store,{
     data: {
         dPshow: false, //点评show
         page: 0, //分页
@@ -65,9 +67,7 @@ Page({
             id:id,
             page:this.data.page,
             limit:this.data.pageSize,
-            studio_id:this.store.data.userInfo.studio_id,
             user_id:this.store.data.userInfo.admin_id,
-            user_type:this.store.data.userInfo.user_role,
         };
         WXAPI.ArtztDetail(params).then((res)=>{
             //上拉加载触发
