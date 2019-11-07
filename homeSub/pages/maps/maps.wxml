@@ -25,14 +25,12 @@
             <text class="distance ">{{item.distance}}m</text> {{item.address}}
           </view>
           <view class="addr-opera">
-            <view class="opera-box" hover-class="opcity" hover-stay-time="150 " bindtap="call" data-id="{{item.id}} " wx:if="{{item.tel}} ">
-              <image src="../../static/images/my/call.png" class="mini-img"></image>
-              <view class="text ">打电话</view>
+
+            <view class="opera-box " hover-class="opcity" hover-stay-time="150 " bindtap="go" data-id="{{item.id}} " data-title="{{item.title}}">
+<!--              <image src="../../static/images/my/go.png" class="mini-img"></image>-->
+              <view class="text ">选择</view>
             </view>
-            <view class="opera-box " hover-class="opcity" hover-stay-time="150 " bindtap="go" data-id="{{item.id}} ">
-              <image src="../../static/images/my/go.png" class="mini-img"></image>
-              <view class="text ">到这里</view>
-            </view>
+
           </view>
         </view>
       </view>

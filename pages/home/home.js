@@ -122,6 +122,17 @@ create(store,{
     },
 
 
+    //地图选择监听小区返回
+    emitSchool(city) {
+        console.log(city,'gggggg');
+        this.setData({
+            community:city,
+        })
+
+    },
+
+
+
 
 
     //发表状态

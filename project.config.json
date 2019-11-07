@@ -62,6 +62,13 @@
 					"id": -1,
 					"name": "pages/home/home",
 					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/maps/maps",
+					"pathName": "homeSub/pages/maps/maps",
 					"scene": null
 				}
 			]

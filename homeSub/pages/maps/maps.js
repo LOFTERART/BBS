@@ -175,16 +175,18 @@ console.log(options)
 
   },
   go(event) {
-    const index = Number(event.currentTarget.dataset.id);
-    const item = this.data.address[index];
-    const latitude = Number(item.latitude)
-    const longitude = Number(item.longitude)
-    wx.openLocation({
-      name: item.title,
-      address: item.address,
-      latitude,
-      longitude,
-      scale: 18
-    })
+      let cityName = event.currentTarget.dataset.title;
+      //返回并刷新上一页面
+      let pages = getCurrentPages();
+      console.log(pages,'pages',pages.length);
+      let prePage = pages[pages.length - 3];
+      prePage.emitSchool(cityName)
+      wx.navigateBack({
+          delta: 2
+      })
+
+
+
+
   }
 })
