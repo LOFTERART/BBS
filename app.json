@@ -65,22 +65,10 @@
         "selectedIconPath": "assets/image/homeing.png"
       },
       {
-        "pagePath": "pages/story/story",
-        "text": "故事",
-        "iconPath": "assets/image/gs.png",
-        "selectedIconPath": "assets/image/gsing.png"
-      },
-      {
         "pagePath": "pages/aiDynamic/aiDynamic",
         "text": "推荐",
         "iconPath": "assets/image/tj.png",
         "selectedIconPath": "assets/image/tjing.png"
-      },
-      {
-        "pagePath": "pages/love/love",
-        "text": "习惯",
-        "iconPath": "assets/image/xg.png",
-        "selectedIconPath": "assets/image/xging.png"
       },
       {
         "pagePath": "pages/mine/mine",
