@@ -24,4 +24,4 @@
 <view class="divider" style="height: 20rpx"></view>
 
 
-<dycell articleList="{{articleList}}" isShowFollow="{{true}}"></dycell>
+<dycell articleList="{{articleList}}"></dycell>
