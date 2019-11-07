@@ -2,7 +2,7 @@
 
 .tag{
     background-color: deeppink;
-    height: 40rpx;
+    height: 50rpx;
     display: flex;
     flex-direction: row;
     justify-content: center;

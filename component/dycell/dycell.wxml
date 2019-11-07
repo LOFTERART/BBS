@@ -4,7 +4,7 @@
 
 <block wx:for="{{articleList}}" wx:key="idx"  wx:for-index="idx" wx:for-item="itemName">
 
-    <view  style="padding: 20rpx;" class="van-hairline--bottom">
+    <view  style="padding: 20rpx;background-color: #12d58b" class="van-hairline--bottom">
         <!--头像基本信息-->
         <view style="display: flex;flex-direction: row;background-color: white;height: 80rpx;margin-bottom: 10rpx;justify-content: space-between;align-items: center" >
 
