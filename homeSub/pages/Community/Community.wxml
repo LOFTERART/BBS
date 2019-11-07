@@ -27,8 +27,7 @@
                 <view class="title">定位社区</view>
                 <view class="city-name" bindtap="bindChoseAddress">
                     <tui-icon tui-icon-class="location" name="position-fill" color="rgba(18,213,139,1)" size="18"></tui-icon>
-<!--                     {{localCity}}-->
-                    打开地图选择
+                     {{localCity}}
                 </view>
             </view>
             <view class="hot-city">

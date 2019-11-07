@@ -18,7 +18,7 @@ Page({
   onLoad: function (options) {
     const that = this;
     that.setData({
-      localCity: options.currentCity || "阳光花墅",
+      localCity: options.currentCity || "打开地图选择",
     })
     setTimeout(() => {
       wx.getSystemInfo({
@@ -82,6 +82,10 @@ Page({
         let that = this;
         wx.chooseLocation({
             success: function (res) {
+
+                that.setData({
+                    localCity:res.name
+                })
                 //授权成功之后，再调用chooseLocation选择地方
                 let cityName = res.name;
                 //返回并刷新上一页面
