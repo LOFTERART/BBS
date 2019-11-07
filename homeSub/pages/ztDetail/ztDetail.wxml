@@ -3,7 +3,7 @@
 <dycell articleList="{{articleList}}" isShowFollow="{{true}}"></dycell>
 <!--头部状态E-->
 
-<view class="divider"></view>
+
 
 
 <!--评论列表-->

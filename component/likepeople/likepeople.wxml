@@ -1,6 +1,6 @@
 
 
-<blcok wx:for="{{likeUserList}}" wx:key>
+<blcok wx:for="{{likeUserList}}" wx:key="index">
 
     <view  style="padding: 20rpx;" class="van-hairline--bottom" bindtap="clickAva" data-name="{{item.name}}">
         <!--头像基本信息-->

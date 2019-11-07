@@ -43,7 +43,6 @@ create(store,{
             articleList:arrayList
         })
 
-        console.log(JSON.parse(options.list),'oooo');
 
     },
 
