@@ -148,7 +148,7 @@ const dataBase = {
             community: "森林半岛",
             specialist:true,
             Auth:'医生认证',
-            timer: '刚刚',
+            timer: '1天前',
             address:'许昌 陈庄幼儿园',
             content: "拿着放大镜去发现秋天~~",
             image_url_came: [
@@ -179,7 +179,7 @@ const dataBase = {
             community: "六合花园",
             specialist:true,
             Auth:'医生认证',
-            timer: '刚刚',
+            timer: '2天前',
             address:'许昌 胖东来',
             content: "明天就要结婚了 亲们给点意见 第一次 有点紧张~~",
             image_url_came: [
