@@ -24,7 +24,8 @@
         "pages/kingList/kingList",
         "pages/Community/Community",
         "pages/moreActivity/moreActivity",
-        "pages/likePeople/likePeople"
+        "pages/likePeople/likePeople",
+        "pages/maps/maps"
       ]
     },
     {

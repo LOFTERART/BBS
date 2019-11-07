@@ -70,6 +70,22 @@ Page({
       searchResult: result
     })
   },
+
+    bindChoseAddress:function(){
+        wx.navigateTo({
+            url: '/homeSub/pages/maps/maps',
+            events:{
+                getValueAddress:(city)=>{
+                    this.setData({
+                        community:city,
+                    })
+
+                }
+            }
+        })
+    },
+
+
   // 选择城市
   selectCity(e) {
       const eventChannel = this.getOpenerEventChannel()
