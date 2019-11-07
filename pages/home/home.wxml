@@ -32,7 +32,7 @@
 <!--banner S -->
 <view class="tui-banner-box">
     <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" class="tui-banner-swiper" circular="{{true}}" >
-        <swiper-item wx:for="{{banners}}" wx:key="{{index}}" class="tui-banner-item">
+        <swiper-item wx:for="{{banners}}" wx:key="index" class="tui-banner-item">
             <image
                     bindtap="tapBanner"
                     data-id="{{item.id||item.order_id}}"
