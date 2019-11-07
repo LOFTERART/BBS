@@ -3,6 +3,7 @@ import UTIL from '../../utils/util'
 import data from '../../data/data'
 import create from '../../utils/omi/create'
 import store from '../../store/index'
+const AMAP = require('../../utils/amap-wx.js');
 create(store,{
     data: {
         //首页广告
@@ -78,8 +79,7 @@ create(store,{
      *
      */
     onLoad: function (options) {
-
-
+        
     },
 
 
