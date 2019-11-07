@@ -1,6 +1,8 @@
 // pages/together/together.js
 import UTIL from '../../../utils/util'
-Page({
+import create from '../../../utils/omi/create'
+import store from '../../../store/index'
+create(store,{
 
     /**
      * 页面的初始数据
