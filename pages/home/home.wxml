@@ -9,7 +9,7 @@
         <view class="f36" style="margin-left: 10rpx;margin-right: 2rpx;font-weight: bold">
             {{community}}
         </view>
-        <tui-icon name="arrowdown" size="20" color="#323233"></tui-icon>
+        <tui-icon name="arrowdown" size="20" color="#323233" style="font-weight: bold"></tui-icon>
 
     </view>
 
