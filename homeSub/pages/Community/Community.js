@@ -72,17 +72,89 @@ Page({
   },
 
     bindChoseAddress:function(){
-        wx.navigateTo({
-            url: '/homeSub/pages/maps/maps',
-            events:{
-                getValueAddress:(city)=>{
-                    this.setData({
-                        community:city,
-                    })
 
-                }
+      this.getLocation();
+
+    },
+
+    // 微信api，获取经纬度
+    getLocation() {
+        let that = this;
+        wx.chooseLocation({
+            success: function (res) {
+                //授权成功之后，再调用chooseLocation选择地方
+                let cityName = res.name;
+                //返回并刷新上一页面
+                let pages = getCurrentPages();
+                let prePage = pages[pages.length - 2];
+                prePage.emitSchool(cityName)
+                wx.navigateBack({
+                    delta: 1
+                })
+
+            },
+            fail:function(){
+                wx.getSetting({
+                    success: function (res) {
+                        var statu = res.authSetting;
+                        if (!statu['scope.userLocation']) {
+                            wx.showModal({
+                                title: '是否授权当前位置',
+                                content: '需要获取您的地理位置，请确认授权，否则地图功能将无法使用',
+                                success: function (tip) {
+                                    if (tip.confirm) {
+                                        wx.openSetting({
+                                            success: function (data) {
+                                                if (data.authSetting["scope.userLocation"] === true) {
+                                                    wx.showToast({
+                                                        title: '授权成功',
+                                                        icon: 'success',
+                                                        duration: 1000
+                                                    })
+                                                    //授权成功之后，再调用chooseLocation选择地方
+                                                    let cityName = res.address;
+                                                    //返回并刷新上一页面
+                                                    let pages = getCurrentPages();
+                                                    console.log(pages,'pages',pages.length);
+                                                    let prePage = pages[pages.length - 2];
+                                                    prePage.emitSchool(cityName)
+                                                    wx.navigateBack({
+                                                        delta: 1
+                                                    })
+
+
+
+                                                } else {
+                                                    wx.showToast({
+                                                        title: '授权失败',
+                                                        icon: 'success',
+                                                        duration: 1000
+                                                    })
+                                                }
+                                            }
+                                        })
+                                    }
+                                }
+                            })
+                        }
+                    },
+                    fail: function (res) {
+                        wx.showToast({
+                            title: '调用授权窗口失败',
+                            icon: 'success',
+                            duration: 1000
+                        })
+                    }
+                })
+            },
+            complete: function () {
+// complete
             }
         })
+
+
+
+
     },
 
 
