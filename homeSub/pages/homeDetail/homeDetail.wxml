@@ -70,7 +70,7 @@
                 <view class="tui-bold tui-cell-title">福利</view>
                 <view>
 
-                    <blcok wx:for="{{activityInfo.welfare}}" wx:key>
+                    <blcok wx:for="{{activityInfo.welfare}}" wx:key="index">
 
                         <view class="tui-promotion-box">
                             <tui-tag size="small" type="warning" plain="{{true}}" tui-tag-class="tui-inline-block">{{item.tag}}</tui-tag>
@@ -111,7 +111,7 @@
 
             <view class="tui-guarantee">
 
-                <block wx:for="{{activityInfo.tags}}" wx:key>
+                <block wx:for="{{activityInfo.tags}}" wx:key="index">
                     <view class="tui-guarantee-item">
                         <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
                         <text class="tui-pl">{{item}}</text>

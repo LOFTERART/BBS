@@ -5,7 +5,7 @@
 
 
 <view class="picture_list">
-        <view wx:for="{{images}}" class="picture_item" wx:key>
+        <view wx:for="{{images}}" class="picture_item" wx:key="index">
             <image  src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
             <text class='del'  data-src='{{image}}' style='display:{{isDel}}' data-idx="{{index}}" bindtap="removeImage">×</text>
         </view>
