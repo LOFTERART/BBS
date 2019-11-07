@@ -79,7 +79,7 @@
 
     <view class="fourTool" wx:if="{{!itemName.list}}">
 
-        <view  class="f28 van-hairline--right tools" data-id="{{itemName.id}}" bindtap="clickDailyContent">
+        <view  class="f28 van-hairline--right tools" data-id="{{itemName.id}}" bindtap="clickDailyContent" data-itemArray="{{itemName}}">
             <i class="iconfont icon-chakan f28" style="margin-right: 10rpx"></i>{{itemName.views}}
         </view>
 
