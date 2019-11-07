@@ -13,13 +13,10 @@ Page({
     inputVal: '', // 搜索框输入的内容
     hotCity: ['许昌橡树湾小区', '许昌一品蓝湾小区', '许昌森林半岛小区', '许昌祥和小区'], // 热门小区
     searchResult: [], // 搜索城市的结果
-    localCity: ''
+    localCity: '打开地图选择'
   },
   onLoad: function (options) {
     const that = this;
-    that.setData({
-      localCity: options.currentCity || "打开地图选择",
-    })
     setTimeout(() => {
       wx.getSystemInfo({
         success: function (res) {
