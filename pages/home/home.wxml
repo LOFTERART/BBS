@@ -66,7 +66,7 @@
     <view class="tui-classify-box" >
         <view class="tui-classify-item"
               wx:for="{{KING}}"
-              wx:key
+              wx:key="index"
               bindtap="clickKing"
               data-name="{{item.name}}"
               data-des="{{item.des}}"

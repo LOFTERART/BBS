@@ -72,16 +72,14 @@ Page({
   },
   // 选择城市
   selectCity(e) {
-    console.log(e, 'eee');
-    let cityName = e.currentTarget.dataset.name;
-    //返回并刷新上一页面
-    let pages = getCurrentPages();
-    let prePage = pages[pages.length - 2];
-    prePage.emitSchool(cityName)
-    wx.navigateBack({
-      delta: 1
-    })
+      const eventChannel = this.getOpenerEventChannel()
+      eventChannel.emit('getValue', e.currentTarget.dataset.name);
+        wx.navigateBack({
+          delta: 1
+        })
   },
+
+
   touchStart(e) {
     this.setData({
       touchmove: true

@@ -68,7 +68,7 @@ create(store,{
         ],
 
         //默认社区名称
-        community:'阳光花墅',
+        community:'请选择小区',
 
         current:0   //轮播图
 
@@ -78,8 +78,6 @@ create(store,{
      *
      */
     onLoad: function (options) {
-
-
 
 
     },
@@ -97,19 +95,6 @@ create(store,{
         UTIL.toast(e.currentTarget.dataset.name)
     },
     
-    
-
-
-    //监听小区返回
-    emitSchool(city) {
-        console.log(city,'gggggg');
-        this.setData({
-            community:city,
-        })
-
-    },
-
-
 
 
     //点击king
@@ -124,7 +109,15 @@ create(store,{
 
     choseCommunity:function(){
         wx.navigateTo({
-            url: '/homeSub/pages/Community/Community'
+            url: '/homeSub/pages/Community/Community',
+            events:{
+                getValue:(city)=>{
+                    this.setData({
+                        community:city,
+                    })
+
+                }
+            }
         })
     },
 
@@ -136,7 +129,6 @@ create(store,{
         wx.navigateTo({
             url: '/homeSub/pages/AddBbs/AddBbs'
         })
-
 
     },
     
