@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "小区选择",
+  "navigationBarTitleText": "社区选择",
   "usingComponents": {
     "tui-icon": "/component/icon/icon"
   }

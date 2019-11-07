@@ -68,7 +68,7 @@ create(store,{
         ],
 
         //默认社区名称
-        community:'请选择小区',
+        community:'请选择社区',
 
         current:0   //轮播图
 

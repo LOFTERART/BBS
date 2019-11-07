@@ -24,14 +24,14 @@
         </view>
         <view wx:if="{{!inputVal}}">
             <view class="current-city">
-                <view class="title">定位小区</view>
+                <view class="title">定位社区</view>
                 <view class="city-name">
                     <tui-icon tui-icon-class="location" name="position-fill" color="rgba(18,213,139,1)" size="18"></tui-icon>
                     {{localCity}}
                 </view>
             </view>
             <view class="hot-city">
-                <view class="title">热门小区</view>
+                <view class="title">热门社区</view>
                 <view class="city-names">
                     <view class="city-name-item" wx:for="{{hotCity}}"  wx:key="{{index}}" hover-class="tap-city" hover-stay-time="150" bindtap="selectCity" data-name="{{item}}">
                         {{item}}

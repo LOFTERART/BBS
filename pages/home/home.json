@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "小区",
+  "navigationBarTitleText": "社区",
   "enablePullDownRefresh": true,
   "usingComponents": {
     "tui-icon": "/component/icon/icon",
