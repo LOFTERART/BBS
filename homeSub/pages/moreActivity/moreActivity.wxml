@@ -1,19 +1,19 @@
 
 <!--活动召集 S class="van-hairline--bottom"-->
-<block wx:for="{{dynamicList}}" wx:key>
-    <view style="padding: 40rpx 20rpx;position: relative"  bindtap="clickDy" data-id="{{item.id}}">
+<block wx:for="{{dynamicList}}" wx:key="index">
+    <view class="main"  bindtap="clickDy" data-id="{{item.id}}">
 
 
         <!--    基本信息 S-->
 
 
-        <view style="display: flex;flex-direction: row;height: 180rpx">
+        <view class="mainBase">
 
             <view style="margin-right: 30rpx">
-                <image src="{{item.image}}" style="width: 180rpx;height: 180rpx;border-radius: 10rpx" />
+                <image src="{{item.image}}" class="imgStyle" />
             </view>
 
-            <view style="display: flex;flex-direction: column;justify-content: space-between">
+            <view class="mainTitle">
 
                 <view class="f28">
                     {{item.name}}
@@ -35,7 +35,7 @@
 
 
         <!--    成员人数信息S-->
-        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
+        <view class="mainMem">
             <view class="f22">
                 <i class="iconfont icon-chengyuan-copy"></i>
                 成员:{{item.memNum}}位   / 价格 <text style="color: red">￥{{item.price}}</text>

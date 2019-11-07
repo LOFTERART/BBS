@@ -1,1 +1,17 @@
 /* homeSub/pages/moreactivity/moreActivity.wxss */
+.main{
+    padding: 40rpx 20rpx;position: relative
+}
+
+.mainBase{
+    display: flex;flex-direction: row;height: 180rpx
+}
+.imgStyle{
+    width: 180rpx;height: 180rpx;border-radius: 10rpx
+}
+.mainTitle{
+    display: flex;flex-direction: column;justify-content: space-between
+}
+.mainMem{
+    display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx
+}
