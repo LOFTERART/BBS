@@ -6,7 +6,7 @@
 
 <!--    去掉下边class="van-hairline--bottom"-->
 
-    <view  style="padding: 20rpx;" >
+    <view  style="padding: 20rpx 20rpx 0 20rpx;" >
         <!--头像基本信息-->
         <view style="display: flex;flex-direction: row;background-color: white;height: 80rpx;margin-bottom: 10rpx;justify-content: space-between;align-items: center" >
 
@@ -81,15 +81,16 @@
 
     <view class="fourTool">
 
-        <view  class="f28 van-hairline--right tools" data-id="{{itemName.id}}" bindtap="clickDailyContent" data-itemArray="{{itemName}}">
+<!--      去掉下边  van-hairline--right-->
+        <view  class="f28  tools" data-id="{{itemName.id}}" bindtap="clickDailyContent" data-itemArray="{{itemName}}">
             <i class="iconfont icon-chakan f28" style="margin-right: 10rpx"></i>{{itemName.views}}
         </view>
 
-        <view  class="f28 van-hairline--right tools" data-id="{{itemName.id}}" bindtap="clickDailyContent" data-itemArray="{{itemName}}">
+        <view  class="f28  tools" data-id="{{itemName.id}}" bindtap="clickDailyContent" data-itemArray="{{itemName}}">
             <i class="iconfont icon-xinxi f28" style="margin-right: 10rpx"></i> {{itemName.comment}}
         </view>
 
-        <view class="f28 van-hairline--right tools" bindtap="clickLike" data-index="{{idx}}" data-id="{{itemName.id}}">
+        <view class="f28  tools" bindtap="clickLike" data-index="{{idx}}" data-id="{{itemName.id}}">
             <i class="iconfont icon-zan f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#999'}}"></i> {{itemName.like}}
         </view>
 

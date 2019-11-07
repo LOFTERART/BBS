@@ -132,7 +132,7 @@ button::after {
 .divider{
     background-color: rgba(251,251,251,1);
     width: 100%;
-    height: 10rpx
+    height: 30rpx
 }
 
 
