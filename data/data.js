@@ -162,7 +162,7 @@ const dataBase = {
                 {url:'https://dcdn.it120.cc/2019/10/26/66ad24e5-fb97-4497-b2a0-202766859b53.jpeg'},
             ],
             tag:'# 幼儿园瞬间',
-            views: 100,
+            views: '1.2K',
             comment: 800,
             like: 10,
             is_like: false,
