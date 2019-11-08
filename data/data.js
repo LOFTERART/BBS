@@ -163,11 +163,10 @@ const dataBase = {
                 {url:'https://att2.citysbs.com/hangzhou/2019/10/23/16/middle_450x300-165246_v2_19511571820766578_f1c910f942f1a66e3c4a8aa9a7d9314e.gif'},
             ],
             tag:'#相亲活动',
-            views: '1.2K',
-            comment: 800,
+            views: '5K',
+            comment: 99,
             like: 10,
             is_like: false,
-
             //是否关注
             isFollow:true,
             followDes:'已关注'
