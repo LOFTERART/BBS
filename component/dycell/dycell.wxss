@@ -5,7 +5,8 @@
     margin-bottom: 20rpx;
     margin-top: 20rpx;
     color: #323233;
-    font-weight: 500
+    font-weight: 500;
+    line-height: 50rpx;
 }
 
 .avaCon{
