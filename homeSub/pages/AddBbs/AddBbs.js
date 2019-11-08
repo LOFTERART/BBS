@@ -212,7 +212,8 @@ Page({
 
 
     up:function(){
-      UTIL.toast('待开发')
+      UTIL.toast('发布成功!增加了10经验值');
+        wx.navigateBack();
     },
 
 //    文字发表
