@@ -36,6 +36,14 @@ Page({
 
   },
 
+
+    wxParseTagATap:function(e){
+        console.log('href',e.currentTarget.dataset.src);
+        wx.navigateTo({
+            url: '/homeSub/pages/homeDetail/homeDetail'
+        })
+    },
+
 //点击多少人赞过
 
     clickLikePeople:function(){
