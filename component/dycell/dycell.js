@@ -20,6 +20,10 @@ create({
           type: String,
           value: '', //不存在此属性时
       },
+      isAll:{
+          type: Boolean,
+          value: false, //不存在此属性时
+      },
 
 
   },
@@ -28,7 +32,6 @@ create({
    * 组件的初始数据
    */
   data: {
-      isAll:false
   },
 
   /**
@@ -36,12 +39,6 @@ create({
    */
   methods: {
 
-      clickAll:function(){
-          console.log(1);
-          this.setData({
-            isAll:!this.data.isAll
-        })
-      },
 
 
       clickName:function(){
