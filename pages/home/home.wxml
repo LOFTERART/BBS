@@ -55,7 +55,7 @@
 <!--金刚区S-->
 <view style="padding: 0 10rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
     <view style="font-weight: bold" class="f36">
-        热门讨论~
+        热门讨论
     </view>
 </view>
 <!--金刚区E-->
@@ -96,7 +96,7 @@
 <!--动态标题S-->
 <view style="padding: 20rpx 20rpx 20rpx 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center">
     <view style="font-weight: bold" class="f36">
-        小区动态
+        社区动态
     </view>
 </view>
 <!--动态标题E-->
