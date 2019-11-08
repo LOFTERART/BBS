@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "故事详情",
+  "navigationBarTitleText": "详情",
   "usingComponents": {
     "comment": "/component/comment/comment",
     "tui-icon": "/component/icon/icon",
