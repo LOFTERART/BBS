@@ -82,8 +82,6 @@ create({
 
       //  like 点赞
       clickLike:function(e){
-          console.log(this.store.data.userInfo.name,'全局store');
-          wx.vibrateShort();
           let index = e.currentTarget.dataset.index;
           let is_like= "articleList["+index+"].is_like";
           let like= "articleList["+index+"].like";
@@ -93,12 +91,14 @@ create({
                   [is_like]: !this.data.articleList[index].is_like,
                   [like]: this.data.articleList[index].like-1,
               })
+              UTIL.toast('取消点赞')
               // this.likeVSNoLikeComment(e.currentTarget.dataset.id,true)
           }else {
               this.setData({
                   [is_like]: !this.data.articleList[index].is_like,
                   [like]: this.data.articleList[index].like+1,
               })
+              UTIL.toast('点赞成功')
               // this.likeVSNoLikeComment(e.currentTarget.dataset.id,false)
           }
 
