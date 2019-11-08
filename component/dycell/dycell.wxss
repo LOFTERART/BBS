@@ -8,6 +8,17 @@
     font-weight: 500
 }
 
+.avaCon{
+    display: flex;flex-direction: row;background-color: white;height: 80rpx;margin-bottom: 10rpx;justify-content: space-between;align-items: center
+}
+
+.imgCon{
+    display: flex;flex-direction: row;flex-wrap: wrap;
+}
+
+.img{
+    width: 230rpx;height: 230rpx;border-radius: 10rpx
+}
 
 .tag{
     height: 50rpx;
