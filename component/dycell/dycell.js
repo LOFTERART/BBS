@@ -28,13 +28,21 @@ create({
    * 组件的初始数据
    */
   data: {
-
+      isAll:false
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+
+      clickAll:function(){
+          console.log(1);
+          this.setData({
+            isAll:!this.data.isAll
+        })
+      },
+
 
       clickName:function(){
           console.log(app.globalData.userInfo,'appglob');

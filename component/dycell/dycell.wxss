@@ -15,6 +15,20 @@
     text-overflow:ellipsis;/* 超出内容显示省略号*/
 }
 
+.contentStyleAll{
+    position: relative;
+    margin-bottom: 20rpx;
+    margin-top: 20rpx;
+    color: #323233;
+    font-weight: 500;
+    line-height: 50rpx;
+    display: -webkit-box;/*关键属性*/
+    -webkit-box-orient: vertical;/* 关键属性 */
+    -webkit-line-clamp:0;/* 关键属性 */
+    overflow: hidden;/* 关键属性 */
+    text-overflow:ellipsis;/* 超出内容显示省略号*/
+}
+
 .avaCon{
     display: flex;flex-direction: row;background-color: white;height: 80rpx;margin-bottom: 10rpx;justify-content: space-between;align-items: center
 }

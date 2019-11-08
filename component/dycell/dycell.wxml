@@ -50,9 +50,10 @@
                 data-id="{{itemName.id}}"
                 data-aid="{{itemName.activityID}}"
                 bindtap="clickDailyContent"
-                class="f28 contentStyle">
-
+                class="f28 {{isAll?'contentStyleAll':'contentStyle'}}">
             {{itemName.content}}
+
+            <text style="color: #12d58b;position: absolute;right: 0;bottom: 0" catchtap="clickAll" wx:if="{{itemName.content.length > 300}}">全部</text>
 
         </view>
 
