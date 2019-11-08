@@ -7,7 +7,7 @@
 
 
 .tag{
-    background-color: deeppink;
+    background-color: #12d58b;
     height: 50rpx;
     display: flex;
     flex-direction: row;
