@@ -13,6 +13,7 @@
 		"coverView": true,
 		"nodeModules": false,
 		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
 		"uglifyFileName": true,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -22,7 +23,8 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"bundle": true
+		"bundle": true,
+		"scopeDataCheck": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",

@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/aiDynamic/aiDynamic",
     "pages/home/home",
+    "pages/aiDynamic/aiDynamic",
     "pages/mine/mine",
     "pages/love/love",
     "pages/story/story"
@@ -59,23 +59,18 @@
     "selectedColor": "#52495b",
     "borderStyle": "white",
     "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "社区",
-        "iconPath": "assets/image/home.png",
-        "selectedIconPath": "assets/image/homeing.png"
-      },
-      {
-        "pagePath": "pages/story/story",
-        "text": "故事",
-        "iconPath": "assets/image/home.png",
-        "selectedIconPath": "assets/image/homeing.png"
-      },
+
       {
         "pagePath": "pages/aiDynamic/aiDynamic",
         "text": "推荐",
         "iconPath": "assets/image/tj.png",
         "selectedIconPath": "assets/image/tjing.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "社区",
+        "iconPath": "assets/image/home.png",
+        "selectedIconPath": "assets/image/homeing.png"
       },
       {
         "pagePath": "pages/mine/mine",

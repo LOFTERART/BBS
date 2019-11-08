@@ -92,7 +92,10 @@ create(store,{
 
     //    ad 点击
     tapBanner: function (e) {
-        UTIL.toast(e.currentTarget.dataset.name)
+        // UTIL.toast(e.currentTarget.dataset.name)
+        wx.navigateTo({
+            url: '/storySub/pages/storyDetail/storyDetail'
+        })
     },
     
 
