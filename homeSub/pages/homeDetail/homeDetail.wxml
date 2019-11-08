@@ -14,7 +14,7 @@
     <!--banner-->
     <view class="tui-banner-swiper">
         <swiper autoplay="true" interval="5000" duration="150" circular="{{true}}" style="height:{{scrollH}}px" bindchange="bannerChange">
-            <block wx:for="{{banner}}" wx:key="{{index}}">
+            <block wx:for="{{banner}}" wx:key="index">
                 <swiper-item data-index="{{index}}" catchtap="previewImage">
                     <image src="{{item}}" class="tui-slide-image" style="height:{{scrollH}}px" />
                 </swiper-item>
