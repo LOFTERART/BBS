@@ -66,6 +66,12 @@
         "selectedIconPath": "assets/image/homeing.png"
       },
       {
+        "pagePath": "pages/story/story",
+        "text": "故事",
+        "iconPath": "assets/image/home.png",
+        "selectedIconPath": "assets/image/homeing.png"
+      },
+      {
         "pagePath": "pages/aiDynamic/aiDynamic",
         "text": "推荐",
         "iconPath": "assets/image/tj.png",
