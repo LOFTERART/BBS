@@ -79,16 +79,11 @@ Page({
         let that = this;
         wx.chooseLocation({
             success: function (res) {
-
                 that.setData({
                     localCity:res.name
                 })
-                //授权成功之后，再调用chooseLocation选择地方
-                let cityName = res.name;
-                //返回并刷新上一页面
-                let pages = getCurrentPages();
-                let prePage = pages[pages.length - 2];
-                prePage.emitSchool(cityName)
+                const eventChannel = that.getOpenerEventChannel()
+                eventChannel.emit('getValue', res.name);
                 wx.navigateBack({
                     delta: 1
                 })
@@ -113,12 +108,8 @@ Page({
                                                         duration: 1000
                                                     })
                                                     //授权成功之后，再调用chooseLocation选择地方
-                                                    let cityName = res.address;
-                                                    //返回并刷新上一页面
-                                                    let pages = getCurrentPages();
-                                                    console.log(pages,'pages',pages.length);
-                                                    let prePage = pages[pages.length - 2];
-                                                    prePage.emitSchool(cityName)
+                                                    const eventChannel = that.getOpenerEventChannel()
+                                                    eventChannel.emit('getValue', res.address);
                                                     wx.navigateBack({
                                                         delta: 1
                                                     })
