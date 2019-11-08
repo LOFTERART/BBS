@@ -63,7 +63,7 @@
             <view  wx:for="{{itemName.image_url_came_thumb}}" wx:key="index" style="margin-right: {{(index+1)%3===0?'0':'8rpx'}};">
 
                 <view bindtap="tapBanner"  data-pic="{{articleList[idx].image_url_came[index].url}}"  data-pics="{{itemName.image_url_came}}" data-idx="{{idx}}">
-                    <image mode="scaleToFill"  src="{{item.url}}"  class="img"/>
+                    <image mode="scaleToFill"  src="{{item.url}}"  class="{{itemName.activityID?'adImg':'img'}}"/>
                 </view>
 
             </view>
@@ -106,7 +106,6 @@
 
     <view class="fourTool">
 
-<!--      去掉下边  van-hairline--right-->
         <view  class="f24  tools" data-id="{{itemName.id}}" data-aid="{{itemName.activityID}}" bindtap="clickDailyContent" data-itemArray="{{itemName}}">
             <i class="iconfont icon-chakan f28" style="margin-right: 10rpx;color: #969799"></i>{{itemName.views}}
         </view>

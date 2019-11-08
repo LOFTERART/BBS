@@ -34,11 +34,21 @@
 }
 
 .imgCon{
-    display: flex;flex-direction: row;flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .img{
-    width: 230rpx;height: 230rpx;border-radius: 10rpx
+    width: 230rpx;
+    height: 230rpx;
+    border-radius: 10rpx
+}
+
+.adImg{
+    width: 500rpx;
+    height: 500rpx;
+    border-radius: 10rpx
 }
 
 .tag{
@@ -64,14 +74,15 @@
     justify-content: space-between;
     align-items: center;
     height: 62rpx;
-    background-color: white
+    background-color: white;
+    padding: 0 20rpx;
 }
 .tools{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /*justify-content: center;*/
+    /*flex: 1;*/
     align-items: center;
-    flex: 1;
     color: #969799 !important;
 }
 
