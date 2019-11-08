@@ -142,6 +142,38 @@ const dataBase = {
     aiDyList:[
         {
             id: 29969,
+            activityID:1,
+            avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+            name: "曹阿瞒",
+            status: "【官方】",
+            community: "",
+            specialist:false,
+            Auth:'',
+            timer: '1天前',
+            address:'许昌前进路鑫鑫娘',
+            content: "【第九届相亲嘉年华】这不仅仅是场相亲盛会，还是场单身派对【2019-11-07至2019-12-07】",
+            image_url_came: [
+                {url:'https://att2.citysbs.com/hangzhou/2019/10/23/16/middle_454x297-165246_v2_15761571820766586_54b34a70070ea834fe20364969e7fbda.gif'},
+                {url:'https://att2.citysbs.com/hangzhou/2019/10/23/16/middle_454x300-165246_v2_17111571820766615_7865a8a822b1d628769249e4efc9c815.gif'},
+                {url:'https://att2.citysbs.com/hangzhou/2019/10/23/16/middle_450x300-165246_v2_19511571820766578_f1c910f942f1a66e3c4a8aa9a7d9314e.gif'},
+            ],
+            image_url_came_thumb: [
+                {url:'https://att2.citysbs.com/hangzhou/2019/10/23/16/middle_454x297-165246_v2_15761571820766586_54b34a70070ea834fe20364969e7fbda.gif'},
+                {url:'https://att2.citysbs.com/hangzhou/2019/10/23/16/middle_454x300-165246_v2_17111571820766615_7865a8a822b1d628769249e4efc9c815.gif'},
+                {url:'https://att2.citysbs.com/hangzhou/2019/10/23/16/middle_450x300-165246_v2_19511571820766578_f1c910f942f1a66e3c4a8aa9a7d9314e.gif'},
+            ],
+            tag:'#相亲活动',
+            views: '1.2K',
+            comment: 800,
+            like: 10,
+            is_like: false,
+
+            //是否关注
+            isFollow:true,
+            followDes:'已关注'
+        },
+        {
+            id: 29969,
             avatar: "https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
             name: "曹阿瞒",
             status: "",

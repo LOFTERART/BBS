@@ -129,10 +129,18 @@ create({
 
       //点击文字跳转详情
       clickDailyContent:function(e){
-          console.log(e.currentTarget.dataset.itemarray);
-          wx.navigateTo({
-              url: '/homeSub/pages/ztDetail/ztDetail?id='+e.currentTarget.dataset.id+'&list='+JSON.stringify(e.currentTarget.dataset.itemarray)
-          })
+          console.log(e.currentTarget.dataset);
+
+
+          if(e.currentTarget.dataset.aid){
+              wx.navigateTo({
+                  url: '/homeSub/pages/homeDetail/homeDetail'
+              })
+          }else {
+              wx.navigateTo({
+                  url: '/homeSub/pages/ztDetail/ztDetail?id='+e.currentTarget.dataset.id+'&list='+JSON.stringify(e.currentTarget.dataset.itemarray)
+              })
+          }
 
       },
 
