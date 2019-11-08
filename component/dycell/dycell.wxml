@@ -118,7 +118,7 @@
             <i class="iconfont icon-zan f28" style="margin-right: 10rpx;color:{{itemName.is_like?'#fdd043':'#969799'}}"></i> {{itemName.like}}
         </view>
 
-        <view  class="f24 tools" bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}">
+        <view  class="f24 tools" bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}" style="justify-content: flex-end">
             <i class="iconfont icon-gengduo f28" style="margin-right: 10rpx;color: #969799"></i>
         </view>
 
