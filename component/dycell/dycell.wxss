@@ -27,11 +27,14 @@
     flex-direction: row;
     align-items: center;
     border-radius: 50rpx;
-    color: white
+    color: rgba(112,143,199,1);
+    font-weight: bold;
 }
 
 .tagStyle{
-    background-color: #12d58b;border-radius: 50rpx;padding: 10rpx
+    background-color: rgba(239,242,248,1);
+    border-radius: 50rpx;
+    padding: 10rpx
 }
 
 .fourTool{
