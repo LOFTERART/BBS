@@ -75,8 +75,19 @@
         <!-- #话题S-->
         <view  class="f22 tag" bindtap="clickTogether" data-tag="{{itemName.tag}}" >
 
-            <view class="tagStyle">
+
+            <view wx:if="{{itemName.activityID}}" style="color: #333333">
+                广告
+            </view>
+
+
+            <view class="tagStyle" wx:else>
                 {{itemName.tag}}
+            </view>
+
+            <view style="color: #12d58b">
+                点击查看
+                <tui-icon name="arrowright" size="20" color="#323233" ></tui-icon>
             </view>
 
         </view>

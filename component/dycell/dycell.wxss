@@ -45,6 +45,7 @@
     height: 50rpx;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     border-radius: 50rpx;
     color: rgba(112,143,199,1);
