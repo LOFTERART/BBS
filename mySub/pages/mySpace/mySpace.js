@@ -1,6 +1,6 @@
-import data from '../../../data/data'
 import create from '../../../utils/omi/create'
 import store from '../../../store/index'
+import data from '../../../data/data'
 create(store,{
 
   /**
