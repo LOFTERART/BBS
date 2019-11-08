@@ -11,6 +11,7 @@
         <view style="display: flex;flex-direction: row;background-color: white;height: 80rpx;margin-bottom: 10rpx;justify-content: space-between;align-items: center" >
 
             <view style="display: flex;flex-direction: row">
+
                 <view style="margin-right: 20rpx" bindtap="clickAva" data-name="{{itemName.name}}">
                     <image mode="widthFix"  src="{{itemName.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
                 </view>
@@ -20,13 +21,11 @@
                         <view class="f28" bindtap="clickName">{{itemName.name}}</view>
                         <view style="margin-left: 10rpx;margin-right: 10rpx" class="f28" bindtap="clickName">{{itemName.status}}</view>
                         <view style="margin-right: 10rpx" class="f28" bindtap="clickName">{{itemName.community}}</view>
-
-                        <tui-icon name="member" size="22" color="#DFB176" bindtap="clickVip" data-auth="{{itemName.Auth}}" wx:if="{{itemName.specialist}}"></tui-icon>
-
-                        <view style="color: red;margin-left: 20rpx" class="f28" wx:if="{{itemName.is_top}}">置顶</view>
+                        <tui-icon name="member" size="22" color="#12d58b" bindtap="clickVip" data-auth="{{itemName.Auth}}" wx:if="{{itemName.specialist}}"></tui-icon>
                     </view>
-                    <view class="f22">{{itemName.timer}}·<text style="color: rgba(18,213,139,1)" class="f22">{{itemName.address}}</text> </view>
+                    <view class="f22">{{itemName.timer}}·<text style="color: #12d58b" class="f22">{{itemName.address}}</text></view>
                 </view>
+
             </view>
 
 
