@@ -1,6 +1,6 @@
 
 <!--头部状态S-->
-<dycell articleList="{{articleList}}" isShowFollow="{{true}}"></dycell>
+<dycell articleList="{{articleList}}" isShowFollow="{{true}}" isAll="{{true}}"></dycell>
 <!--头部状态E-->
 
 

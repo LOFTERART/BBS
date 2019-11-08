@@ -52,9 +52,6 @@
                 bindtap="clickDailyContent"
                 class="f28 {{isAll?'contentStyleAll':'contentStyle'}}">
             {{itemName.content}}
-
-            <text style="color: #12d58b;position: absolute;right: 0;bottom: 0"  wx:if="{{isAll}}">全部</text>
-
         </view>
 
         <!--文字E-->
