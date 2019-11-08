@@ -91,7 +91,7 @@
         </view>
 
         <view class="f24  tools" bindtap="clickLike" data-index="{{idx}}" data-id="{{itemName.id}}">
-            <i class="iconfont icon-zan f28" style="margin-right: 10rpx;color:{{itemName.is_like?'red':'#969799'}}"></i> {{itemName.like}}
+            <i class="iconfont icon-zan f28" style="margin-right: 10rpx;color:{{itemName.is_like?'#12db58':'#969799'}}"></i> {{itemName.like}}
         </view>
 
         <view  class="f24 tools" bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}">
