@@ -4,20 +4,23 @@
 
 <view style="display: flex;flex-direction: row;height: 40rpx;;padding: 20rpx;justify-content: space-between">
 
+
+    <view class="36" style="font-weight: 400">
+        你好
+    </view>
+
+
+
     <view style="display: flex;flex-direction: row;align-items: center" bindtap="choseCommunity">
-        <tui-icon tui-icon-class="location" name="position-fill" color="rgba(18,213,139,1)" size="18"></tui-icon>
-        <view class="f36" style="margin-left: 10rpx;margin-right: 2rpx;font-weight: bold">
+        <tui-icon tui-icon-class="location" name="position-fill" color="#12db58" size="18"></tui-icon>
+        <view class="f36" style="margin-left: 10rpx;margin-right: 2rpx;font-weight: 400">
             {{community}}
         </view>
-        <tui-icon name="arrowdown" size="20" color="#323233" style="font-weight: bold"></tui-icon>
+        <tui-icon name="arrowright" size="20" color="#323233" ></tui-icon>
 
     </view>
 
 
-
-    <view class="f22">
-        第<text style="color: #00cc88">1008</text>位 欢迎您加入我们社区
-    </view>
 
 </view>
 
@@ -31,7 +34,7 @@
 
 <!--banner S -->
 <view class="tui-banner-box">
-    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" class="tui-banner-swiper" circular="{{true}}" >
+    <swiper indicator-dots="true" autoplay="true" interval="9000" duration="1000" class="tui-banner-swiper" circular="{{true}}" >
         <swiper-item wx:for="{{banners}}" wx:key="index" class="tui-banner-item">
             <image
                     bindtap="tapBanner"
