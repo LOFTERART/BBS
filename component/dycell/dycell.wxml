@@ -43,11 +43,21 @@
 
         </view>
 
-        <!--文字-->
+        <!--文字S-->
 
-        <view  data-itemArray="{{itemName}}" data-id="{{itemName.id}}" data-aid="{{itemName.activityID}}" bindtap="clickDailyContent" class="f28 contentStyle">
+        <view
+                data-itemArray="{{itemName}}"
+                data-id="{{itemName.id}}"
+                data-aid="{{itemName.activityID}}"
+                bindtap="clickDailyContent"
+                class="f28 contentStyle">
+
             {{itemName.content}}
+
         </view>
+
+        <!--文字E-->
+
 
         <!--图片九宫格-->
         <view class="imgCon">
