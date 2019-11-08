@@ -1,5 +1,11 @@
 @import "/app.wxss";
 
+
+.contentStyle{
+    margin-bottom: 20rpx;margin-top: 20rpx;color: #323233;font-weight: 500
+}
+
+
 .tag{
     background-color: deeppink;
     height: 50rpx;

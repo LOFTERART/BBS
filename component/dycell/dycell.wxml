@@ -45,7 +45,7 @@
 
         <!--文字-->
 
-        <view style="margin-bottom: 10rpx;margin-top: 30rpx;color: #323233;font-weight: 500" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f28" data-itemArray="{{itemName}}">
+        <view  data-itemArray="{{itemName}}" data-id="{{itemName.id}}" bindtap="clickDailyContent" class="f28 contentStyle">
             {{itemName.content}}
         </view>
 
