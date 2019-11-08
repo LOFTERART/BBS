@@ -73,19 +73,25 @@
 
 
         <!-- #话题S-->
-        <view  class="f22 tag" bindtap="clickTogether" data-tag="{{itemName.tag}}" >
+        <view  class="f22 tag"  >
 
 
-            <view wx:if="{{itemName.activityID}}" style="color: #333333">
+            <view wx:if="{{itemName.activityID}}" style="color: #333333" class="f28">
                 广告
             </view>
 
 
-            <view class="tagStyle" wx:else>
+            <view class="tagStyle" wx:else bindtap="clickTogether" data-tag="{{itemName.tag}}">
                 {{itemName.tag}}
             </view>
 
-            <view style="color: #12d58b">
+            <view style="color: #12d58b"
+                  class="f28"
+                  wx:if="{{itemName.activityID}}"
+                  data-itemArray="{{itemName}}"
+                  data-id="{{itemName.id}}"
+                  data-aid="{{itemName.activityID}}"
+                  bindtap="clickDailyContent">
                 点击查看
                 <tui-icon name="arrowright" size="20" color="#323233" ></tui-icon>
             </view>
