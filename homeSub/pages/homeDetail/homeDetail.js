@@ -80,11 +80,15 @@ create(store,{
             })
         });
 
-        this.getActivityDetail(options.id)
+        //获取活动详情
+        this.getActivityDetail(options.id);
+    //    模拟获取全部评论
+
+        this.getActivityComments(options.id);
 
     },
 
-
+   //获取活动详情
     getActivityDetail:function(id){
         WXAPI.ActivityDetail({
             activityId:id,
@@ -98,6 +102,26 @@ create(store,{
         })
 
     },
+    //    模拟获取全部评论
+    getActivityComments:function(id){
+        WXAPI.ActivityComments({
+            activityId:id,
+        }).then(res=>{
+            if(res.code===200){
+                console.log(res,'全部评论');
+            }else {
+                UTIL.toast(res.message)
+            }
+        })
+
+    },
+
+    
+
+
+
+
+
 
 
 
@@ -167,7 +191,7 @@ create(store,{
                 [CollectionNum]: this.data.activityInfo.CollectionNum-1,
             })
             UTIL.toast('取消收藏')
-            this.collectedVSNocollected(e.currentTarget.dataset.id,true)
+            this.collectedVSNocollected(e.currentTarget.dataset.id,false)
         }else{
             this.setData({
                 [collected]: !this.data.activityInfo.collected,
@@ -183,6 +207,7 @@ create(store,{
 
         WXAPI.ActivityCollection({
             activityId:id,
+            type:type,
             userId:''
         }).then(res=>{
             if(res.code===200){
@@ -198,7 +223,7 @@ create(store,{
 
     //未开发功能
     common: function () {
-        Toast.toast('待开发')
+        UTIL.toast('待开发')
     },
 
 

@@ -90,6 +90,11 @@ module.exports = {
         return request('https://192.168.1.2:9001/wechat/conllection/delectCollecion', 'GET',data)
     },
 
+    //趣知游 活动评论
+    ActivityComments:(data)=>{
+        return request('https://192.168.1.2:9001/wechat/evaluate/selectEvaluateListByActivityId', 'GET',data)
+    },
+
 
 
 
