@@ -1,10 +1,9 @@
 
 // const API_BASE_URL = 'https://www.calligraphy.musemore.art';
 
-const request = (url, method, data,isShowLoading,UserID) => {
+const request = (url, method, data,isShowLoading) => {
    return new Promise((resolve, reject) => {
        if(isShowLoading){
-           console.log(111);
            wx.showLoading({
                "mask": true,
                "title":''
@@ -16,14 +15,14 @@ const request = (url, method, data,isShowLoading,UserID) => {
             data: data,
             header: {
                 'Content-Type': 'application/json',
-                'UserID':data.UserID|| wx.getStorageSync('UserID')
+                'userId':wx.getStorageSync('userId')
             },
             success(request) {
                 // 停止下拉动作
                 wx.hideLoading();
                 wx.stopPullDownRefresh();
               console.log('---------start----------');
-              console.log('请求的header: ', wx.getStorageSync('UserID'));
+              console.log('请求的header: ', wx.getStorageSync('userId'));
               console.log('请求的url: ', url);
               console.log('请求类型: ',method);
               console.log('请求参数: ',data);

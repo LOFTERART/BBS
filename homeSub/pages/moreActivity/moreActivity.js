@@ -73,7 +73,8 @@ create(store,{
 
     getActivity:function(){
         WXAPI.ActivityHome({
-            type:1
+            type:1,
+            userId:this.store.data.userId
         }).then(res=>{
             if(res.code===200){
                 console.log(res,'res');

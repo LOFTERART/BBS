@@ -207,8 +207,7 @@ create(store,{
 
         WXAPI.ActivityCollection({
             activityId:id,
-            type:type,
-            userId:''
+            collection:type
         }).then(res=>{
             if(res.code===200){
                 console.log(res,'res');

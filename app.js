@@ -21,8 +21,8 @@ App({
                             isShowLoading:true
                         }).then(res=>{
                             console.log(res,'code返回');
-                            if(res.code===200){
-                                wx.setStorageSync('UserID', res.UserID);
+                            if(Number(res.code)===200){
+                                wx.setStorageSync('userId', res.data);
                                 resolve(res.data)
                             }else {
                                 UTIL.toast(res.message)

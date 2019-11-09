@@ -3,7 +3,7 @@ export default {
     data: {
         userInfo: {
             name:'fukCup',
-            uId:4027,
+            userId:'',
         }
     },
     debug: false,
