@@ -14,20 +14,21 @@ App({
         return new Promise((resolve, reject) => {
             wx.login({
                 success (res) {
+                    console.log(res.code);
                     if (res.code) {
-                        WXAPI.QZYLogin({
-                            code:res.code,
-                            isShowLoading:true
-                        }).then(res=>{
-                            console.log(res,'code返回');
-                            if(Number(res.code)===200){
-                                wx.setStorageSync('userId', res.data);
-                                that.globalData.userInfo.userId=res.data
-                                resolve(res.data)
-                            }else {
-                                UTIL.toast(res.message)
-                            }
-                        })
+                        // WXAPI.QZYLogin({
+                        //     code:res.code,
+                        //     isShowLoading:true
+                        // }).then(res=>{
+                        //     console.log(res,'code返回');
+                        //     if(Number(res.code)===200){
+                        //         wx.setStorageSync('userId', res.data);
+                        //         that.globalData.userInfo.userId=res.data
+                        //         resolve(res.data)
+                        //     }else {
+                        //         UTIL.toast(res.message)
+                        //     }
+                        // })
                     } else {
                        UTIL.toast('code获取失败')
                     }
