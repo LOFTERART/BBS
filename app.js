@@ -24,7 +24,7 @@ App({
                                 wx.setStorageSync('UserID', res.UserID);
                                 resolve(res.data)
                             }else {
-                                UTIL.toast('登录失败')
+                                UTIL.toast(res.message)
                             }
                         })
                     } else {

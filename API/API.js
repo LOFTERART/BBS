@@ -3,10 +3,10 @@
 
 const request = (url, method, data) => {
    return new Promise((resolve, reject) => {
-       wx.showLoading({
-           "mask": true,
-           "title":''
-       })
+       // wx.showLoading({
+       //     "mask": true,
+       //     "title":''
+       // })
         wx.request({
             url:  url,
             method: method,
