@@ -1,19 +1,22 @@
 
 // const API_BASE_URL = 'https://www.calligraphy.musemore.art';
 
-const request = (url, method, data) => {
+const request = (url, method, data,isShowLoading,UserID) => {
    return new Promise((resolve, reject) => {
-       // wx.showLoading({
-       //     "mask": true,
-       //     "title":''
-       // })
+       if(isShowLoading){
+           console.log(111);
+           wx.showLoading({
+               "mask": true,
+               "title":''
+           })
+       }
         wx.request({
             url:  url,
             method: method,
             data: data,
             header: {
                 'Content-Type': 'application/json',
-                'UserID':wx.getStorageSync('UserID')
+                'UserID':data.UserID|| wx.getStorageSync('UserID')
             },
             success(request) {
                 // 停止下拉动作
@@ -73,32 +76,32 @@ module.exports = {
 
    //趣知游 登录
     QZYLogin:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/login/getUserId', 'GET',data)
+        return request('https://192.168.1.2:9001/wechat/login/getUserId', 'GET',data,true)
     },
     //趣知游 活动首页
     ActivityHome:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/activity/selectActivityList', 'GET',data)
+        return request('https://192.168.1.2:9001/wechat/activity/selectActivityList', 'GET',data,true)
     },
 
 
     //趣知游 活动详情
     ActivityDetail:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/activity/selectActivicyInfoById', 'GET',data)
+        return request('https://192.168.1.2:9001/wechat/activity/selectActivicyInfoById', 'GET',data,true)
     },
 
     //趣知游 活动收藏
     ActivityCollection:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/conllection/insertCollection', 'POST',data)
+        return request('https://192.168.1.2:9001/wechat/conllection/insertCollection', 'POST',data,true)
     },
 
     //趣知游 取消活动收藏
     ActivityDelCollection:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/conllection/delectCollecion', 'GET',data)
+        return request('https://192.168.1.2:9001/wechat/conllection/delectCollecion', 'GET',data,true)
     },
 
     //趣知游 活动评论
     ActivityComments:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/evaluate/selectEvaluateListByActivityId', 'GET',data)
+        return request('https://192.168.1.2:9001/wechat/evaluate/selectEvaluateListByActivityId', 'GET',data,true)
     },
 
 

@@ -17,7 +17,8 @@ App({
                 success (res) {
                     if (res.code) {
                         WXAPI.QZYLogin({
-                            code:res.code
+                            code:res.code,
+                            isShowLoading:true
                         }).then(res=>{
                             console.log(res,'code返回');
                             if(res.code===200){
