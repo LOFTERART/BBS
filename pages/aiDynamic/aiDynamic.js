@@ -32,10 +32,7 @@ create(store,{
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      app.wxLogin().then(res=>{
-          app.globalData.userInfo.openId=res.openid
-      })
-      this.store.data.userInfo.name='zw'
+
   },
 
 

@@ -4,8 +4,7 @@ const WXAPI = require('/API/API')
 App({
     onLaunch: function () {
         this.updataApp();
-
-        if(this.globalData.userInfo.openId){
+        if(this.globalData.userInfo.userId){
             this.wxLogin();
         }
     },
@@ -23,6 +22,7 @@ App({
                             console.log(res,'code返回');
                             if(Number(res.code)===200){
                                 wx.setStorageSync('userId', res.data);
+                                that.globalData.userInfo.userId=res.data
                                 resolve(res.data)
                             }else {
                                 UTIL.toast(res.message)
@@ -73,7 +73,7 @@ App({
 
     globalData: {
         userInfo: {
-            openId:null
+            userId:null
         }
     }
 
