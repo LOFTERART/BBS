@@ -4,10 +4,10 @@ const WXAPI = require('/API/API')
 App({
     onLaunch: function () {
         this.updataApp();
-        this.wxLogin();
-        // if(this.globalData.userInfo.userId){
-        //     this.wxLogin();
-        // }
+
+        if(!this.globalData.userInfo.userId){
+            this.wxLogin();
+        }
     },
 
     wxLogin:function() {
@@ -75,7 +75,7 @@ App({
 
     globalData: {
         userInfo: {
-            userId:null
+            userId:wx.getStorageSync('userId')
         }
     }
 
