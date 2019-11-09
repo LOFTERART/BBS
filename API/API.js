@@ -88,15 +88,11 @@ module.exports = {
         return request('https://192.168.1.2:9001/wechat/activity/selectActivicyInfoById', 'GET',data,true)
     },
 
-    //趣知游 活动收藏
+    //趣知游 活动收藏&&取消
     ActivityCollection:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/conllection/insertCollection', 'POST',data,true)
+        return request('https://192.168.1.2:9001/wechat/collection/isCollection', 'GET',data,true)
     },
 
-    //趣知游 取消活动收藏
-    ActivityDelCollection:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/conllection/delectCollecion', 'GET',data,true)
-    },
 
     //趣知游 活动评论
     ActivityComments:(data)=>{

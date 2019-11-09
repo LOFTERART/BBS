@@ -27,8 +27,6 @@ App({
                             }else {
                                 UTIL.toast(res.message)
                             }
-                        }).finally(res=>{
-                            UTIL.toast('服务器连接超时')
                         })
                     } else {
                        UTIL.toast('code获取失败')
