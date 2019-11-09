@@ -16,11 +16,12 @@ App({
             wx.login({
                 success (res) {
                     if (res.code) {
-                        console.log(res.code,'code');
-                        WXAPI.ArtLogin({
+                        WXAPI.QZYLogin({
                             code:res.code
                         }).then(res=>{
-                            if(res.success){
+                            console.log(res,'code返回');
+                            if(res.code===200){
+                                wx.setStorageSync('UserID', res.UserID);
                                 resolve(res.data)
                             }else {
                                 UTIL.toast('登录失败')

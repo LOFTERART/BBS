@@ -13,6 +13,7 @@ const request = (url, method, data) => {
             data: data,
             header: {
                 'Content-Type': 'application/json',
+                'UserID':wx.getStorageSync('UserID')
             },
             success(request) {
                 // 停止下拉动作
@@ -68,8 +69,12 @@ module.exports = {
     request,
 
 
-    //趣知游 活动首页
 
+   //趣知游 登录
+    QZYLogin:(data)=>{
+        return request('https://192.168.1.2:9001/wechat/login/getUserId', 'GET',data)
+    },
+    //趣知游 活动首页
     ActivityHome:(data)=>{
         return request('https://192.168.1.2:9001/wechat/activity/selectActivityList', 'GET',data)
     },
