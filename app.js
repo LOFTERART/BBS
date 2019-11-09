@@ -16,6 +16,7 @@ App({
             wx.login({
                 success (res) {
                     if (res.code) {
+                        console.log(res.code,'code');
                         WXAPI.ArtLogin({
                             code:res.code
                         }).then(res=>{

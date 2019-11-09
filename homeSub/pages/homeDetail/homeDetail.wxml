@@ -32,9 +32,9 @@
                     <view>￥<text class="tui-price">{{activityInfo.price}}</text>.00</view>
                     <tui-tag size="small" plain="{{true}}" type="warning" shape="circle" tui-tag-class="tui-scale tui-tag-pro">{{activityInfo.priceTag}}</tui-tag>
                 </view>
-                <view class="tui-collection tui-size" bindtap="collecting">
-                    <tui-icon name="{{collected?'like-fill':'like'}}" color="{{collected?'#ff201f':'#333'}}" size="20" tui-icon-class="tui-icon-collection"></tui-icon>
-                    <view class="tui-scale {{collected?'tui-red':''}}">收藏</view>
+                <view class="tui-collection tui-size" bindtap="collecting" data-id="{{activityInfo.id}}">
+                    <tui-icon name="{{activityInfo.collected?'like-fill':'like'}}" color="{{activityInfo.collected?'#ff201f':'#333'}}" size="20" tui-icon-class="tui-icon-collection"></tui-icon>
+                    <view class="tui-scale {{activityInfo.collected?'tui-red':''}}">收藏</view>
                 </view>
             </view>
             <view class="tui-original-price tui-gray">
@@ -170,7 +170,7 @@
 
 
         <view class="tui-product-img tui-radius-all">
-            <image src="https://www.thorui.cn/img/detail/{{index+1}}.jpg" wx:for="{{20}}" wx:key="{{index}}" mode="widthFix"></image>
+            <image src="https://www.thorui.cn/img/detail/{{index+1}}.jpg" wx:for="{{20}}" wx:key="index" mode="widthFix"></image>
         </view>
         <tui-nomore text="已经到最底了" visible="{{true}}" bgcolor="#f7f7f7"></tui-nomore>
         <view class="tui-safearea-bottom"></view>

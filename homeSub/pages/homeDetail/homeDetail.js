@@ -1,5 +1,9 @@
-import Toast from '../../../utils/util'
-Page({
+import UTIL from "../../../utils/util";
+const WXAPI = require('../../../API/API')
+import create from '../../../utils/omi/create'
+import store from '../../../store/index'
+create(store,{
+
     data: {
         height: 64, //header高度
         top: 0, //标题图标距离顶部距离
@@ -20,7 +24,8 @@ Page({
 
         //活动详情
         activityInfo:{
-            isCollection:false, //是否收藏
+            id:1,
+            collected:false, //是否收藏
             price:99, //现价
             priceTag:'首届',
             originalPrice:199, //原价
@@ -56,8 +61,9 @@ Page({
 
 
         value: 1,
-        collected: false
     },
+
+
     onLoad: function (options) {
         let obj = wx.getMenuButtonBoundingClientRect();
         this.setData({
@@ -73,7 +79,28 @@ Page({
                 }
             })
         });
+
+        this.getActivityDetail(options.id)
+
     },
+
+
+    getActivityDetail:function(id){
+        WXAPI.ActivityDetail({
+            activityId:id,
+            userId:''
+        }).then(res=>{
+            if(res.code===200){
+                console.log(res,'res');
+            }else {
+                UTIL.toast(res.message)
+            }
+        })
+
+    },
+
+
+
     bannerChange: function (e) {
         this.setData({
             bannerIndex: e.detail.current
@@ -126,11 +153,48 @@ Page({
         })
     },
 
-    collecting: function () {
-        this.setData({
-            collected: !this.data.collected
-        })
+
+
+
+    //活动收藏
+    collecting: function (e) {
+
+        let collected= "activityInfo.collected";
+        let CollectionNum= "activityInfo.CollectionNum";
+        if(this.data.activityInfo.collected){
+            this.setData({
+                [collected]: !this.data.activityInfo.collected,
+                [CollectionNum]: this.data.activityInfo.CollectionNum-1,
+            })
+            UTIL.toast('取消收藏')
+            this.collectedVSNocollected(e.currentTarget.dataset.id,true)
+        }else{
+            this.setData({
+                [collected]: !this.data.activityInfo.collected,
+                [CollectionNum]: this.data.activityInfo.CollectionNum+1,
+            })
+            UTIL.toast('收藏成功')
+            this.collectedVSNocollected(e.currentTarget.dataset.id,true)
+        }
     },
+
+    //活动收藏API
+    collectedVSNocollected:function(id,type){
+
+        WXAPI.ActivityCollection({
+            activityId:id,
+            userId:''
+        }).then(res=>{
+            if(res.code===200){
+                console.log(res,'res');
+            }else {
+                UTIL.toast(res.message)
+            }
+        })
+
+    },
+
+
 
     //未开发功能
     common: function () {

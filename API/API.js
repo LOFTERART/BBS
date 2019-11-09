@@ -68,6 +68,38 @@ module.exports = {
     request,
 
 
+    //趣知游 活动首页
+
+    ActivityHome:(data)=>{
+        return request('https://192.168.1.2:9001/wechat/activity/selectActivityList', 'GET',data)
+    },
+
+
+    //趣知游 活动详情
+    ActivityDetail:(data)=>{
+        return request('https://192.168.1.2:9001/wechat/activity/selectActivicyInfoById', 'GET',data)
+    },
+
+    //趣知游 活动收藏
+    ActivityCollection:(data)=>{
+        return request('https://192.168.1.2:9001/wechat/conllection/insertCollection', 'POST',data)
+    },
+
+    //趣知游 取消活动收藏
+    ActivityDelCollection:(data)=>{
+        return request('https://192.168.1.2:9001/wechat/conllection/delectCollecion', 'GET',data)
+    },
+
+
+
+
+
+
+
+
+
+
+
     //登录
     ArtLogin:(data)=>{
         // return request('https://api.teacher.meishuquanyunxiao.com/v2/admin/login-test', 'GET',data)

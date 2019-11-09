@@ -1,5 +1,12 @@
 // homeSub/pages/moreactivity/moreActivity.js
-Page({
+
+import UTIL from "../../../utils/util";
+
+const WXAPI = require('../../../API/API')
+import create from '../../../utils/omi/create'
+import store from '../../../store/index'
+
+create(store,{
 
   /**
    * 页面的初始数据
@@ -57,12 +64,30 @@ Page({
           dynamicList:arrayList,
       })
 
+      //获取活动首页列表
+      this.getActivity();
+
   },
+
+
+
+    getActivity:function(){
+        WXAPI.ActivityHome({
+            type:1
+        }).then(res=>{
+            if(res.code===200){
+                console.log(res,'res');
+
+            }else {
+                UTIL.toast(res.message)
+            }
+        })
+    },
 
 
     clickDy:function(e){
         wx.navigateTo({
-            url: '/homeSub/pages/homeDetail/homeDetail'
+            url: '/homeSub/pages/homeDetail/homeDetail?id='+e.currentTarget.dataset.id
         })
 
     },
