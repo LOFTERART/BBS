@@ -20,6 +20,7 @@ const request = (url, method, data) => {
                 wx.hideLoading();
                 wx.stopPullDownRefresh();
               console.log('---------start----------');
+              console.log('请求的header: ', wx.getStorageSync('UserID'));
               console.log('请求的url: ', url);
               console.log('请求类型: ',method);
               console.log('请求参数: ',data);

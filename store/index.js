@@ -6,7 +6,7 @@ export default {
             uId:4027,
         }
     },
-    debug: true,
+    debug: false,
     // updateAll: true
 }
 
