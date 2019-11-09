@@ -75,7 +75,7 @@ module.exports = {
 
    //趣知游 登录
     QZYLogin:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/login/selectUserId', 'POST',data,true)
+        return request('https://192.168.1.2:9001/wechat/login/selectUserId', 'GET',data,true)
     },
     //趣知游 活动首页
     ActivityHome:(data)=>{

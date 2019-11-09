@@ -4,9 +4,10 @@ const WXAPI = require('/API/API')
 App({
     onLaunch: function () {
         this.updataApp();
-        if(this.globalData.userInfo.userId){
-            this.wxLogin();
-        }
+        this.wxLogin();
+        // if(this.globalData.userInfo.userId){
+        //     this.wxLogin();
+        // }
     },
 
     wxLogin:function() {
@@ -16,19 +17,19 @@ App({
                 success (res) {
                     console.log(res.code);
                     if (res.code) {
-                        // WXAPI.QZYLogin({
-                        //     code:res.code,
-                        //     isShowLoading:true
-                        // }).then(res=>{
-                        //     console.log(res,'code返回');
-                        //     if(Number(res.code)===200){
-                        //         wx.setStorageSync('userId', res.data);
-                        //         that.globalData.userInfo.userId=res.data
-                        //         resolve(res.data)
-                        //     }else {
-                        //         UTIL.toast(res.message)
-                        //     }
-                        // })
+                        WXAPI.QZYLogin({
+                            code:res.code
+                        }).then(res=>{
+                            if(Number(res.code)===200){
+                                wx.setStorageSync('userId', res.data.userId);
+                                that.globalData.userInfo.userId=res.data.userId
+                                resolve(res.data)
+                            }else {
+                                UTIL.toast(res.message)
+                            }
+                        }).finally(res=>{
+                            UTIL.toast('服务器连接超时')
+                        })
                     } else {
                        UTIL.toast('code获取失败')
                     }
