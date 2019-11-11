@@ -28,6 +28,12 @@ create(store,{
         showModalStatus: false,
         isShowBottom:true,  //是否显示底部评论bar
 
+        PK:{
+            squareNum:1500,
+            opposingNum:2000,
+        }
+
+
     },
 
 
