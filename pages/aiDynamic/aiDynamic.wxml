@@ -1,13 +1,29 @@
 
 
+<view style="padding: 20rpx;">
+    #你会因为孩子哭泣而妥协吗?#
+</view>
 
-<view style="height: 40rpx;display: flex;flex-direction: row;border-radius: 20rpx;padding: 20rpx" class="f24">
 
-    <view style="display: flex;background-color: red;flex: {{PK.squareNum}};flex-direction: row;justify-content: flex-start;color: white;align-items: center;border-top-left-radius: 20rpx;border-bottom-left-radius: 20rpx;">
+<view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx">
+
+
+    <view style="flex: 2" class="f24">会妥协,孩子哭是我的软肋会妥协</view>
+    <view style="flex: 1;justify-content: center;align-items: center;display: flex;flex-direction: row;" class="f36">PK</view>
+    <view style="flex: 2" class="f24">不会妥协,哭不能解决问题</view>
+
+
+</view>
+
+
+
+<view style="height: 60rpx;display: flex;flex-direction: row;padding: 20rpx" class="f24">
+
+    <view style="display: flex;background-color: red;flex: {{PK.squareNum}};flex-direction: row;justify-content: flex-start;color: white;align-items: center;border-top-left-radius: 30rpx;border-bottom-left-radius: 30rpx;padding-left: 20rpx">
         {{PK.squareNum}}人
     </view>
 
-    <view style="display: flex;background-color: orange;flex: {{PK.opposingNum}};flex-direction: row;justify-content: flex-end;color: white;align-items: center;border-top-right-radius: 20rpx;border-bottom-right-radius: 20rpx">
+    <view style="display: flex;background-color: orange;flex: {{PK.opposingNum}};flex-direction: row;justify-content: flex-end;color: white;align-items: center;border-top-right-radius: 30rpx;border-bottom-right-radius: 30rpx;padding-right: 20rpx">
         {{PK.opposingNum}}人
     </view>
 
