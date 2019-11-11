@@ -28,8 +28,8 @@ create(store,{
         ],
 
         PK:{
-            squareNum:150,
-            opposingNum:200,
+            squareNum:1500,
+            opposingNum:2000,
         }
 
     },

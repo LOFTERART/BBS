@@ -1,6 +1,13 @@
 
+<view style="padding: 20rpx" class="f28">
 
-<view style="padding: 20rpx;">
+    你家孩子爱哭吗？一哭起来让人心疼又无奈。当孩子用哭闹表达诉求时，明明知道不合理，你会心软妥协吗？
+
+</view>
+
+<view class="divider"></view>
+
+<view style="padding: 20rpx;" class="f28">
     #你会因为孩子哭泣而妥协吗?#
 </view>
 
@@ -34,13 +41,17 @@
 
 
 
-<view style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+<view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx">
 
     <view style="width: 200rpx;height: 50rpx;background-color: red;border-radius: 50rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;color: white">会</view>
     <view style="width: 200rpx;height: 50rpx;background-color: orange;border-radius: 50rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;color: white">不会</view>
 
 
 </view>
+
+
+
+
 
 
 
