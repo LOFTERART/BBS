@@ -32,7 +32,7 @@ create(store,{
             squareNum:1500,
             opposingNum:2000,
         },
-        type:'active'
+        type:'PK'
 
 
     },
@@ -41,7 +41,7 @@ create(store,{
     onLoad: function (options) {
         // this.getZTList(false,options.id);
 
-        console.log(options,'oppppp');
+        console.log(options.type,'oppppp');
 
 
         let arrayList=[];
