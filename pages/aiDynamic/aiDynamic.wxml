@@ -1,5 +1,24 @@
 
 
+
+<view style="height: 40rpx;display: flex;flex-direction: row;border-radius: 20rpx;padding: 20rpx" class="f24">
+
+    <view style="display: flex;background-color: red;flex: 0.9;flex-direction: row;justify-content: flex-start;color: white;align-items: center;border-top-left-radius: 20rpx;border-bottom-left-radius: 20rpx;">
+        2827人
+    </view>
+
+    <view style="display: flex;background-color: orange;flex: 1;flex-direction: row;justify-content: flex-end;color: white;align-items: center;border-top-right-radius: 20rpx;border-bottom-right-radius: 20rpx">
+        2424人
+    </view>
+
+</view>
+
+
+
+
+
+
+
 <view style="display: flex;flex-direction: column;height: 40rpx;padding: 20rpx;color:rgba(58,58,58,1)" class="f36">
     为你推荐
 </view>
