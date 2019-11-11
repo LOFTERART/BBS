@@ -22,7 +22,7 @@ create(store,{
         articleList:data.aiDyList,
 
         hotList: [
-            {id:1,name:'#你会因为孩子哭泣尔妥协吗# PK',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'87.7万阅读'},
+            {id:1,name:'#你会因为孩子哭泣尔妥协吗# PK',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'87.7万阅读',type:'PK'},
             {id:2,name:'#孩子说过什么让你记忆深刻#',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'5万阅读'},
             {id:3,name:'#活动精选#',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'100.6万阅读'}
         ],
@@ -44,6 +44,18 @@ create(store,{
       // })
 
   },
+
+
+    //点击超级话题
+
+    clickHot:function(e){
+        console.log(e);
+        wx.navigateTo({
+            url: '/homeSub/pages/ztDetail/ztDetail?id='+e.currentTarget.dataset.id+'&type='+e.currentTarget.dataset.type
+        })
+
+    },
+
 
 
     clickAI:function(e){

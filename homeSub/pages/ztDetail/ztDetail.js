@@ -31,7 +31,8 @@ create(store,{
         PK:{
             squareNum:1500,
             opposingNum:2000,
-        }
+        },
+        type:'active'
 
 
     },
@@ -40,12 +41,15 @@ create(store,{
     onLoad: function (options) {
         // this.getZTList(false,options.id);
 
+        console.log(options,'oppppp');
+
 
         let arrayList=[];
         arrayList.push(JSON.parse(options.list))
 
         this.setData({
             id:options.id,
+            type:options.type,
             articleList:arrayList
         })
 

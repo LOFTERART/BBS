@@ -46,9 +46,9 @@
 
 
 
-    <block wx:for="{{hotList}}" wx:key="index">
+    <block wx:for="{{hotList}}" wx:key="index" >
 
-        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx">
+        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx" bindtap="clickHot" data-type="{{item.type}}" data-id="{{item.id}}" >
 
 
             <view style="display: flex;flex-direction: row">
