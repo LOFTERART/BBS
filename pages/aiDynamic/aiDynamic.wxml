@@ -9,7 +9,7 @@
 
 
     <view style="flex: 2" class="f24">会妥协,孩子哭是我的软肋会妥协</view>
-    <view style="flex: 1;justify-content: center;align-items: center;display: flex;flex-direction: row;" class="f36">PK</view>
+    <view style="flex: 1;justify-content: center;align-items: center;display: flex;flex-direction: row;color: #12d58b;background-color: #d9d9d9;height: 40rpx;border-radius: 20rpx" class="f36">PK</view>
     <view style="flex: 2" class="f24">不会妥协,哭不能解决问题</view>
 
 
