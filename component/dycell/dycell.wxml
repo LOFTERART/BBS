@@ -130,7 +130,7 @@
 
 
 
-    <slot></slot>
+    <slot wx:if="{{idx===6}}"></slot>
 
 </block>
 

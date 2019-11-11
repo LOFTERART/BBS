@@ -28,10 +28,12 @@
 
 
 
+    <view class="divider"></view>
+
     <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 20rpx;padding: 20rpx">
 
-        <view class="f24">热门讨论</view>
-        <view class="f24">更多</view>
+        <view class="f28">热门讨论</view>
+        <view class="f28">更多</view>
 
     </view>
 
@@ -39,7 +41,7 @@
 
     <block wx:for="{{hotList}}" wx:key="index">
 
-        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 20rpx;padding: 20rpx">
+        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx">
 
 
             <view style="display: flex;flex-direction: row">
@@ -47,7 +49,7 @@
                 <view>
                     <image src="{{item.image}}" style="width: 30rpx;height: 30rpx;border-radius: 15rpx" />
                 </view>
-                <view class="f24" style="margin-left: 10rpx">{{item.name}}</view>
+                <view class="f28" style="margin-left: 10rpx">{{item.name}}</view>
 
             </view>
 
@@ -62,7 +64,7 @@
     </block>
 
 
-
+    <view class="divider"></view>
 
 
 
