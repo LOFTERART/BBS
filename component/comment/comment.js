@@ -25,6 +25,21 @@ Component({
    * 组件的方法列表
    */
   methods: {
+
+      clickName:function(){
+          UTIL.toast('让身边的人更有温度~')
+      },
+
+      //点击头像
+
+      clickAva:function(e){
+          wx.navigateTo({
+              url: '/mySub/pages/mySpace/mySpace?name='+e.currentTarget.dataset.name
+          })
+      },
+
+
+
       clickVip:function(e){
           UTIL.toast(e.currentTarget.dataset.auth)
       },

@@ -1020,7 +1020,7 @@ const dataBase = {
 
     commentList:[
         {
-            specialist:false,
+            specialist:true,
             Auth:'医生认证',
             address:'许昌 陈庄幼儿园',
             avatar: "http://meishuquanyunxiao.img-cn-beijing.aliyuncs.com/icon/touxiang.png?x-oss-process=style/ef92587c6ac8577915de51f9fa6cae2c",
@@ -1030,7 +1030,7 @@ const dataBase = {
             is_like: true,
             like_num: 10,
             name: "卢婷",
-            status:'环保局',
+            status:'',
             Community:'阳光花墅',
             reply_comment: [],
             timer: '刚刚',

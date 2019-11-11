@@ -9,19 +9,26 @@
 
             <view style="display: flex;flex-direction: row;width: 100%;height: 80rpx;margin-bottom: 10rpx" >
 
-                <view style="margin-right: 10rpx">
+                <view style="margin-right: 10rpx" bindtap="clickAva" data-name="{{item.name}}">
                     <image mode="scaleToFill"  src="{{item.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
                 </view>
 
-                <view style="display: flex;flex-direction: column;justify-content: space-between;">
-                    <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center">
-                        <view class="f24" style="font-weight: 500">{{item.name}}</view>
-                        <view style="color: rgba(247,153,40,1);margin-left: 10rpx;margin-right: 10rpx" class="f24">{{item.status}}</view>
-                        <view style="color: rgba(18,213,139,1);margin-right: 10rpx" class="f24">{{item.Community}}</view>
-                        <tui-icon name="member" size="22" color="#DFB176" bindtap="clickVip" data-auth="{{item.Auth}}" wx:if="{{item.specialist}}"></tui-icon>
+
+
+
+
+                <view style="display: flex;flex-direction: column;justify-content: space-around;">
+                    <view style="display: flex;flex-direction: row;justify-content: flex-start;align-items: center">
+                        <view class="f28" bindtap="clickName" style="margin-right: 10rpx">{{item.name}}</view>
+                        <view style="margin-right: 10rpx" class="f28" bindtap="clickName" wx:if="{{item.status}}">{{item.status}}</view>
+                        <view style="margin-right: 10rpx" class="f28" bindtap="clickName" wx:if="{{item.Community}}">{{item.Community}}</view>
+                        <tui-icon name="member" size="22" color="#12d58b" bindtap="clickVip" data-auth="{{item.Auth}}" wx:if="{{item.specialist}}"></tui-icon>
                     </view>
-                    <view class="f22">{{item.timer}}·<text style="color: rgba(18,213,139,1)" class="f22">{{item.address}}</text></view>
+                    <view class="f22">{{item.timer}}·<text style="color: #12d58b" class="f22">{{item.address}}</text></view>
                 </view>
+
+
+
 
             </view>
 
