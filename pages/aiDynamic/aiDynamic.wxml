@@ -21,8 +21,6 @@
 </view>
 
 
-<!--<view class="divider" style="height: 20rpx"></view>-->
-
 
 <dycell articleList="{{articleList}}">
 
