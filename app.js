@@ -20,7 +20,7 @@ App({
                         WXAPI.QZYLogin({
                             code:res.code
                         }).then(res=>{
-                            if(res.code===200){
+                            if(Number(res.code)===200){
                                 wx.setStorageSync('userId', res.data.userId);
                                 that.globalData.userInfo.userId=res.data.userId
                                 resolve(res.data)

@@ -91,8 +91,10 @@ create(store,{
    //获取活动详情
     getActivityDetail:function(id){
         WXAPI.ActivityDetail({
-            activityId:id,
+            activityId:Number(id),
+            'userId':wx.getStorageSync('userId')
         }).then(res=>{
+            console.log(res,'detail');
             if(res.code===200){
                 console.log(res,'res');
             }else {
