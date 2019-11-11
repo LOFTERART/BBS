@@ -51,7 +51,7 @@ create(store,{
     clickHot:function(e){
         console.log(e);
         wx.navigateTo({
-            url: '/homeSub/pages/ztDetail/ztDetail?id='+e.currentTarget.dataset.id+'&type='+e.currentTarget.dataset.type
+            url: '/homeSub/pages/PKDetail/PKDetail?id='+e.currentTarget.dataset.id+'&type='+e.currentTarget.dataset.type
         })
 
     },

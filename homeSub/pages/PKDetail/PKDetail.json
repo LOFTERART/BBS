@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "PK详情",
+  "usingComponents": {
+    "tui-icon": "/component/icon/icon",
+    "comment": "/component/comment/comment",
+    "tui-tag": "/component/tag/tag",
+    "drawer": "/component/drawer/drawer"
+  }
+}

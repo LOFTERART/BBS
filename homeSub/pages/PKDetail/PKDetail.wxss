@@ -1,4 +1,7 @@
+@import "../../../app.wxss";
+@import "../../../iconFont/iconFont.wxss";
 
+/*底部抽屉样式 start*/
 
 .mask-screen{
     width: 100%;

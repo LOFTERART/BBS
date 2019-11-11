@@ -25,7 +25,8 @@
         "pages/Community/Community",
         "pages/moreActivity/moreActivity",
         "pages/likePeople/likePeople",
-        "pages/maps/maps"
+        "pages/maps/maps",
+        "pages/PKDetail/PKDetail"
       ]
     },
     {
@@ -50,7 +51,6 @@
       "name": "storySub",
       "pages": [
         "pages/storyDetail/storyDetail"
-
       ]
     }
   ],
@@ -59,8 +59,6 @@
     "selectedColor": "#52495b",
     "borderStyle": "white",
     "list": [
-
-
       {
         "pagePath": "pages/home/home",
         "text": "社区",
