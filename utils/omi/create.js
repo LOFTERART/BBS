@@ -1,5 +1,5 @@
 /*!
- *  omix v2.3.0 by dntzhang
+ *  omix v2.3.3 by dntzhang
  *  Github: https://github.com/Tencent/omi
  *  MIT Licensed.
 */
@@ -14,7 +14,7 @@ function create(store, option) {
       store.instances = {}
     }
 
-    if(!store.__changes_){
+    if (!store.__changes_) {
       store.__changes_ = []
     }
 
@@ -36,7 +36,9 @@ function create(store, option) {
       }
     }
     const hasData = typeof option.data !== 'undefined'
+    let clone
     if (option.data) {
+      clone = JSON.parse(JSON.stringify(option.data))
       option.data.$ = store.data
     } else {
       option.data = store.data
@@ -50,13 +52,16 @@ function create(store, option) {
       option.use && (this.__updatePath = getPath(option.use))
       this.__use = option.use
       this.__hasData = hasData
+      if (hasData) {
+        Object.assign(option.data, JSON.parse(JSON.stringify(clone)))
+      }
       store.instances[this.route] = []
       store.instances[this.route].push(this)
       this.computed = option.computed
       this.setData(option.data)
       const using = getUsing(store.data, option.use)
 
-      option.computed && compute(option.computed, store, using)
+      option.computed && compute(option.computed, store, using, this)
       this.setData(using)
 
       onLoad && onLoad.call(this, e)
@@ -75,7 +80,7 @@ function create(store, option) {
       this.setData(store.data)
       const using = getUsing(this.store.data, store.use)
 
-      store.computed && compute(store.computed, this.store, using)
+      store.computed && compute(store.computed, this.store, using, this)
       this.setData(using)
 
       this.store.instances[page.route].push(this)
@@ -85,9 +90,9 @@ function create(store, option) {
   }
 }
 
-function compute(computed, store, using) {
+function compute(computed, store, using, scope) {
   for (let key in computed) {
-    using[key] = computed[key].call(store.data)
+    using[key] = computed[key].call(store.data, scope)
   }
 }
 
@@ -110,7 +115,7 @@ function observeStore(store) {
 
   })
 
-  if(!store.set) {
+  if (!store.set) {
     store.set = function (obj, prop, val) {
       obaa.set(obj, prop, val, oba)
     }
@@ -122,18 +127,21 @@ function _update(kv, store) {
     store.instances[key].forEach(ins => {
       if (store.updateAll || ins.__updatePath && needUpdate(kv, ins.__updatePath)) {
         if (ins.__hasData) {
-          for (let pk in kv) {
-            kv['$.' + pk] = kv[pk]
-            delete kv[pk]
+          const patch = Object.assign({}, kv)
+          for (let pk in patch) {
+            if (!/\$\./.test(pk)) {
+              patch['$.' + pk] = kv[pk]
+              delete patch[pk]
+            }
           }
-          ins.setData.call(ins, kv)
+          ins.setData.call(ins, patch)
         } else {
           ins.setData.call(ins, kv)
         }
 
         const using = getUsing(store.data, ins.__use)
 
-        compute(ins.computed, store, using)
+        compute(ins.computed, store, using, ins)
         ins.setData(using)
 
 
