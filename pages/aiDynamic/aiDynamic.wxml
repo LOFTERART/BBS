@@ -56,7 +56,9 @@
                 <view>
                     <image src="{{item.image}}" style="width: 30rpx;height: 30rpx;border-radius: 15rpx" />
                 </view>
-                <view class="f28" style="margin-left: 10rpx">{{item.name}}</view>
+                <view class="f28" style="margin-left: 10rpx">
+                    {{item.name}} <text wx:if="{{item.type==='PK'}}" style="color: #12d58b">PK</text>
+                </view>
 
             </view>
 

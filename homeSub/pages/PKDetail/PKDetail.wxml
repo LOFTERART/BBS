@@ -30,11 +30,11 @@
 
     <view style="height: 60rpx;display: flex;flex-direction: row;padding: 20rpx" class="f24">
 
-        <view style="display: flex;background-color: red;flex: {{PK.squareNum}};flex-direction: row;justify-content: flex-start;color: white;align-items: center;border-top-left-radius: 30rpx;border-bottom-left-radius: 30rpx;padding-left: 20rpx">
+        <view style="display: flex;background-color: #ff5c5c;flex: {{PK.squareNum}};flex-direction: row;justify-content: flex-start;color: white;align-items: center;border-top-left-radius: 30rpx;border-bottom-left-radius: 30rpx;padding-left: 20rpx">
             {{PK.squareNum}}人
         </view>
 
-        <view style="display: flex;background-color: orange;flex: {{PK.opposingNum}};flex-direction: row;justify-content: flex-end;color: white;align-items: center;border-top-right-radius: 30rpx;border-bottom-right-radius: 30rpx;padding-right: 20rpx">
+        <view style="display: flex;background-color: #5c99ff;flex: {{PK.opposingNum}};flex-direction: row;justify-content: flex-end;color: white;align-items: center;border-top-right-radius: 30rpx;border-bottom-right-radius: 30rpx;padding-right: 20rpx">
             {{PK.opposingNum}}人
         </view>
 
@@ -45,8 +45,8 @@
 
     <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx">
 
-        <view style="width: 200rpx;height: 50rpx;background-color: red;border-radius: 50rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;color: white">会</view>
-        <view style="width: 200rpx;height: 50rpx;background-color: orange;border-radius: 50rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;color: white">不会</view>
+        <view style="width: 200rpx;height: 50rpx;background-color: #ff5c5c;border-radius: 50rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;color: white">会</view>
+        <view style="width: 200rpx;height: 50rpx;background-color: #5c99ff;border-radius: 50rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;color: white">不会</view>
 
 
     </view>
