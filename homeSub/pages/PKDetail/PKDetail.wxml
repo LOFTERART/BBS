@@ -4,14 +4,14 @@
 
 <view style="position: relative">
 
-    <image src='http://stlib.qbb6.com/content/2102386_55fbc5911319.jpg' style="width: 100%;height: 300rpx" mode="widthFix"></image>
+    <image src='http://stlib.qbb6.com/content/2102386_55fbc5911319.jpg' style="width: 100%;height: 400rpx" mode="widthFix"></image>
 
     <view style="position: absolute;left: 20rpx;bottom: 50rpx;">
 
 
         <view style="display: flex;flex-direction: row">
 
-            <image src='http://stlib.qbb6.com/content/2102385_95ba639e9224.jpg' style="width: 120rpx;height: 12rpx;border-radius: 10rpx" mode="widthFix"></image>
+            <image src='http://stlib.qbb6.com/content/2102385_95ba639e9224.jpg' style="width: 120rpx;height: 120rpx;border-radius: 10rpx" mode="widthFix"></image>
 
             <view style="display: flex;flex-direction: column;justify-content: center;margin-left: 20rpx;color: white" class="f32" >
                 <view>#你会因为孩子哭而妥协吗#</view>
