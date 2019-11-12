@@ -1,6 +1,5 @@
 
 .picture_list {
-    /*padding: 10rpx;*/
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -12,9 +11,9 @@
 
 
 
-.add-image, .up-pic image {
-    width: 140rpx;
-    height: 140rpx;
+.add-image, image {
+    width: 160rpx;
+    height: 160rpx;
     color: #ddd;
     font-size: 28rpx;
     display: flex;
@@ -26,7 +25,7 @@
 
 
 .picture_item {
-    margin: 10px;
+    padding: 10px;
     position: relative;
     width: 140rpx;
     height: 140rpx;
@@ -34,8 +33,8 @@
 
 .picture_item .del {
     position: absolute;
-    top: -11rpx;
-    right: -11rpx;
+    top: 0;
+    right: 0;
     color: #fff;
     border-radius: 50%;
     width: 40rpx;
