@@ -1,5 +1,4 @@
-@import "../../../iconFont/iconFont.wxss";
-@import "../../../app.wxss";
+
 .picture_list {
     /*padding: 10rpx;*/
     width: 100%;
@@ -14,8 +13,8 @@
 
 
 .add-image, .up-pic image {
-    width: 180rpx;
-    height: 180rpx;
+    width: 140rpx;
+    height: 140rpx;
     color: #ddd;
     font-size: 28rpx;
     display: flex;
@@ -29,8 +28,8 @@
 .picture_item {
     margin: 10px;
     position: relative;
-    width: 160rpx;
-    height: 160rpx;
+    width: 140rpx;
+    height: 140rpx;
 }
 
 .picture_item .del {
