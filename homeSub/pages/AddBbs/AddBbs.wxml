@@ -1,6 +1,15 @@
 
 <view style="padding: 10rpx 20rpx">
-    <textarea maxlength="300" value='{{message}}' bindinput='messInput'placeholder="这一刻你想说什么..." show-confirm-bar='{{false}}'></textarea>
+    <textarea
+            maxlength="300"
+            value='{{message}}'
+            bindinput='messInput'
+            placeholder="这一刻你想说什么..."
+            show-confirm-bar='{{false}}'
+            placeholder-style="color:#ccc"
+    >
+
+    </textarea>
 </view>
 
 
