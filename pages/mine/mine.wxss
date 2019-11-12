@@ -114,7 +114,9 @@
     flex-shrink: 0;
     width: 128rpx;
     height: 128rpx;
+    border-radius: 64rpx;
     display: block;
+    border: 1rpx solid white;
 }
 
 .tui-info {

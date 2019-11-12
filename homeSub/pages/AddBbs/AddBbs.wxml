@@ -1,5 +1,5 @@
 
-<view style="padding: 0 20rpx 20rpx 20rpx">
+<view style="padding: 10rpx 20rpx">
     <textarea maxlength="300" value='{{message}}' bindinput='messInput'placeholder="这一刻你想说什么..." show-confirm-bar='{{false}}'></textarea>
 </view>
 
@@ -25,7 +25,7 @@
 
 <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20rpx;height: 80rpx" class="van-hairline--bottom" bindtap="clickHuaTi">
 
-    <view class="f28" style="font-weight: bold"><text style="color: rgba(18,213,139,1)">#</text> 添加话题</view>
+    <view class="f28" style="font-weight: bold"><text style="color: rgba(18,213,139,1)">#</text> 选择话题</view>
     <view style="display: flex;flex-direction: row;align-items: center">
         <view class="f22" style="margin-right: 10rpx">{{huati}}</view>
         <tui-icon name="arrowright" size="18" color="#969799"></tui-icon>

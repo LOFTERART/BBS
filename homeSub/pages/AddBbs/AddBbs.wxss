@@ -44,7 +44,7 @@
     z-index: 2;
     line-height: 35rpx;
     text-align: center;
-    background-color: #f00;
+    background-color: #12d58b;
 }
 
 .upload_progress {
