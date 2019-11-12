@@ -12,7 +12,6 @@
     "tui-nomore": "../../../component/nomore/nomore",
     "tui-button": "../../../component/button/button",
     "tui-top-dropdown": "../../../component/top-dropdown/top-dropdown",
-    "tui-bottom-popup": "../../../component/bottom-popup/bottom-popup",
-    "tui-numberbox": "../../../component/numberbox/numberbox"
+    "tui-bottom-popup": "../../../component/bottom-popup/bottom-popup"
   }
 }

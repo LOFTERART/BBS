@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "PK详情",
+  "navigationStyle": "custom",
   "usingComponents": {
     "tui-icon": "/component/icon/icon",
     "comment": "/component/comment/comment",

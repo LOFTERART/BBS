@@ -1,4 +1,55 @@
 
+.tui-header-box {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+}
+
+.tui-header {
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tui-header-icon {
+    position: fixed;
+    left: 10px;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+    height: 32px;
+    transform: translateZ(0);
+    z-index: 99999;
+}
+
+.tui-badge {
+    background: #e41f19 !important;
+    position: absolute;
+    right: -4px;
+}
+
+.tui-icon-ml {
+    margin-left: 20rpx;
+}
+
+.tui-icon {
+    height: 32px !important;
+    width: 32px !important;
+    border-radius: 16px;
+}
+
+.tui-icon-back {
+    height: 32px !important;
+    width: 32px !important;
+    display: block !important;
+}
 
 /*底部抽屉样式 start*/
 
