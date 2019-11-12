@@ -1,5 +1,6 @@
 {
-  "navigationBarTitleText": "PK详情",
+  "navigationBarTitleText": "PK",
+  "enablePullDownRefresh": true,
   "navigationStyle": "custom",
   "usingComponents": {
     "tui-icon": "/component/icon/icon",
