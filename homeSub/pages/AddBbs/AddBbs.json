@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "参与话题",
+  "navigationBarTitleText": "新动态",
   "usingComponents": {
     "tui-icon": "/component/icon/icon"
   }
