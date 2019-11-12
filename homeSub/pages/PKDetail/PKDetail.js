@@ -9,7 +9,7 @@ Page({
    */
   data: {
       height: 64, //header高度
-      top: 0, //标题图标距离顶部距离
+      top: 50, //标题图标距离顶部距离
       scrollH: 0, //滚动总高度
       opcity: 0,
       iconOpcity: 0.5,
