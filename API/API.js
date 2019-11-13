@@ -75,28 +75,28 @@ module.exports = {
 
    //趣知游 登录
     QZYLogin:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/login/selectUserId', 'GET',data,true)
+        return request('https://39.97.230.148:9001/wechat/login/selectUserId', 'GET',data,true)
     },
     //趣知游 活动首页
     ActivityHome:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/activity/selectActivityList', 'GET',data,true)
+        return request('https://39.97.230.148:9001/wechat/activity/selectActivityList', 'GET',data,true)
     },
 
 
     //趣知游 活动详情
     ActivityDetail:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/activity/selectActivicyInfoById', 'GET',data,true)
+        return request('https://39.97.230.148:9001/wechat/activity/selectActivicyInfoById', 'GET',data,true)
     },
 
     //趣知游 活动收藏&&取消
     ActivityCollection:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/collection/isCollection', 'GET',data,true)
+        return request('https://39.97.230.148:9001/wechat/collection/isCollection', 'GET',data,true)
     },
 
 
     //趣知游 活动评论
     ActivityComments:(data)=>{
-        return request('https://192.168.1.2:9001/wechat/evaluate/selectEvaluateListByActivityId', 'GET',data,true)
+        return request('https://39.97.230.148:9001/wechat/evaluate/selectEvaluateListByActivityId', 'GET',data,true)
     },
 
 
