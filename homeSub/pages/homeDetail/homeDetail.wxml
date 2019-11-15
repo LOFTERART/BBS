@@ -16,7 +16,7 @@
         <swiper autoplay="true" interval="5000" duration="150" circular="{{true}}" style="height:{{scrollH}}px" bindchange="bannerChange">
             <block wx:for="{{banner}}" wx:key="index">
                 <swiper-item data-index="{{index}}" catchtap="previewImage">
-                    <image src="{{item}}" class="tui-slide-image" style="height:{{scrollH}}px" />
+                    <image src="{{item}}" class="tui-slide-image" style="height:{{scrollH}}px" lazy-load="{{true}}"/>
                 </swiper-item>
             </block>
         </swiper>
