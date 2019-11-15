@@ -50,6 +50,7 @@ create(store,{
                 KingDes:options.des,
                 KingImage:options.image,
                 isFollow:true,
+                actionid:1,
             },
         })
 

@@ -16,7 +16,11 @@
 }
 
 .wG{
-    display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 100%
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
 }
 
 .desc{
@@ -29,4 +33,16 @@
 
 .descCont{
     width: 90%;height: 140rpx;background-color: white;display: flex;flex-direction: column;padding: 20rpx
+}
+
+/*关注*/
+
+.follow{
+    flex: 1;
+    width: 120rpx;
+    height: 60rpx;
+    border-radius: 70rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 26rpx;
 }

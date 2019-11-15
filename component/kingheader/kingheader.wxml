@@ -14,24 +14,18 @@
 
             <view class="wG">
 
-                <view style="color: white;" class="f24">
+                <view style="color: white; flex: 3" class="f24">
                     1万条评论 2.7万人围观
                 </view>
 
 
-<!--
-<view style="width: 140rpx;height: 60rpx;background-color: #12d58b;border-radius: 70rpx;line-height: 60rpx;text-align: center;color: white">
-                    关注
-                </view>
--->
 
                 <view
                         class="follow"
                         style="background-color: {{KingHeader.isFollow?'white':'#12d58b'}};color: {{KingHeader.isFollow?'#12d58b':'white'}};border: {{KingHeader.isFollow?'0.5rpx solid #12d58b':''}}"
                         bindtap="clickAction"
-                        data-index="{{idx}}"
-                        data-id="{{itemName.id}}"
-                        data-isFollow="{{itemName.isFollow}}">
+                        data-id="{{KingHeader.actionid}}"
+                        >
                     {{KingHeader.isFollow?'已关注':'关注'}}
                 </view>
 
