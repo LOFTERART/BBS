@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "dycell": "/component/dycell/dycell"
+    "dycell": "/component/dycell/dycell",
+    "kingheader": "/component/kingheader/kingheader"
   }
 }

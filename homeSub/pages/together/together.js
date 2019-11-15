@@ -17,12 +17,20 @@ create(store,{
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+      console.log(options,'op');
       wx.setNavigationBarTitle({
         title: options.name
       })
-
       this.setData({
-          name:options.name
+          name:options.name,
+          KingHeader:{
+              name:options.name,
+              KingPic:options.pic,
+              KingDes:options.des,
+              KingImage:options.image,
+              isFollow:false,
+              actionid:1,
+          },
       })
 
   },

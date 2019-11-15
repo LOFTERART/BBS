@@ -1,82 +1,7 @@
 
-<view style="position: relative">
-
-    <image   src="https://static1.keepcdn.com/2019/06/05/1559718008918_750x497.png"  style="width: 100%;height: 500rpx;filter: blur(6rpx)"/>
-
-    <view style="position: absolute;top:50%;width: 100%;">
-
-     <view style="display: flex;flex-direction: column;padding: 20rpx">
-
-         <view style="color: white;font-weight: bold" class="f36">
-             #拯救身边的流浪动物
-         </view>
-
-
-
-         <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 100%">
-
-             <view style="color: white;" class="f24">
-                 1万条评论 2.7万人围观
-             </view>
-
-
-             <view style="width: 140rpx;height: 60rpx;background-color: #00cc88;border-radius: 70rpx;line-height: 60rpx;text-align: center;color: white">
-                 关注
-             </view>
-
-
-         </view>
-
-
-     </view>
-
-
-  </view>
-
-
-<!--    描述-->
-
-    <view style="position: absolute;bottom: -90rpx;width: 100%;">
-
-
-
-        <view style="display: flex;flex-direction: column;width: 100%;height:140rpx;justify-content: center;align-items: center">
-
-
-
-            <view style="width: 90%;height: 140rpx;background-color: white;display: flex;flex-direction: column;padding: 20rpx" class="van-hairline--surround">
-
-
-                <view style="display: flex;flex-direction: row;align-items: center">
-
-                    <view>
-                        <image   src="https://dcdn.it120.cc/2019/08/22/b938febf-48e9-4f31-8a4b-cab00e6e8092.png"  style="width: 60rpx;height: 60rpx;border-radius: 30rpx"/>
-                    </view>
-                    <view style="margin-left: 10rpx;margin-right: 10rpx" class="f22">趣知游</view>
-                    <view class="f22">发起</view>
-
-                </view>
-
-
-                <view class="f24">
-                   给身边的流浪动物一个温暖的家,从此不再流浪
-                </view>
-
-
-            </view>
-
-
-
-
-
-        </view>
-
-
-
-
-    </view>
-
-</view>
+<!--KingHeader S-->
+<kingheader KingHeader="{{KingHeader}}"/>
+<!--KingHeader E-->
 
 
 
@@ -110,16 +35,16 @@
 
 
 
-<view class="bottomStyle">
 
+<!--底部操作栏-->
+<view class="tui-operation"
+      bindtap="clickAction"
+      data-id="{{theme.themeId}}"
+      data-name="{{theme.name}}"
+      bindtap="clickAction"
+     >
 
-    <view
-            data-id="{{theme.themeId}}"
-            data-name="{{theme.name}}"
-            bindtap="clickAction"
-            style="flex: 1;display: flex;flex-direction: row;justify-content: center;align-items: center;background-color: #32C48A;color: white;font-weight: bold;height: 80rpx"  >
-        立即参与
-    </view>
-
+    <view style="color: white">立即参与</view>
 
 </view>
+<!--底部操作栏--->

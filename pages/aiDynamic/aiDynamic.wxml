@@ -48,7 +48,16 @@
 
     <block wx:for="{{hotList}}" wx:key="index" >
 
-        <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx" bindtap="clickHot" data-type="{{item.type}}" data-name="{{item.name}}" data-id="{{item.id}}" >
+        <view
+                style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 40rpx;padding: 20rpx"
+                bindtap="clickHot"
+                data-type="{{item.type}}"
+                data-name="{{item.name}}"
+                data-pic="{{item.pic}}"
+                data-des="{{item.des}}"
+                data-image="{{item.image}}"
+                data-id="{{item.id}}"
+        >
 
 
             <view style="display: flex;flex-direction: row">

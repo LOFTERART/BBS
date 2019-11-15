@@ -22,9 +22,9 @@ create(store,{
         articleList:data.aiDyList,
 
         hotList: [
-            {id:1,name:'#你会因为孩子哭泣尔妥协吗#',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'87.7万阅读',type:'PK'},
-            {id:2,name:'#孩子说过什么让你记忆深刻#',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'5万阅读',type:'topCon'},
-            {id:3,name:'#活动精选#',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'100.6万阅读',type:'topCon'}
+            {id:1,name:'#你会因为孩子哭泣尔妥协吗#',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'87.7万阅读',type:'PK',des:'那次暴走旅行因何而起，你经历了哪些有意思的事儿，记录下来分享给大家吧～',pic:'https://static1.keepcdn.com/2019/05/20/1558321125739_1242x1056.jpg'},
+            {id:2,name:'#孩子说过什么让你记忆深刻#',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'5万阅读',type:'topCon',des:'那次暴走旅行因何而起，你经历了哪些有意思的事儿，记录下来分享给大家吧～',pic:'https://static1.keepcdn.com/2019/05/20/1558321125739_1242x1056.jpg'},
+            {id:3,name:'#活动精选#',image:'https://dcdn.it120.cc/2019/10/26/e6a977e7-cecb-45b2-9c8f-7b7512e7a9ea.png',views:'100.6万阅读',type:'topCon',des:'那次暴走旅行因何而起，你经历了哪些有意思的事儿，记录下来分享给大家吧～',pic:'https://static1.keepcdn.com/2019/05/20/1558321125739_1242x1056.jpg'}
         ],
 
         PK:{
@@ -56,7 +56,7 @@ create(store,{
             })
         }if(e.currentTarget.dataset.type==='topCon'){
             wx.navigateTo({
-                url: '/homeSub/pages/together/together?name='+e.currentTarget.dataset.name
+                url: '/homeSub/pages/together/together?name='+e.currentTarget.dataset.name+'&des='+e.currentTarget.dataset.des+'&pic='+decodeURIComponent(e.currentTarget.dataset.pic)+'&image='+decodeURIComponent(e.currentTarget.dataset.image)
             })
         }
 
