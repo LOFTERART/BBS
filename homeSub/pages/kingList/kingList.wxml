@@ -20,7 +20,7 @@
                 </view>
 
 
-                <view style="width: 140rpx;height: 60rpx;background-color: #00cc88;border-radius: 70rpx;line-height: 60rpx;text-align: center;color: white">
+                <view style="width: 140rpx;height: 60rpx;background-color: #12d58b;border-radius: 70rpx;line-height: 60rpx;text-align: center;color: white">
                     关注
                 </view>
 
@@ -84,7 +84,7 @@
 
 
 <view class="tui-rolling-news">
-    <tui-icon tui-icon-class="tui-rolling-icon" name-="news-fill" size='28' color='#ff7900'></tui-icon>
+    <tui-icon tui-icon-class="tui-rolling-icon" name-="news-fill" size='20' color='#12db58'></tui-icon>
     <swiper vertical="{{true}}" autoplay="{{true}}" circular="{{true}}" interval="3000" class="tui-swiper" >
         <swiper-item wx:for="{{newsList}}" wx:key="index" class="tui-swiper-item">
             <view class="tui-news-item" bindtap='detail'
@@ -126,13 +126,15 @@
 
 
 
-<view class="bottomStyle">
 
-    <view style="flex: 1;display: flex;flex-direction: row;justify-content: center;align-items: center;background-color: #12d58b;color: white;font-weight: bold;height: 80rpx"
-          bindtap="clickAction"
-          data-name="{{name}}">
-        立即参与
-    </view>
+<!--底部操作栏-->
+<view class="tui-operation"
+      bindtap="clickAction"
+      data-name="{{name}}">
 
+    <view style="color: white">立即参与</view>
 
 </view>
+<!--底部操作栏--->
+
+
