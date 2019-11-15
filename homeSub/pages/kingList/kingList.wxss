@@ -125,6 +125,7 @@ notice S
     width: 100%;
     height: 80rpx;
     background: #12d58b;
+    color: white;
     position: fixed;
     display: flex;
     align-items: center;

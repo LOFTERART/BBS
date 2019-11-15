@@ -69,7 +69,7 @@
       bindtap="clickAction"
       data-name="{{name}}">
 
-    <view style="color: white">立即参与</view>
+    立即参与
 
 </view>
 <!--底部操作栏--->
