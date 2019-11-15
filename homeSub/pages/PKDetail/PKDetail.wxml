@@ -20,7 +20,7 @@
 
 <view class="top">
 
-    <image src='https://static1.keepcdn.com/2019/06/05/1559718008918_750x497.png' class="headerIMG" mode="widthFix"></image>
+    <image src='https://static1.keepcdn.com/2019/06/05/1559718008918_750x497.png' class="headerIMG" mode="aspectFill"></image>
 
     <view class="mask"></view>
 
