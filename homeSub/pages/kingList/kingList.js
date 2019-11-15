@@ -49,6 +49,7 @@ create(store,{
                 KingPic:options.pic,
                 KingDes:options.des,
                 KingImage:options.image,
+                isFollow:true,
             },
         })
 

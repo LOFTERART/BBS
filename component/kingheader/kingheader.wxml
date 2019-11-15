@@ -19,8 +19,20 @@
                 </view>
 
 
-                <view style="width: 140rpx;height: 60rpx;background-color: #12d58b;border-radius: 70rpx;line-height: 60rpx;text-align: center;color: white">
+<!--
+<view style="width: 140rpx;height: 60rpx;background-color: #12d58b;border-radius: 70rpx;line-height: 60rpx;text-align: center;color: white">
                     关注
+                </view>
+-->
+
+                <view
+                        class="follow"
+                        style="background-color: {{KingHeader.isFollow?'white':'#12d58b'}};color: {{KingHeader.isFollow?'#12d58b':'white'}};border: {{KingHeader.isFollow?'0.5rpx solid #12d58b':''}}"
+                        bindtap="clickAction"
+                        data-index="{{idx}}"
+                        data-id="{{itemName.id}}"
+                        data-isFollow="{{itemName.isFollow}}">
+                    {{KingHeader.isFollow?'已关注':'关注'}}
                 </view>
 
 
@@ -50,7 +62,7 @@
                     <view>
                         <image   src="{{KingHeader.KingImage}}"  style="width: 60rpx;height: 60rpx;border-radius: 30rpx"/>
                     </view>
-                    
+
                     <view style="margin-left: 10rpx;margin-right: 10rpx" class="f22">趣知游</view>
                     <view class="f22">发起</view>
 
