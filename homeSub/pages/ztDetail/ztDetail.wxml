@@ -35,7 +35,7 @@
 
         </view>
         <view  class="f20">
-            <tui-icon name="arrowright" size="25" color="#3E3A39"></tui-icon>
+            <tui-icon name="arrowright" size="20" color="#3E3A39"></tui-icon>
         </view>
 
     </view>
@@ -44,13 +44,13 @@
 
 <!--    赞信息S-->
     <view style="padding: 20rpx 20rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
-        <view style="font-weight: bold" class="f32">
-            61评论
+        <view  class="f24">
+           <text style="font-weight: bold;margin-right: 4rpx;color: #333333">79 </text>评论
         </view>
 
         <view class="f22" style="display: flex;flex-direction: row">
-            <view style="font-weight: bold;color: #1a1a1a">按热度</view>
-            <view style="margin-left: 30rpx;margin-right: 30rpx">|</view>
+            <view style="font-weight: 500;color: #333333">按热度</view>
+            <view style="margin-left: 20rpx;margin-right: 20rpx">|</view>
             <view>按时间</view>
         </view>
     </view>
