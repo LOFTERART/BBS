@@ -13,7 +13,7 @@
 
 
             <view class="wG">
-                
+
 
                 <view style="color: white; flex: 3" class="f24">
                     1万条评论 2.7万人围观
@@ -48,7 +48,7 @@
 
 
 
-            <view  class="van-hairline--surround descCont">
+            <view  class=" descCont">
 
 
                 <view style="display: flex;flex-direction: row;align-items: center">

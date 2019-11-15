@@ -1,5 +1,6 @@
 // component/kingheader/kingheader.js
-Component({
+import create from '../../utils/omi/create'
+create({
   /**
    * 组件的属性列表
    */
@@ -28,8 +29,9 @@ Component({
       //点击关注按钮
       clickAction:function(e){
 
+
           let id = e.currentTarget.dataset.id;
-          console.log(id);
+          console.log(id,this.store);
 
 
           let isFollow= "KingHeader.isFollow";

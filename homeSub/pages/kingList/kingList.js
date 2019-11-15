@@ -49,7 +49,7 @@ create(store,{
                 KingPic:options.pic,
                 KingDes:options.des,
                 KingImage:options.image,
-                isFollow:true,
+                isFollow:false,
                 actionid:1,
             },
         })
@@ -68,6 +68,8 @@ create(store,{
             iconOpcity: 0.5 * (1 - opcity < 0 ? 0 : 1 - opcity)
         })
     },
+
+
     back: function () {
         wx.navigateBack()
     },

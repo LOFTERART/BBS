@@ -27,7 +27,7 @@
 		"bundle": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.2",
+	"libVersion": "2.9.3",
 	"appid": "wx87d54b84fe549219",
 	"projectname": "quzhi",
 	"debugOptions": {
