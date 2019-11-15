@@ -1,1 +1,1 @@
-/* component/kingheader/kingheader.wxss */
+@import "/app.wxss";

@@ -5,6 +5,12 @@ Component({
    */
   properties: {
 
+
+      KingHeader:{
+            type: Object,
+            value: {}, //不存在此属性时
+          }
+
   },
 
   /**

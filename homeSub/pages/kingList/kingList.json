@@ -3,6 +3,7 @@
   "navigationStyle": "custom",
   "usingComponents": {
     "tui-icon": "/component/icon/icon",
-    "dycell": "/component/dycell/dycell"
+    "dycell": "/component/dycell/dycell",
+    "kingheader": "/component/kingheader/kingheader"
   }
 }

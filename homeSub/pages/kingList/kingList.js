@@ -43,22 +43,16 @@ create(store,{
             })
         });
 
-        console.log(options);
-        wx.setNavigationBarTitle({
-            title: options.name
-        })
-
-        setTimeout(()=>{
-            this.setData({
-                animation:true
-            })
-        },600)
-
 
 
         this.setData({
-
             name:options.name,
+            KingHeader:{
+                name:options.name,
+                KingPic:options.pic,
+                KingDes:options.des,
+                KingImage:options.image,
+            },
             KingPic:options.pic,
             KingDes:options.des,
             KingImage:options.image,
