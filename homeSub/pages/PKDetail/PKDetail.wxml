@@ -6,8 +6,8 @@
     <view class="tui-header" style="padding-top:{{top}}px; opacity:{{opcity}}">
         PK
     </view>
-    <view class="tui-header-icon" style="margin-top:{{top}}px">
-        <tui-icon name="arrowleft" color="{{opcity>=1?'#000':'#fff'}}" bindtap="back" tui-icon-class="tui-icon-back" class="tui-icon" style="background:rgba(0, 0, 0, {{iconOpcity}});"></tui-icon>
+    <view class="tui-header-icon" style="margin-top:{{top}}px" bindtap="back">
+        <tui-icon name="arrowleft" color="{{opcity>=1?'#000':'#000'}}"  tui-icon-class="tui-icon-back" class="tui-icon" style="background:rgba(255, 255, 255, {{iconOpcity}});"></tui-icon>
 
     </view>
 </view>
