@@ -132,7 +132,7 @@ create(store,{
 
     },
 
-    
+
     //发表状态
     clickAdd:function(e){
         wx.navigateTo({

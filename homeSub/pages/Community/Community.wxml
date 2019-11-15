@@ -4,7 +4,7 @@
             <view class="search-bar-form">
                 <view class="search-bar-box">
                     <!-- <icon class="icon-search-in-box" type="search" size="16"></icon> -->
-                    <input confirm-type="search" class="search-bar-input" placeholder="输入学校名称或首字母查询" placeholder-class="phcolor" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <input confirm-type="search" class="search-bar-input" placeholder="输入社区名称或首字母查询" placeholder-class="phcolor" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
                     <view class="icon-clear" wx:if="{{inputVal}}" bindtap="clearInput">
                         <icon type="clear" size="15"></icon>
                     </view>
