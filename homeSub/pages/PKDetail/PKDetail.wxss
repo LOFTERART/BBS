@@ -1,4 +1,28 @@
 
+.top{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.headerIMG{
+    width: 100%;
+    height: 100%;
+
+}
+.mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(34,34,34,0.5);
+    left: 0;
+    top: 0;
+}
+
+
 .tui-header-box {
     width: 100%;
     position: fixed;
@@ -407,6 +431,7 @@ page {
     margin: 0;
     padding: 0;
 }
+
 
 
 

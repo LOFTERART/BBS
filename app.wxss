@@ -6,6 +6,7 @@
 
 page {
     padding-bottom: 140rpx;
+    font-family: pingfang sc;
 }
 
 

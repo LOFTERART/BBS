@@ -71,6 +71,13 @@
 					"id": -1,
 					"name": "homeSub/pages/kingList/kingList",
 					"pathName": "homeSub/pages/kingList/kingList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/PKDetail/PKDetail",
+					"pathName": "homeSub/pages/PKDetail/PKDetail",
 					"scene": null
 				}
 			]
