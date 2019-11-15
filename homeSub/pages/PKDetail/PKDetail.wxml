@@ -18,7 +18,7 @@
 <!--图片-->
 
 
-<view style="position: relative">
+<view style="position: relative;top: 0">
 
     <image src='http://stlib.qbb6.com/content/2102386_55fbc5911319.jpg' style="width: 100%;height: 400rpx" mode="aspectFit"></image>
 
