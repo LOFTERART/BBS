@@ -1,4 +1,19 @@
 
+<!--header-->
+<view class="tui-header-box" style="height:{{height}}px;background:rgba(255,255,255,{{opcity}})">
+    <view class="tui-header" style="padding-top:{{top}}px; opacity:{{opcity}}">
+       {{name}}
+    </view>
+    <view class="tui-header-icon" style="margin-top:{{top}}px">
+        <tui-icon name="arrowleft" color="{{opcity>=1?'#000':'#fff'}}" bindtap="back" tui-icon-class="tui-icon-back" class="tui-icon" style="background:rgba(0, 0, 0, {{iconOpcity}});"></tui-icon>
+
+    </view>
+</view>
+<!--header-->
+
+
+
+
 <view style="position: relative">
 
     <image   src="{{KingPic}}"  style="width: 100%;height: 500rpx;filter: blur(6rpx)"/>
@@ -76,11 +91,6 @@
     </view>
 
 </view>
-
-
-
-
-
 
 
 <view class="tui-rolling-news">
