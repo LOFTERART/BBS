@@ -59,77 +59,7 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/home/home",
-					"pathName": "pages/home/home",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/maps/maps",
-					"pathName": "homeSub/pages/maps/maps",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/story/story",
-					"pathName": "pages/story/story",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/aiDynamic/aiDynamic",
-					"pathName": "pages/aiDynamic/aiDynamic",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/moreActivity/moreActivity",
-					"pathName": "homeSub/pages/moreActivity/moreActivity",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/homeDetail/homeDetail",
-					"pathName": "homeSub/pages/homeDetail/homeDetail",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/PKDetail/PKDetail",
-					"pathName": "homeSub/pages/PKDetail/PKDetail",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/AddBbs/AddBbs",
-					"pathName": "homeSub/pages/AddBbs/AddBbs",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "homeSub/pages/AddBbs/AddBbs",
-					"pathName": "homeSub/pages/AddBbs/AddBbs",
-					"scene": null
-				}
-			]
+            "list": []
 		}
 	}
 }
