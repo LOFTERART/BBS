@@ -3,7 +3,6 @@ import UTIL from '../../utils/util'
 import data from '../../data/data'
 import create from '../../utils/omi/create'
 import store from '../../store/index'
-const AMAP = require('../../utils/amap-wx.js');
 create(store,{
     data: {
         //首页广告
@@ -69,7 +68,7 @@ create(store,{
         ],
 
         //默认社区名称
-        community:'请选择社区',
+        community:'许昌',
 
         current:0   //轮播图
 
@@ -127,17 +126,13 @@ create(store,{
 
     //地图选择监听小区返回
     emitSchool(city) {
-        console.log(city,'gggggg');
         this.setData({
             community:city,
         })
 
     },
 
-
-
-
-
+    
     //发表状态
     clickAdd:function(e){
         wx.navigateTo({
