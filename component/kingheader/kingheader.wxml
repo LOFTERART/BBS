@@ -1,18 +1,18 @@
 <view style="position: relative">
 
-    <image   src="{{KingHeader.KingPic}}"  style="width: 100%;height: 500rpx;filter: blur(6rpx)"/>
+    <image   src="{{KingHeader.KingPic}}"  class="bgimg"/>
 
-    <view style="position: absolute;top:50%;width: 100%;">
+    <view class="topStyle">
 
-        <view style="display: flex;flex-direction: column;padding: 20rpx">
+        <view class="topStyleT">
 
-            <view style="color: white;font-weight: bold" class="f36">
+            <view  class="f36 headernameStyle">
                 #{{KingHeader.name}}
             </view>
 
 
 
-            <view style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 100%">
+            <view class="wG">
 
                 <view style="color: white;" class="f24">
                     1万条评论 2.7万人围观
@@ -34,15 +34,15 @@
 
     <!--    描述-->
 
-    <view style="position: absolute;bottom: -90rpx;width: 100%;">
+    <view class="desc">
 
 
 
-        <view style="display: flex;flex-direction: column;width: 100%;height:140rpx;justify-content: center;align-items: center">
+        <view class="descCon">
 
 
 
-            <view style="width: 90%;height: 140rpx;background-color: white;display: flex;flex-direction: column;padding: 20rpx" class="van-hairline--surround">
+            <view  class="van-hairline--surround descCont">
 
 
                 <view style="display: flex;flex-direction: row;align-items: center">
@@ -50,6 +50,7 @@
                     <view>
                         <image   src="{{KingHeader.KingImage}}"  style="width: 60rpx;height: 60rpx;border-radius: 30rpx"/>
                     </view>
+                    
                     <view style="margin-left: 10rpx;margin-right: 10rpx" class="f22">趣知游</view>
                     <view class="f22">发起</view>
 

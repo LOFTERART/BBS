@@ -27,7 +27,6 @@ create(store,{
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
         let obj = wx.getMenuButtonBoundingClientRect();
         this.setData({
             width: obj.left,
@@ -43,8 +42,6 @@ create(store,{
             })
         });
 
-
-
         this.setData({
             name:options.name,
             KingHeader:{
@@ -53,9 +50,6 @@ create(store,{
                 KingDes:options.des,
                 KingImage:options.image,
             },
-            KingPic:options.pic,
-            KingDes:options.des,
-            KingImage:options.image,
         })
 
     },
