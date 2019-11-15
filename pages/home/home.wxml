@@ -12,7 +12,7 @@
 
 
     <view style="display: flex;flex-direction: row;align-items: center" bindtap="choseCommunity">
-        <tui-icon tui-icon-class="location" name="position-fill" color="#12db58" size="18"></tui-icon>
+        <tui-icon tui-icon-class="location" name="position-fill" color="#584f60" size="14"></tui-icon>
         <view class="f36" style="margin-left: 10rpx;margin-right: 2rpx;font-weight: 400">
             {{community}}
         </view>
