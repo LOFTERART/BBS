@@ -21,15 +21,7 @@
       </view>
     </tui-list-cell>
 
-<!--
 
- <tui-list-cell hover="{{false}}">
-      <view class="tui-line-cell">
-        <view class="tui-title">邮箱</view>
-        <input placeholder-class="phcolor" class="tui-input" name="email" placeholder="请输入邮箱" maxlength="50" type="text" />
-      </view>
-    </tui-list-cell>
--->
 
     <tui-list-cell hover="{{false}}">
       <view class="tui-line-cell">
@@ -38,41 +30,12 @@
       </view>
     </tui-list-cell>
 
-<!--
-
-  <tui-list-cell hover="{{false}}">
-      <view class="tui-line-cell">
-        <view class="tui-title">密码</view>
-        <input placeholder-class="phcolor" class="tui-input" name="pwd" placeholder="请输入密码" maxlength="50" type="text" />
-      </view>
-    </tui-list-cell>
-    <tui-list-cell hover="{{false}}">
-      <view class="tui-line-cell">
-        <view class="tui-title">确认密码</view>
-        <input placeholder-class="phcolor" class="tui-input" name="pwd2" placeholder="请输入确认密码" maxlength="50" type="text" />
-      </view>
-    </tui-list-cell>
-    <tui-list-cell hover="{{false}}">
-      <view class="tui-line-cell">
-        <view class="tui-title">区间</view>
-        <input placeholder-class="phcolor" class="tui-input" name="range" placeholder="请输入3-20之间的数" maxlength="50" type="number" />
-      </view>
-    </tui-list-cell>
-    <tui-list-cell hover="{{false}}" last="{{true}}">
-      <view class="tui-line-cell">
-        <view class="tui-title">金额</view>
-        <input placeholder-class="phcolor" class="tui-input" name="amount" placeholder="请输入金额,允许保留两位小数" maxlength="50" type="digit" />
-      </view>
-    </tui-list-cell>
--->
 
 
     <view class="tui-tips">保证信息真实性</view>
 
     <view class="tui-btn-box">
         <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">立即报名</tui-button>
-<!--      <button class="btn-primary" hover-class="btn-hover" formType="submit" type="primary">立即报名</button>-->
-<!--      <button class="btn-primary btn-gray" hover-class="btn-gray-hover" formType="reset">Reset</button>-->
     </view>
   </form>
 </view>

@@ -106,7 +106,7 @@
 
     <view class="fourTool">
 
-        <view  class="f24  tools" data-id="{{itemName.id}}" data-aid="{{itemName.activityID}}" bindtap="clickDailyContent" data-itemArray="{{itemName}}">
+        <view  class="f24  tools">
             <i class="iconfont icon-chakan f28" style="margin-right: 10rpx;color: #969799"></i>{{itemName.views}}
         </view>
 
