@@ -44,7 +44,22 @@ Page({
             badge:'https://dcdn.it120.cc/2019/10/25/12bbe9e6-7e26-40d9-a1f7-e45a1dc9a6f5.png',
             community:'阳光花墅',
 
-        }
+        },
+        hotTools:[
+            {id:1,name:'消息通知',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+            {id:1,name:'私信',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+            {id:1,name:'收藏',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+            {id:1,name:'阅读历史',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+            {id:1,name:'钱包',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+            {id:1,name:'用户反馈',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+            {id:1,name:'服务',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+            {id:1,name:'系统设置',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+        ],
+        autherTools:[
+            {id:1,name:'动态管理',image:'https://dcdn.it120.cc/2019/10/24/a5851f96-80fd-4f77-9fac-a073dfb5482c.png',isHot:'',type:'GY'},
+        ],
+
+
 
 
 

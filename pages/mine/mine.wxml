@@ -34,6 +34,8 @@
     </view>
 
     <view class="tui-content-box">
+
+<!--        动态数据S-->
         <view class="tui-box tui-order-box">
             <tui-list-cell arrow="{{false}}" padding="0" lineLeft="{{false}}" bind:click="href" data-type="4">
                 <view class="tui-cell-header">
@@ -57,25 +59,28 @@
 
             </view>
         </view>
+<!--        动态数据E-->
 
-<!--
 
- <view class="tui-box tui-assets-box" bindtap="href" data-type="6">
-            <tui-list-cell padding="0" last="{{true}}" hover="{{false}}">
+
+        <!--        数据S-->
+
+        <view class="tui-box tui-tool-box">
+            <tui-list-cell arrow="{{false}}" padding="0" lineLeft="{{false}}">
                 <view class="tui-cell-header">
-                    <view class="tui-cell-title">数据中心</view>
+                    <view class="tui-cell-title">常用功能</view>
                 </view>
             </tui-list-cell>
-            <view class="tui-order-list tui-assets-list">
+            <view class="tui-order-list tui-flex-wrap">
 
-                <block wx:for="{{actions}}" wx:key>
+                <block wx:for="{{hotTools}}" wx:key>
 
-                    <view class="tui-order-item">
-                        <view class="tui-assets-num">
-                            <text>{{item.number}}</text>
-                            <view class="tui-badge-dot" wx:if="{{item.isHot}}"></view>
+                    <view class="tui-tool-item" bindtap="clickTool" data-type="{{item.type}}">
+                        <view class="tui-icon-box">
+                            <image src="{{item.image}}" class="tui-tool-icon"></image>
+                            <image src="{{item.isHot}}" class="tui-badge-icon"></image>
                         </view>
-                        <view class="tui-assets-text">{{item.name}}</view>
+                        <view class="tui-tool-text">{{item.name}}</view>
                     </view>
 
                 </block>
@@ -83,13 +88,44 @@
 
             </view>
         </view>
+        <!--        数据E-->
 
--->
+
+        <!--        常用S-->
 
         <view class="tui-box tui-tool-box">
             <tui-list-cell arrow="{{false}}" padding="0" lineLeft="{{false}}">
                 <view class="tui-cell-header">
-                    <view class="tui-cell-title">常用</view>
+                    <view class="tui-cell-title">常用功能</view>
+                </view>
+            </tui-list-cell>
+            <view class="tui-order-list tui-flex-wrap">
+
+                <block wx:for="{{autherTools}}" wx:key>
+
+                    <view class="tui-tool-item" bindtap="clickTool" data-type="{{item.type}}">
+                        <view class="tui-icon-box">
+                            <image src="{{item.image}}" class="tui-tool-icon"></image>
+                            <image src="{{item.isHot}}" class="tui-badge-icon"></image>
+                        </view>
+                        <view class="tui-tool-text">{{item.name}}</view>
+                    </view>
+
+                </block>
+
+
+            </view>
+        </view>
+        <!--        常用E-->
+
+
+
+        <!--        常用S-->
+
+        <view class="tui-box tui-tool-box">
+            <tui-list-cell arrow="{{false}}" padding="0" lineLeft="{{false}}">
+                <view class="tui-cell-header">
+                    <view class="tui-cell-title">更多功能</view>
                 </view>
             </tui-list-cell>
             <view class="tui-order-list tui-flex-wrap">
@@ -109,6 +145,13 @@
 
             </view>
         </view>
+        <!--        常用E-->
+
+
+
+
 
     </view>
+
+
 </view>

@@ -85,6 +85,20 @@
 					"id": -1,
 					"name": "homeSub/pages/ztDetail/ztDetail",
 					"pathName": "homeSub/pages/ztDetail/ztDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
 					"scene": null
 				}
 			]
