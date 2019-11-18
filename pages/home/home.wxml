@@ -34,7 +34,7 @@
 
 <!--banner S -->
 <view class="tui-banner-box">
-    <swiper indicator-dots="true" autoplay="true" interval="9000" duration="1000" class="tui-banner-swiper" circular="{{true}}" >
+    <swiper indicator-dots="true" autoplay="true" interval="9000" duration="1000" class="tui-banner-swiper" circular="{{true}}" bindchange="change">
         <swiper-item wx:for="{{banners}}" wx:key="index" class="tui-banner-item">
             <image
                     bindtap="tapBanner"
@@ -44,7 +44,7 @@
                     data-type="{{item.type}}"
                     data-name="{{item.name}}"
                     src="{{item.thumbnails||item.image}}"
-                    class="tui-slide-image {{current!=index?'tui-banner-scale':''}}"
+                    class="tui-slide-image"
                     mode="scaleToFill"  />
         </swiper-item>
     </swiper>
