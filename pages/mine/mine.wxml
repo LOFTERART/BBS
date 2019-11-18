@@ -73,7 +73,7 @@
             </tui-list-cell>
             <view class="tui-order-list tui-flex-wrap">
 
-                <block wx:for="{{hotTools}}" wx:key>
+                <block wx:for="{{hotTools}}" wx:key="index">
 
                     <view class="tui-tool-item" bindtap="clickTool" data-type="{{item.type}}">
                         <view class="tui-icon-box">
