@@ -31,7 +31,7 @@
 
             <view
                     class="follow"
-                    style="color: {{itemName.isFollow?'#999':'#12d58b'}};"
+                    style="color: {{itemName.isFollow?'#3C3C3C':'#12d58b'}};"
                     wx:if="{{isShowFollow}}"
                     bindtap="clickAction"
                     data-index="{{idx}}"
