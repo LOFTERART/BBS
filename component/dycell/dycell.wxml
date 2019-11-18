@@ -31,7 +31,7 @@
 
             <view
                     class="follow"
-                    style="background-color: {{itemName.isFollow?'white':'#12d58b'}};color: {{itemName.isFollow?'#12d58b':'white'}};border: {{itemName.isFollow?'0.5rpx solid #12d58b':''}}"
+                    style="color: {{itemName.isFollow?'#999':'#12d58b'}};"
                     wx:if="{{isShowFollow}}"
                     bindtap="clickAction"
                     data-index="{{idx}}"

@@ -78,6 +78,13 @@
 					"id": -1,
 					"name": "homeSub/pages/PKDetail/PKDetail",
 					"pathName": "homeSub/pages/PKDetail/PKDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/ztDetail/ztDetail",
+					"pathName": "homeSub/pages/ztDetail/ztDetail",
 					"scene": null
 				}
 			]
