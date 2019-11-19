@@ -21,7 +21,7 @@
                         <view class="f28" bindtap="clickName" style="margin-right: 10rpx">{{itemName.name}}</view>
                         <view style="margin-right: 10rpx" class="f28" bindtap="clickName" wx:if="{{itemName.status}}">{{itemName.status}}</view>
                         <view style="margin-right: 10rpx" class="f28" bindtap="clickName" wx:if="{{itemName.community}}">{{itemName.community}}</view>
-                        <tui-icon name="member" size="22" color="#12d58b" bindtap="clickVip" data-auth="{{itemName.Auth}}" wx:if="{{itemName.specialist}}"></tui-icon>
+                        <tui-icon name="member" size="22" color="#99775d" bindtap="clickVip" data-auth="{{itemName.Auth}}" wx:if="{{itemName.specialist}}"></tui-icon>
                     </view>
                     <view class="f22">{{itemName.timer}}·<text style="color: #12d58b" class="f22">{{itemName.address}}</text></view>
                 </view>
