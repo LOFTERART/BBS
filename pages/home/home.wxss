@@ -123,6 +123,7 @@
     line-height: 28rpx;
     padding-top: 8rpx;
     white-space: nowrap;
+    font-family:PingFangSC-Regular,PingFang SC;
 }
 /*金刚位E*/
 

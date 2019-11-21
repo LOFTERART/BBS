@@ -95,7 +95,7 @@ button::after {
     /*首页分栏标题*/
     font-size: 36rpx;
     color: #323233;
-    font-weight: bold;
+    font-weight: 400;
     font-family: PingFangSC-Regular;
 }
 .f32{
