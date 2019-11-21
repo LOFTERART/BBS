@@ -134,6 +134,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /*新闻*/
 .container{
     display: flex;
@@ -158,14 +166,24 @@
 
 
 
-/*发表*/
-.bottomStyle{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: center;
-    height: 80rpx;
+
+/*发布按钮*/
+
+.addDaily{
     position: fixed;
-    bottom: 38rpx;
-    right: 38rpx;
+    right: 40rpx;
+    bottom: 50rpx;
+    width: 108rpx;
+    height: 108rpx;
+    border-radius: 50%;
+    background: #3CCB9B;
+    box-shadow: 0px 8rpx 16rpx 0px rgba(209, 209, 209, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: #fff;
 }

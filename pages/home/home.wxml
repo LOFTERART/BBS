@@ -28,10 +28,6 @@
 
 <!--默认小区E-->
 
-
-
-
-
 <!--banner S -->
 <view class="tui-banner-box">
     <swiper indicator-dots="true" autoplay="true" interval="9000" duration="1000" class="tui-banner-swiper" circular="{{true}}" bindchange="change">
@@ -106,13 +102,8 @@
 
 
 <!--底部固定信息 S-->
-<view class="bottomStyle f22" style="color: white" bindtap="clickAdd" >
-
-
-    <view style="display: flex;flex-direction: row;justify-content: center;align-items: center;color: white;background-color: rgba(18,213,139,1);width: 80rpx;height: 80rpx;border-radius: 40rpx">
-        <i class="iconfont icon-xiangji" style="color: white;font-size: 40rpx;" ></i>
-    </view>
-
+<view class="addDaily" bindtap="clickAdd">
+    <i class="iconfont icon-xiangji" style="color: white;font-size: 40rpx;" ></i>
 </view>
 <!--底部固定信息 E-->
 
