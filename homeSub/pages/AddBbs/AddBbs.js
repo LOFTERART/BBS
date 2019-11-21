@@ -71,7 +71,7 @@ Page({
 
         if (e.detail.value.length>1){
             this.setData({
-                changeColor:'#12d58b'
+                changeColor:'#3CCB9B'
             })
         }else {
             this.setData({

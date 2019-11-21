@@ -20,7 +20,7 @@
   color: #fff;
 }
 .tui-mainGreen {
-    background: #12d58b !important;
+    background: #3CCB9B !important;
     color: #fff;
 }
 .tui-green {

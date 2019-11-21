@@ -22,7 +22,7 @@
 
                 <view
                         class="follow"
-                        style="background-color: {{KingHeader.isFollow?'white':'#12d58b'}};color: {{KingHeader.isFollow?'#12d58b':'white'}};border: {{KingHeader.isFollow?'0.5rpx solid #12d58b':''}}"
+                        style="background-color: {{KingHeader.isFollow?'white':'#3CCB9B'}};color: {{KingHeader.isFollow?'#3CCB9B':'white'}};border: {{KingHeader.isFollow?'0.5rpx solid #3CCB9B':''}}"
                         bindtap="clickAction"
                         data-id="{{KingHeader.actionid}}"
                         >

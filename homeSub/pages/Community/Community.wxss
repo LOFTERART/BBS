@@ -201,7 +201,7 @@ page {
 
 .tap-city {
     color: #fff;
-    background: #12d58b;
+    background: #3CCB9B;
     /* border: solid 1rpx #5677fc; */
 }
 

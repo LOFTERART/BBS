@@ -37,7 +37,7 @@
                     class="follow"
                     data-index="{{index}}"
                     data-isfollow="{{item.isShowFollow}}"
-                    style="background-color: #12d58b;color: white;"
+                    style="background-color: #3CCB9B;color: white;"
             >
                 去打卡
             </view>

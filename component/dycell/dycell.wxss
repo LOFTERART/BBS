@@ -2,6 +2,7 @@
 
 
 .contentStyle{
+    font-family:PingFangSC-Regular,PingFang SC;
     position: relative;
     margin-bottom: 20rpx;
     margin-top: 20rpx;
@@ -16,6 +17,7 @@
 }
 
 .contentStyleAll{
+    font-family:PingFangSC-Regular,PingFang SC;
     position: relative;
     margin-bottom: 20rpx;
     margin-top: 20rpx;
@@ -30,7 +32,13 @@
 }
 
 .avaCon{
-    display: flex;flex-direction: row;background-color: white;height: 80rpx;margin-bottom: 10rpx;justify-content: space-between;align-items: center
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 80rpx;
+    margin-bottom: 10rpx;
+    justify-content: space-between;
+    align-items: center
 }
 
 .imgCon{
