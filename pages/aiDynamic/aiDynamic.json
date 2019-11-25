@@ -2,6 +2,7 @@
   "navigationBarTitleText": "推荐",
   "enablePullDownRefresh": true,
   "usingComponents": {
-    "dycell": "/component/dycell/dycell"
+    "dycell": "/component/dycell/dycell",
+    "mp-halfScreenDialog": "/component/half-screen-dialog/half-screen-dialog"
   }
 }
