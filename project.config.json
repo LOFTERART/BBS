@@ -99,6 +99,20 @@
 					"id": -1,
 					"name": "pages/mine/mine",
 					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/addPeoInfo/addPeoInfo",
+					"pathName": "homeSub/pages/addPeoInfo/addPeoInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/addPeoInfo/addPeoInfo",
+					"pathName": "homeSub/pages/addPeoInfo/addPeoInfo",
 					"scene": null
 				}
 			]
