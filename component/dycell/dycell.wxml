@@ -1,7 +1,6 @@
 
 <!--状态S-->
 
-
 <block wx:for="{{articleList}}" wx:key="idx"  wx:for-index="idx" wx:for-item="itemName">
 
 <!--    去掉下边class="van-hairline--bottom"-->
@@ -117,7 +116,7 @@
         <view class="f24  tools" bindtap="clickLike" data-index="{{idx}}" data-id="{{itemName.id}}">
             <i class="iconfont icon-zan f28" style="margin-right: 10rpx;color:{{itemName.is_like?'#fdd043':'#969799'}}"></i> {{itemName.like}}
         </view>
-
+<!--   bindtap="clickMore"-->
         <view  class="f24 tools" bindtap="clickMore" data-id="{{itemName.id}}" data-top="{{itemName.is_top}}" data-Uid="{{itemName.follow_user_id}}" data-Utype="{{itemName.follow_user_type}}" style="justify-content: flex-end">
             <i class="iconfont icon-gengduo f28" style="margin-right: 10rpx;color: #969799"></i>
         </view>

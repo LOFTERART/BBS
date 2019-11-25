@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "tui-icon": "/component/icon/icon"
+    "tui-icon": "/component/icon/icon",
+    "mp-halfScreenDialog": "/component/half-screen-dialog/half-screen-dialog"
   }
 }

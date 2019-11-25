@@ -30,8 +30,9 @@
         <button 
           wx:for="{{buttons}}" 
           wx:key="{{item.text + item.index}}"
-          type="{{item.type}}" 
-          class="weui-btn {{item.className}}" 
+          type="{{item.type}}"
+          open-type="{{item.opentype}}"
+          class="weui-btn {{item.className}}"
           data-index="{{index}}" 
           bindtap="buttonTap"
         >{{item.text}}</button>
