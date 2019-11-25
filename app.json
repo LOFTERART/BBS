@@ -102,5 +102,12 @@
       "desc": "你的位置信息将用于动态的效果展示"
     }
   },
+
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
+
+
   "sitemapLocation": "sitemap.json"
 }
