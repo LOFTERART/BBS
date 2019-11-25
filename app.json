@@ -103,7 +103,6 @@
     }
   },
 
-  "style": "v2",
   "useExtendedLib": {
     "weui": true
   },

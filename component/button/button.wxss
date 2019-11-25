@@ -48,10 +48,10 @@
 
 .tui-btn {
   width: 100%;
-  /* position: relative;
+  position: relative;
   border: 0 !important;
   border-radius: 10rpx;
-  display: inline-block; */
+  display: inline-block;
 }
 
 .tui-btn::after {
@@ -72,8 +72,8 @@
 
 .tui-btn-block {
   font-size: 36rpx;
-  /* height: 90rpx;
-  line-height: 90rpx; */
+  height: 90rpx;
+  line-height: 90rpx;
 }
 
 .tui-white::after {
