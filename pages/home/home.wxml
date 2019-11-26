@@ -9,12 +9,13 @@
         loading="{{loading}}"
         border="{{false}}"
         left="{{true}}"
-        center="{{true}}">
+        
+>
 
 
 
 
-    <view slot="center">
+    <view slot="left">
 
         <view class="square">
 
