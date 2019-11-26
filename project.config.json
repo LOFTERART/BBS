@@ -113,6 +113,13 @@
 					"id": -1,
 					"name": "homeSub/pages/addPeoInfo/addPeoInfo",
 					"pathName": "homeSub/pages/addPeoInfo/addPeoInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
 					"scene": null
 				}
 			]

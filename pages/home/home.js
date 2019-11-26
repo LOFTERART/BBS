@@ -70,7 +70,22 @@ create(store,{
         //默认社区名称
         community:'许昌',
 
-        current:0   //轮播图
+        current:0,   //轮播图
+
+
+
+        title:'自定义导航标题',
+
+        topBarHeight:0,
+
+        background:'#ffffff',
+
+        color:'#000000',
+
+
+
+        loading: false,
+
 
     },
     /**
@@ -79,6 +94,12 @@ create(store,{
      */
     onLoad: function (options) {
 
+    },
+
+    //获取导航栏高度
+    getBarInfo(e){
+        console.log(e.detail)
+        this.setData({topBarHeight:e.detail.topBarHeight})
     },
 
 

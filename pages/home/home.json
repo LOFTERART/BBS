@@ -1,8 +1,10 @@
 {
   "navigationBarTitleText": "社区",
   "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
   "usingComponents": {
     "tui-icon": "/component/icon/icon",
-    "dycell": "/component/dycell/dycell"
+    "dycell": "/component/dycell/dycell",
+    "navigation-bar":"/component/navigation-bar/navigation-bar"
   }
 }

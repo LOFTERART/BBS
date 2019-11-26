@@ -1,7 +1,29 @@
 
+
+<!-- 自定义导航组件引入 -->
+<navigation-bar
+        bindgetBarInfo="getBarInfo"
+
+        title="{{title}}"
+        background="{{background}}"
+        color="{{color}}"
+        show="{{true}}"
+        loading="{{loading}}"
+        border="{{false}}"
+        left="{{true}}"
+        center="{{true}}">
+    <view slot="left">
+        <view class="square">左侧slot</view>
+    </view>
+    <view slot="center">
+        <view class="square">中间slot</view>
+    </view>
+</navigation-bar>
+
+
+
+
 <!--默认小区S-->
-
-
 <view style="display: flex;flex-direction: row;height: 40rpx;;padding: 20rpx;justify-content: space-between">
 
 
