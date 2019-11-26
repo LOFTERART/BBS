@@ -3,12 +3,12 @@
 <!-- 自定义导航组件引入 -->
 <navigation-bar
         bindgetBarInfo="getBarInfo"
-        background="{{background}}"
-        color="{{color}}"
-        show="{{true}}"
+        background="#ffffff"
+        color="#000000"
         loading="{{loading}}"
         border="{{false}}"
         left="{{true}}"
+        center="{{false}}"
 
 >
 
@@ -27,6 +27,17 @@
                 <tui-icon name="arrowright" size="20" color="#323233" ></tui-icon>
 
             </view>
+
+        </view>
+
+    </view>
+
+
+    <view slot="center">
+
+        <view class="square">
+
+            11
 
         </view>
 

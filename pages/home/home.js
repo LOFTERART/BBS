@@ -72,16 +72,7 @@ create(store,{
 
         current:0,   //轮播图
 
-
-
-
         topBarHeight:0,
-
-        background:'#ffffff',
-
-        color:'#000000',
-
-
 
         loading: false,
 

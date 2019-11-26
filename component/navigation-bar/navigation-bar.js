@@ -199,8 +199,8 @@ Component({
               statusBarHeight:statusBarHeight,
               innerWidth: isSupport ? 'width:' + rect.left + 'px' : '',
               innerPaddingRight: isSupport ? 'padding-right:' + (res.windowWidth - rect.left) + 'px' : '',
-              // leftWidth: isSupport ? 'width:' + (res.windowWidth - rect.left) + 'px' : ''
-              leftWidth: isSupport ? 'width:' + (res.windowWidth) + 'px' : ''
+              leftWidth: isSupport ? 'width:' + (res.windowWidth - rect.left) + 'px' : ''
+              // leftWidth: isSupport ? 'width:' + (res.windowWidth) + 'px' : ''
           });
 
           _this.triggerEvent('getBarInfo', {topBarHeight,statusBarHeight});               
