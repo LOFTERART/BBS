@@ -74,7 +74,6 @@ create(store,{
 
 
 
-        title:'自定义导航标题',
 
         topBarHeight:0,
 

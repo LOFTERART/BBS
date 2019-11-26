@@ -13,7 +13,7 @@
 		"coverView": true,
 		"nodeModules": false,
 		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
+		"showShadowRootInWxmlPanel": false,
 		"scopeDataCheck": true,
 		"uglifyFileName": true,
 		"checkInvalidKey": true,

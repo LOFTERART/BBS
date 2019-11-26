@@ -3,8 +3,6 @@
 <!-- 自定义导航组件引入 -->
 <navigation-bar
         bindgetBarInfo="getBarInfo"
-
-        title="{{title}}"
         background="{{background}}"
         color="{{color}}"
         show="{{true}}"
@@ -12,18 +10,42 @@
         border="{{false}}"
         left="{{true}}"
         center="{{true}}">
-    <view slot="left">
-        <view class="square">左侧slot</view>
+
+
+    <view slot="left" style="width: 300rpx">
+
+        <view class="square">
+
+            <view style="display: flex;flex-direction: row;align-items: center" bindtap="choseCommunity">
+                <tui-icon tui-icon-class="location" name="position-fill" color="#584f60" size="14"></tui-icon>
+                <view  style="margin: 0 2rpx 0 10rpx">
+                    {{community}}
+                </view>
+                <tui-icon name="arrowright" size="20" color="#323233" ></tui-icon>
+
+            </view>
+
+        </view>
+
     </view>
-    <view slot="center">
+
+<!--
+ <view slot="center">
         <view class="square">中间slot</view>
     </view>
+-->
+
+
 </navigation-bar>
 
 
 
 
 <!--默认小区S-->
+
+
+<!--
+
 <view style="display: flex;flex-direction: row;height: 40rpx;;padding: 20rpx;justify-content: space-between">
 
 
@@ -45,6 +67,8 @@
 
 
 </view>
+
+-->
 
 
 
