@@ -12,7 +12,9 @@
         center="{{true}}">
 
 
-    <view slot="left" style="width: 300rpx">
+
+
+    <view slot="center">
 
         <view class="square">
 
@@ -26,14 +28,9 @@
             </view>
 
         </view>
-
+        
     </view>
 
-<!--
- <view slot="center">
-        <view class="square">中间slot</view>
-    </view>
--->
 
 
 </navigation-bar>
