@@ -68,7 +68,7 @@ create(store,{
         ],
 
         //默认社区名称
-        community:'许昌',
+        community:'魏都星球',
 
         current:0,   //轮播图
 
@@ -149,7 +149,11 @@ create(store,{
         wx.navigateTo({
             url: '/homeSub/pages/AddBbs/AddBbs'
         })
-
+    },
+    onPullDownRefresh () {
+        setTimeout(()=>{
+            wx.stopPullDownRefresh()
+        },3000)
     },
     
 

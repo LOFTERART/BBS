@@ -8,7 +8,7 @@
         loading="{{loading}}"
         border="{{false}}"
         left="{{true}}"
-        center="{{false}}"
+        center="{{true}}"
 
 >
 
@@ -22,7 +22,7 @@
             <view style="display: flex;flex-direction: row;align-items: center" bindtap="choseCommunity">
                 <tui-icon tui-icon-class="location" name="position-fill" color="#584f60" size="14"></tui-icon>
                 <view  style="margin: 0 2rpx 0 10rpx">
-                    {{community}}
+                    许昌
                 </view>
                 <tui-icon name="arrowright" size="20" color="#323233" ></tui-icon>
 
@@ -37,7 +37,7 @@
 
         <view class="square">
 
-            11
+            {{community}}
 
         </view>
 
