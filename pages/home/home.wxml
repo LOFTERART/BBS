@@ -111,7 +111,7 @@
 <!--动态标题S-->
 <view style="padding: 20rpx 20rpx 20rpx 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center">
     <view  class="f36">
-        社区动态
+        社区动态  <text style="color: rgba(150,150,150,1);font-size: 22rpx">记录认真生活的你!</text>
     </view>
 </view>
 <!--动态标题E-->
