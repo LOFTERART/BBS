@@ -88,7 +88,6 @@ create(store,{
 
     //获取导航栏高度
     getBarInfo(e){
-        console.log(e.detail)
         this.setData({topBarHeight:e.detail.topBarHeight})
     },
 

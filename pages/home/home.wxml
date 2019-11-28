@@ -1,6 +1,6 @@
 
 
-<!-- 自定义导航组件引入 -->
+<!-- 自定义导航组件引入S -->
 <navigation-bar
         bindgetBarInfo="getBarInfo"
         background="#ffffff"
@@ -47,41 +47,10 @@
 
 </navigation-bar>
 
+<!-- 自定义导航组件引入E -->
 
 
 
-<!--默认小区S-->
-
-
-<!--
-
-<view style="display: flex;flex-direction: row;height: 40rpx;;padding: 20rpx;justify-content: space-between">
-
-
-    <view class="36">
-        你好
-    </view>
-
-
-
-    <view style="display: flex;flex-direction: row;align-items: center" bindtap="choseCommunity">
-        <tui-icon tui-icon-class="location" name="position-fill" color="#584f60" size="14"></tui-icon>
-        <view class="f36" style="margin: 0 2rpx 0 10rpx">
-            {{community}}
-        </view>
-        <tui-icon name="arrowright" size="20" color="#323233" ></tui-icon>
-
-    </view>
-
-
-
-</view>
-
--->
-
-
-
-<!--默认小区E-->
 
 <!--banner S -->
 <view class="tui-banner-box">
@@ -106,7 +75,7 @@
 <!--金刚区S-->
 <view style="padding: 0 10rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
     <view  class="f36">
-        热门讨论
+        热门讨论  <text style="color: rgba(150,150,150,1);font-size: 22rpx">和身边的小伙伴一起爱智求真!</text>
     </view>
 </view>
 

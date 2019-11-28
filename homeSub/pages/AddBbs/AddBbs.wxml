@@ -1,6 +1,7 @@
 
 <view style="padding: 10rpx 20rpx">
     <textarea
+            auto-focus="{{true}}"
             maxlength="300"
             value='{{message}}'
             bindinput='messInput'
