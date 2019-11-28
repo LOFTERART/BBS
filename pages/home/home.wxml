@@ -71,11 +71,11 @@
 </view>
 <!--banner E-->
 
-
+<!--<text style="color: rgba(150,150,150,1);font-size: 22rpx">让这个城市更有温度!</text>-->
 <!--金刚区S-->
 <view style="padding: 0 10rpx 0 20rpx;display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-top: 30rpx">
     <view  class="f36">
-        热门讨论  <text style="color: rgba(150,150,150,1);font-size: 22rpx">和身边的小伙伴一起爱智求真!</text>
+        热门讨论
     </view>
 </view>
 
