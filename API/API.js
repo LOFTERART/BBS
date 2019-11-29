@@ -71,6 +71,23 @@ Promise.prototype.finally = function (callback) {
 module.exports = {
     request,
 
+  //趣知游 登录
+  ask: (data) => {
+    return request('http://127.0.0.1:8081/', 'POST', data, true)
+  },
+
+    getStu: (data) => {
+        return request('http://127.0.0.1:8081/getstudent', 'POST', data, true)
+    },
+    getAllStu: (data) => {
+        return request('http://127.0.0.1:8081/getallstudent', 'POST', data, true)
+    },
+    getdelStu: (data) => {
+        return request('http://127.0.0.1:8081/getdelstudent', 'POST', data, true)
+    },
+    getupStu: (data) => {
+        return request('http://127.0.0.1:8081/getupstudent', 'POST', data, true)
+    },
 
 
    //趣知游 登录

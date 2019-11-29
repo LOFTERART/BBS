@@ -83,6 +83,42 @@ create(store,{
      *
      */
     onLoad: function (options) {
+        WXAPI.ask({
+            name:"赵福文"+Math.random(),
+            score:59
+        }).then(res=>{
+            console.log(res,"----插入数据-------")
+        })
+        //
+        WXAPI.getStu({
+            id:197,
+            name:"fuk"
+        }).then(res=>{
+            console.log(res,"-----------")
+        })
+        //
+        // WXAPI.getAllStu({
+        //     id:8,
+        //     name:"fuk"
+        // }).then(res=>{
+        //     console.log(res,"-----------")
+        // })
+        //
+        // WXAPI.getdelStu({
+        //     id:2,
+        //     name:"fuk"
+        // }).then(res=>{
+        //     console.log(res,"-----------")
+        // })
+
+        // WXAPI.getupStu({
+        //     id:3,
+        //     name:"fuk"
+        // }).then(res=>{
+        //     console.log(res,"-----------")
+        // })
+
+
 
     },
 
