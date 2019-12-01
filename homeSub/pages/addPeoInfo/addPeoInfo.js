@@ -10,6 +10,7 @@ Page({
 
       getName:'',
       getIDCard:'',
+      sex:'1',
 
       popupShow: false,
 
