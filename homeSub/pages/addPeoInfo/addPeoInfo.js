@@ -57,8 +57,9 @@ Page({
 
 
 
-    clickEdit:function(){
-      this.setData({
+    clickEdit:function(e){
+        console.log(e.currentTarget.dataset.index,'ddddddddd');
+        this.setData({
           popupShow: true,
       })
     },
@@ -94,8 +95,26 @@ Page({
 
 
 
+    getName:function(e){
+
+
+        this.setData({
+            name:e.detail.value
+        })
+
+    },
+
+    getIdCard:function(e){
+        this.setData({
+            iDCard:e.detail.value
+        })
+
+    },
+
+
+
     clickBm: function(e) {
-        console.log(e.detail.value,'9999999');
+        console.log(this.data.name,this.data.iDCard,'9999999');
 
     },
 
