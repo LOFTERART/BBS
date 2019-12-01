@@ -41,10 +41,7 @@ Page({
             })
             this.addItem()
         }else if(e.detail.type==='blur'){
-            UTIL.toast("不支持手动输入数量")
-            let value = this.data.value2
-            console.log(value,'7777777');
-
+            UTIL.toast("暂不支持手动输入数量")
             return
         }
 
@@ -66,14 +63,6 @@ Page({
             info: info
         });
     },
-
-
-
-
-
-
-
-
 
 
     hidePopup: function () {
@@ -111,7 +100,6 @@ Page({
     },
 
     radioChange: function (e) {
-        console.log('radio发生change事件，携带value值为：', e.detail.value)
         this.setData({
            sex:e.detail.value
         })
@@ -149,8 +137,11 @@ Page({
         console.log(e.target.dataset.idx);
         this.data.info.splice(idx, 1);
         var info = this.data.info;
+        var value2 =info.length
+        console.log(info.length,'8888');
         this.setData({
-            info: info
+            info: info,
+            value2:value2
         })
 
     },
