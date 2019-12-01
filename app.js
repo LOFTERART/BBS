@@ -5,7 +5,7 @@ App({
     onLaunch: function () {
         this.updataApp();
         if(!this.globalData.userInfo.userId){
-            // this.wxLogin();
+            this.wxLogin();
         }
     },
 
