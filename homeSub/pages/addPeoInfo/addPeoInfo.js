@@ -10,8 +10,7 @@ Page({
       popupShow: false,
       value2: 1,
       info: [
-          {title:'游客',subTitle:'点击补全游客信息',name:'',idCard:''},
-          {title:'游客',subTitle:'点击补全游客信息',name:'赵福文',idCard:'411023198905101091'},
+          {title:'游客',subTitle:'点击补全游客信息',name:'',idCard:''}
       ]
 
   },

@@ -80,18 +80,9 @@
 <!--游客信息E-->
 
 
-
-
-<input placeholder-class="phcolor" class="tui-input" name="name" placeholder="请输入姓名" maxlength="50" type="text" bindconfirm="getName"/>
-
-<button bindtap="getName">提交姓名</button>
-
-
-
-
-
-
-
+<view class="tui-btn-box">
+    <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">立即提交</tui-button>
+</view>
 
 
 <!--底部选择层-->
