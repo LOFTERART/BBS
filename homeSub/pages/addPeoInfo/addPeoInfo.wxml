@@ -46,12 +46,12 @@
         <view style="display: flex;flex-direction: row;justify-content: space-between;height: 120rpx;align-items: center" wx:for="{{info}}" wx:key="index" class="van-hairline--bottom">
 
             <view>{{item.title}}</view>
-            <view wx:if="{{item.name}}">
+            <view wx:if="{{item.name}}" style="display:flex;flex-direction: column;justify-content: center;align-items: center">
                 <view>
                     {{item.name}}
                 </view>
                 <view>
-                    {{item.idCard}}
+                    {{item.iDCard}}
                 </view>
             </view>
             <view wx:else>补全游客信息</view>
@@ -81,7 +81,7 @@
 
 
 <view class="tui-btn-box">
-    <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">立即提交</tui-button>
+    <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBM">立即提交</tui-button>
 </view>
 
 
@@ -111,7 +111,7 @@
                 <view class="tui-tips">保证信息真实性</view>
 
                 <view class="tui-btn-box">
-                    <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">完成</tui-button>
+                    <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickOk">完成</tui-button>
                 </view>
             </form>
         </view>

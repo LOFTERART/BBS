@@ -36,7 +36,7 @@ Page({
 
     addItem: function () {
         let info = this.data.info;
-        info.push({title:'游客',subTitle:'点击补全游客信息',name:'',idCard:''});
+        info.push({title:'游客',subTitle:'点击补全游客信息',name:'',iDCard:''});
         this.setData({
             info: info
         });
@@ -61,6 +61,7 @@ Page({
         console.log(e.currentTarget.dataset.index,'ddddddddd');
         this.setData({
           popupShow: true,
+            editIndex:e.currentTarget.dataset.index
       })
     },
 
@@ -113,10 +114,22 @@ Page({
 
 
 
-    clickBm: function(e) {
+    clickOk: function(e) {
         console.log(this.data.name,this.data.iDCard,'9999999');
+        this.data.info[this.data.editIndex].name=this.data.name
+        this.data.info[this.data.editIndex].iDCard=this.data.iDCard
+
+        this.setData({
+            info:this.data.info,
+            popupShow: false,
+        })
 
     },
+
+    clickBM:function () {
+        console.log(this.data.info,'this.data.info');
+
+    }
 
 
 
