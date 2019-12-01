@@ -7,6 +7,10 @@ import form  from '../../../component/utils/formValidation.js'
 
 Page({
   data: {
+
+      name:'',
+      iDCard:'',
+
       popupShow: false,
       value2: 1,
       info: [
@@ -46,6 +50,7 @@ Page({
         console.log(this.data.info,'000000');
         let info = this.data.info;
         info.pop();
+        info = this.data.info
         this.setData({
             info: info
         });
@@ -62,7 +67,9 @@ Page({
         console.log(e.currentTarget.dataset.index,'ddddddddd');
         this.setData({
           popupShow: true,
-            editIndex:e.currentTarget.dataset.index
+          editIndex:e.currentTarget.dataset.index,
+            name:'',
+            iDCard:''
       })
     },
 
@@ -96,16 +103,15 @@ Page({
     },
 
 
-
+    //获取输入姓名
     getName:function(e){
-
 
         this.setData({
             name:e.detail.value
         })
 
     },
-
+    //获取输入id
     getIdCard:function(e){
         this.setData({
             iDCard:e.detail.value
@@ -114,7 +120,7 @@ Page({
     },
 
 
-
+    //编辑完成
     clickOk: function(e) {
         console.log(this.data.name,this.data.iDCard,'9999999');
         this.data.info[this.data.editIndex].name=this.data.name
@@ -127,6 +133,7 @@ Page({
 
     },
 
+    //点击报名
     clickBM:function () {
         console.log(this.data.info,'this.data.info');
 
