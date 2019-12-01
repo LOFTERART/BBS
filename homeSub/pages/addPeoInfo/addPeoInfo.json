@@ -4,6 +4,7 @@
   "navigationBarTextStyle": "black",
   "usingComponents": {
     "tui-list-cell":"/component/list-cell/list-cell",
-    "tui-button": "/component/button/button"
+    "tui-button": "/component/button/button",
+    "tui-numberbox": "/component/numberbox/numberbox"
   }
 }

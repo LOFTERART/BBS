@@ -1,3 +1,77 @@
+
+<!--活动信息S-->
+<view style="background-color: white;color: white;padding: 20rpx;">
+
+
+    <view style="padding: 20rpx;border-radius: 20rpx;display: flex;flex-direction: column;justify-content: space-around;height: 200rpx;">
+
+        <view class="f32">
+            北京趣知游第一届乡村民宿游
+        </view>
+
+        <view class="van-hairline--bottom"></view>
+
+        <view class="f24">
+            日期:2019-12-31
+        </view>
+
+        <view class="van-hairline--bottom"></view>
+
+
+
+        <view class="tui-number-box">
+            <view class="tui-title f24">设置最小值和最大值</view>
+            <tui-numberbox min="1" max="10" value="{{value2}}" bind:change="change2"></tui-numberbox>
+        </view>
+
+    </view>
+
+
+</view>
+<!--活动信息E-->
+
+
+
+<!--游客信息S-->
+<view style="background-color: white;color: white;padding: 20rpx;">
+
+
+    <view style="padding: 20rpx;border-radius: 20rpx;display: flex;flex-direction: column;justify-content: space-around;background-color: #00cc88">
+
+        <view class="f32">
+            游客信息
+        </view>
+
+
+        <view style="display: flex;flex-direction: row;justify-content: space-between" wx:for="{{info}}">
+
+            <view>{{item.name}}</view>
+            <view>{{item.subName}}</view>
+
+
+        </view>
+
+
+
+
+
+
+
+
+
+
+
+    </view>
+
+
+</view>
+
+
+<!--游客信息E-->
+
+
+
+
 <view class="container">
   <form bindsubmit="formSubmit" bindreset="formReset">
     <tui-list-cell hover="{{false}}">

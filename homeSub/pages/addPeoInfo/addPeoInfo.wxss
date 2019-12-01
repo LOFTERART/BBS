@@ -2,6 +2,17 @@
 		padding: 20rpx 0 50rpx 0;
 	}
 
+.tui-number-box {
+    padding: 20rpx;
+    box-sizing: border-box;
+    margin-bottom: 30rpx;
+    background: #fff;
+    font-size: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 	.tui-line-cell {
 		width: 100%;
 		box-sizing: border-box;
