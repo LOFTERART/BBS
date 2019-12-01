@@ -9,7 +9,7 @@ Page({
   data: {
       value2: 1,
       info: [
-          {name:'游客',subName:'点击补全游客信息'}
+          {title:'游客',subTitle:'点击补全游客信息',name:'',idCard:''}
       ]
 
   },
@@ -35,7 +35,7 @@ Page({
 
     addItem: function () {
         let info = this.data.info;
-        info.push({name:'游客',subName:'点击补全游客信息'});
+        info.push({title:'游客',subTitle:'点击补全游客信息',name:'',idCard:''});
         this.setData({
             info: info
         });
@@ -50,6 +50,17 @@ Page({
     },
 
 
+
+    getName:function(e){
+        console.log(e.detail.value,'111');
+
+        this.data.info[0].name="zhaofuwen"
+        console.log(this.data.info,'infofofof');
+        this.setData({
+            info: this.data.info
+        });
+
+    },
 
 
 

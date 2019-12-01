@@ -45,8 +45,9 @@
 
         <view style="display: flex;flex-direction: row;justify-content: space-between;height: 80rpx;align-items: center" wx:for="{{info}}" wx:key="index">
 
-            <view>{{item.name}}</view>
-            <view>{{item.subName}}</view>
+            <view>{{item.title}}</view>
+            <view wx:if="{{item.name}}">{{item.name}}</view>
+            <view wx:else>点击补全游客信息</view>
 
 
         </view>
@@ -70,6 +71,11 @@
 <!--游客信息E-->
 
 
+
+
+<input placeholder-class="phcolor" class="tui-input" name="name" placeholder="请输入姓名" maxlength="50" type="text" bindconfirm="getName"/>
+
+<button bindtap="getName">提交姓名</button>
 
 
 <view class="container">
