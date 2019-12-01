@@ -12,6 +12,8 @@ Page({
       getIDCard:'',
 
       popupShow: false,
+
+      //数量 人数
       value2: 1,
       info: [
           {name:'',iDCard:''}
@@ -25,16 +27,24 @@ Page({
   },
 
     change2: function (e) {
-        console.log(e);
-        this.setData({
-            value2: e.detail.value
-        })
+        console.log(e.detail);
+
 
         if(e.detail.type==='reduce'){
+            this.setData({
+                value2: e.detail.value
+            })
             this.removeItem()
         }else if(e.detail.type==='plus'){
+            this.setData({
+                value2: e.detail.value
+            })
             this.addItem()
         }else if(e.detail.type==='blur'){
+            UTIL.toast("不支持手动输入数量")
+            let value = this.data.value2
+            console.log(value,'7777777');
+
             return
         }
 
