@@ -2,19 +2,19 @@
 
 import form  from '../../../component/utils/formValidation.js'
 
-
+import  UTIL from '../../../utils/util'
 
 
 Page({
   data: {
 
-      name:'',
-      iDCard:'',
+      getName:'',
+      getIDCard:'',
 
       popupShow: false,
       value2: 1,
       info: [
-          {title:'游客',subTitle:'点击补全游客信息',name:'',idCard:''}
+          {name:'',iDCard:''}
       ]
 
   },
@@ -40,7 +40,7 @@ Page({
 
     addItem: function () {
         let info = this.data.info;
-        info.push({title:'游客',subTitle:'点击补全游客信息',name:'',iDCard:''});
+        info.push({name:'',iDCard:''});
         this.setData({
             info: info
         });
@@ -63,15 +63,7 @@ Page({
 
 
 
-    clickEdit:function(e){
-        console.log(e.currentTarget.dataset.index,'ddddddddd');
-        this.setData({
-          popupShow: true,
-          editIndex:e.currentTarget.dataset.index,
-            name:'',
-            iDCard:''
-      })
-    },
+
 
     hidePopup: function () {
         this.setData({
@@ -82,49 +74,48 @@ Page({
 
 
 
-    setPlace: function (e) {
-        let index = parseInt(e.currentTarget.id.replace("place-", ""));
-        let place = e.detail.value;
-        let info = this.data.info;
-        info.details[index].placeName = place;
-        this.setData({
-            info: info
-        });
-    },
-
-    setNumber: function (e) {
-        let index = parseInt(e.currentTarget.id.replace("number-", ""));
-        let number = e.detail.value;
-        let info = this.data.info;
-        info.details[index].number = number;
-        this.setData({
-            info: info
-        });
-    },
 
 
     //获取输入姓名
     getName:function(e){
+        console.log(e.detail);
 
         this.setData({
-            name:e.detail.value
+            getName:e.detail.value
         })
 
     },
     //获取输入id
     getIdCard:function(e){
         this.setData({
-            iDCard:e.detail.value
+            getIDCard:e.detail.value
         })
 
     },
 
+    getPhone:function(e){
+        this.setData({
+            phone:e.detail.value
+        })
+    },
+
+    
+    //编辑游客信息
+    clickEdit:function(e){
+        console.log(e.currentTarget.dataset.index,'ddddddddd');
+        this.setData({
+            popupShow: true,
+            editIndex:e.currentTarget.dataset.index,
+            getName :'',
+            getIDCard:''
+        })
+    },
 
     //编辑完成
     clickOk: function(e) {
-        console.log(this.data.name,this.data.iDCard,'9999999');
-        this.data.info[this.data.editIndex].name=this.data.name
-        this.data.info[this.data.editIndex].iDCard=this.data.iDCard
+        console.log(this.data.getName,this.data.getIDCard,'9999999');
+        this.data.info[this.data.editIndex].name=this.data.getName
+        this.data.info[this.data.editIndex].iDCard=this.data.getIDCard
 
         this.setData({
             info:this.data.info,
@@ -133,9 +124,15 @@ Page({
 
     },
 
+    //删除游客信息
+    clickDel:function(e){
+
+    },
+
     //点击报名
     clickBM:function () {
         console.log(this.data.info,'this.data.info');
+        UTIL.toast("模拟提交")
 
     }
 

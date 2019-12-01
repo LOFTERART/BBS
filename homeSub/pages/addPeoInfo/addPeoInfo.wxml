@@ -3,15 +3,16 @@
 <view style="background-color: white;color: white;padding: 20rpx;">
 
 
-    <view style="padding: 20rpx;border-radius: 20rpx;display: flex;flex-direction: column;justify-content: space-around;height: 200rpx;">
+    <view style="padding: 20rpx 20rpx 20rpx;border-radius: 20rpx;display: flex;flex-direction: column;justify-content: space-around;height: 240rpx;" >
 
-        <view class="f32">
+        <view class="f32" style="font-weight: bold">
             北京趣知游第一届乡村民宿游
         </view>
 
+
         <view class="van-hairline--bottom"></view>
 
-        <view class="f24">
+        <view class="f28">
             日期:2019-12-31
         </view>
 
@@ -20,9 +21,11 @@
 
 
         <view class="tui-number-box">
-            <view class="tui-title f24">数量</view>
+            <view class="f28">数量</view>
             <tui-numberbox min="1" max="10" value="{{value2}}" bind:change="change2"></tui-numberbox>
         </view>
+
+
 
     </view>
 
@@ -31,21 +34,28 @@
 <!--活动信息E-->
 
 
+<view class="divider"></view>
 
 <!--游客信息S-->
 <view style="background-color: white;color: white;padding: 20rpx;">
 
 
-    <view style="padding: 20rpx;border-radius: 20rpx;display: flex;flex-direction: column;justify-content: space-around;background-color: #12d58b">
+    <view style="padding: 20rpx 20rpx 0 20rpx;border-radius: 20rpx;display: flex;flex-direction: column;justify-content: space-around;">
 
-        <view class="f32">
+        <view class="f32" style="font-weight: bold">
             游客信息
         </view>
 
 
-        <view style="display: flex;flex-direction: row;justify-content: space-between;height: 120rpx;align-items: center" wx:for="{{info}}" wx:key="index" class="van-hairline--bottom">
+        <view style="display: flex;flex-direction: row;justify-content: space-between;height: 120rpx;align-items: center;color: #333" wx:for="{{info}}" wx:key="index" class="van-hairline--bottom f28">
 
-            <view>{{item.title}}</view>
+            <view style="display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;" bindtap="clickDel" data-index="{{index}}">
+                <view>游客</view>
+                <view style="width: 40rpx;height: 40rpx;border-radius: 50%;background-color: #12d58b;color: white;display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: 22rpx">
+                    X
+                </view>
+            </view>
+
             <view wx:if="{{item.name}}" style="display:flex;flex-direction: column;justify-content: center;align-items: center">
                 <view>
                     {{item.name}}
@@ -54,22 +64,22 @@
                     {{item.iDCard}}
                 </view>
             </view>
-            <view wx:else>补全游客信息</view>
+            <view wx:else bindtap="clickEdit" data-index="{{index}}" >补全游客信息</view>
 
             <view bindtap="clickEdit" data-index="{{index}}">编辑</view>
 
 
         </view>
 
+        <view style="height: 80rpx;display: flex;flex-direction: column;justify-content: center;">
 
+            <view class="tui-line-cell">
+                <view class="tui-title f28">联系手机</view>
+                <input placeholder-class="phcolor" class="tui-input"  value="{{phone}}" placeholder="请输入联系人手机号" maxlength="11" type="number" bindblur="getPhone" />
 
+            </view>
 
-
-
-
-
-
-
+        </view>
 
     </view>
 
@@ -79,6 +89,7 @@
 
 <!--游客信息E-->
 
+<view class="divider"></view>
 
 <view class="tui-btn-box">
     <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBM">立即提交</tui-button>
@@ -96,7 +107,7 @@
                 <tui-list-cell hover="{{false}}">
                     <view class="tui-line-cell">
                         <view class="tui-title">真实姓名</view>
-                        <input placeholder-class="phcolor" class="tui-input" name="name" placeholder="请输入姓名" maxlength="50" type="text" bindblur="getName" />
+                        <input placeholder-class="phcolor" class="tui-input"  value="{{getName}}" placeholder="请输入姓名" maxlength="50" type="text" bindblur="getName" />
 
                     </view>
                 </tui-list-cell>
@@ -104,7 +115,7 @@
                 <tui-list-cell hover="{{false}}">
                     <view class="tui-line-cell">
                         <view class="tui-title">身份证号</view>
-                        <input placeholder-class="phcolor" class="tui-input" name="idcard" placeholder="请输入身份证号码" maxlength="50" type="text" bindblur="getIdCard"/>
+                        <input placeholder-class="phcolor" class="tui-input"  value="{{getIDCard}}" placeholder="请输入身份证号码" maxlength="50" type="text" bindblur="getIdCard"/>
                     </view>
                 </tui-list-cell>
 
