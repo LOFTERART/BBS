@@ -58,7 +58,7 @@
 
             <view wx:if="{{item.name}}" style="display:flex;flex-direction: column;justify-content: center;align-items: center">
                 <view>
-                    {{item.name}}
+                    {{item.name}} <text style="color: red">{{item.sex==='1'?'男':'女'}}</text>
                 </view>
                 <view>
                     {{item.iDCard}}
