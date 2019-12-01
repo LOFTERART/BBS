@@ -77,6 +77,7 @@
 .tui-popup-box {
     position: relative;
     padding: 30rpx 0 100rpx 0;
+    height: 1000rpx;
 }
 
 .tui-popup-btn {

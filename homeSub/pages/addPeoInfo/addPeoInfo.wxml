@@ -101,31 +101,44 @@
 
     <view class="tui-popup-box">
 
-        <view class="container">
-            <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="tui-popup-scroll">
+            <view class="container">
+                <form bindsubmit="formSubmit" bindreset="formReset">
 
-                <tui-list-cell hover="{{false}}">
-                    <view class="tui-line-cell">
-                        <view class="tui-title">真实姓名</view>
-                        <input placeholder-class="phcolor" class="tui-input"  value="{{getName}}" placeholder="请输入姓名" maxlength="50" type="text" bindblur="getName" />
+                    <tui-list-cell hover="{{false}}">
+                        <view class="tui-line-cell">
+                            <view class="tui-title">真实姓名</view>
+                            <input placeholder-class="phcolor" class="tui-input"  value="{{getName}}" placeholder="请输入姓名" maxlength="50" type="text" bindblur="getName" adjust-position="{{true}}"/>
 
+                            <radio-group class="radio-group" name="sex">
+                                <label class="tui-radio">
+                                    <radio value="1" color="#3CCB9B" />男
+                                </label>
+                                <label class="tui-radio">
+                                    <radio value="2" color="#3CCB9B" />女
+                                </label>
+                            </radio-group>
+
+
+                        </view>
+                    </tui-list-cell>
+
+                    <tui-list-cell hover="{{false}}">
+                        <view class="tui-line-cell">
+                            <view class="tui-title">身份证号</view>
+                            <input placeholder-class="phcolor" class="tui-input"  value="{{getIDCard}}" placeholder="请输入身份证号码" maxlength="50" type="text" bindblur="getIdCard" adjust-position="{{true}}"/>
+                        </view>
+                    </tui-list-cell>
+
+                    <view class="tui-tips">保证信息真实性</view>
+
+                    <view class="tui-btn-box">
+                        <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickOk">完成</tui-button>
                     </view>
-                </tui-list-cell>
-
-                <tui-list-cell hover="{{false}}">
-                    <view class="tui-line-cell">
-                        <view class="tui-title">身份证号</view>
-                        <input placeholder-class="phcolor" class="tui-input"  value="{{getIDCard}}" placeholder="请输入身份证号码" maxlength="50" type="text" bindblur="getIdCard"/>
-                    </view>
-                </tui-list-cell>
-
-                <view class="tui-tips">保证信息真实性</view>
-
-                <view class="tui-btn-box">
-                    <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickOk">完成</tui-button>
-                </view>
-            </form>
+                </form>
+            </view>
         </view>
+
 
 
         <tui-icon name="close-fill" color="#999" class="tui-icon-close" size="20" bindtap="hidePopup"></tui-icon>
