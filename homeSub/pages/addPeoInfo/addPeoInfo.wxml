@@ -51,7 +51,7 @@
 
             <view style="display: flex;flex-direction: column;justify-content: space-between;align-items: flex-start;" bindtap="clickDel" data-index="{{index}}">
                 <view>游客</view>
-                <view style="width: 40rpx;height: 40rpx;border-radius: 50%;background-color: #12d58b;color: white;display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: 22rpx">
+                <view style="width: 30rpx;height: 30rpx;border-radius: 50%;background-color: #12d58b;color: white;display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: 22rpx" >
                     X
                 </view>
             </view>
@@ -71,7 +71,7 @@
 
         </view>
 
-        <view style="height: 80rpx;display: flex;flex-direction: column;justify-content: center;">
+        <view style="height: 100rpx;display: flex;flex-direction: column;justify-content: center;" class="van-hairline--bottom">
 
             <view class="tui-line-cell">
                 <view class="tui-title f28">联系手机</view>

@@ -99,7 +99,7 @@ Page({
         })
     },
 
-    
+
     //编辑游客信息
     clickEdit:function(e){
         console.log(e.currentTarget.dataset.index,'ddddddddd');
@@ -126,6 +126,14 @@ Page({
 
     //删除游客信息
     clickDel:function(e){
+
+        const idx = e.currentTarget.dataset.index;
+        console.log(e.target.dataset.idx);
+        this.data.info.splice(idx, 1);
+        var info = this.data.info;
+        this.setData({
+            info: info
+        })
 
     },
 
