@@ -43,7 +43,7 @@
         </view>
 
 
-        <view style="display: flex;flex-direction: row;justify-content: space-between" wx:for="{{info}}" wx:key="index">
+        <view style="display: flex;flex-direction: row;justify-content: space-between;height: 80rpx;align-items: center" wx:for="{{info}}" wx:key="index">
 
             <view>{{item.name}}</view>
             <view>{{item.subName}}</view>
