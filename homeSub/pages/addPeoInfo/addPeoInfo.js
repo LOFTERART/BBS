@@ -43,6 +43,7 @@ Page({
     },
 
     removeItem: function () {
+        console.log(this.data.info,'000000');
         let info = this.data.info;
         info.pop();
         this.setData({
