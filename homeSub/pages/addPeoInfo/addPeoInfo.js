@@ -32,8 +32,10 @@ Page({
 
         if(e.detail.type==='reduce'){
             this.removeItem()
-        }else {
+        }else if(e.detail.type==='plus'){
             this.addItem()
+        }else if(e.detail.type==='blur'){
+            return
         }
 
     },
@@ -50,7 +52,6 @@ Page({
         console.log(this.data.info,'000000');
         let info = this.data.info;
         info.pop();
-        info = this.data.info
         this.setData({
             info: info
         });
@@ -127,7 +128,7 @@ Page({
     //删除游客信息
     clickDel:function(e){
 
-        const idx = e.currentTarget.dataset.index;
+        let idx = e.currentTarget.dataset.index;
         console.log(e.target.dataset.idx);
         this.data.info.splice(idx, 1);
         var info = this.data.info;
