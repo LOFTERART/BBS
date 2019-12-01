@@ -110,9 +110,9 @@
                             <view class="tui-title">真实姓名</view>
                             <input placeholder-class="phcolor" class="tui-input"  value="{{getName}}" placeholder="请输入姓名" maxlength="50" type="text" bindblur="getName" adjust-position="{{true}}"/>
 
-                            <radio-group class="radio-group" name="sex">
+                            <radio-group class="radio-group" name="sex" bindchange="radioChange">
                                 <label class="tui-radio">
-                                    <radio value="1" color="#3CCB9B" />男
+                                    <radio value="1" color="#3CCB9B" checked/>男
                                 </label>
                                 <label class="tui-radio">
                                     <radio value="2" color="#3CCB9B" />女

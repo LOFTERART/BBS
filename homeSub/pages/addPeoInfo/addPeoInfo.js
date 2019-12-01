@@ -16,7 +16,7 @@ Page({
       //数量 人数
       value2: 1,
       info: [
-          {name:'',iDCard:''}
+          {name:'',iDCard:'',sex:'1'}
       ]
 
   },
@@ -103,10 +103,17 @@ Page({
         })
 
     },
-
+    //获取手机号
     getPhone:function(e){
         this.setData({
             phone:e.detail.value
+        })
+    },
+
+    radioChange: function (e) {
+        console.log('radio发生change事件，携带value值为：', e.detail.value)
+        this.setData({
+           sex:e.detail.value
         })
     },
 
@@ -118,16 +125,16 @@ Page({
             popupShow: true,
             editIndex:e.currentTarget.dataset.index,
             getName :'',
-            getIDCard:''
+            getIDCard:'',
+            sex:'1'
         })
     },
 
     //编辑完成
     clickOk: function(e) {
-        console.log(this.data.getName,this.data.getIDCard,'9999999');
         this.data.info[this.data.editIndex].name=this.data.getName
         this.data.info[this.data.editIndex].iDCard=this.data.getIDCard
-
+        this.data.info[this.data.editIndex].sex=this.data.sex
         this.setData({
             info:this.data.info,
             popupShow: false,
