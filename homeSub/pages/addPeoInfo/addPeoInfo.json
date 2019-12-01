@@ -5,6 +5,8 @@
   "usingComponents": {
     "tui-list-cell":"/component/list-cell/list-cell",
     "tui-button": "/component/button/button",
-    "tui-numberbox": "/component/numberbox/numberbox"
+    "tui-numberbox": "/component/numberbox/numberbox",
+    "tui-bottom-popup": "/component/bottom-popup/bottom-popup",
+    "tui-icon": "/component/icon/icon"
   }
 }

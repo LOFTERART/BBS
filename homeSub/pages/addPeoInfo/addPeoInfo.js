@@ -7,6 +7,7 @@ import form  from '../../../component/utils/formValidation.js'
 
 Page({
   data: {
+      popupShow: false,
       value2: 1,
       info: [
           {title:'游客',subTitle:'点击补全游客信息',name:'',idCard:''},
@@ -66,6 +67,18 @@ Page({
 
 
 
+
+    clickEdit:function(){
+      this.setData({
+          popupShow: true,
+      })
+    },
+
+    hidePopup: function () {
+        this.setData({
+            popupShow: false
+        })
+    },
 
 
 

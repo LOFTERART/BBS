@@ -56,7 +56,7 @@
             </view>
             <view wx:else>点击补全游客信息</view>
 
-            <view>编辑</view>
+            <view bindtap="clickEdit">编辑</view>
 
 
         </view>
@@ -87,44 +87,48 @@
 <button bindtap="getName">提交姓名</button>
 
 
-<view class="container">
-  <form bindsubmit="formSubmit" bindreset="formReset">
-    <tui-list-cell hover="{{false}}">
-      <view class="tui-line-cell">
-        <view class="tui-title">姓名</view>
-        <input placeholder-class="phcolor" class="tui-input" name="name" placeholder="请输入姓名" maxlength="50" type="text" />
-        <radio-group class="radio-group" name="sex">
-          <label class="tui-radio">
-            <radio value="1" color="#3CCB9B" />男
-          </label>
-          <label class="tui-radio">
-            <radio value="2" color="#3CCB9B" />女
-          </label>
-        </radio-group>
-      </view>
-    </tui-list-cell>
-    <tui-list-cell hover="{{false}}">
-      <view class="tui-line-cell">
-        <view class="tui-title">手机号</view>
-        <input placeholder-class="phcolor" class="tui-input" name="mobile" placeholder="请输入手机号" maxlength="50" type="text" />
-      </view>
-    </tui-list-cell>
 
 
 
-    <tui-list-cell hover="{{false}}">
-      <view class="tui-line-cell">
-        <view class="tui-title">身份证号码</view>
-        <input placeholder-class="phcolor" class="tui-input" name="idcard" placeholder="请输入身份证号码" maxlength="50" type="text" />
-      </view>
-    </tui-list-cell>
 
 
 
-    <view class="tui-tips">保证信息真实性</view>
 
-    <view class="tui-btn-box">
-        <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">立即报名</tui-button>
+<!--底部选择层-->
+<tui-bottom-popup show="{{popupShow}}" tui-popup-class="tui-popup" bind:close="hidePopup">
+
+    <view class="tui-popup-box">
+
+        <view class="container">
+            <form bindsubmit="formSubmit" bindreset="formReset">
+
+                <tui-list-cell hover="{{false}}">
+                    <view class="tui-line-cell">
+                        <view class="tui-title">真实姓名</view>
+                        <input placeholder-class="phcolor" class="tui-input" name="name" placeholder="请输入姓名" maxlength="50" type="text" />
+
+                    </view>
+                </tui-list-cell>
+
+                <tui-list-cell hover="{{false}}">
+                    <view class="tui-line-cell">
+                        <view class="tui-title">身份证号</view>
+                        <input placeholder-class="phcolor" class="tui-input" name="idcard" placeholder="请输入身份证号码" maxlength="50" type="text" />
+                    </view>
+                </tui-list-cell>
+
+                <view class="tui-tips">保证信息真实性</view>
+
+                <view class="tui-btn-box">
+                    <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle"  class="tui-flex-1" bindtap="clickBm">完成</tui-button>
+                </view>
+            </form>
+        </view>
+
+
+        <tui-icon name="close-fill" color="#999" class="tui-icon-close" size="20" bindtap="hidePopup"></tui-icon>
     </view>
-  </form>
-</view>
+</tui-bottom-popup>
+<!--底部选择层-->
+
+
