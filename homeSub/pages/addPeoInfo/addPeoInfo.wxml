@@ -36,7 +36,7 @@
 <view style="background-color: white;color: white;padding: 20rpx;">
 
 
-    <view style="padding: 20rpx;border-radius: 20rpx;display: flex;flex-direction: column;justify-content: space-around;background-color: #00cc88">
+    <view style="padding: 20rpx;border-radius: 20rpx;display: flex;flex-direction: column;justify-content: space-around;background-color: #12d58b">
 
         <view class="f32">
             游客信息
@@ -54,7 +54,7 @@
                     {{item.idCard}}
                 </view>
             </view>
-            <view wx:else>点击补全游客信息</view>
+            <view wx:else>补全游客信息</view>
 
             <view bindtap="clickEdit">编辑</view>
 
