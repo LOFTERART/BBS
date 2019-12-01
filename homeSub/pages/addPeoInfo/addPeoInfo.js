@@ -9,7 +9,8 @@ Page({
   data: {
       value2: 1,
       info: [
-          {title:'游客',subTitle:'点击补全游客信息',name:'',idCard:''}
+          {title:'游客',subTitle:'点击补全游客信息',name:'',idCard:''},
+          {title:'游客',subTitle:'点击补全游客信息',name:'赵福文',idCard:'411023198905101091'},
       ]
 
   },
@@ -54,7 +55,8 @@ Page({
     getName:function(e){
         console.log(e.detail.value,'111');
 
-        this.data.info[0].name="zhaofuwen"
+        this.data.info[0].name="闫莎"
+        this.data.info[0].idCard="411023198905101091"
         console.log(this.data.info,'infofofof');
         this.setData({
             info: this.data.info

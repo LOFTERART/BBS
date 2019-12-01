@@ -43,11 +43,20 @@
         </view>
 
 
-        <view style="display: flex;flex-direction: row;justify-content: space-between;height: 80rpx;align-items: center" wx:for="{{info}}" wx:key="index">
+        <view style="display: flex;flex-direction: row;justify-content: space-between;height: 120rpx;align-items: center" wx:for="{{info}}" wx:key="index" class="van-hairline--bottom">
 
             <view>{{item.title}}</view>
-            <view wx:if="{{item.name}}">{{item.name}}</view>
+            <view wx:if="{{item.name}}">
+                <view>
+                    {{item.name}}
+                </view>
+                <view>
+                    {{item.idCard}}
+                </view>
+            </view>
             <view wx:else>点击补全游客信息</view>
+
+            <view>编辑</view>
 
 
         </view>
