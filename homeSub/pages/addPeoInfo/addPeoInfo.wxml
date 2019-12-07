@@ -47,7 +47,8 @@
         </view>
 
         <!--金刚位置 S-->
-        <view class="type-container">
+<!--
+ <view class="type-container">
             <scroll-view  scroll-x="{{true}}" class="type-navbar" >
                 <view  class="courseStyle" wx:for="{{contactsList}}" wx:key="index" bindtap="clickName"  data-id="{{item.id}}" data-iteminfo="{{item}}" >
                     <view  class="f28 van-ellipsis" style="width: 220rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;height: 80rpx;border: 1rpx solid #ccc">
@@ -56,6 +57,8 @@
                 </view>
             </scroll-view>
         </view>
+
+-->
         <!--金刚位置 E-->
 
 

@@ -24,10 +24,10 @@ Page({
 
 
   onLoad: function(options) {
-    
+
     console.log(options,"oppppp")
 
-    this.getPeople(options.id);
+    // this.getPeople(options.id);
     this.setData({
       name:options.name,
       date: options.date
@@ -80,9 +80,6 @@ Page({
 
 
     clickName:function(e){
-        this.setData({
-            value2: 0
-        })
         let info = this.data.info;
         info.push(e.currentTarget.dataset.iteminfo);
         this.setData({
@@ -191,21 +188,24 @@ Page({
 
     //点击报名
     clickBM:function () {
-      console.log(this.data.info, 'this.data.info', this.data.phone);
-        UTIL.toast("模拟提交")
 
-      WXAPI.ActivityaddpInfo({
-        activityId:  9,
-        contactsList: this.data.info,
-        phone: this.data.phone
-      }).then(res => {
-        if (res.code === 200) {
-          console.log(res, 'res');
+      if (!this.data.phone){
+          UTIL.toast("请填写联系人手机号")
+      }else {
+          WXAPI.ActivityaddpInfo({
+              activityId:  9,
+              contactsList: this.data.info,
+              phone: this.data.phone
+          }).then(res => {
+              if (res.code === 200) {
+                  UTIL.toast(res.message)
+              } else {
+                  UTIL.toast(res.message)
+              }
+          })
+      }
 
-        } else {
-          UTIL.toast(res.message)
-        }
-      })
+
 
 
     }
