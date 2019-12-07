@@ -6,14 +6,14 @@
     <view style="padding: 20rpx 20rpx 20rpx;border-radius: 20rpx;display: flex;flex-direction: column;justify-content: space-around;height: 240rpx;" >
 
         <view class="f32" style="font-weight: bold">
-            北京趣知游第一届乡村民宿游
+            {{name}}
         </view>
 
 
         <view class="van-hairline--bottom"></view>
 
         <view class="f28">
-            日期:2019-12-31
+            活动日期:{{date}}
         </view>
 
         <view class="van-hairline--bottom"></view>
@@ -56,12 +56,12 @@
                 </view>
             </view>
 
-            <view wx:if="{{item.name}}" style="display:flex;flex-direction: column;justify-content: center;align-items: center">
+            <view wx:if="{{item.contactsName}}" style="display:flex;flex-direction: column;justify-content: center;align-items: center">
                 <view>
-                    {{item.name}} <text style="color: red">{{item.sex==='1'?'男':'女'}}</text>
+                    {{item.contactsName}} <text style="color: red">{{item.contactsSex==='1'?'男':'女'}}</text>
                 </view>
                 <view>
-                    {{item.iDCard}}
+                    {{item.contactsIdCard}}
                 </view>
             </view>
             <view wx:else bindtap="clickEdit" data-index="{{index}}" >补全游客信息</view>

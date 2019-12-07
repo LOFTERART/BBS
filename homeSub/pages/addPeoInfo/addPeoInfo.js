@@ -3,7 +3,7 @@
 import form  from '../../../component/utils/formValidation.js'
 
 import  UTIL from '../../../utils/util'
-
+const WXAPI = require('../../../API/API')
 
 Page({
   data: {
@@ -17,15 +17,42 @@ Page({
       //数量 人数
       value2: 1,
       info: [
-          {name:'',iDCard:'',sex:'1'}
+        { contactsName: '', contactsIdCard: '', contactsSex:'1'}
       ]
 
   },
 
 
   onLoad: function(options) {
+    
+    console.log(options,"oppppp")
+
+    this.getPeople(options.id);
+    this.setData({
+      name:options.name,
+      date: options.date
+    })
 
   },
+
+// 获取已经报名人信息
+  getPeople:function(id){
+    
+    WXAPI.ActivityaddpPeopleList({
+      activityId: id
+    }).then(res => {
+      if (res.code === 200) {
+        console.log(res, 'user');
+      } else {
+        UTIL.toast(res.message)
+      }
+    })
+
+  },
+
+
+
+
 
     change2: function (e) {
         console.log(e.detail);
@@ -50,7 +77,7 @@ Page({
 
     addItem: function () {
         let info = this.data.info;
-        info.push({name:'',iDCard:''});
+      info.push({ contactsName: '', contactsIdCard: '', contactsSex:'1'});
         this.setData({
             info: info
         });
@@ -80,7 +107,6 @@ Page({
     //获取输入姓名
     getName:function(e){
         console.log(e.detail);
-
         this.setData({
             getName:e.detail.value
         })
@@ -102,7 +128,7 @@ Page({
 
     radioChange: function (e) {
         this.setData({
-           sex:e.detail.value
+          sex:e.detail.value
         })
     },
 
@@ -121,9 +147,9 @@ Page({
 
     //编辑完成
     clickOk: function(e) {
-        this.data.info[this.data.editIndex].name=this.data.getName
-        this.data.info[this.data.editIndex].iDCard=this.data.getIDCard
-        this.data.info[this.data.editIndex].sex=this.data.sex
+      this.data.info[this.data.editIndex].contactsName=this.data.getName
+      this.data.info[this.data.editIndex].contactsIdCard=this.data.getIDCard
+      this.data.info[this.data.editIndex].contactsSex=this.data.sex
         this.setData({
             info:this.data.info,
             popupShow: false,
@@ -149,10 +175,25 @@ Page({
 
     //点击报名
     clickBM:function () {
-        console.log(this.data.info,'this.data.info');
+      console.log(this.data.info, 'this.data.info', this.data.phone);
         UTIL.toast("模拟提交")
 
+      WXAPI.ActivityaddpInfo({
+        activityId:  9,
+        contactsList: this.data.info,
+        phone: this.data.phone
+      }).then(res => {
+        if (res.code === 200) {
+          console.log(res, 'res');
+
+        } else {
+          UTIL.toast(res.message)
+        }
+      })
+
+
     }
+
 
 
 

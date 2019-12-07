@@ -111,6 +111,20 @@ module.exports = {
     },
 
 
+  //趣知游 活动报名
+  ActivityaddpInfo: (data) => {
+    return request('https://www.quzhiyou.cn/wechat/enroll/inser', 'POST', data, true)
+  },
+
+  //趣知游 活动用户获取
+  ActivityaddpPeopleList: (data) => {
+    return request('https://www.quzhiyou.cn/wechat/enroll/selectEnrollInfo', 'GET', data, true)
+  },
+
+
+
+
+
     //趣知游 活动评论
     ActivityComments:(data)=>{
         return request('https://www.quzhiyou.cn/wechat/evaluate/selectEvaluateListByActivityId', 'GET',data,true)

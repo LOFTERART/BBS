@@ -1,3 +1,4 @@
+<import src="/component/wxParse/wxParse.wxml"/>
 <view class="container">
     <!--header-->
     <view class="tui-header-box" style="height:{{height}}px;background:rgba(255,255,255,{{opcity}})">
@@ -16,7 +17,7 @@
         <swiper autoplay="true" interval="5000" duration="150" circular="{{true}}" style="height:{{scrollH}}px" bindchange="bannerChange">
             <block wx:for="{{banner}}" wx:key="index">
                 <swiper-item data-index="{{index}}" catchtap="previewImage">
-                    <image src="{{item}}" class="tui-slide-image" style="height:{{scrollH}}px" lazy-load="{{true}}"/>
+                    <image src="{{item.url}}" class="tui-slide-image" style="height:{{scrollH}}px" lazy-load="{{true}}"/>
                 </swiper-item>
             </block>
         </swiper>
@@ -32,7 +33,7 @@
                     <view>￥<text class="tui-price">{{activityInfo.price}}</text>.00</view>
                     <tui-tag size="small" plain="{{true}}" type="warning" shape="circle" tui-tag-class="tui-scale tui-tag-pro">{{activityInfo.priceTag}}</tui-tag>
                 </view>
-                <view class="tui-collection tui-size" bindtap="collecting" data-id="{{activityInfo.id}}">
+                <view class="tui-collection tui-size" bindtap="collecting" data-id="{{activityInfo.activityId}}">
                     <tui-icon name="{{activityInfo.collected?'like-fill':'like'}}" color="{{activityInfo.collected?'#ff201f':'#333'}}" size="20" tui-icon-class="tui-icon-collection"></tui-icon>
                     <view class="tui-scale {{activityInfo.collected?'tui-red':''}}">收藏</view>
                 </view>
@@ -42,7 +43,7 @@
                 <text class="tui-line-through">￥{{activityInfo.originalPrice}}</text>
             </view>
             <view class="tui-pro-titbox">
-                <view class="tui-pro-title f28">{{activityInfo.name}}</view>
+                <view class="tui-pro-title f28">{{activityInfo.activityName}}</view>
                 <button open-type="share" class="tui-share-btn tui-share-position">
                     <tui-tag type="gray" tui-tag-class="tui-tag-share tui-size" shape="circleLeft" size="small">
                         <tui-icon name="partake" color="#999" size="15"></tui-icon>
@@ -53,9 +54,9 @@
             <view class="tui-padding">
                 <view class="tui-sub-title tui-size tui-gray">{{activityInfo.subName}}</view>
                 <view class="tui-sale-info tui-size tui-gray">
-                    <view>人数：{{activityInfo.peoNun}}人</view>
-                    <view>已报{{activityInfo.signNum}}人</view>
-                    <view>已收藏{{activityInfo.CollectionNum}}人</view>
+                    <view>人数：{{activityInfo.totalNum}}人</view>
+                    <view>已报{{activityInfo.memNum}}人</view>
+                    <view>已收藏{{activityInfo.collectionNum}}人</view>
                 </view>
             </view>
         </view>
@@ -70,7 +71,7 @@
                 <view class="tui-bold tui-cell-title">福利</view>
                 <view>
 
-                    <blcok wx:for="{{activityInfo.welfare}}" wx:key="index">
+                    <blcok wx:for="{{activityInfo.welfareList}}" wx:key="index">
 
                         <view class="tui-promotion-box">
                             <tui-tag size="small" type="warning" plain="{{true}}" tui-tag-class="tui-inline-block">{{item.tag}}</tui-tag>
@@ -88,23 +89,23 @@
         <view class="tui-basic-info tui-mtop tui-radius-all">
             <view class="tui-list-cell" >
                 <view class="tui-bold tui-cell-title">报名时间</view>
-                <view class="tui-selected-box">{{activityInfo.signTime}}</view>
+                <view class="tui-selected-box">{{activityInfo.signStartTime}}</view>
             </view>
 
             <view class="tui-list-cell" >
                 <view class="tui-bold tui-cell-title">活动时间</view>
-                <view class="tui-selected-box">{{activityInfo.activeTime}}</view>
+                <view class="tui-selected-box">{{activityInfo.signEndTime}}</view>
             </view>
-            <view class="tui-list-cell" bindtap="clickAddressFrom" data-lng="{{activityInfo.gatherAdd.lng}}" data-lat="{{activityInfo.gatherAdd.lat}}" data-name="{{activityInfo.gatherAdd.name}}" data-address="{{activityInfo.gatherAdd.address}}">
+            <view class="tui-list-cell" bindtap="clickAddressFrom" data-lng="{{activityInfo.gatherAddList[0].lng}}" data-lat="{{activityInfo.gatherAddList[0].lat}}" data-name="{{activityInfo.gatherAddList[0].addressName}}" data-address="{{activityInfo.gatherAddList[0].address}}">
                 <view class="tui-bold tui-cell-title">集合地点</view>
                 <view class="tui-addr-box">
-                    <view class="tui-addr-item">{{activityInfo.gatherAdd.address}}</view>
+                    <view class="tui-addr-item">{{activityInfo.gatherAddList[0].addressName}}</view>
                     <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>
                 </view>
             </view>
-            <view class="tui-list-cell tui-last" bindtap="clickAddressTo" data-lng="{{activityInfo.destination.lng}}" data-lat="{{activityInfo.destination.lat}}" data-name="{{activityInfo.destination.name}}" data-address="{{activityInfo.destination.address}}">
+            <view class="tui-list-cell tui-last" bindtap="clickAddressTo" data-lng="{{activityInfo.destinationList[0].lng}}" data-lat="{{activityInfo.destinationList[0].lat}}" data-name="{{activityInfo.destinationList[0].addressName}}" data-address="{{activityInfo.destinationList[0].address}}">
                 <view class="tui-bold tui-cell-title">目的地</view>
-                <view class="tui-selected-box">{{activityInfo.destination.address}}</view>
+                <view class="tui-selected-box">{{activityInfo.destinationList[0].addressName}}</view>
                 <tui-icon name="location" size="20" class="tui-right" color="#666"></tui-icon>
             </view>
 
@@ -123,6 +124,7 @@
         </view>
 
     <!-- 评价S-->
+ <!-- 
      <view class="tui-cmt-box tui-mtop tui-radius-all">
             <view class="tui-list-cell tui-last tui-between">
                 <view class="tui-bold tui-cell-title">评价</view>
@@ -145,6 +147,7 @@
                 <tui-tag type="black" plain="{{true}}" tui-tag-class="tui-tag-cmt" bindtap="common">查看全部评价</tui-tag>
             </view>
         </view>
+  -->
      <!-- 评价E-->
 
         <view class="tui-nomore-box">
@@ -153,25 +156,19 @@
 
 
         <view style="padding: 20rpx">
-            活动介绍信息
-            公司介绍相关信息
-            赞助商介绍信息
-            微信群信息
-            旅游信息
-            开始时间
-            结束时间
-            注意事项
-            等等
-            图文详情介绍本届活动
 
-
-            邀请人给助力 前50名 免费参加旅游
+        <template is="wxParse" data="{{wxParseData:article.nodes}}" />  
+            
         </view>
 
 
+      <!-- 
         <view class="tui-product-img tui-radius-all">
             <image src="https://www.thorui.cn/img/detail/{{index+1}}.jpg" wx:for="{{20}}" wx:key="index" mode="widthFix"></image>
         </view>
+       -->
+
+       
         <tui-nomore text="已经到最底了" visible="{{true}}" bgcolor="#f7f7f7"></tui-nomore>
         <view class="tui-safearea-bottom"></view>
     </view>
@@ -219,19 +216,18 @@
 
             <scroll-view scroll-y class="tui-popup-scroll">
                 <view class="tui-scrollview-box">
-                    <view class="tui-bold tui-attr-title">意外险</view>
-                    <view class="tui-attr-box">
-                        <view class="tui-attr-item tui-attr-active">
-                            XXX保险公司提供
-                        </view>
-                    </view>
-                    <view class="tui-bold tui-attr-title">新品赠送</view>
-                    <view class="tui-attr-box">
 
+                <block wx:for="{{activityInfo.welfareList}}" wx:key="index">
+                
+                    <view class="tui-bold tui-attr-title">{{item.tag}}</view>
+                    <view class="tui-attr-box">
                         <view class="tui-attr-item tui-attr-active">
-                            郑家老酒200ML
+                            {{item.des}}
                         </view>
                     </view>
+
+                </block>
+
 
                 </view>
             </scroll-view>

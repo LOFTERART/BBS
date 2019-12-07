@@ -2,6 +2,7 @@ import UTIL from "../../../utils/util";
 const WXAPI = require('../../../API/API')
 import create from '../../../utils/omi/create'
 import store from '../../../store/index'
+var WxParse = require('../../../component/wxParse/wxParse.js');
 create(store,{
 
     data: {
@@ -10,55 +11,18 @@ create(store,{
         scrollH: 0, //滚动总高度
         opcity: 0,
         iconOpcity: 0.5,
-        banner: [
-            "https://www.thorui.cn/img/product/11.jpg",
-            "https://www.thorui.cn/img/product/2.png",
-            "https://www.thorui.cn/img/product/33.jpg",
-            "https://www.thorui.cn/img/product/4.png",
-            "https://www.thorui.cn/img/product/55.jpg",
-            "https://www.thorui.cn/img/product/6.png",
-            "https://www.thorui.cn/img/product/7.jpg",
-            "https://www.thorui.cn/img/product/8.jpg"
-        ],
+        banner: [],//banner
         bannerIndex: 0,
 
         //活动详情
-        activityInfo:{
-            id:1,
-            collected:false, //是否收藏
-            price:99, //现价
-            priceTag:'首届',
-            originalPrice:199, //原价
-            name:'趣知游第一届香山旅游活动召集令',
-            subName:'2019年 河南人在北京同乡会',
-            peoNun:50, //人数
-            signNum:20, //人数
-            CollectionNum:30, //收藏数
-            welfare:[
-                {id:1,tag:'意外保险',des:'旅游意外险'},
-                {id:2,tag:'新品赠送',des:'酒样品200ML'},
-                {id:2,tag:'新品赠送',des:'酒样品200ML'},
-            ],
-            signTime:'2019-10-17 -2019-10-31',//报名时间
-            activeTime:'2019-11-31全天',//活动时间
-            gatherAdd:{address:'北京海淀区人民大学',lat:'39.975529',lng:'116.322402',name:'人民大学'}, //集合地
-            destination:{address:'北京香山公园的具体地址',lat:'39.975529',lng:'116.322402',name:'香山公园'},//目的地
-            tags:['河南同乡','免费一日游','吃喝全包','客车接送'],
-            htmlCon:'<h1>11</h1>'
-        },
+        activityInfo:{},
 
 
         //评价list
         evaluateList:[
             {id:1,name:'杨过',ava:'url',from:'来自河南许昌',content:'XXXXXXXX'}
         ],
-
-
-
-
-
         popupShow: false,
-
 
         value: 1,
     },
@@ -84,19 +48,24 @@ create(store,{
         this.getActivityDetail(options.id);
     //    模拟获取全部评论
 
-        this.getActivityComments(options.id);
+        // this.getActivityComments(options.id);
 
     },
 
    //获取活动详情
     getActivityDetail:function(id){
         WXAPI.ActivityDetail({
-            activityId:Number(id),
+            activityId:Number(id)||9,
             'userId':wx.getStorageSync('userId')
         }).then(res=>{
-            console.log(res,'detail');
             if(res.code===200){
                 console.log(res,'res');
+              this.setData({
+                banner:res.data.banner,
+                activityInfo:res.data.activityInfo
+              })
+              WxParse.wxParse('article', 'html', res.data.activityInfo.htmlCon, this, 5);
+
             }else {
                 UTIL.toast(res.message)
             }
@@ -106,7 +75,7 @@ create(store,{
     //    模拟获取全部评论
     getActivityComments:function(id){
         WXAPI.ActivityComments({
-            activityId:id,
+            activityId:id||7,
         }).then(res=>{
             if(res.code===200){
                 console.log(res,'全部评论');
@@ -232,7 +201,7 @@ create(store,{
 
     clickBm:function(){
         wx.navigateTo({
-          url: '/homeSub/pages/addPeoInfo/addPeoInfo'
+          url: '/homeSub/pages/addPeoInfo/addPeoInfo?id=' + this.data.activityInfo.activityId + '&name=' + this.data.activityInfo.activityName + "&date="+this.data.activityInfo.signEndTime
         })
     },
     submit() {

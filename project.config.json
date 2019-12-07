@@ -4,10 +4,11 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"enhance": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
@@ -127,6 +128,62 @@
 					"id": -1,
 					"name": "homeSub/pages/addPeoInfo/addPeoInfo",
 					"pathName": "homeSub/pages/addPeoInfo/addPeoInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/addPeoInfo/addPeoInfo",
+					"pathName": "homeSub/pages/addPeoInfo/addPeoInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/moreActivity/moreActivity",
+					"pathName": "homeSub/pages/moreActivity/moreActivity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/moreActivity/moreActivity",
+					"pathName": "homeSub/pages/moreActivity/moreActivity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/homeDetail/homeDetail",
+					"pathName": "homeSub/pages/homeDetail/homeDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/homeDetail/homeDetail",
+					"pathName": "homeSub/pages/homeDetail/homeDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/homeDetail/homeDetail",
+					"pathName": "homeSub/pages/homeDetail/homeDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/homeDetail/homeDetail",
+					"pathName": "homeSub/pages/homeDetail/homeDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/homeDetail/homeDetail",
+					"pathName": "homeSub/pages/homeDetail/homeDetail",
 					"query": "",
 					"scene": null
 				},

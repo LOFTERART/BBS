@@ -1,7 +1,7 @@
 
 <!--活动召集 S class="van-hairline--bottom"-->
 <block wx:for="{{dynamicList}}" wx:key="index">
-    <view class="main"  bindtap="clickDy" data-id="{{item.id}}">
+    <view class="main"  bindtap="clickDy" data-id="{{item.activityId}}">
 
 
         <!--    基本信息 S-->
@@ -16,7 +16,7 @@
             <view class="mainTitle">
 
                 <view class="f28">
-                    {{item.name}}
+                    {{item.activityName}}
                 </view>
                 <view class="f24">
                     {{item.subName}}
@@ -38,10 +38,10 @@
         <view class="mainMem">
             <view class="f22">
                 <i class="iconfont icon-chengyuan-copy"></i>
-                成员:{{item.memNum}}位   / 价格 <text style="color: red">￥{{item.price}}</text>
+                人数:{{item.totalNum}}位   / 价格 <text style="color: red">￥{{item.price}}</text>
             </view>
             <view class="f22">
-                <tui-tag size="small" type="danger" shape="circle" plain="{{true}}">{{item.status.desc}}</tui-tag>
+                <tui-tag size="small" type="danger" shape="circle" plain="{{true}}">{{item.status}}</tui-tag>
             </view>
         </view>
         <!--    成员人数信息E-->
