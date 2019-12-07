@@ -54,7 +54,7 @@
             <view class="tui-padding">
                 <view class="tui-sub-title tui-size tui-gray">{{activityInfo.subName}}</view>
                 <view class="tui-sale-info tui-size tui-gray">
-                    <view>人数：{{activityInfo.totalNum}}人</view>
+                    <view>总人数：{{activityInfo.totalNum}}人</view>
                     <view>已报{{activityInfo.memNum}}人</view>
                     <view>已收藏{{activityInfo.collectionNum}}人</view>
                 </view>

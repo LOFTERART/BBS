@@ -146,8 +146,6 @@ create(store,{
     },
 
 
-
-
     //活动收藏
     collecting: function (e) {
         let collected= "activityInfo.collected";
