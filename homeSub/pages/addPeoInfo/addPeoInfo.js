@@ -39,10 +39,13 @@ Page({
   getPeople:function(id){
     
     WXAPI.ActivityaddpPeopleList({
-      activityId: id
+      activityId: id||9
     }).then(res => {
       if (res.code === 200) {
         console.log(res, 'user');
+        this.setData({
+            contactsList:res.data.contactsList
+        })
       } else {
         UTIL.toast(res.message)
       }
@@ -72,6 +75,19 @@ Page({
             UTIL.toast("暂不支持手动输入数量")
             return
         }
+
+    },
+
+
+    clickName:function(e){
+        this.setData({
+            value2: 0
+        })
+        let info = this.data.info;
+        info.push(e.currentTarget.dataset.iteminfo);
+        this.setData({
+            info: info,
+        });
 
     },
 

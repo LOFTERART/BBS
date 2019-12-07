@@ -46,6 +46,21 @@
             游客信息
         </view>
 
+        <!--金刚位置 S-->
+        <view class="type-container">
+            <scroll-view  scroll-x="{{true}}" class="type-navbar" >
+                <view  class="courseStyle" wx:for="{{contactsList}}" wx:key="index" bindtap="clickName"  data-id="{{item.id}}" data-iteminfo="{{item}}" >
+                    <view  class="f28 van-ellipsis" style="width: 220rpx;display: flex;flex-direction: row;justify-content: center;align-items: center;height: 80rpx;border: 1rpx solid #ccc">
+                        {{item.contactsName}}
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+        <!--金刚位置 E-->
+
+
+
+
 
         <view style="display: flex;flex-direction: row;justify-content: space-between;height: 120rpx;align-items: center;color: #333" wx:for="{{info}}" wx:key="index" class="van-hairline--bottom f28">
 
