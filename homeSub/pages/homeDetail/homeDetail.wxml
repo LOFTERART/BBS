@@ -1,3 +1,4 @@
+<wxs src="../../../wxs/Time.wxs" module="Time" />
 <import src="/component/wxParse/wxParse.wxml"/>
 <view class="container">
     <!--header-->
@@ -89,12 +90,18 @@
         <view class="tui-basic-info tui-mtop tui-radius-all">
             <view class="tui-list-cell" >
                 <view class="tui-bold tui-cell-title">报名时间</view>
-                <view class="tui-selected-box">{{activityInfo.signStartTime}}</view>
+                <view class="tui-selected-box">
+<!--                    {{Time.dateFormat(activityInfo.signStartTime)}}-->
+                    {{activityInfo.signStartTime}}
+                </view>
             </view>
 
             <view class="tui-list-cell" >
                 <view class="tui-bold tui-cell-title">活动时间</view>
-                <view class="tui-selected-box">{{activityInfo.signEndTime}}</view>
+                <view class="tui-selected-box">
+<!--                    {{Time.dateFormat(activityInfo.signEndTime)}}-->
+                    {{activityInfo.signEndTime}}
+                </view>
             </view>
             <view class="tui-list-cell" bindtap="clickAddressFrom" data-lng="{{activityInfo.gatherAddList[0].lng}}" data-lat="{{activityInfo.gatherAddList[0].lat}}" data-name="{{activityInfo.gatherAddList[0].addressName}}" data-address="{{activityInfo.gatherAddList[0].address}}">
                 <view class="tui-bold tui-cell-title">集合地点</view>

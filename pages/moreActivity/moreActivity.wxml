@@ -41,7 +41,8 @@
                 人数:{{item.totalNum}}   / 价格 <text style="color: red">￥{{item.price}}</text>
             </view>
             <view class="f22">
-                <tui-tag size="small" type="danger" shape="circle" plain="{{true}}">{{item.status}}</tui-tag>
+                <tui-tag size="small" type="gray" shape="circle" plain="{{true}}" wx:if="{{item.status==='已结束'}}">{{item.status}}</tui-tag>
+                <tui-tag size="small" type="danger" shape="circle" plain="{{true}}" wx:if="{{item.status==='进行中'}}">{{item.status}}</tui-tag>
             </view>
         </view>
         <!--    成员人数信息E-->
