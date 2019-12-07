@@ -21,7 +21,7 @@
 
 
         <view class="tui-number-box">
-            <view class="f28">数量</view>
+            <view class="f28">人数</view>
             <tui-numberbox min="1" max="10" value="{{value2}}" bind:change="change2"></tui-numberbox>
         </view>
 
