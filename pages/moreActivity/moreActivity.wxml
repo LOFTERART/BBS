@@ -38,7 +38,7 @@
         <view class="mainMem">
             <view class="f22">
                 <i class="iconfont icon-chengyuan-copy"></i>
-                人数:{{item.totalNum}}位   / 价格 <text style="color: red">￥{{item.price}}</text>
+                人数:{{item.totalNum}}   / 价格 <text style="color: red">￥{{item.price}}</text>
             </view>
             <view class="f22">
                 <tui-tag size="small" type="danger" shape="circle" plain="{{true}}">{{item.status}}</tui-tag>

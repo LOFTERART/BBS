@@ -55,17 +55,15 @@ create(store,{
    //获取活动详情
     getActivityDetail:function(id){
         WXAPI.ActivityDetail({
-            activityId:Number(id)||9,
+            activityId:Number(id),
             'userId':wx.getStorageSync('userId')
         }).then(res=>{
             if(res.code===200){
-                console.log(res,'res');
               this.setData({
                 banner:res.data.banner,
                 activityInfo:res.data.activityInfo
               })
               WxParse.wxParse('article', 'html', res.data.activityInfo.htmlCon, this, 5);
-
             }else {
                 UTIL.toast(res.message)
             }
@@ -152,35 +150,31 @@ create(store,{
 
     //活动收藏
     collecting: function (e) {
-
         let collected= "activityInfo.collected";
-        let CollectionNum= "activityInfo.CollectionNum";
+        let CollectionNum= "activityInfo.collectionNum";
         if(this.data.activityInfo.collected){
             this.setData({
                 [collected]: !this.data.activityInfo.collected,
-                [CollectionNum]: this.data.activityInfo.CollectionNum-1,
+                [CollectionNum]: this.data.activityInfo.collectionNum-1,
             })
-            UTIL.toast('取消收藏')
             this.collectedVSNocollected(e.currentTarget.dataset.id,false)
         }else{
             this.setData({
                 [collected]: !this.data.activityInfo.collected,
-                [CollectionNum]: this.data.activityInfo.CollectionNum+1,
+                [CollectionNum]: this.data.activityInfo.collectionNum+1,
             })
-            UTIL.toast('收藏成功')
             this.collectedVSNocollected(e.currentTarget.dataset.id,true)
         }
     },
 
     //活动收藏API
     collectedVSNocollected:function(id,type){
-
         WXAPI.ActivityCollection({
             activityId:id,
             collection:type
         }).then(res=>{
             if(res.code===200){
-                console.log(res,'res');
+                UTIL.toast(res.message)
             }else {
                 UTIL.toast(res.message)
             }

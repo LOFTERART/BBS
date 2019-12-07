@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "活动",
+  "navigationBarTitleText": "趣知游活动",
   "usingComponents": {
     "tui-tag": "/component/tag/tag"
   }
