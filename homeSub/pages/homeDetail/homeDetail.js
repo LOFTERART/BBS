@@ -148,17 +148,17 @@ create(store,{
 
     //活动收藏
     collecting: function (e) {
-        let collected= "activityInfo.collected";
+        let collection= "activityInfo.collection";
         let CollectionNum= "activityInfo.collectionNum";
-        if(this.data.activityInfo.collected){
+        if(this.data.activityInfo.collection){
             this.setData({
-                [collected]: !this.data.activityInfo.collected,
+                [collection]: !this.data.activityInfo.collection,
                 [CollectionNum]: this.data.activityInfo.collectionNum-1,
             })
             this.collectedVSNocollected(e.currentTarget.dataset.id,false)
         }else{
             this.setData({
-                [collected]: !this.data.activityInfo.collected,
+                [collection]: !this.data.activityInfo.collection,
                 [CollectionNum]: this.data.activityInfo.collectionNum+1,
             })
             this.collectedVSNocollected(e.currentTarget.dataset.id,true)
