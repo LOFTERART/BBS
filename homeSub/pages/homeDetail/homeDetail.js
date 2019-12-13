@@ -56,7 +56,7 @@ create(store,{
     getActivityDetail:function(id){
         WXAPI.ActivityDetail({
             activityId:Number(id),
-            'userId':wx.getStorageSync('userId')
+           
         }).then(res=>{
             if(res.code===200){
               this.setData({

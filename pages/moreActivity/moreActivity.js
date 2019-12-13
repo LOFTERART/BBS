@@ -29,7 +29,8 @@ create(store,{
 
     getActivity:function(){
         WXAPI.ActivityHome({
-            type:1
+            page:1,
+            size:2
         }).then(res=>{
             if(res.code===200){
               this.setData({

@@ -96,13 +96,15 @@ module.exports = {
     },
     //趣知游 活动首页
     ActivityHome:(data)=>{
-        return request('https://www.quzhiyou.cn/wechat/activity/selectActivityList', 'GET',data,true)
+        // return request('https://www.quzhiyou.cn/wechat/activity/selectActivityList', 'GET',data,true)
+      return request('http://192.168.0.114:8080/v1/wechat/activity/selectActivityList', 'GET', data, true)
     },
 
 
     //趣知游 活动详情
     ActivityDetail:(data)=>{
-        return request('https://www.quzhiyou.cn/wechat/activity/selectActivicyInfoById', 'GET',data,true)
+        // return request('https://www.quzhiyou.cn/wechat/activity/selectActivicyInfoById', 'GET',data,true)
+      return request('http://192.168.0.114:8080/v1/wechat/activity/selectActivicyInfoById', 'GET', data, true)
     },
 
     //趣知游 活动收藏&&取消
