@@ -1,4 +1,5 @@
 <wxs src="../../../wxs/Time.wxs" module="Time" />
+<wxs src="../../../wxs/Status.wxs" module="Status" />
 <import src="/component/wxParse/wxParse.wxml"/>
 <view class="container">
     <!--header-->
@@ -125,7 +126,7 @@
                     </view>
                 </block>
 
-               <!-- 
+               <!--
 
              <block wx:for="{{activityInfo.tagsInfo}}" wx:key="index">
                     <view class="tui-guarantee-item">
@@ -212,11 +213,11 @@
 
 
 
-
-
         </view>
         <view class="tui-operation-right tui-right-flex tui-col-7">
-            <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle" size="mini"  class="tui-flex-1" bindtap="clickBm">立即报名</tui-button>
+            <tui-button type="mainGreen" tui-button-class="tui-btn-equals" shape="circle" size="mini"  class="tui-flex-1" bindtap="clickBm" data-status="{{activityInfo.status}}">
+                {{Status.formatStatus(activityInfo.status,true)}}
+            </tui-button>
         </view>
     </view>
     <!--底部操作栏--->

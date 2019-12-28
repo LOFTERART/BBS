@@ -1,9 +1,11 @@
 
 
 
-var formatStatus = function (status) {
+var formatStatus = function (status,type) {
 
-    if (status==="0"){
+    if(type&&status==="1"){
+        return "立即报名"
+    }else if (status==="0"){
 
         return "未开始"
 

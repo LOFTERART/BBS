@@ -56,7 +56,7 @@ create(store,{
     getActivityDetail:function(id){
         WXAPI.ActivityDetail({
             activityId:Number(id),
-           
+
         }).then(res=>{
             if(res.code===200){
               this.setData({
@@ -83,11 +83,6 @@ create(store,{
         })
 
     },
-
-
-
-
-
 
 
 
@@ -190,11 +185,24 @@ create(store,{
 
 
 
+    //报名
+    clickBm:function(e){
 
-    clickBm:function(){
-        wx.navigateTo({
-          url: '/homeSub/pages/addPeoInfo/addPeoInfo?id=' + this.data.activityInfo.activityId + '&name=' + this.data.activityInfo.activityName + "&date="+this.data.activityInfo.activeEndTime
-        })
+        if(e.currentTarget.dataset.status==="0"){
+            UTIL.toast("未开始")
+            return
+        }else if(e.currentTarget.dataset.status==="1"){
+            wx.navigateTo({
+                url: '/homeSub/pages/addPeoInfo/addPeoInfo?id=' + this.data.activityInfo.activityId + '&name=' + this.data.activityInfo.activityName + "&date="+this.data.activityInfo.activeStartTime+"至"+this.data.activityInfo.activeEndTime
+            })
+        }else if(e.currentTarget.dataset.status==="2"){
+            UTIL.toast("已结束")
+            return
+        }
+
+
+
+
     },
     submit() {
         this.setData({
@@ -221,7 +229,7 @@ create(store,{
             scale: 18
         })
     },
-    
+
 //     点击目的地
     clickAddressTo:function (e) {
         console.log(e.currentTarget.dataset);
@@ -237,7 +245,7 @@ create(store,{
             scale: 18
         })
     }
-    
-    
-    
+
+
+
 })
