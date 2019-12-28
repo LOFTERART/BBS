@@ -1,0 +1,39 @@
+
+
+
+var formatStatus = function (status) {
+
+    if (status==="0"){
+
+        return "未开始"
+
+    }else if (status==="1"){
+        return "进行中"
+
+    }else if (status==="2"){
+        return "已结束"
+    }
+
+}
+
+
+var formatStatusColor = function (status) {
+
+    if (status==="0"){
+
+        return "green"
+
+    }else if (status==="1"){
+        return "danger"
+
+    }else if (status==="2"){
+        return "gray"
+    }
+
+}
+
+
+module.exports = {
+    formatStatus: formatStatus,
+    formatStatusColor: formatStatusColor,
+};

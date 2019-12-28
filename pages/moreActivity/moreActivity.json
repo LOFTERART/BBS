@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "趣知游活动",
+  "enablePullDownRefresh":true,
   "usingComponents": {
     "tui-tag": "/component/tag/tag"
   }
