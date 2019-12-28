@@ -119,12 +119,22 @@
 
             <view class="tui-guarantee">
 
-                <block wx:for="{{activityInfo.tags}}" wx:key="index">
+            <block>
+                    <view class="tui-guarantee-item">
+                        <text class="tui-pl">{{activityInfo.tagsInfo}}</text>
+                    </view>
+                </block>
+
+               <!-- 
+
+             <block wx:for="{{activityInfo.tagsInfo}}" wx:key="index">
                     <view class="tui-guarantee-item">
                         <tui-icon name="circle-selected" size="14" color="#999"></tui-icon>
                         <text class="tui-pl">{{item}}</text>
                     </view>
                 </block>
+
+                -->
 
 
             </view>

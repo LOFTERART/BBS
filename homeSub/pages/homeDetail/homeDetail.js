@@ -193,7 +193,7 @@ create(store,{
 
     clickBm:function(){
         wx.navigateTo({
-          url: '/homeSub/pages/addPeoInfo/addPeoInfo?id=' + this.data.activityInfo.activityId + '&name=' + this.data.activityInfo.activityName + "&date="+this.data.activityInfo.signEndTime
+          url: '/homeSub/pages/addPeoInfo/addPeoInfo?id=' + this.data.activityInfo.activityId + '&name=' + this.data.activityInfo.activityName + "&date="+this.data.activityInfo.activeEndTime
         })
     },
     submit() {
