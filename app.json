@@ -1,8 +1,9 @@
 {
   "pages": [
-        "pages/moreActivity/moreActivity",
-    "pages/aiDynamic/aiDynamic",
+    "pages/moreActivity/moreActivity",
     "pages/home/home",
+    
+    "pages/aiDynamic/aiDynamic",
     "pages/mine/mine",
     "pages/love/love",
  

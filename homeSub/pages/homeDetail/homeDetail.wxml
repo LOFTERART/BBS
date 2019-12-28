@@ -92,7 +92,7 @@
                 <view class="tui-bold tui-cell-title">报名时间</view>
                 <view class="tui-selected-box">
 <!--                    {{Time.dateFormat(activityInfo.signStartTime)}}-->
-                    {{activityInfo.signStartTime}}
+                    {{activityInfo.signStartTime}}至{{activityInfo.signEndTime}}
                 </view>
             </view>
 
@@ -100,7 +100,7 @@
                 <view class="tui-bold tui-cell-title">活动时间</view>
                 <view class="tui-selected-box">
 <!--                    {{Time.dateFormat(activityInfo.signEndTime)}}-->
-                    {{activityInfo.signEndTime}}
+                    {{activityInfo.activeStartTime}}至{{activityInfo.activeEndTime}}
                 </view>
             </view>
             <view class="tui-list-cell" bindtap="clickAddressFrom" data-lng="{{activityInfo.gatherAddList[0].lng}}" data-lat="{{activityInfo.gatherAddList[0].lat}}" data-name="{{activityInfo.gatherAddList[0].addressName}}" data-address="{{activityInfo.gatherAddList[0].address}}">
@@ -131,7 +131,7 @@
         </view>
 
     <!-- 评价S-->
- <!-- 
+ <!--
      <view class="tui-cmt-box tui-mtop tui-radius-all">
             <view class="tui-list-cell tui-last tui-between">
                 <view class="tui-bold tui-cell-title">评价</view>
@@ -164,18 +164,18 @@
 
         <view style="padding: 20rpx">
 
-        <template is="wxParse" data="{{wxParseData:article.nodes}}" />  
-            
+        <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+
         </view>
 
 
-      <!-- 
+      <!--
         <view class="tui-product-img tui-radius-all">
             <image src="https://www.thorui.cn/img/detail/{{index+1}}.jpg" wx:for="{{20}}" wx:key="index" mode="widthFix"></image>
         </view>
        -->
 
-       
+
         <tui-nomore text="已经到最底了" visible="{{true}}" bgcolor="#f7f7f7"></tui-nomore>
         <view class="tui-safearea-bottom"></view>
     </view>
@@ -225,7 +225,7 @@
                 <view class="tui-scrollview-box">
 
                 <block wx:for="{{activityInfo.welfareList}}" wx:key="index">
-                
+
                     <view class="tui-bold tui-attr-title">{{item.tag}}</view>
                     <view class="tui-attr-box">
                         <view class="tui-attr-item tui-attr-active">
