@@ -274,7 +274,9 @@ Page({
                             community:that.data.community,
                             photos:pass,
                             tag:that.data.huati,
-                            communityId:Number(that.data.communityid)
+                            communityId:Number(that.data.communityid),
+                            ClassifyId:2, //大标签ID
+                            sub_topic_id:1
                         }).then((res=>{
                             console.log(res,"------")
                             UTIL.toast('发布成功!增加了10经验值');
