@@ -4,8 +4,8 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
-		"es6": false,
+		"urlCheck": false,
+		"es6": true,
 		"enhance": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
@@ -28,7 +28,7 @@
 		"bundle": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.4",
+	"libVersion": "2.10.0",
 	"appid": "wx27f763c834a6e9aa",
 	"projectname": "quzhi",
 	"debugOptions": {
@@ -191,6 +191,13 @@
 					"id": -1,
 					"name": "homeSub/pages/addPeoInfo/addPeoInfo",
 					"pathName": "homeSub/pages/addPeoInfo/addPeoInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homeSub/pages/AddBbs/AddBbs",
+					"pathName": "homeSub/pages/AddBbs/AddBbs",
 					"scene": null
 				}
 			]

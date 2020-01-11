@@ -32,9 +32,9 @@ create(store,{
             page:1,
             size:10
         }).then(res=>{
-            if(res.code===200){
+            if(res.code===0){
               this.setData({
-                dynamicList: res.data,
+                dynamicList: res.data.items,
               })
             }else {
                 UTIL.toast(res.message)

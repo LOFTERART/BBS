@@ -16,11 +16,12 @@ App({
                 success (res) {
                     console.log(res.code);
                     if (res.code) {
-                        WXAPI.QZYLogin({
+                        WXAPI.wxLoginGetOpenid({
                             code:res.code
                         }).then(res=>{
-                            if(Number(res.code)===200){
+                            if(Number(res.code)===0){
                                 wx.setStorageSync('userId', res.data.userId);
+                                wx.setStorageSync('Authorization', res.data.token);
                                 that.globalData.userInfo.userId=res.data.userId
                                 resolve(res.data)
                             }else {
@@ -72,7 +73,8 @@ App({
 
     globalData: {
         userInfo: {
-            userId:wx.getStorageSync('userId')
+            userId:wx.getStorageSync('userId'),
+            Authorization:wx.getStorageSync('token')
         }
     }
 

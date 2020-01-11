@@ -6,12 +6,12 @@ import store from '../../store/index'
 create(store,{
     data: {
         //首页广告
-        banners:data.homeBanner,
+        banners:[],
         //首页金刚位
-        KING:data.homeKing,
+        KING:[],
 
         //首页成员动态
-        articleList:data.homeDyList,
+        articleList:[],
 
         hotList:[
             {
@@ -69,6 +69,8 @@ create(store,{
 
         //默认社区名称
         community:'魏都星球',
+        //默认社区魏都星球id
+        communityid:1,
 
         current:0,   //轮播图
 
@@ -83,50 +85,45 @@ create(store,{
      *
      */
     onLoad: function (options) {
-        // WXAPI.ask({
-        //     name:"赵福文"+Math.random(),
-        //     score:59
-        // }).then(res=>{
-        //     console.log(res,"----插入数据-------")
-        // })
-        //
-        WXAPI.getStu({
-            id:208,
-            name:"fuk"
-        }).then(res=>{
-            console.log(res,"-----------")
+        this.getBanner()
+        this.getKing()
+        this.getDiary()
+    },
+
+    //获取banner
+    getBanner:function(){
+        WXAPI.getHomeAd().then(res=>{
+            this.setData({
+                banners:res.data
+            })
         })
-        //
-        // WXAPI.getAllStu({
-        //     id:8,
-        //     name:"fuk"
-        // }).then(res=>{
-        //     console.log(res,"-----------")
-        // })
-        //
-        // WXAPI.getdelStu({
-        //     id:2,
-        //     name:"fuk"
-        // }).then(res=>{
-        //     console.log(res,"-----------")
-        // })
+    },
+    //获取King
+    getKing:function(){
+        WXAPI.getHomeKing().then(res=>{
+            this.setData({
+                KING:res.data
+            })
+        })
+    },
 
-        // WXAPI.getupStu({
-        //     id:3,
-        //     name:"fuk"
-        // }).then(res=>{
-        //     console.log(res,"-----------")
-        // })
-
-
-
+    //获取日志
+    getDiary:function(){
+        WXAPI.getHomeDiarys({
+            page:1,
+            size:10,
+            communityId:this.data.communityid
+        }).then(res=>{
+            this.setData({
+                articleList:res.data.items
+            })
+        })
     },
 
     //获取导航栏高度
     getBarInfo(e){
         this.setData({topBarHeight:e.detail.topBarHeight})
     },
-
 
     //轮播图切换
     change: function (e) {
@@ -142,8 +139,6 @@ create(store,{
             url: '/storySub/pages/storyDetail/storyDetail'
         })
     },
-    
-
 
     //点击king
     clickKing:function(e){
@@ -160,9 +155,13 @@ create(store,{
             url: '/homeSub/pages/Community/Community',
             events:{
                 getValue:(city)=>{
+                    console.log(city,"city------");
                     this.setData({
-                        community:city,
+                        community:city.name,
+                        communityid:city.id,
                     })
+
+                    this.getDiary()
 
                 }
             }
@@ -170,7 +169,7 @@ create(store,{
     },
 
 
-    //地图选择监听小区返回
+    //监听小区返回
     emitSchool(city) {
         this.setData({
             community:city,
@@ -178,19 +177,22 @@ create(store,{
 
     },
 
+    emitGetNewDiary(){
+        this.getDiary()
+    },
+
 
     //发表状态
     clickAdd:function(e){
         wx.navigateTo({
-            url: '/homeSub/pages/AddBbs/AddBbs'
+            url: '/homeSub/pages/AddBbs/AddBbs?community='+this.data.community+"&communityid="+this.data.communityid
         })
     },
+
     onPullDownRefresh () {
-        setTimeout(()=>{
-            wx.stopPullDownRefresh()
-        },3000)
+        this.getDiary()
     },
-    
+
 
 
 })

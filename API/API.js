@@ -9,26 +9,29 @@ const request = (url, method, data,isShowLoading) => {
                "title":''
            })
        }
+
         wx.request({
             url:  url,
             method: method,
             data: data,
             header: {
                 'Content-Type': 'application/json',
-                'userId':wx.getStorageSync('userId')
+                'userId':wx.getStorageSync('userId'),
+                'Authorization':wx.getStorageSync('Authorization'),
             },
-            success(request) {
+            success(response) {
                 // 停止下拉动作
                 wx.hideLoading();
                 wx.stopPullDownRefresh();
               console.log('---------start----------');
-              console.log('请求的header: ', wx.getStorageSync('userId'));
+              console.log('请求的header: ', wx.getStorageSync('userId'),wx.setStorageSync('Authorization', response.data.token));
               console.log('请求的url: ', url);
               console.log('请求类型: ',method);
               console.log('请求参数: ',data);
-              console.log('返回数据: ',request.data);
+              console.log('返回数据: ',response.data);
               console.log('---------end----------');
-                resolve(request.data)
+                //获取新的激活码
+                resolve(response.data)
             },
             fail(error) {
                 wx.hideLoading();
@@ -73,38 +76,54 @@ module.exports = {
 
   //趣知游 登录
   ask: (data) => {
-    return request('http://127.0.0.1:8081/', 'POST', data, true)
+    return request('http://127.0.0.1:8080/', 'POST', data, true)
   },
 
-    getStu: (data) => {
-        return request('http://127.0.0.1:8081/getstudent', 'POST', data, true)
+  //首页状态
+  wxLoginGetOpenid: (data) => {
+    return request('http://127.0.0.1:8080/wxlogin', 'GET', data, true)
+},
+  //首页状态
+    getHomeDiarys: (data) => {
+        return request('http://127.0.0.1:8080/home/homediarys', 'GET', data, true)
     },
-    getAllStu: (data) => {
-        return request('http://127.0.0.1:8081/getallstudent', 'POST', data, true)
+
+    //首页KING
+    getHomeKing: (data) => {
+        return request('http://127.0.0.1:8080/home/classify', 'GET', data, true)
     },
-    getdelStu: (data) => {
-        return request('http://127.0.0.1:8081/getdelstudent', 'POST', data, true)
+    //首页KING
+    getHomeAd: (data) => {
+        return request('http://127.0.0.1:8080/home/ad', 'GET', data, true)
     },
-    getupStu: (data) => {
-        return request('http://127.0.0.1:8081/getupstudent', 'POST', data, true)
+
+    //发布状态
+    postDiary: (data) => {
+        return request('http://127.0.0.1:8080/home/adddiary', 'POST', data, true)
     },
+    //获取小区
+    GetCity: (data) => {
+        return request('http://127.0.0.1:8080/home/getcommunity', 'Get', data, true)
+    },
+
 
 
    //趣知游 登录
     QZYLogin:(data)=>{
-        return request('https://www.quzhiyou.cn/wechat/login/selectUserId', 'GET',data,true)
+        // return request('https://www.quzhiyou.cn/wechat/login/selectUserId', 'GET',data,true)
+        return request('https://127.0.0.1:8080/wxlogin', 'GET',data,true)
     },
     //趣知游 活动首页
     ActivityHome:(data)=>{
-        return request('https://www.quzhiyou.cn/wechat/activity/selectActivityList', 'GET',data,true)
-    //   return request('http://39.97.230.148:8080/v1/wechat/activity/selectActivityList', 'GET', data, true)
+        // return request('https://www.quzhiyou.cn/wechat/activity/selectActivityList', 'GET',data,true)
+      return request('http://127.0.0.1:8080/v1/wechat/activity/selectActivityList', 'GET', data, true)
     },
 
 
     //趣知游 活动详情
     ActivityDetail:(data)=>{
-        return request('https://www.quzhiyou.cn/wechat/activity/selectActivicyInfoById', 'GET',data,true)
-    //   return request('http://39.97.230.148:8080/v1/wechat/activity/selectActivicyInfoById', 'GET', data, true)
+        // return request('https://www.quzhiyou.cn/wechat/activity/selectActivicyInfoById', 'GET',data,true)
+      return request('http://127.0.0.1:8080/v1/wechat/activity/selectActivicyInfoById', 'GET', data, true)
     },
 
     //趣知游 活动收藏&&取消

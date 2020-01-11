@@ -13,7 +13,9 @@ Page({
 
     onLoad:function(options){
         this.setData({
-            huati:options.name||'选择合适的话题会有更多赞~'
+            huati:options.name||'选择合适的话题会有更多赞~',
+            community:options.community,
+            communityid:options.communityid
         })
 
     },
@@ -91,7 +93,7 @@ Page({
         })
 
     },
-    
+
 //    你在哪里位置选择
 
     clickXiaoQu:function(){
@@ -211,14 +213,30 @@ Page({
     },
 
 
-    up:function(){
-      UTIL.toast('发布成功!增加了10经验值');
-        wx.navigateBack();
+    up1:function(){
+
+
+        WXAPI.postDiary({
+            avatar:"https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+            name:"曹阿瞒",
+            content:this.data.message,
+            address:this.data.addressLocal,
+            community:this.data.community,
+            photos:["fd3ab27b-1ddc-4554-93ca-e0bd6e83bd32.jpeg","9ed88469-5287-481e-ab44-d3287517a020.jpeg","66ad24e5-fb97-4497-b2a0-202766859b53.jpeg"],
+            tag:this.data.huati
+        }).then((res=>{
+            console.log(res,"------")
+            UTIL.toast('发布成功!增加了10经验值');
+            wx.navigateBack();
+
+        }))
+
+
     },
 
 //    文字发表
 
-    upText:   function () {
+    up:   function () {
         var that=this;
         var images_list = [];
         for (let i = 0; i < that.data.images.length; i++) {
@@ -227,7 +245,7 @@ Page({
                 "title":'上传中'
             })
             wx.uploadFile({
-                url: 'https://api.teacher.meishuquanyunxiao.com/v2/news/upload-image-yun?source=daily',
+                url: 'http://127.0.0.1:8080/home/upload',
                 method: "POST",
                 headers: {
                     'Accept': 'application/json',
@@ -237,9 +255,6 @@ Page({
                 name: 'file',
                 type: 'image/jpg',
                 formData: {
-                    studio_id:this.store.data.userInfo.studio_id,
-                    user_id:this.store.data.userInfo.admin_id,
-                    user_type:this.store.data.userInfo.user_role,
                     indexSort:i,
                 },
                 success:   function (res) {
@@ -250,19 +265,43 @@ Page({
                         images_list.sort(that.compare).map((item,index)=>{
                             pass.push(item.showPic);
                         })
-                        let params = {
-                            studio_id:that.store.data.userInfo.studio_id,
-                            user_id:that.store.data.userInfo.admin_id,
-                            user_type:that.store.data.userInfo.user_role,
+
+                        WXAPI.postDiary({
+                            avatar:"https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
+                            name:"曹阿瞒",
                             content:that.data.message,
-                            image_url_came:pass
-                        };
-                        WXAPI.ArtAddZT(params).then((res)=>{
-                            if(res.success){
-                                that.context.emitter.emit('getNewDataList', res)
-                                wx.navigateBack();
-                            }
-                        })
+                            address:that.data.addressLocal,
+                            community:that.data.community,
+                            photos:pass,
+                            tag:that.data.huati,
+                            communityId:Number(that.data.communityid)
+                        }).then((res=>{
+                            console.log(res,"------")
+                            UTIL.toast('发布成功!增加了10经验值');
+                            let pages = getCurrentPages();
+                            let prePage = pages[pages.length - 2];
+                            prePage.emitGetNewDiary()
+                            wx.navigateBack({
+                                delta: 1
+                            })
+                        }))
+
+
+
+
+                        // let params = {
+                        //     studio_id:that.store.data.userInfo.studio_id,
+                        //     user_id:that.store.data.userInfo.admin_id,
+                        //     user_type:that.store.data.userInfo.user_role,
+                        //     content:that.data.message,
+                        //     image_url_came:pass
+                        // };
+                        // WXAPI.ArtAddZT(params).then((res)=>{
+                        //     if(res.success){
+                        //         that.context.emitter.emit('getNewDataList', res)
+                        //         wx.navigateBack();
+                        //     }
+                        // })
                     }
                 },
                 fail: function (error) { }

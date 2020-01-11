@@ -135,7 +135,7 @@ create({
 
       //点击文字跳转详情
       clickDailyContent:function(e){
-          console.log(e.currentTarget.dataset);
+          console.log(e.currentTarget.dataset,"aaaaaaaaa");
 
 
           if(e.currentTarget.dataset.aid){

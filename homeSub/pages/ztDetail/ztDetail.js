@@ -35,10 +35,10 @@ create(store,{
 
 
     onLoad: function (options) {
+      
         // this.getZTList(false,options.id);
         let arrayList=[];
         arrayList.push(JSON.parse(options.list))
-
         this.setData({
             id:options.id,
             articleList:arrayList

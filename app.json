@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/moreActivity/moreActivity",
+
     "pages/home/home",
-    
+    "pages/moreActivity/moreActivity",
     "pages/aiDynamic/aiDynamic",
     "pages/mine/mine",
     "pages/love/love",
- 
+
     "pages/story/story"
   ],
   "subPackages": [
@@ -56,7 +56,7 @@
       ]
     }
   ],
-  
+
   "preloadRule": {
     "pages/aiDynamic/aiDynamic": {
       "network": "all",
@@ -84,7 +84,22 @@
   "useExtendedLib": {
     "weui": true
   },
-
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#3E3A39",
+    "selectedColor": "#3CCB9B",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
 
   "sitemapLocation": "sitemap.json"
 }

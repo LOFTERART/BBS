@@ -1,4 +1,5 @@
 const cityData = require('../../../utils/Community.js')
+const WXAPI = require('../../../API/API')
 Page({
   data: {
     lists: [],
@@ -17,6 +18,7 @@ Page({
   },
   onLoad: function (options) {
     const that = this;
+    that.getCity();
     setTimeout(() => {
       wx.getSystemInfo({
         success: function (res) {
@@ -27,12 +29,23 @@ Page({
             indexBarHeight: barHeight,
             indexBarItemHeight: barHeight / 25,
             titleHeight: res.windowWidth / 750 * 132,
-            lists: cityData.list
+            // lists: cityData.list
           })
         }
       })
     }, 50)
   },
+
+
+    getCity:function(){
+        WXAPI.GetCity().then(res=>{
+            this.setData({
+                lists:res.data.list
+            })
+        })
+    },
+
+
   showInput() {
     this.setData({
       inputShowed: true
@@ -68,7 +81,7 @@ Page({
     })
   },
 
-    bindChoseAddress:function(){
+  bindChoseAddress:function(){
 
       this.getLocation();
 
@@ -152,8 +165,9 @@ Page({
 
   // 选择城市
   selectCity(e) {
+      console.log(e,"eeeeeeeeeeeeeeee");
       const eventChannel = this.getOpenerEventChannel()
-      eventChannel.emit('getValue', e.currentTarget.dataset.name);
+      eventChannel.emit('getValue', e.currentTarget.dataset);
         wx.navigateBack({
           delta: 1
         })
