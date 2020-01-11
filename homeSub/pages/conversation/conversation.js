@@ -93,12 +93,14 @@ Page({
   },
   productList(e) {
     let key = e.currentTarget.dataset.name;
-      console.log(key,'key');
+    let cid = e.currentTarget.dataset.cid;
+    let id = e.currentTarget.dataset.id;
+      console.log(key,cid,id,'key');
 
       //返回并刷新上一页面
       let pages = getCurrentPages();
       let prePage = pages[pages.length - 2];
-      prePage.emitHuaTi(key)
+      prePage.emitHuaTi(key,cid,id)
       wx.navigateBack({
           delta: 1
       })

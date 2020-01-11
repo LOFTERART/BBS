@@ -7,7 +7,9 @@ Page({
         images: [], //存放图片的数组
         message:'',
         huati:'选择合适的话题会有更多赞~',
-        addressLocal:'不显示地区'
+        addressLocal:'不显示地区',
+        ClassifyId:0, //大标签ID
+        sub_topic_id:0
     },
 
 
@@ -195,9 +197,11 @@ Page({
 
 
     //监听话题返回
-    emitHuaTi(huati) {
+    emitHuaTi(huati,cid,id) {
         this.setData({
-            huati
+            huati:huati,
+            ClassifyId:cid,
+            sub_topic_id:id
         })
 
     },
@@ -275,8 +279,8 @@ Page({
                             photos:pass,
                             tag:that.data.huati,
                             communityId:Number(that.data.communityid),
-                            ClassifyId:2, //大标签ID
-                            sub_topic_id:1
+                            ClassifyId:that.data.ClassifyId, //大标签ID
+                            sub_topic_id:that.data.sub_topic_id
                         }).then((res=>{
                             console.log(res,"------")
                             UTIL.toast('发布成功!增加了10经验值');
