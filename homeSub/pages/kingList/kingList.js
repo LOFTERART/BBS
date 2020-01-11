@@ -3,6 +3,7 @@ import UTIL from '../../../utils/util'
 import create from '../../../utils/omi/create'
 import store from '../../../store/index'
 import data from '../../../data/data'
+const WXAPI = require('../../../API/API')
 create(store,{
 
     /**
@@ -14,7 +15,8 @@ create(store,{
         scrollH: 0, //滚动总高度
         opcity: 0,
         iconOpcity: 0.5,
-        articleList:data.homeDyList,
+        // articleList:data.homeDyList,
+        articleList:[],
         newsList:[
             {id:1,name:"庆春节 迎新年 和睦邻里拉力赛",link:'url',type:'H5'},
             {id:2,name:"河南市海淀区人民大学",link:'url',type:'H5'},
@@ -27,6 +29,9 @@ create(store,{
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        //获取日记
+        this.getDiary(Number(options.id))
+
         let obj = wx.getMenuButtonBoundingClientRect();
         this.setData({
             width: obj.left,
@@ -54,6 +59,19 @@ create(store,{
             },
         })
 
+    },
+
+    //获取对应Kingid 的内容
+    getDiary:function(id){
+        WXAPI.getHomeDiarys({
+            page:1,
+            size:10,
+            classifyId:id
+        }).then(res=>{
+            this.setData({
+                articleList:res.data.items
+            })
+        })
     },
 
     //页面滚动执行方式
@@ -84,7 +102,7 @@ create(store,{
 
     //立即参与
     clickAction:function(e){
-        
+
         wx.navigateTo({
           url: '/homeSub/pages/AddBbs/AddBbs'
         })

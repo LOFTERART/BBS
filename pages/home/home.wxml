@@ -86,6 +86,7 @@
               wx:for="{{KING}}"
               wx:key="index"
               bindtap="clickKing"
+              data-id="{{item.id}}"
               data-name="{{item.name}}"
               data-des="{{item.des}}"
               data-pic="{{item.desPic}}"
