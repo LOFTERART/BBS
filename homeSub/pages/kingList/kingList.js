@@ -30,7 +30,7 @@ create(store,{
      */
     onLoad: function (options) {
         //获取日记
-        this.getDiary(Number(options.id))
+        this.getDiary(Number(options.id),Number(options.communityid))
 
         let obj = wx.getMenuButtonBoundingClientRect();
         this.setData({
@@ -62,10 +62,11 @@ create(store,{
     },
 
     //获取对应Kingid 的内容
-    getDiary:function(id){
+    getDiary:function(id,communityid){
         WXAPI.getHomeDiarys({
             page:1,
             size:10,
+            communityId:communityid,
             classifyId:id
         }).then(res=>{
             this.setData({

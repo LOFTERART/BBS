@@ -6,7 +6,7 @@ Page({
         changeColor:'rgba(231,231,232,1)',
         images: [], //存放图片的数组
         message:'',
-        huati:'选择合适的话题会有更多赞~',
+        huati:'',
         addressLocal:'不显示地区',
         ClassifyId:0, //大标签ID
         sub_topic_id:0
@@ -217,30 +217,25 @@ Page({
     },
 
 
-    up1:function(){
-
-
-        WXAPI.postDiary({
-            avatar:"https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
-            name:"曹阿瞒",
-            content:this.data.message,
-            address:this.data.addressLocal,
-            community:this.data.community,
-            photos:["fd3ab27b-1ddc-4554-93ca-e0bd6e83bd32.jpeg","9ed88469-5287-481e-ab44-d3287517a020.jpeg","66ad24e5-fb97-4497-b2a0-202766859b53.jpeg"],
-            tag:this.data.huati
-        }).then((res=>{
-            console.log(res,"------")
-            UTIL.toast('发布成功!增加了10经验值');
-            wx.navigateBack();
-
-        }))
-
-
-    },
 
 //    文字发表
 
     up:   function () {
+
+        if (this.data.huati=="选择合适的话题会有更多赞~"){
+            UTIL.toast("选择合适的话题会有更多赞~")
+            return
+        }else {
+            this.send()
+        }
+
+
+    },
+
+
+    //发表
+
+    send:function(){
         var that=this;
         var images_list = [];
         for (let i = 0; i < that.data.images.length; i++) {
@@ -280,7 +275,7 @@ Page({
                             tag:that.data.huati,
                             communityId:Number(that.data.communityid),
                             ClassifyId:that.data.ClassifyId, //大标签ID
-                            sub_topic_id:that.data.sub_topic_id
+                            sub_topic_id:that.data.sub_topic_id  //子标签分类
                         }).then((res=>{
                             console.log(res,"------")
                             UTIL.toast('发布成功!增加了10经验值');
@@ -292,29 +287,11 @@ Page({
                             })
                         }))
 
-
-
-
-                        // let params = {
-                        //     studio_id:that.store.data.userInfo.studio_id,
-                        //     user_id:that.store.data.userInfo.admin_id,
-                        //     user_type:that.store.data.userInfo.user_role,
-                        //     content:that.data.message,
-                        //     image_url_came:pass
-                        // };
-                        // WXAPI.ArtAddZT(params).then((res)=>{
-                        //     if(res.success){
-                        //         that.context.emitter.emit('getNewDataList', res)
-                        //         wx.navigateBack();
-                        //     }
-                        // })
                     }
                 },
                 fail: function (error) { }
             })
         }
-
-
     },
 
     //    比较图片顺序

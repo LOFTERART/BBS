@@ -144,7 +144,12 @@ create(store,{
     clickKing:function(e){
         let type = e.currentTarget.dataset.type;
         wx.navigateTo({
-            url: '/homeSub/pages/kingList/kingList?name='+e.currentTarget.dataset.name+'&des='+e.currentTarget.dataset.des+'&pic='+decodeURIComponent(e.currentTarget.dataset.pic)+'&image='+decodeURIComponent(e.currentTarget.dataset.image)+"&id="+e.currentTarget.dataset.id
+            url: '/homeSub/pages/kingList/kingList?name='
+                +e.currentTarget.dataset.name+'&des='
+                +e.currentTarget.dataset.des+'&pic='
+                +decodeURIComponent(e.currentTarget.dataset.pic)
+                +'&image='+decodeURIComponent(e.currentTarget.dataset.image)
+                +"&id="+e.currentTarget.dataset.id+"&communityid="+this.data.communityid
         })
     },
 
