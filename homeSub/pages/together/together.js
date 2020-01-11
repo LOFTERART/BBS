@@ -2,13 +2,14 @@
 import create from '../../../utils/omi/create'
 import store from '../../../store/index'
 import data from '../../../data/data'
+const WXAPI = require('../../../API/API')
 create(store,{
 
   /**
    * 页面的初始数据
    */
   data: {
-      artList:data.homeDyList,
+      artList:[],
       theme:{name:'# 寻找流浪猫',themeId:10}
 
   },
@@ -33,7 +34,23 @@ create(store,{
           },
       })
 
+      this.getDiary(options.tagid,options.cid);
   },
+
+
+    //获取日志
+    getDiary:function(tagid,cid){
+        WXAPI.getHomeDiarys({
+            page:1,
+            size:10,
+            communityId:Number(cid),
+            sub_topic_id:Number(tagid)
+        }).then(res=>{
+            this.setData({
+                artList:res.data.items
+            })
+        })
+    },
 
 
 

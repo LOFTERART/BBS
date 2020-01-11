@@ -154,7 +154,7 @@ create({
 
       clickTogether:function (e) {
           wx.navigateTo({
-              url: '/homeSub/pages/together/together?name='+e.currentTarget.dataset.tag
+              url: '/homeSub/pages/together/together?name='+e.currentTarget.dataset.tag+"&tagid="+e.currentTarget.dataset.tagid+"&cid="+e.currentTarget.dataset.cid
           })
       },
 

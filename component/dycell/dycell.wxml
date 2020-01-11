@@ -80,7 +80,7 @@
             </view>
 
 
-            <view class="tagStyle" wx:else bindtap="clickTogether" data-tag="{{itemName.tag}}">
+            <view class="tagStyle" wx:else bindtap="clickTogether" data-tag="{{itemName.tag}}" data-tagid="{{itemName.tagId}}" data-tagid="{{itemName.tagId}}" data-cid="{{itemName.communityId}}">
                 {{itemName.tag}}
             </view>
 
