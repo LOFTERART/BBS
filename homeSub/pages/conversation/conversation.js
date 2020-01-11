@@ -6,7 +6,7 @@ Page({
     currentTab: 0, //预设当前项的值
     scrollTop: 0, //tab标题的滚动条位置
 
-      huaTiList:[]
+    huaTiList:[]
   },
   onLoad: function (options) {
     wx.getSystemInfo({
@@ -19,28 +19,81 @@ Page({
 
 
 
-    var list=[]
-    for (let i=0;i<=50;i++){
-        list.push(
+    this.setData({
+        huaTiList1:[
+            [
+                {
+                    id:1,name:'# 1帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+                },
+                {
+                    id:2,name:'# 2包打听',subName:'1079条讨论 1299人围观'
+                }
+            ],
+            [
+                {
+                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+                },
+                {
+                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
+                }
+            ],
+            [
+                {
+                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+                },
+                {
+                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
+                }
+            ],
+            [
+                {
+                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+                },
+                {
+                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
+                }
+            ],
+            [
+                {
+                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+                },
+                {
+                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
+                }
+            ],
+            [
+                {
+                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+                },
+                {
+                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
+                }
+            ]
+        ],
+        huaTiList:[
             {
-                id:1,name:'# 帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+                id:1,name:'# 0帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
             },
             {
-                id:2,name:'# 包打听',subName:'1079条讨论 1299人围观'
+                id:2,name:'# 0包打听',subName:'1079条讨论 1299人围观'
             }
-        )
-    }
-
-    this.setData({
-        huaTiList:list
+        ]
     })
 
 
   },
   // 点击标题切换当前页时改变样式
   swichNav: function (e) {
+      this.setData({
+          huaTiList:this.data.huaTiList1[e.currentTarget.dataset.current]
+      })
+      console.log(this.data.huaTiList,'huaTiList');
     let cur = e.currentTarget.dataset.current;
-    if (this.data.currentTab == cur) {
+      console.log(e.currentTarget.dataset.current,'e.currentTarget.dataset.current');
+      if (this.data.currentTab == cur) {
+        this.setData({
+            huaTiList:this.data.huaTiList[e.currentTarget.dataset.current]
+        })
       return false;
     } else {
       wx.pageScrollTo({
@@ -51,6 +104,8 @@ Page({
       })
       this.checkCor();
     }
+
+
   },
   //判断当前滚动超过一屏时，设置tab标题滚动条。
   checkCor: function () {
