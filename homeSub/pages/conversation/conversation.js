@@ -1,3 +1,4 @@
+const WXAPI = require('../../../API/API')
 Page({
   data: {
     tabbar: ['美食','宠物','相亲','结婚','家居','亲子','教育','旅游','闲置','物业'],
@@ -6,7 +7,8 @@ Page({
     currentTab: 0, //预设当前项的值
     scrollTop: 0, //tab标题的滚动条位置
 
-    huaTiList:[]
+    huaTiList:[],
+      classifyId:1 //获取King对应的子主题
   },
   onLoad: function (options) {
     wx.getSystemInfo({
@@ -19,41 +21,26 @@ Page({
 
 
 
-    this.setData({
-        huaTiList1:[
-            {
-                name:"运动",
-                data:[
-                    {
-                        id:1,name:'# 1帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
-                    },
-                    {
-                        id:2,name:'# 2包打听',subName:'1079条讨论 1299人围观'
-                    }
-                ]
-            }
-
-        ],
-        huaTiList:[
-            {
-                name:"运动",
-                data:[
-                    {
-                        id:1,name:'# 1帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
-                    },
-                    {
-                        id:2,name:'# 2包打听',subName:'1079条讨论 1299人围观'
-                    }
-                ]
-            }
-        ]
-    })
 
 
+
+      this.Getsubtopic(this.data.classifyId)
+      this.getKing()
   },
 
-    getCity:function(){
-        WXAPI.Getsubtopic().then(res=>{
+
+    //获取King
+    getKing:function(){
+        WXAPI.getHomeKing().then(res=>{
+            this.setData({
+                tabbar:res.data
+            })
+        })
+    },
+    Getsubtopic:function(id){
+        WXAPI.Getsubtopic({
+            classifyId:id
+        }).then(res=>{
             this.setData({
                 huaTiList:res.data
             })
@@ -63,10 +50,7 @@ Page({
 
   // 点击标题切换当前页时改变样式
   swichNav: function (e) {
-      this.setData({
-          huaTiList:this.data.huaTiList1[e.currentTarget.dataset.current]
-      })
-      console.log(this.data.huaTiList,'huaTiList');
+      this.Getsubtopic(e.currentTarget.dataset.id)
     let cur = e.currentTarget.dataset.current;
       console.log(e.currentTarget.dataset.current,'e.currentTarget.dataset.current');
       if (this.data.currentTab == cur) {

@@ -7,15 +7,15 @@
   </view>
 
   <scroll-view scroll-y scroll-with-animation class="tab-view" scroll-top="{{scrollTop}}" style="height:{{menuHeight}}px">
-    <view wx:for="{{tabbar}}" wx:key="{{index}}" class="tab-bar-item {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" catchtap="swichNav">
-      <text>{{item}}</text>
+    <view wx:for="{{tabbar}}" wx:key="{{index}}" class="tab-bar-item {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" catchtap="swichNav" data-id="{{item.id}}">
+      <text>{{item.name}}</text>
     </view>
   </scroll-view>
   <view class="right-box">
 
 <!--      hidden="{{currentTab!==index}}"-->
 
-      <block wx:for="{{huaTiList.data}}" wx:key>
+      <block wx:for="{{huaTiList}}" wx:key>
           <view >
               <view style="display: flex;flex-direction: column;margin-bottom: 40rpx" class="van-hairline--bottom" bindtap="productList" data-name="{{item.name}}">
                   <view class="f24">{{item.name}}</view>
