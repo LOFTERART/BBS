@@ -106,9 +106,16 @@ module.exports = {
         return request('http://127.0.0.1:8080/home/getcommunity', 'Get', data, true)
     },
 
+    //获取话题
+    Getsubtopic: (data) => {
+        return request('http://127.0.0.1:8080/home/getsubtopic', 'Get', data, true)
+    },
 
 
-   //趣知游 登录
+
+
+
+    //趣知游 登录
     QZYLogin:(data)=>{
         // return request('https://www.quzhiyou.cn/wechat/login/selectUserId', 'GET',data,true)
         return request('https://127.0.0.1:8080/wxlogin', 'GET',data,true)

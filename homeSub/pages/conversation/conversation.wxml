@@ -15,7 +15,7 @@
 
 <!--      hidden="{{currentTab!==index}}"-->
 
-      <block wx:for="{{huaTiList}}" wx:key>
+      <block wx:for="{{huaTiList.data}}" wx:key>
           <view >
               <view style="display: flex;flex-direction: column;margin-bottom: 40rpx" class="van-hairline--bottom" bindtap="productList" data-name="{{item.name}}">
                   <view class="f24">{{item.name}}</view>

@@ -21,67 +21,46 @@ Page({
 
     this.setData({
         huaTiList1:[
-            [
-                {
-                    id:1,name:'# 1帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
-                },
-                {
-                    id:2,name:'# 2包打听',subName:'1079条讨论 1299人围观'
-                }
-            ],
-            [
-                {
-                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
-                },
-                {
-                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
-                }
-            ],
-            [
-                {
-                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
-                },
-                {
-                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
-                }
-            ],
-            [
-                {
-                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
-                },
-                {
-                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
-                }
-            ],
-            [
-                {
-                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
-                },
-                {
-                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
-                }
-            ],
-            [
-                {
-                    id:3,name:'# 3帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
-                },
-                {
-                    id:4,name:'# 4包打听',subName:'1079条讨论 1299人围观'
-                }
-            ]
+            {
+                name:"运动",
+                data:[
+                    {
+                        id:1,name:'# 1帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+                    },
+                    {
+                        id:2,name:'# 2包打听',subName:'1079条讨论 1299人围观'
+                    }
+                ]
+            }
+
         ],
         huaTiList:[
             {
-                id:1,name:'# 0帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
-            },
-            {
-                id:2,name:'# 0包打听',subName:'1079条讨论 1299人围观'
+                name:"运动",
+                data:[
+                    {
+                        id:1,name:'# 1帮助身边的流浪动物',subName:'4079条讨论 6299人围观'
+                    },
+                    {
+                        id:2,name:'# 2包打听',subName:'1079条讨论 1299人围观'
+                    }
+                ]
             }
         ]
     })
 
 
   },
+
+    getCity:function(){
+        WXAPI.Getsubtopic().then(res=>{
+            this.setData({
+                huaTiList:res.data
+            })
+        })
+    },
+
+
   // 点击标题切换当前页时改变样式
   swichNav: function (e) {
       this.setData({
