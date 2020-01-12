@@ -198,6 +198,13 @@
 					"id": -1,
 					"name": "homeSub/pages/AddBbs/AddBbs",
 					"pathName": "homeSub/pages/AddBbs/AddBbs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
 					"scene": null
 				}
 			]

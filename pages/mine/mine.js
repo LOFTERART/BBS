@@ -1,4 +1,5 @@
 import UTIL from '../../utils/util'
+const WXAPI = require('../../API/API')
 Page({
     data: {
         height: 64, //header高度
@@ -88,6 +89,25 @@ Page({
 
 
 
+
+
+
+    //提交用户信息
+    onGotUserInfo:function(e){
+        WXAPI.wxLoginGetUserinfo({
+            nick_name:e.detail.userInfo.nickName,
+            avatar_url:e.detail.userInfo.avatarUrl,
+            province:e.detail.userInfo.province,
+            city:e.detail.userInfo.city,
+            country:e.detail.userInfo.country,
+            gender:e.detail.userInfo.gender,
+        }).then(res=>{
+            console.log(res.msg,"------msg-----");
+            UTIL.toast(res.msg)
+        })
+    },
+
+
     //点击头部数据
     clickAction:function(e){
 
@@ -166,8 +186,8 @@ Page({
 
 
     },
-    
-    
+
+
     //点击勋章
 
     clickMedal:function(){

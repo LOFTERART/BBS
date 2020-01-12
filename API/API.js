@@ -85,7 +85,7 @@ module.exports = {
 },
     //首页状态
     wxLoginGetUserinfo: (data) => {
-        return request('http://127.0.0.1:8080/login/getwxuserinfo', 'GET', data, true)
+        return request('http://127.0.0.1:8080/login/getwxuserinfo', 'POST', data, true)
     },
   //首页状态
     getHomeDiarys: (data) => {
