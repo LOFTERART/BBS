@@ -244,7 +244,7 @@ Page({
                 "title":'上传中'
             })
             wx.uploadFile({
-                url: 'http://127.0.0.1:8080/home/upload',
+                url: 'http://192.168.0.114:8080/home/upload',
                 method: "POST",
                 headers: {
                     'Accept': 'application/json',

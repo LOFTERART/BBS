@@ -76,43 +76,43 @@ module.exports = {
 
   //趣知游 登录
   ask: (data) => {
-    return request('http://127.0.0.1:8080/', 'POST', data, true)
+    return request('http://192.168.0.114:8080/', 'POST', data, true)
   },
 
   //首页状态
   wxLoginGetOpenid: (data) => {
-    return request('http://127.0.0.1:8080/login/getcode', 'GET', data, true)
+    return request('http://192.168.0.114:8080/login/getcode', 'GET', data, true)
 },
     //首页状态
     wxLoginGetUserinfo: (data) => {
-        return request('http://127.0.0.1:8080/login/getwxuserinfo', 'POST', data, true)
+        return request('http://192.168.0.114:8080/login/getwxuserinfo', 'POST', data, true)
     },
   //首页状态
     getHomeDiarys: (data) => {
-        return request('http://127.0.0.1:8080/home/homediarys', 'GET', data, true)
+        return request('http://192.168.0.114:8080/home/homediarys', 'GET', data, true)
     },
 
     //首页KING
     getHomeKing: (data) => {
-        return request('http://127.0.0.1:8080/home/classify', 'GET', data, true)
+        return request('http://192.168.0.114:8080/home/classify', 'GET', data, true)
     },
     //首页KING
     getHomeAd: (data) => {
-        return request('http://127.0.0.1:8080/home/ad', 'GET', data, true)
+        return request('http://192.168.0.114:8080/home/ad', 'GET', data, true)
     },
 
     //发布状态
     postDiary: (data) => {
-        return request('http://127.0.0.1:8080/home/adddiary', 'POST', data, true)
+        return request('http://192.168.0.114:8080/home/adddiary', 'POST', data, true)
     },
     //获取小区
     GetCity: (data) => {
-        return request('http://127.0.0.1:8080/home/getcommunity', 'Get', data, true)
+        return request('http://192.168.0.114:8080/home/getcommunity', 'Get', data, true)
     },
 
     //获取话题
     Getsubtopic: (data) => {
-        return request('http://127.0.0.1:8080/home/getsubtopic', 'Get', data, true)
+        return request('http://192.168.0.114:8080/home/getsubtopic', 'Get', data, true)
     },
 
 
