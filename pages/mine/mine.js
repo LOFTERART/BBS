@@ -94,6 +94,8 @@ Page({
 
     //提交用户信息
     onGotUserInfo:function(e){
+        wx.setStorageSync('avatarUrl', e.detail.userInfo.avatarUrl);
+        wx.setStorageSync('nickName', e.detail.userInfo.nickName);
         WXAPI.wxLoginGetUserinfo({
             nick_name:e.detail.userInfo.nickName,
             avatar_url:e.detail.userInfo.avatarUrl,
@@ -102,7 +104,6 @@ Page({
             country:e.detail.userInfo.country,
             gender:e.detail.userInfo.gender,
         }).then(res=>{
-            console.log(res.msg,"------msg-----");
             UTIL.toast(res.msg)
         })
     },

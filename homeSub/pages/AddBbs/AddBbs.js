@@ -266,8 +266,8 @@ Page({
                         })
 
                         WXAPI.postDiary({
-                            avatar:"https://dcdn.it120.cc/2019/10/26/2b4ab83c-5d78-486e-a25e-ff693f00da4d.png",
-                            name:"曹阿瞒",
+                            avatar:wx.getStorageSync('avatarUrl'),
+                            name:wx.getStorageSync('nickName'),
                             content:that.data.message,
                             address:that.data.addressLocal,
                             community:that.data.community,
