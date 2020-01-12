@@ -81,8 +81,12 @@ module.exports = {
 
   //首页状态
   wxLoginGetOpenid: (data) => {
-    return request('http://127.0.0.1:8080/wxlogin', 'GET', data, true)
+    return request('http://127.0.0.1:8080/login/getcode', 'GET', data, true)
 },
+    //首页状态
+    wxLoginGetUserinfo: (data) => {
+        return request('http://127.0.0.1:8080/login/getwxuserinfo', 'GET', data, true)
+    },
   //首页状态
     getHomeDiarys: (data) => {
         return request('http://127.0.0.1:8080/home/homediarys', 'GET', data, true)
@@ -115,10 +119,10 @@ module.exports = {
 
 
 
-    //趣知游 登录
+    //趣知游 登录 获取openid
     QZYLogin:(data)=>{
         // return request('https://www.quzhiyou.cn/wechat/login/selectUserId', 'GET',data,true)
-        return request('https://127.0.0.1:8080/wxlogin', 'GET',data,true)
+        return request('https://127.0.0.1:8080/login/getcode', 'GET',data,true)
     },
     //趣知游 活动首页
     ActivityHome:(data)=>{
