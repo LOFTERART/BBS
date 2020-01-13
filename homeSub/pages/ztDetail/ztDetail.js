@@ -47,7 +47,10 @@ create(store,{
         WXAPI.GetDiaryInfo({
             id:Number(options.id)
         }).then(res=>{
-            console.log(res,"res");
+            console.log(res.data,"res");
+            this.setData({
+                picInfo:res.data
+            })
         })
 
 
