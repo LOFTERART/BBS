@@ -3,6 +3,7 @@ import UTIL from "../../utils/util";
 //获取应用实例
 const app = getApp()
 import create from '../../utils/omi/create'
+const WXAPI = require('../../API/API')
 create({
   /**
    * 组件的属性列表
@@ -93,18 +94,29 @@ create({
                   [like]: this.data.articleList[index].like-1,
               })
               UTIL.toast('取消点赞')
-              // this.likeVSNoLikeComment(e.currentTarget.dataset.id,true)
+              this.likeVSNoLikeComment(e.currentTarget.dataset.id,true)
           }else {
               this.setData({
                   [is_like]: !this.data.articleList[index].is_like,
                   [like]: this.data.articleList[index].like+1,
               })
               UTIL.toast('点赞成功')
-              // this.likeVSNoLikeComment(e.currentTarget.dataset.id,false)
+              this.likeVSNoLikeComment(e.currentTarget.dataset.id,false)
           }
 
 
+      },
 
+
+
+
+      likeVSNoLikeComment:function(diaryId,type){
+          WXAPI.postLikeDiary({
+              diary_id:diaryId,
+              type:type
+          }).then(res=>{
+              console.log(res,"------------dddddd--------");
+          })
       },
 
       //点击头像
