@@ -16,7 +16,6 @@ Page({
     onLoad:function(options){
         this.setData({
             huati:options.name||'选择合适的话题会有更多赞~',
-            community:options.community,
             communityid:options.communityid
         })
 
@@ -268,9 +267,7 @@ Page({
                         WXAPI.postDiary({
                             content:that.data.message,
                             address:that.data.addressLocal,
-                            community:that.data.community,
                             photos:pass,
-                            tag:that.data.huati,
                             communityId:Number(that.data.communityid),
                             ClassifyId:that.data.ClassifyId, //大标签ID
                             sub_topic_id:that.data.sub_topic_id  //子标签分类
