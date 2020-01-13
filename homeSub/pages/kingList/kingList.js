@@ -29,8 +29,14 @@ create(store,{
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        //获取日记
-        this.getDiary(Number(options.id),Number(options.communityid))
+        console.log(options,"op0--------000-------");
+        //获取king日记
+        if(options.type){
+            this.getDiary(Number(options.id),Number(options.communityid))
+        }else {
+            this.getDiaryTopic(Number(options.sid),Number(options.communityid))
+        }
+
 
         let obj = wx.getMenuButtonBoundingClientRect();
         this.setData({
@@ -68,6 +74,20 @@ create(store,{
             size:10,
             communityId:communityid,
             classifyId:id
+        }).then(res=>{
+            this.setData({
+                articleList:res.data.items
+            })
+        })
+    },
+
+    //获取子topic的内容
+    getDiaryTopic:function(sid,communityid){
+        WXAPI.getHomeDiarys({
+            page:1,
+            size:10,
+            communityId:communityid,
+            sub_topic_id:sid
         }).then(res=>{
             this.setData({
                 articleList:res.data.items

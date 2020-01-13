@@ -80,7 +80,22 @@
             </view>
 
 
-            <view class="tagStyle" wx:else bindtap="clickTogether" data-tag="{{itemName.tag}}" data-tagid="{{itemName.tagId}}" data-tagid="{{itemName.tagId}}" data-cid="{{itemName.communityId}}">
+<!--            data-tag="{{itemName.tag}}"-->
+<!--            data-tagid="{{itemName.tagId}}"-->
+<!--            data-tagid="{{itemName.tagId}}"-->
+<!--            data-cid="{{itemName.communityId}}"-->
+
+            <view class="tagStyle" wx:else
+                  bindtap="clickTogether"
+
+
+                  data-sid="{{itemName.sub_topic_info.id}}"
+                  data-communityid="{{itemName.communityId}}"
+                  data-name="{{itemName.sub_topic_info.name}}"
+                  data-des="{{itemName.sub_topic_info.des}}"
+                  data-pic="{{itemName.sub_topic_info.desPic}}"
+                  data-image="{{itemName.sub_topic_info.image}}"
+            >
                 {{itemName.tag}}
             </view>
 

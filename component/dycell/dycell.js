@@ -162,12 +162,23 @@ create({
 
       },
 
-//   点击#
+//   点击#子标题
+    // wx.navigateTo({
+    //     url: '/homeSub/pages/together/together?name='+e.currentTarget.dataset.tag+"&tagid="+e.currentTarget.dataset.tagid+"&cid="+e.currentTarget.dataset.cid
+    // })
 
       clickTogether:function (e) {
+          console.log(e,"eeeeee--------------------");
           wx.navigateTo({
-              url: '/homeSub/pages/together/together?name='+e.currentTarget.dataset.tag+"&tagid="+e.currentTarget.dataset.tagid+"&cid="+e.currentTarget.dataset.cid
+              url: '/homeSub/pages/kingList/kingList?name='
+                  +e.currentTarget.dataset.name+
+                  '&des='+e.currentTarget.dataset.des+
+                  '&pic='+decodeURIComponent(e.currentTarget.dataset.pic)
+                  +'&image='+decodeURIComponent(e.currentTarget.dataset.image)
+                  +"&sid="+e.currentTarget.dataset.sid
+                  +"&communityid="+e.currentTarget.dataset.communityid
           })
+
       },
 
 
