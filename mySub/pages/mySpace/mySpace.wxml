@@ -10,14 +10,14 @@
 
         <view style="display: flex;flex-direction: row;align-items: center">
             <view>
-                <image   src="https://static1.keepcdn.com/2019/06/05/1559718008918_750x497.png"  style="width: 150rpx;height: 150rpx;border-radius: 75rpx"/>
+                <image   src="{{articleList[0].user_info.avatar_url}}"  style="width: 150rpx;height: 150rpx;border-radius: 75rpx"/>
             </view>
 
 
             <view style="margin-left: 20rpx">
 
-                <view class="f24" style="font-weight: bold">{{userInfo.name}}</view>
-                <view class="f22">{{userInfo.community}}</view>
+                <view class="f24" style="font-weight: bold">{{articleList[0].user_info.nick_name}}</view>
+                <view class="f22">{{articleList[0].user_info.city}}</view>
 
             </view>
 
