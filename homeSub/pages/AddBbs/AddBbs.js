@@ -266,8 +266,6 @@ Page({
                         })
 
                         WXAPI.postDiary({
-                            avatar:wx.getStorageSync('avatarUrl'),
-                            name:wx.getStorageSync('nickName'),
                             content:that.data.message,
                             address:that.data.addressLocal,
                             community:that.data.community,
