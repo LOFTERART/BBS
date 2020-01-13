@@ -1,6 +1,7 @@
 import create from '../../../utils/omi/create'
 import store from '../../../store/index'
 import data from '../../../data/data'
+const WXAPI = require('../../../API/API')
 create(store,{
 
   /**
@@ -23,8 +24,8 @@ create(store,{
           ]
 
       },
-      //成员动态
-      articleList:data.mySpaceDyList,
+      //成员动态data.mySpaceDyList,
+      articleList:[]
 
 
 
@@ -35,11 +36,27 @@ create(store,{
    */
   onLoad: function (options) {
 
+      console.log(options,"--------options");
       wx.setNavigationBarTitle({
         title: options.name
       })
+      //用户id
+      this.getDiaryUserInfo(options.id)
 
   },
+
+    //获取日志
+    getDiaryUserInfo:function(id){
+        WXAPI.getHomeDiarys({
+            page:1,
+            size:10,
+            user_id:Number(id)
+        }).then(res=>{
+            this.setData({
+                articleList:res.data.items
+            })
+        })
+    },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

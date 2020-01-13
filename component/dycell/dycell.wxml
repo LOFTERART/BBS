@@ -11,7 +11,7 @@
 
             <view style="display: flex;flex-direction: row">
 
-                <view style="margin-right: 20rpx" bindtap="clickAva" data-name="{{itemName.name}}">
+                <view style="margin-right: 20rpx" bindtap="clickAva" data-name="{{itemName.name}}" data-uid="{{itemName.user_id}}">
                     <image mode="widthFix"  src="{{itemName.avatar}}" class="slide-image" style="width: 80rpx;height: 80rpx;border-radius: 40rpx"/>
                 </view>
 

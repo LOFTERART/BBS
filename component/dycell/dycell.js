@@ -122,8 +122,9 @@ create({
       //点击头像
 
       clickAva:function(e){
+          console.log(e,"---------rrrr");
           wx.navigateTo({
-              url: '/mySub/pages/mySpace/mySpace?name='+e.currentTarget.dataset.name
+              url: '/mySub/pages/mySpace/mySpace?name='+e.currentTarget.dataset.name+"&id="+e.currentTarget.dataset.uid
           })
       },
 
