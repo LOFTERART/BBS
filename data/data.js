@@ -1,6 +1,15 @@
 
 const dataBase = {
 
+    //like People
+
+    pic:[
+        {id:1,pic:"url"}  ,
+        {id:1,pic:"url"}  ,
+        {id:1,pic:"url"}  ,
+    ],
+
+
     //首页
     homeDyList:[
         {
