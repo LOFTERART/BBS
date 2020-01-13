@@ -16,6 +16,7 @@
 
    <!--点赞人数S-->
     <view
+            wx:if="{{picInfo.total>0}}"
             bindtap="clickLikePeople"
             style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;height: 60rpx;padding: 20rpx" class="van-hairline--bottom">
 
