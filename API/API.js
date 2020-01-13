@@ -106,6 +106,11 @@ module.exports = {
         return request('http://192.168.0.114:8080/home/adddiary', 'POST', data, true)
     },
 
+    //获取状态
+    GetDiaryInfo: (data) => {
+        return request('http://192.168.0.114:8080/home/diaryinfo', 'GET', data, true)
+    },
+
     //点赞状态
     postLikeDiary: (data) => {
         return request('http://192.168.0.114:8080/home/likediary', 'POST', data, true)

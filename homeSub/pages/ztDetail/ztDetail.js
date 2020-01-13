@@ -35,13 +35,19 @@ create(store,{
 
 
     onLoad: function (options) {
-      
+
         // this.getZTList(false,options.id);
         let arrayList=[];
         arrayList.push(JSON.parse(options.list))
         this.setData({
             id:options.id,
             articleList:arrayList
+        })
+
+        WXAPI.GetDiaryInfo({
+            id:Number(options.id)
+        }).then(res=>{
+            console.log(res,"res");
         })
 
 
@@ -53,11 +59,11 @@ create(store,{
     clickLikePeople:function(){
       wx.navigateTo({
         url: '/homeSub/pages/likePeople/likePeople'
-      })  
+      })
     },
-    
-    
-    
+
+
+
     collection: function () {
         this.setData({
             isCollection: !this.data.isCollection
