@@ -71,59 +71,62 @@ Promise.prototype.finally = function (callback) {
     );
 }
 
+// const  baseUrl="http://192.168.0.114:8080/"
+const  baseUrl="http://192.168.31.65:8080"
+
 module.exports = {
     request,
 
   //趣知游 登录
   ask: (data) => {
-    return request('http://192.168.0.114:8080/', 'POST', data, true)
+    return request(baseUrl, 'POST', data, true)
   },
 
   //首页状态
   wxLoginGetOpenid: (data) => {
-    return request('http://192.168.0.114:8080/login/getcode', 'GET', data, true)
+    return request(baseUrl+"/login/getcode", 'GET', data, true)
 },
     //首页状态
     wxLoginGetUserinfo: (data) => {
-        return request('http://192.168.0.114:8080/login/getwxuserinfo', 'POST', data, true)
+        return request(baseUrl+'/login/getwxuserinfo', 'POST', data, true)
     },
   //首页状态
     getHomeDiarys: (data) => {
-        return request('http://192.168.0.114:8080/home/homediarys', 'GET', data, true)
+        return request(baseUrl+'/home/homediarys', 'GET', data, true)
     },
 
     //首页KING
     getHomeKing: (data) => {
-        return request('http://192.168.0.114:8080/home/classify', 'GET', data, true)
+        return request(baseUrl+'/home/classify', 'GET', data, true)
     },
     //首页KING
     getHomeAd: (data) => {
-        return request('http://192.168.0.114:8080/home/ad', 'GET', data, true)
+        return request(baseUrl+'/home/ad', 'GET', data, true)
     },
 
     //发布状态
     postDiary: (data) => {
-        return request('http://192.168.0.114:8080/home/adddiary', 'POST', data, true)
+        return request(baseUrl+'/home/adddiary', 'POST', data, true)
     },
 
     //获取状态
     GetDiaryInfo: (data) => {
-        return request('http://192.168.0.114:8080/home/diaryinfo', 'GET', data, true)
+        return request(baseUrl+'/home/diaryinfo', 'GET', data, true)
     },
 
     //点赞状态
     postLikeDiary: (data) => {
-        return request('http://192.168.0.114:8080/home/likediary', 'POST', data, true)
+        return request(baseUrl+'/home/likediary', 'POST', data, true)
     },
 
     //获取小区
     GetCity: (data) => {
-        return request('http://192.168.0.114:8080/home/getcommunity', 'Get', data, true)
+        return request(baseUrl+'/home/getcommunity', 'Get', data, true)
     },
 
     //获取话题
     Getsubtopic: (data) => {
-        return request('http://192.168.0.114:8080/home/getsubtopic', 'Get', data, true)
+        return request(baseUrl+'/home/getsubtopic', 'Get', data, true)
     },
 
 
@@ -133,19 +136,19 @@ module.exports = {
     //趣知游 登录 获取openid
     QZYLogin:(data)=>{
         // return request('https://www.quzhiyou.cn/wechat/login/selectUserId', 'GET',data,true)
-        return request('https://127.0.0.1:8080/login/getcode', 'GET',data,true)
+        return request(baseUrl+'/login/getcode', 'GET',data,true)
     },
     //趣知游 活动首页
     ActivityHome:(data)=>{
         // return request('https://www.quzhiyou.cn/wechat/activity/selectActivityList', 'GET',data,true)
-      return request('http://127.0.0.1:8080/v1/wechat/activity/selectActivityList', 'GET', data, true)
+      return request(baseUrl+'/v1/wechat/activity/selectActivityList', 'GET', data, true)
     },
 
 
     //趣知游 活动详情
     ActivityDetail:(data)=>{
         // return request('https://www.quzhiyou.cn/wechat/activity/selectActivicyInfoById', 'GET',data,true)
-      return request('http://127.0.0.1:8080/v1/wechat/activity/selectActivicyInfoById', 'GET', data, true)
+      return request(baseUrl+'/v1/wechat/activity/selectActivicyInfoById', 'GET', data, true)
     },
 
     //趣知游 活动收藏&&取消
